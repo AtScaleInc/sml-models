@@ -1,0 +1,3 @@
+[submodule "sml-tutorials"]
+	path = sml-tutorials
+	url = https://github.com/AtScaleInc/sml-tutorials.git
