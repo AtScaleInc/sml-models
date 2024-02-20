@@ -6,3 +6,7 @@
 	path = sml-marketplaces
 	url = https://github.com/AtScaleInc/sml-marketplaces.git
 	branch = main
+[submodule "sml-tutorials"]
+	path = sml-tutorials
+	url = https://github.com/AtScaleInc/sml-tutorials.git
+	branch = main
