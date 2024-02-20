@@ -1,8 +1,1 @@
-[submodule "sml-tutorials"]
-	path = sml-tutorials
-	url = https://github.com/AtScaleInc/sml-tutorials.git
-	branch = main
-[submodule "sml-shared"]
-	path = sml-shared
-	url = https://github.com/AtScaleInc/sml-shared.git
-	branch = main
+
