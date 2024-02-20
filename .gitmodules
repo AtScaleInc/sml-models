@@ -1,8 +1,0 @@
-[submodule "sml-marketplaces"]
-	path = sml-marketplaces
-	url = https://github.com/AtScaleInc/sml-marketplaces.git
-	branch = main
-[submodule "sml-shared"]
-	path = sml-shared
-	url = https://github.com/AtScaleInc/sml-shared.git
-	branch = main
