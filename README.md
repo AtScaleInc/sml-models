@@ -3,19 +3,19 @@ AtScale's semantic layer platform simplifies the access to data through a unifie
 
 This repository contains a variety of semantic models encoded in the **S**emantic **M**odeling **L**anguage (SML).
 
-## Model Library
+# Model Library
 
-### Tutorial Models
+## Tutorial Models
 1. [Internet Sales](models/tutorials/internet-sales) - a simple, single fact model derived from the ficticious AdventureWorks retail dataset
-2. World Wide Importers - a more complex, multi-fact model that represents a fictional wholesale and distribution company
-3. TPC-DS - a complex, multi-fact model that encodes the [TPC-DS](https://www.tpc.org/tpcds/) benchmark model in SML
+2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model that represents a fictional wholesale and distribution company
+3. [TPC-DS](models/tutorials/tpc-ds) - a complex, multi-fact model that encodes the [TPC-DS](https://www.tpc.org/tpcds/) benchmark model in SML
 
-## Getting Started
+# Getting Started
 
-### How to Download and Install AtScale
-### How to Register this Repository in AtScale Design Center
-### How to Add a Data Warehouse Connection in AtScale Design Center
+## How to Install AtScale
+## How to Use These Models In AtScale Design Center
+### How to Register this Repository
+### How to Add a Data Warehouse Connection
 ### How to Deploy a Model
 ### How to Query a Model
-
 ## Resources
