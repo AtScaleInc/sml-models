@@ -16,7 +16,7 @@ The Internet Sales dataset is adapted from the Microsoft AdventureWorks tutorial
 
 ## Data Model Overview
 
-![](images/internet-sales-model.png)
+![Internet Sales Model](images/internet-sales-model.png)
 
 ## Data Loading Instructions
 
