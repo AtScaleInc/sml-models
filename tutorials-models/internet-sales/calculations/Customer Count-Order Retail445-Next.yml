@@ -1,0 +1,9 @@
+unique_name: Customer Count-Order Retail445-Next
+object_type: metric_calc
+label: Customer Count-Order Retail445-Next
+description: Next Period's  Sales Amount on Order Retail445
+expression: "CASE WHEN ISEMPTY([Measures].[customercount1]) \nTHEN NULL\nELSE\n([Order\
+  \ Date Dimension].[Order Retail445].CurrentMember.NextMember, [Measures].[customercount1])\n\
+  END\n"
+folder: Time Relative
+format: General Number

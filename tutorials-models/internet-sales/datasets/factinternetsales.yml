@@ -1,0 +1,59 @@
+unique_name: factinternetsales
+object_type: dataset
+label: factinternetsales
+connection_id: Snowflake
+table: factinternetsales
+
+columns:
+  - name: Calculated Tax
+    data_type: double
+    sql: salesamount*0.085
+    dialects:
+      - dialect: Snowflake
+        sql: '"salesamount"*0.085'
+      - dialect: Oracle
+        sql: '"salesamount"*0.085'
+  - name: currencykey
+    data_type: long
+  - name: customerkey
+    data_type: long
+  - name: orderdate
+    data_type: string
+  - name: orderdatekey
+    data_type: long
+  - name: orderquantity
+    data_type: long
+  - name: productkey
+    data_type: long
+  - name: sales_reasons
+    data_type: string
+  - name: salesamount
+    data_type: double
+  - name: salesorderlinenumber
+    data_type: long
+  - name: salesordernumber
+    data_type: string
+  - name: shipdatekey
+    data_type: long
+  - name: taxamt
+    data_type: double
+  - name: unitprice
+    data_type: double
+  - name: product_info
+    map:
+      field_terminator: ","
+      key_terminator: ':'
+      key_type: String
+      value_type: String
+  - name: color
+    data_type: string
+    parent_column: product_info
+  - name: size
+    data_type: string
+    parent_column: product_info
+  - name: style
+    data_type: string
+    parent_column: product_info
+  - name: weight
+    data_type: string
+    parent_column: product_info

@@ -1,0 +1,8 @@
+unique_name: orderquantity1
+object_type: metric
+label: Order Quantity
+calculation_method: sum
+folder: Sales Metrics
+format: General Number
+dataset: factinternetsales
+column: orderquantity

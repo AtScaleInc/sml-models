@@ -1,0 +1,26 @@
+unique_name: Color Dimension
+object_type: dimension
+label: Color Dimension
+description: 'Product Color '
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: Color
+    label: Color
+    folder: Product Attributes
+
+    levels:
+
+      - unique_name: Color Level
+
+level_attributes:
+
+  - unique_name: Color Level
+    label: Color
+    description: Product Color
+    is_hidden: true
+    dataset: factinternetsales
+    name_column: color
+    key_columns:
+      - color

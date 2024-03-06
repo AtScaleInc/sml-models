@@ -1,0 +1,8 @@
+unique_name: customercount1
+object_type: metric
+label: Customer Count v5
+calculation_method: count distinct
+folder: Customer Metrics
+format: General Number
+dataset: factinternetsales
+column: customerkey

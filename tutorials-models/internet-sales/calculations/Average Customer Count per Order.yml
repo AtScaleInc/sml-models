@@ -1,0 +1,5 @@
+unique_name: Average Customer Count per Order
+object_type: metric_calc
+label: Average Customer Count per Order
+expression: "([Measures].[customercount1] / [Measures].[orderquantity1])"
+folder: Time Relative
