@@ -1,0 +1,8 @@
+unique_name: maxtaxamount1
+object_type: metric
+label: Max Tax Amount
+calculation_method: maximum
+folder: Sales Metrics
+format: "$#,##0.00"
+dataset: factinternetsales
+column: taxamt

@@ -1,0 +1,9 @@
+unique_name: dim_geo_country
+object_type: dataset
+label: dim_geo_country
+connection_id: Snowflake
+table: dim_geo_country
+
+columns:
+  - name: country
+    data_type: string

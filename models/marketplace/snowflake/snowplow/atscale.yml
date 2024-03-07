@@ -1,0 +1,23 @@
+unique_name: Sales Insights
+label: Sales Insights
+object_type: AtscaleSettings
+as_version: 1.0
+aggressive_agg_promotion: false
+build_speculative_aggs: false
+dataset_properties:
+  factinternetsales:
+    aggregate_locality: managed
+  dim_geo_country:
+    aggregate_locality: managed
+  DateCustom:
+    aggregate_locality: managed
+  dimproduct:
+    aggregate_locality: managed
+  dim_geo_state:
+    aggregate_locality: managed
+  dim_geo_postalcode:
+    aggregate_locality: managed
+  dim_geo_city:
+    aggregate_locality: managed
+  dimcustomer:
+    aggregate_locality: managed

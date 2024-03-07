@@ -1,0 +1,21 @@
+unique_name: dimproduct
+object_type: dataset
+label: dimproduct
+connection_id: Snowflake
+table: dimproduct
+
+columns:
+  - name: englishproductname
+    data_type: string
+  - name: listprice
+    data_type: double
+  - name: productkey
+    data_type: long
+  - name: productline
+    data_type: string
+  - name: productsubcategorykey
+    data_type: long
+  - name: productsubcategoryname
+    data_type: string
+  - name: startdate
+    data_type: string

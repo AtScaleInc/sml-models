@@ -1,0 +1,205 @@
+unique_name: DateCustom
+object_type: dataset
+label: DateCustom
+connection_id: Snowflake
+table: datecustom
+
+columns:
+  - name: date_name
+    data_type: string
+  - name: datekey
+    data_type: long
+  - name: day_of_half_year
+    data_type: long
+  - name: day_of_half_year_name
+    data_type: string
+  - name: day_of_month
+    data_type: long
+  - name: day_of_month_name
+    data_type: string
+  - name: day_of_quarter
+    data_type: long
+  - name: day_of_quarter_name
+    data_type: string
+  - name: day_of_week
+    data_type: long
+  - name: day_of_week_name
+    data_type: string
+  - name: day_of_year
+    data_type: long
+  - name: day_of_year_name
+    data_type: string
+  - name: half_year
+    data_type: datetime
+  - name: half_year_name
+    data_type: string
+  - name: half_year_of_year
+    data_type: long
+  - name: half_year_of_year_name
+    data_type: string
+  - name: iso_8601_day
+    data_type: datetime
+  - name: iso_8601_day_name
+    data_type: string
+  - name: iso_8601_day_of_week
+    data_type: long
+  - name: iso_8601_day_of_week_name
+    data_type: string
+  - name: iso_8601_day_of_year
+    data_type: long
+  - name: iso_8601_day_of_year_name
+    data_type: string
+  - name: iso_8601_week
+    data_type: datetime
+  - name: iso_8601_week_name
+    data_type: string
+  - name: iso_8601_week_of_year
+    data_type: long
+  - name: iso_8601_week_of_year_name_reporting_day_ctl
+    data_type: string
+  - name: iso_8601_year
+    data_type: datetime
+  - name: iso_8601_year_name
+    data_type: string
+  - name: month
+    data_type: datetime
+  - name: month_name
+    data_type: string
+  - name: month_of_half_year
+    data_type: long
+  - name: month_of_half_year_name
+    data_type: string
+  - name: month_of_quarter
+    data_type: long
+  - name: month_of_quarter_name
+    data_type: string
+  - name: month_of_year
+    data_type: long
+  - name: month_of_year_name
+    data_type: string
+  - name: pk_date
+    data_type: datetime
+  - name: quarter
+    data_type: datetime
+  - name: quarter_name
+    data_type: string
+  - name: quarter_of_half_year
+    data_type: long
+  - name: quarter_of_half_year_name
+    data_type: string
+  - name: quarter_of_year
+    data_type: long
+  - name: quarter_of_year_name
+    data_type: string
+  - name: reporting_day
+    data_type: datetime
+  - name: reporting_day_lykey
+    data_type: datetime
+  - name: reporting_day_name
+    data_type: string
+  - name: reporting_day_of_half_year
+    data_type: long
+  - name: reporting_day_of_half_year_name
+    data_type: string
+  - name: reporting_day_of_month
+    data_type: long
+  - name: reporting_day_of_month_name
+    data_type: string
+  - name: reporting_day_of_quarter
+    data_type: long
+  - name: reporting_day_of_quarter_name
+    data_type: string
+  - name: reporting_day_of_week
+    data_type: long
+  - name: reporting_day_of_week_name
+    data_type: string
+  - name: reporting_day_of_year
+    data_type: long
+  - name: reporting_day_of_year_name
+    data_type: string
+  - name: reporting_half_year
+    data_type: datetime
+  - name: reporting_half_year_lykey
+    data_type: datetime
+  - name: reporting_half_year_name
+    data_type: string
+  - name: reporting_half_year_of_year
+    data_type: long
+  - name: reporting_half_year_of_year_name
+    data_type: string
+  - name: reporting_month
+    data_type: datetime
+  - name: reporting_month_lykey
+    data_type: datetime
+  - name: reporting_month_name
+    data_type: string
+  - name: reporting_month_name2
+    data_type: string
+  - name: reporting_month_of_half_year
+    data_type: long
+  - name: reporting_month_of_half_year_name
+    data_type: string
+  - name: reporting_month_of_quarter
+    data_type: long
+  - name: reporting_month_of_quarter_name
+    data_type: string
+  - name: reporting_month_of_year
+    data_type: long
+  - name: reporting_month_of_year_name
+    data_type: string
+  - name: reporting_quarter
+    data_type: datetime
+  - name: reporting_quarter_lykey
+    data_type: datetime
+  - name: reporting_quarter_name
+    data_type: string
+  - name: reporting_quarter_of_half_year
+    data_type: long
+  - name: reporting_quarter_of_half_year_name
+    data_type: string
+  - name: reporting_quarter_of_year
+    data_type: long
+  - name: reporting_quarter_of_year_name
+    data_type: string
+  - name: reporting_week
+    data_type: datetime
+  - name: reporting_week_ctl
+    data_type: datetime
+  - name: reporting_week_lykey
+    data_type: datetime
+  - name: reporting_week_name
+    data_type: string
+  - name: reporting_week_of_half_year
+    data_type: long
+  - name: reporting_week_of_half_year_name
+    data_type: string
+  - name: reporting_week_of_month
+    data_type: long
+  - name: reporting_week_of_month_name
+    data_type: string
+  - name: reporting_week_of_quarter
+    data_type: long
+  - name: reporting_week_of_quarter_name
+    data_type: string
+  - name: reporting_week_of_year
+    data_type: long
+  - name: reporting_week_of_year_name
+    data_type: string
+  - name: reporting_year
+    data_type: datetime
+  - name: reporting_year_lykey
+    data_type: datetime
+  - name: reporting_year_name
+    data_type: string
+  - name: week
+    data_type: datetime
+  - name: week_name
+    data_type: string
+  - name: week_of_year
+    data_type: long
+  - name: week_of_year_name
+    data_type: string
+  - name: year
+    data_type: datetime
+  - name: year_name
+    data_type: string

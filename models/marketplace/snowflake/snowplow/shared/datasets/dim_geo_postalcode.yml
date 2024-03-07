@@ -1,0 +1,15 @@
+unique_name: dim_geo_postalcode
+object_type: dataset
+label: dim_geo_postalcode
+connection_id: Snowflake
+table: dim_geo_postalcode
+
+columns:
+  - name: country
+    data_type: string
+  - name: countrypostalcode
+    data_type: string
+  - name: geographykey
+    data_type: long
+  - name: postalcode
+    data_type: string

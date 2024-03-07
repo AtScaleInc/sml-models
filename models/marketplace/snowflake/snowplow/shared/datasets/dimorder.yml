@@ -1,0 +1,23 @@
+unique_name: dimorder
+object_type: dataset
+label: dimorder
+connection_id: Snowflake
+table: dimorder
+
+columns:
+  - name: currency_name
+    data_type: string
+  - name: currencykey
+    data_type: long
+  - name: linename
+    data_type: string
+  - name: ordername
+    data_type: string
+  - name: ordernumberlinekey
+    data_type: string
+  - name: salesorderlinenumber
+    data_type: long
+  - name: salesordernumber
+    data_type: string
+  - name: type
+    data_type: string

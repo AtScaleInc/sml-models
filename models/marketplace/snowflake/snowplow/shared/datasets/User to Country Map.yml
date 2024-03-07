@@ -1,0 +1,22 @@
+unique_name: User to Country Map
+object_type: dataset
+label: User to Country Map
+connection_id: Snowflake
+sql: |-
+  select 'France' as country, 'joe' as username
+  union all
+  select 'United States' as country, 'david' as username
+  union all
+  select 'Australia' as country, 'joe' as username
+  union all
+  select 'Canada' as country, 'david' as username
+  union all
+  select 'Germany' as country, 'joe' as username
+  union all
+  select 'United Kingdom' as country, 'joe' as username
+
+columns:
+  - name: country
+    data_type: string
+  - name: username
+    data_type: string

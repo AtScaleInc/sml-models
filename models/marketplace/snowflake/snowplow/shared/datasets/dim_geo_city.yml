@@ -1,0 +1,15 @@
+unique_name: dim_geo_city
+object_type: dataset
+label: dim_geo_city
+connection_id: Snowflake
+table: dim_geo_city
+
+columns:
+  - name: city
+    data_type: string
+  - name: citystatekey
+    data_type: string
+  - name: geographykey
+    data_type: long
+  - name: statekey
+    data_type: string
