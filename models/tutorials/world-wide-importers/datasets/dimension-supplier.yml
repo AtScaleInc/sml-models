@@ -1,0 +1,29 @@
+unique_name: dimension-supplier
+object_type: dataset
+label: dimension-supplier
+connection_id: BigQuery
+table: dimension-supplier
+
+columns:
+  - name: Category
+    data_type: string
+  - name: Lineage_Key
+    data_type: long
+  - name: Payment_Days
+    data_type: long
+  - name: Postal_Code
+    data_type: string
+  - name: Primary_Contact
+    data_type: string
+  - name: Supplier
+    data_type: string
+  - name: Supplier_Key
+    data_type: long
+  - name: Supplier_Reference
+    data_type: string
+  - name: Valid_From
+    data_type: datetime
+  - name: Valid_To
+    data_type: datetime
+  - name: WWI_Supplier_ID
+    data_type: long

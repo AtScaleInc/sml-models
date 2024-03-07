@@ -1,0 +1,98 @@
+unique_name: Promotions
+object_type: dimension
+label: Promotions
+type: standard
+
+hierarchies:
+
+  - unique_name: Promotions
+    label: Promotions
+    folder: Promotion Attributes
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Promotions
+
+        secondary_attributes:
+
+          - unique_name: d_channel_catalog
+            label: Channel Catalog
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_CHANNEL_CATALOG
+            key_columns:
+              - P_CHANNEL_CATALOG
+            sort_column: P_CHANNEL_CATALOG
+
+          - unique_name: d_channel_direct_mail
+            label: Channel Direct Mail
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_CHANNEL_DMAIL
+            key_columns:
+              - P_CHANNEL_DMAIL
+            sort_column: P_CHANNEL_DMAIL
+
+          - unique_name: d_channel_email
+            label: Channel Email
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_CHANNEL_EMAIL
+            key_columns:
+              - P_CHANNEL_EMAIL
+            sort_column: P_CHANNEL_EMAIL
+
+          - unique_name: d_channel_event
+            label: Channel Event
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_CHANNEL_EVENT
+            key_columns:
+              - P_CHANNEL_EVENT
+            sort_column: P_CHANNEL_EVENT
+
+          - unique_name: d_channel_press
+            label: Channel Press
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_CHANNEL_PRESS
+            key_columns:
+              - P_CHANNEL_PRESS
+            sort_column: P_CHANNEL_PRESS
+
+          - unique_name: d_channel_radio
+            label: Channel Radio
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_CHANNEL_RADIO
+            key_columns:
+              - P_CHANNEL_RADIO
+            sort_column: P_CHANNEL_RADIO
+
+          - unique_name: d_channel_tv
+            label: Channel TV
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_CHANNEL_TV
+            key_columns:
+              - P_CHANNEL_TV
+            sort_column: P_CHANNEL_TV
+
+          - unique_name: d_promo_name
+            label: Promotion Name
+            folder: Promotion Attributes
+            dataset: PROMOTION
+            name_column: P_PROMO_NAME
+            key_columns:
+              - P_PROMO_NAME
+            sort_column: P_PROMO_NAME
+
+level_attributes:
+
+  - unique_name: Promotions
+    label: Promotion SK
+    dataset: PROMOTION
+    name_column: P_PROMO_SK
+    key_columns:
+      - P_PROMO_SK

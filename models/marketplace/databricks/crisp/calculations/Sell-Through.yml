@@ -1,0 +1,5 @@
+unique_name: Sell-Through
+object_type: metric_calc
+label: Sell-Through
+expression: "[Measures].[m_sales_quantity_sum]/[Measures].[m_inventory_retail_amount_sum]"
+format: Percent

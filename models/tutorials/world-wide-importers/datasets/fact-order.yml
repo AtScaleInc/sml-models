@@ -1,0 +1,45 @@
+unique_name: fact-order
+object_type: dataset
+label: fact-order
+connection_id: BigQuery
+table: fact-order
+
+columns:
+  - name: City_Key
+    data_type: long
+  - name: Customer_Key
+    data_type: long
+  - name: Description
+    data_type: string
+  - name: Lineage_Key
+    data_type: long
+  - name: Order_Date_Key
+    data_type: date
+  - name: Order_Key
+    data_type: long
+  - name: Package
+    data_type: string
+  - name: Picked_Date_Key
+    data_type: date
+  - name: Picker_Key
+    data_type: long
+  - name: Quantity
+    data_type: long
+  - name: Salesperson_Key
+    data_type: long
+  - name: Stock_Item_Key
+    data_type: long
+  - name: Tax_Amount
+    data_type: double
+  - name: Tax_Rate
+    data_type: double
+  - name: Total_Excluding_Tax
+    data_type: double
+  - name: Total_Including_Tax
+    data_type: double
+  - name: Unit_Price
+    data_type: double
+  - name: WWI_Backorder_ID
+    data_type: long
+  - name: WWI_Order_ID
+    data_type: long

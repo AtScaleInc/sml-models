@@ -1,0 +1,45 @@
+unique_name: Income Band
+object_type: dimension
+label: Income Band
+type: standard
+
+hierarchies:
+
+  - unique_name: Income Band
+    label: Income Band
+
+    levels:
+
+      - unique_name: Income Band
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_ib_lower_bound
+            label: Income Band Lower Bound
+            folder: Household Demographics
+            dataset: INCOME_BAND
+            name_column: IB_LOWER_BOUND
+            key_columns:
+              - IB_LOWER_BOUND
+            sort_column: IB_LOWER_BOUND
+
+          - unique_name: d_ib_upper_bound
+            label: Income Vand Upper Bound
+            folder: Household Demographics
+            dataset: INCOME_BAND
+            name_column: IB_UPPER_BOUND
+            key_columns:
+              - IB_UPPER_BOUND
+            sort_column: IB_UPPER_BOUND
+
+level_attributes:
+
+  - unique_name: Income Band
+    label: Income Band
+    is_hidden: true
+    is_unique_key: true
+    dataset: INCOME_BAND
+    name_column: IB_INCOME_BAND_SK
+    key_columns:
+      - IB_INCOME_BAND_SK

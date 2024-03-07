@@ -1,0 +1,42 @@
+unique_name: Store Dimension
+object_type: dimension
+label: Store Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Store Hierarchy
+    label: Store Hierarchy
+    folder: Store
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Store
+
+level_attributes:
+
+  - unique_name: Store
+    label: Store
+    dataset: normalized_target_dim_store
+    name_column: store
+    key_columns:
+      - store_id
+
+relationships:
+
+  - unique_name: StoreDimension_RegionDimension
+    from:
+      hierarchy: Store Hierarchy
+      level: Store
+      dataset: normalized_target_dim_store
+      join_columns:
+        - region_id
+    to:
+      dimension: Region Dimension
+      level: Region
+    type: embedded
+
+modeler_metadata:
+  version: 0
+  modified: "false"

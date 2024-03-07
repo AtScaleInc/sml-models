@@ -1,0 +1,6 @@
+unique_name: m_sales_quantity_sum
+object_type: metric
+label: Sales Quantity - SUM
+calculation_method: sum
+dataset: normalized_target_fact_sales
+column: sales_quantity

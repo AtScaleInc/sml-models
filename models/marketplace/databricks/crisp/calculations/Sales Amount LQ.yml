@@ -1,0 +1,6 @@
+unique_name: Sales Amount LQ
+object_type: metric_calc
+label: Sales Amount LQ
+expression: "CASE WHEN ISEMPTY([Measures].[m_sales_amount_sum]) THEN \nNULL\nELSE\
+  \ (ParallelPeriod([Date Dimension].[Date Hierarchy].[Quarter], 1, [Date Dimension].[Date\
+  \ Hierarchy].CurrentMember), [Measures].[m_sales_amount_sum]) END"

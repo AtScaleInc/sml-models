@@ -1,0 +1,6 @@
+unique_name: m_store_purchase_discount_amount_sum
+object_type: metric
+label: Store Purchase Discount Amount
+calculation_method: sum
+dataset: normalized_target_fact_gross_margin
+column: store_purchase_discount_amount

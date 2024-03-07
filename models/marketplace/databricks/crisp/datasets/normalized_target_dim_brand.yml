@@ -1,0 +1,11 @@
+unique_name: normalized_target_dim_brand
+object_type: dataset
+label: normalized_target_dim_brand
+connection_id: Databricks - Crisp
+table: normalized_target_dim_brand
+
+columns:
+  - name: brand
+    data_type: string
+  - name: brand_id
+    data_type: long

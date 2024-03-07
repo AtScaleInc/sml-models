@@ -1,0 +1,19 @@
+unique_name: dimension-payment-method
+object_type: dataset
+label: dimension-payment-method
+connection_id: BigQuery
+table: dimension-payment-method
+
+columns:
+  - name: Lineage_Key
+    data_type: long
+  - name: Payment_Method
+    data_type: string
+  - name: Payment_Method_Key
+    data_type: long
+  - name: Valid_From
+    data_type: datetime
+  - name: Valid_To
+    data_type: datetime
+  - name: WWI_Payment_Method_ID
+    data_type: long

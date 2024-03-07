@@ -1,0 +1,25 @@
+unique_name: fact-stock-holding
+object_type: dataset
+label: fact-stock-holding
+connection_id: BigQuery
+table: fact-stock-holding
+
+columns:
+  - name: Bin_Location
+    data_type: string
+  - name: Last_Cost_Price
+    data_type: double
+  - name: Last_Stocktake_Quantity
+    data_type: long
+  - name: Lineage_Key
+    data_type: long
+  - name: Quantity_On_Hand
+    data_type: long
+  - name: Reorder_Level
+    data_type: long
+  - name: Stock_Holding_Key
+    data_type: long
+  - name: Stock_Item_Key
+    data_type: long
+  - name: Target_Stock_Level
+    data_type: long

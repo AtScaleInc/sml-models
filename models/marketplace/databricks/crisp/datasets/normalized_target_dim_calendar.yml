@@ -1,0 +1,81 @@
+unique_name: normalized_target_dim_calendar
+object_type: dataset
+label: normalized_target_dim_calendar
+connection_id: Databricks - Crisp
+table: normalized_target_dim_calendar
+
+columns:
+  - name: date
+    data_type: date
+  - name: date_key
+    data_type: date
+  - name: day_of_month
+    data_type: string
+  - name: day_of_week
+    data_type: string
+  - name: day_of_week_num_sat_start
+    data_type: long
+  - name: day_of_week_num_sun_start
+    data_type: long
+  - name: day_of_week_short
+    data_type: string
+  - name: day_of_year
+    data_type: string
+  - name: is_current_month
+    data_type: boolean
+  - name: is_current_quarter
+    data_type: boolean
+  - name: is_current_week_sat_start
+    data_type: boolean
+  - name: is_current_week_sun_start
+    data_type: boolean
+  - name: is_current_year
+    data_type: boolean
+  - name: month
+    data_type: string
+  - name: month_end
+    data_type: date
+  - name: month_end_by_week_end_sat_start
+    data_type: date
+  - name: month_filter
+    data_type: string
+  - name: month_number
+    data_type: string
+  - name: month_short
+    data_type: string
+  - name: month_start
+    data_type: date
+  - name: quarter
+    data_type: string
+  - name: quarter_end
+    data_type: date
+  - name: quarter_filter
+    data_type: string
+  - name: quarter_start
+    data_type: date
+  - name: week_end_sat_start
+    data_type: date
+  - name: week_end_sun_start
+    data_type: date
+  - name: week_filter_sat_start
+    data_type: string
+  - name: week_filter_sun_start
+    data_type: string
+  - name: week_of_year_sat_start
+    data_type: string
+  - name: week_of_year_sun_start
+    data_type: string
+  - name: week_start_sat_start
+    data_type: date
+  - name: week_start_sun_start
+    data_type: date
+  - name: year
+    data_type: long
+  - name: year_end
+    data_type: date
+  - name: year_filter
+    data_type: string
+  - name: year_month
+    data_type: string
+  - name: year_start
+    data_type: date

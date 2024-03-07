@@ -1,0 +1,83 @@
+unique_name: normalized_target_fact_sales
+object_type: dataset
+label: normalized_target_fact_sales
+connection_id: Databricks - Crisp
+table: normalized_target_fact_sales
+
+columns:
+  - name: ad_comp_sales_amount
+    data_type: "decimal(38,9)"
+  - name: ad_comp_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: circle_sales_amount
+    data_type: "decimal(38,9)"
+  - name: circle_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: circular_sales_amount
+    data_type: "decimal(38,9)"
+  - name: circular_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: clearance_sales_amount
+    data_type: "decimal(38,9)"
+  - name: clearance_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: comp_sales_amount
+    data_type: "decimal(38,9)"
+  - name: comp_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: date_key
+    data_type: date
+  - name: discontinued_sales_amount
+    data_type: "decimal(38,9)"
+  - name: discontinued_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: dmnd_sales_amount
+    data_type: "decimal(38,9)"
+  - name: dmnd_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: drive_up_amount
+    data_type: "decimal(38,9)"
+  - name: drive_up_quantity
+    data_type: "decimal(38,9)"
+  - name: fulfillment_type_id
+    data_type: long
+  - name: is_online
+    data_type: boolean
+  - name: mature_sales_amount
+    data_type: "decimal(38,9)"
+  - name: mature_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: product_id
+    data_type: long
+  - name: promo_sales_amount
+    data_type: "decimal(38,9)"
+  - name: promo_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: regular_sales_amount
+    data_type: "decimal(38,9)"
+  - name: regular_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: return_guest_amount
+    data_type: "decimal(38,9)"
+  - name: return_guest_quantity
+    data_type: "decimal(38,9)"
+  - name: sales_amount
+    data_type: "decimal(38,9)"
+  - name: sales_id
+    data_type: long
+  - name: sales_quantity
+    data_type: "decimal(38,9)"
+  - name: shipt_app_amount
+    data_type: "decimal(38,9)"
+  - name: shipt_app_quantity
+    data_type: "decimal(38,9)"
+  - name: shipt_target_amount
+    data_type: "decimal(38,9)"
+  - name: shipt_target_quantity
+    data_type: "decimal(38,9)"
+  - name: store_id
+    data_type: long
+  - name: tpc_sales_amount
+    data_type: "decimal(38,9)"
+  - name: tpc_sales_quantity
+    data_type: "decimal(38,9)"

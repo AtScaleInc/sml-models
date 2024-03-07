@@ -1,0 +1,25 @@
+unique_name: Payment Method
+object_type: dimension
+label: Payment Method
+type: standard
+
+hierarchies:
+
+  - unique_name: Payment Method
+    label: Payment Method
+    folder: Transactions
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Payment Method Level
+
+level_attributes:
+
+  - unique_name: Payment Method Level
+    label: Payment Method Level
+    is_unique_key: true
+    dataset: dimension-payment-method
+    name_column: Payment_Method
+    key_columns:
+      - Payment_Method_Key

@@ -1,0 +1,43 @@
+unique_name: customer
+object_type: dataset
+label: customer
+connection_id: Snowflake
+table: CUSTOMER
+
+columns:
+  - name: C_BIRTH_COUNTRY
+    data_type: string
+  - name: C_BIRTH_DAY
+    data_type: int
+  - name: C_BIRTH_MONTH
+    data_type: int
+  - name: C_BIRTH_YEAR
+    data_type: int
+  - name: C_CURRENT_ADDR_SK
+    data_type: int
+  - name: C_CURRENT_CDEMO_SK
+    data_type: int
+  - name: C_CURRENT_HDEMO_SK
+    data_type: int
+  - name: C_CUSTOMER_ID
+    data_type: string
+  - name: C_CUSTOMER_SK
+    data_type: int
+  - name: C_EMAIL_ADDRESS
+    data_type: string
+  - name: C_FIRST_NAME
+    data_type: string
+  - name: C_FIRST_SALES_DATE_SK
+    data_type: int
+  - name: C_FIRST_SHIPTO_DATE_SK
+    data_type: int
+  - name: C_LAST_NAME
+    data_type: string
+  - name: C_LAST_REVIEW_DATE
+    data_type: string
+  - name: C_LOGIN
+    data_type: string
+  - name: C_PREFERRED_CUST_FLAG
+    data_type: string
+  - name: C_SALUTATION
+    data_type: string

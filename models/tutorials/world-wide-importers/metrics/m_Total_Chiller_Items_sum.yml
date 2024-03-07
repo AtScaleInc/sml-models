@@ -1,0 +1,7 @@
+unique_name: m_Total_Chiller_Items_sum
+object_type: metric
+label: Total Chiller Items
+calculation_method: sum
+format: "#,##0"
+dataset: fact-sale
+column: Total_Chiller_Items

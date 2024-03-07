@@ -1,0 +1,90 @@
+unique_name: Product Dimension
+object_type: dimension
+label: Product Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Product Hierarchy
+    label: Product Hierarchy
+    folder: Product
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Product Department
+
+      - unique_name: Product2
+
+level_attributes:
+
+  - unique_name: Product Department
+    label: Product Department
+    dataset: normalized_target_dim_product_department
+    name_column: product_department
+    key_columns:
+      - product_department_id
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - Range
+      - Siblings
+
+  - unique_name: Product2
+    label: Product
+    dataset: normalized_target_dim_product
+    name_column: product
+    key_columns:
+      - product_id
+
+relationships:
+
+  - unique_name: ProductDimension_BrandDimension
+    from:
+      hierarchy: Product Hierarchy
+      level: Product2
+      dataset: normalized_target_dim_product
+      join_columns:
+        - brand_id
+    to:
+      dimension: Brand Dimension
+      level: Brand
+    type: embedded
+
+  - unique_name: ProductDimension_SubCategoryDimension
+    from:
+      hierarchy: Product Hierarchy
+      level: Product2
+      dataset: normalized_target_dim_product
+      join_columns:
+        - product_sub_category_id
+    to:
+      dimension: Sub Category Dimension
+      level: Sub Category
+    type: embedded
+
+  - from:
+      dataset: normalized_target_dim_product
+      join_columns:
+        - product_department_id
+    to:
+      level: Product Department
+    type: snowflake
+
+  - unique_name: ProductDimension_SupplierDimension
+    from:
+      hierarchy: Product Hierarchy
+      level: Product2
+      dataset: normalized_target_dim_product
+      join_columns:
+        - supplier_id
+    to:
+      dimension: Supplier Dimension
+      level: Supplier
+    type: embedded
+
+modeler_metadata:
+  version: 0
+  modified: "false"

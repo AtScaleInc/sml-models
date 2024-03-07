@@ -1,0 +1,135 @@
+unique_name: Product Dimension
+object_type: dimension
+label: Product Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Product Dimension
+    label: Product Dimension
+    folder: Product Attributes
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: I Category
+
+      - unique_name: Product Dimension
+
+        secondary_attributes:
+
+          - unique_name: d_i_color
+            label: Product Color
+            folder: Product Attributes
+            dataset: item
+            name_column: I_COLOR
+            key_columns:
+              - I_COLOR
+            sort_column: I_COLOR
+
+          - unique_name: d_i_size
+            label: Product Size
+            folder: Product Attributes
+            dataset: item
+            name_column: I_SIZE
+            key_columns:
+              - I_SIZE
+            sort_column: I_SIZE
+
+          - unique_name: d_product_brand_id
+            label: Product Brand ID
+            folder: Product Attributes
+            dataset: item
+            name_column: I_BRAND_ID
+            key_columns:
+              - I_BRAND_ID
+            sort_column: I_BRAND_ID
+
+          - unique_name: d_product_brand_name
+            label: Product Brand Name
+            folder: Product Attributes
+            dataset: item
+            name_column: I_BRAND
+            key_columns:
+              - I_BRAND_ID
+            sort_column: I_BRAND
+
+          - unique_name: d_product_class_id
+            label: Product Class ID
+            folder: Product Attributes
+            dataset: item
+            name_column: I_CLASS_ID
+            key_columns:
+              - I_CLASS_ID
+            sort_column: I_CLASS_ID
+
+          - unique_name: d_product_class_name
+            label: Product Class Name
+            folder: Product Attributes
+            dataset: item
+            name_column: I_CLASS
+            key_columns:
+              - I_CLASS
+            sort_column: I_CLASS
+
+          - unique_name: d_product_current_price
+            label: Product Current Price
+            folder: Product Attributes
+            dataset: item
+            name_column: I_CURRENT_PRICE
+            key_columns:
+              - I_CURRENT_PRICE
+            sort_column: I_CURRENT_PRICE
+
+          - unique_name: d_product_item_id
+            label: Product Item ID
+            folder: Product Attributes
+            dataset: item
+            name_column: I_ITEM_ID
+            key_columns:
+              - I_ITEM_ID
+            sort_column: I_ITEM_ID
+
+          - unique_name: d_product_manager_id
+            label: Product Manager ID
+            folder: Product Attributes
+            dataset: item
+            name_column: I_MANAGER_ID
+            key_columns:
+              - I_MANAGER_ID
+            sort_column: I_MANAGER_ID
+
+          - unique_name: d_product_manufacturer_id
+            label: Product Manufacturer ID
+            folder: Product Attributes
+            dataset: item
+            name_column: I_MANUFACT_ID
+            key_columns:
+              - I_MANUFACT_ID
+            sort_column: I_MANUFACT_ID
+
+          - unique_name: d_product_manufacturer_name
+            label: Product Manufacturer Name
+            folder: Product Attributes
+            dataset: item
+            name_column: I_MANUFACT
+            key_columns:
+              - I_MANAGER_ID
+            sort_column: I_MANUFACT
+
+level_attributes:
+
+  - unique_name: I Category
+    label: Product Category
+    dataset: item
+    name_column: I_CATEGORY
+    key_columns:
+      - I_CATEGORY
+
+  - unique_name: Product Dimension
+    label: Product Item
+    is_unique_key: true
+    dataset: item
+    name_column: I_ITEM_DESC
+    key_columns:
+      - I_ITEM_SK

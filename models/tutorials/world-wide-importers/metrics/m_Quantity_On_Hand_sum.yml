@@ -1,0 +1,7 @@
+unique_name: m_Quantity_On_Hand_sum
+object_type: metric
+label: Stock Quantity On Hand
+calculation_method: sum
+format: "#,##0"
+dataset: fact-stock-holding
+column: Quantity_On_Hand

@@ -1,0 +1,7 @@
+unique_name: m_Total_Dry_Items_sum
+object_type: metric
+label: Total Dry Items
+calculation_method: sum
+format: "#,##0"
+dataset: fact-sale
+column: Total_Dry_Items

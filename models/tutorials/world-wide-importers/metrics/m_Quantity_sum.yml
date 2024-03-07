@@ -1,0 +1,7 @@
+unique_name: m_Quantity_sum
+object_type: metric
+label: Movement Quantity
+calculation_method: sum
+format: "#,##0"
+dataset: fact-movement
+column: Quantity

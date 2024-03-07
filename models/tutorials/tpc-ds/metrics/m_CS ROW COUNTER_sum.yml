@@ -1,0 +1,6 @@
+unique_name: m_CS ROW COUNTER_sum
+object_type: metric
+label: Catalog Sales Row Counter
+calculation_method: sum
+dataset: catalog_sales
+column: CS ROW COUNTER

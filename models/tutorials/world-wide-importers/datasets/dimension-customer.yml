@@ -1,0 +1,29 @@
+unique_name: dimension-customer
+object_type: dataset
+label: dimension-customer
+connection_id: BigQuery
+table: dimension-customer
+
+columns:
+  - name: Bill_To_Customer
+    data_type: string
+  - name: Buying_Group
+    data_type: string
+  - name: Category
+    data_type: string
+  - name: Customer
+    data_type: string
+  - name: Customer_Key
+    data_type: long
+  - name: Lineage_Key
+    data_type: long
+  - name: Postal_Code
+    data_type: string
+  - name: Primary_Contact
+    data_type: string
+  - name: Valid_From
+    data_type: datetime
+  - name: Valid_To
+    data_type: datetime
+  - name: WWI_Customer_ID
+    data_type: long

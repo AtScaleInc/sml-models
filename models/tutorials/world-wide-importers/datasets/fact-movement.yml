@@ -1,0 +1,29 @@
+unique_name: fact-movement
+object_type: dataset
+label: fact-movement
+connection_id: BigQuery
+table: fact-movement
+
+columns:
+  - name: Customer_Key
+    data_type: long
+  - name: Date_Key
+    data_type: date
+  - name: Lineage_Key
+    data_type: long
+  - name: Movement_Key
+    data_type: long
+  - name: Quantity
+    data_type: long
+  - name: Stock_Item_Key
+    data_type: long
+  - name: Supplier_Key
+    data_type: long
+  - name: Transaction_Type_Key
+    data_type: long
+  - name: WWI_Invoice_ID
+    data_type: long
+  - name: WWI_Purchase_Order_ID
+    data_type: long
+  - name: WWI_Stock_Item_Transaction_ID
+    data_type: long

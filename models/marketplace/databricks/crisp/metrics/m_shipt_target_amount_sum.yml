@@ -1,0 +1,6 @@
+unique_name: m_shipt_target_amount_sum
+object_type: metric
+label: Shipt Target Amount
+calculation_method: sum
+dataset: normalized_target_fact_sales
+column: shipt_target_amount

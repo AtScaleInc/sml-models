@@ -1,0 +1,76 @@
+unique_name: store_sales
+object_type: dataset
+label: store_sales
+connection_id: Snowflake
+table: STORE_SALES
+
+columns:
+  - name: Net Profit Tier
+    data_type: string
+    sql: "CASE WHEN \"SS_NET_PROFIT\" > 25000 THEN 'More than 25000' \nWHEN \"SS_NET_PROFIT\"\
+      \ BETWEEN 3000 AND 25000 THEN '3000-25000'\nWHEN \"SS_NET_PROFIT\" BETWEEN 2000\
+      \ AND 3000 THEN '2000-3000'  \nWHEN \"SS_NET_PROFIT\" BETWEEN 300 AND 2000 THEN\
+      \ '300-2000'  \nWHEN \"SS_NET_PROFIT\" BETWEEN 250 AND 300 THEN '250-300'  \n\
+      WHEN \"SS_NET_PROFIT\" BETWEEN 200 AND 250 THEN '200-250'\nWHEN \"SS_NET_PROFIT\"\
+      \ BETWEEN 150 AND 200 THEN '150-200'\nWHEN \"SS_NET_PROFIT\" BETWEEN 100 AND\
+      \ 150 THEN '100-150' \nWHEN \"SS_NET_PROFIT\" BETWEEN 50 AND 100 THEN ' 50-100'\
+      \ \nWHEN \"SS_NET_PROFIT\" BETWEEN 0 AND 50 THEN '  0- 50' \nELSE ' 50 or Less'\
+      \ END"
+  - name: Purchased Amount in Store
+    data_type: "decimal(16,8)"
+    sql: (("SS_EXT_LIST_PRICE"-"SS_EXT_WHOLESALE_COST"-"SS_EXT_DISCOUNT_AMT")+"SS_EXT_SALES_PRICE")/2
+  - name: Sales Price Tier
+    data_type: string
+    sql: "CASE WHEN \"SS_SALES_PRICE\" > 200 THEN '200 and More' \nWHEN \"SS_SALES_PRICE\"\
+      BETWEEN 150 AND 200 THEN '150-200' \nWHEN \"SS_SALES_PRICE\" BETWEEN 100 AND\
+      \ 150 THEN '100-150' \nWHEN \"SS_SALES_PRICE\" BETWEEN 50 AND 100 THEN ' 50-100'\
+      \ \nELSE ' 50 and Less' END"
+  - name: SS ROW COUNTER
+    data_type: int
+    sql: 1
+  - name: SS_ADDR_SK
+    data_type: long
+  - name: SS_CDEMO_SK
+    data_type: long
+  - name: SS_COUPON_AMT
+    data_type: "decimal(7,2)"
+  - name: SS_CUSTOMER_SK
+    data_type: long
+  - name: SS_EXT_DISCOUNT_AMT
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_TAX
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_WHOLESALE_COST
+    data_type: "decimal(7,2)"
+  - name: SS_HDEMO_SK
+    data_type: long
+  - name: SS_ITEM_SK
+    data_type: long
+  - name: SS_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_NET_PAID
+    data_type: "decimal(7,2)"
+  - name: SS_NET_PAID_INC_TAX
+    data_type: "decimal(7,2)"
+  - name: SS_NET_PROFIT
+    data_type: "decimal(7,2)"
+  - name: SS_PROMO_SK
+    data_type: long
+  - name: SS_QUANTITY
+    data_type: long
+  - name: SS_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_SOLD_DATE_SK
+    data_type: long
+  - name: SS_SOLD_TIME_SK
+    data_type: long
+  - name: SS_STORE_SK
+    data_type: long
+  - name: SS_TICKET_NUMBER
+    data_type: long
+  - name: SS_WHOLESALE_COST
+    data_type: "decimal(7,2)"

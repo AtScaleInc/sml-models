@@ -1,0 +1,73 @@
+unique_name: normalized_target_fact_gross_margin
+object_type: dataset
+label: normalized_target_fact_gross_margin
+connection_id: Databricks - Crisp
+table: normalized_target_fact_gross_margin
+
+columns:
+  - name: clearance_markdown_amount
+    data_type: "decimal(38,9)"
+  - name: competitor_markdown_amount
+    data_type: "decimal(38,9)"
+  - name: date_key
+    data_type: date
+  - name: employee_discount_amount
+    data_type: "decimal(38,9)"
+  - name: free_shipping_discount_amount
+    data_type: "decimal(38,9)"
+  - name: freight_amount
+    data_type: "decimal(38,9)"
+  - name: fulfillment_type_id
+    data_type: long
+  - name: gross_margin_amount
+    data_type: "decimal(38,9)"
+  - name: gross_margin_id
+    data_type: long
+  - name: gross_margin_with_net_shipping_margin_amount
+    data_type: "decimal(38,9)"
+  - name: inventory_cost
+    data_type: "decimal(38,9)"
+  - name: inventory_retail_amount
+    data_type: "decimal(38,9)"
+  - name: is_online
+    data_type: boolean
+  - name: markdown_amount
+    data_type: "decimal(38,9)"
+  - name: miscellaneous_other_cost_of_sales_amount
+    data_type: "decimal(38,9)"
+  - name: net_sales_amount
+    data_type: "decimal(38,9)"
+  - name: net_sales_quantity
+    data_type: "decimal(38,9)"
+  - name: net_shipping_margin_amount
+    data_type: "decimal(38,9)"
+  - name: originated_location
+    data_type: string
+  - name: product_id
+    data_type: long
+  - name: promotion_discount_markdown_amount
+    data_type: "decimal(38,9)"
+  - name: return_shipping_expense_amount
+    data_type: "decimal(38,9)"
+  - name: roundel_ad_revenue_amount
+    data_type: "decimal(38,9)"
+  - name: shipping_expense_amount
+    data_type: "decimal(38,9)"
+  - name: shipping_revenue_amount
+    data_type: "decimal(38,9)"
+  - name: stock_shortage_amount
+    data_type: "decimal(38,9)"
+  - name: store_id
+    data_type: long
+  - name: store_purchase_discount_amount
+    data_type: "decimal(38,9)"
+  - name: store_receipts_amount
+    data_type: "decimal(38,9)"
+  - name: store_receipts_cost
+    data_type: "decimal(38,9)"
+  - name: unsaleable_markdown_amount
+    data_type: "decimal(38,9)"
+  - name: unsaleable_markdown_quantity
+    data_type: "decimal(38,9)"
+  - name: vendor_income_amount
+    data_type: "decimal(38,9)"

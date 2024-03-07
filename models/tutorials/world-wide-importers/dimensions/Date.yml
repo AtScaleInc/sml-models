@@ -1,0 +1,84 @@
+unique_name: Date
+object_type: dimension
+label: Date
+description: Date Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Dimension Date
+    label: Calendar Date
+    folder: Calendar Dates
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Calendar Year
+
+      - unique_name: Calendar Month
+
+      - unique_name: Calendar Day
+
+  - unique_name: Fiscal Data
+    label: Fiscal Date
+    folder: Fiscal Dates
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Fiscal Year
+
+      - unique_name: Fiscal Month
+
+      - unique_name: Fiscal Day
+
+level_attributes:
+
+  - unique_name: Calendar Day
+    label: Calendar Day
+    description: Date Dimension
+    is_unique_key: true
+    dataset: dimension-date
+    name_column: Date
+    key_columns:
+      - Date
+    sort_column: Date
+
+  - unique_name: Calendar Month
+    label: Calendar Month
+    dataset: dimension-date
+    name_column: Calendar_Month_Label
+    key_columns:
+      - Calendar_Month_Label
+    sort_column: Year-Month
+
+  - unique_name: Calendar Year
+    label: Calendar Year
+    dataset: dimension-date
+    name_column: Calendar_Year_Label
+    key_columns:
+      - Calendar_Year_Label
+    sort_column: Calendar_Year_Label
+
+  - unique_name: Fiscal Day
+    label: Fiscal Day
+    dataset: dimension-date
+    name_column: Date
+    key_columns:
+      - Date
+    sort_column: Date
+
+  - unique_name: Fiscal Month
+    label: Fiscal Month
+    dataset: dimension-date
+    name_column: Fiscal_Month_Label
+    key_columns:
+      - Fiscal_Month_Label
+    sort_column: Year-Month
+
+  - unique_name: Fiscal Year
+    label: Fiscal Year
+    dataset: dimension-date
+    name_column: Fiscal_Year_Label
+    key_columns:
+      - Fiscal_Year_Label

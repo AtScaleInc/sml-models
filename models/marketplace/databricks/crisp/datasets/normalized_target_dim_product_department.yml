@@ -1,0 +1,11 @@
+unique_name: normalized_target_dim_product_department
+object_type: dataset
+label: normalized_target_dim_product_department
+connection_id: Databricks - Crisp
+table: normalized_target_dim_product_department
+
+columns:
+  - name: product_department
+    data_type: string
+  - name: product_department_id
+    data_type: long

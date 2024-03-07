@@ -1,0 +1,33 @@
+unique_name: customer_address
+object_type: dataset
+label: customer_address
+connection_id: Snowflake
+table: CUSTOMER_ADDRESS
+
+columns:
+  - name: CA_ADDRESS_ID
+    data_type: string
+  - name: CA_ADDRESS_SK
+    data_type: int
+  - name: CA_CITY
+    data_type: string
+  - name: CA_COUNTRY
+    data_type: string
+  - name: CA_COUNTY
+    data_type: string
+  - name: CA_GMT_OFFSET
+    data_type: decimal
+  - name: CA_LOCATION_TYPE
+    data_type: string
+  - name: CA_STATE
+    data_type: string
+  - name: CA_STREET_NAME
+    data_type: string
+  - name: CA_STREET_NUMBER
+    data_type: string
+  - name: CA_STREET_TYPE
+    data_type: string
+  - name: CA_SUITE_NUMBER
+    data_type: string
+  - name: CA_ZIP
+    data_type: string

@@ -1,0 +1,7 @@
+unique_name: m_Sale_Tax_Amount_sum
+object_type: metric
+label: Sale Tax Amount
+calculation_method: sum
+format: "$#,##0;($#,##0)"
+dataset: fact-sale
+column: Tax_Amount

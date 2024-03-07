@@ -1,0 +1,39 @@
+unique_name: normalized_target_dim_store
+object_type: dataset
+label: normalized_target_dim_store
+connection_id: Databricks - Crisp
+table: normalized_target_dim_store
+
+columns:
+  - name: fdc_id
+    data_type: long
+  - name: rdc_id
+    data_type: long
+  - name: region_id
+    data_type: long
+  - name: store
+    data_type: string
+  - name: store_address
+    data_type: string
+  - name: store_city
+    data_type: string
+  - name: store_format_id
+    data_type: long
+  - name: store_full_address
+    data_type: string
+  - name: store_grouping_id
+    data_type: long
+  - name: store_id
+    data_type: long
+  - name: store_key
+    data_type: string
+  - name: store_latitude
+    data_type: "decimal(38,9)"
+  - name: store_longitude
+    data_type: "decimal(38,9)"
+  - name: store_state
+    data_type: string
+  - name: store_type_id
+    data_type: long
+  - name: store_zip
+    data_type: string

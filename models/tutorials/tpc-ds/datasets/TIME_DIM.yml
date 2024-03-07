@@ -1,0 +1,37 @@
+unique_name: TIME_DIM
+object_type: dataset
+label: TIME_DIM
+connection_id: Snowflake
+table: TIME_DIM
+
+columns:
+  - name: Morning  Time Tier
+    data_type: string
+    sql: "CASE \nWHEN \"T_HOUR\" = 8 AND \"T_MINUTE\" >= 30 THEN '08:30 to 09:00'\n\
+      WHEN \"T_HOUR\" = 9 AND \"T_MINUTE\" < 30 THEN '09:00 to 09:30'\nWHEN \"T_HOUR\"\
+      \ = 9 AND \"T_MINUTE\" >= 30 THEN '09:30 to 10:00'\nWHEN \"T_HOUR\" = 10 AND\
+      \ \"T_MINUTE\" < 30 THEN '10:00 to 10:30'\nWHEN \"T_HOUR\" = 10 AND \"T_MINUTE\"\
+      \ >= 30 THEN '10:30 to 11:00'\nWHEN \"T_HOUR\" = 11 AND \"T_MINUTE\" < 30 THEN\
+      \ '11:00 to 11:30'\nWHEN \"T_HOUR\" = 11 AND \"T_MINUTE\" >= 30 THEN '11:30\
+      \ to 12:00'\nWHEN \"T_HOUR\" = 12 AND \"T_MINUTE\" < 30 THEN '12:00 to 12:30'\n\
+      ELSE\n'Other'\nEND"
+  - name: T_AM_PM
+    data_type: string
+  - name: T_HOUR
+    data_type: long
+  - name: T_MEAL_TIME
+    data_type: string
+  - name: T_MINUTE
+    data_type: long
+  - name: T_SECOND
+    data_type: long
+  - name: T_SHIFT
+    data_type: string
+  - name: T_SUB_SHIFT
+    data_type: string
+  - name: T_TIME
+    data_type: long
+  - name: T_TIME_ID
+    data_type: string
+  - name: T_TIME_SK
+    data_type: long

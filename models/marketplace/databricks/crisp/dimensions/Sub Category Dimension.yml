@@ -1,0 +1,42 @@
+unique_name: Sub Category Dimension
+object_type: dimension
+label: Sub Category Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Sub Category Hierarchy
+    label: Sub Category Hierarchy
+    folder: Sub Category
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Sub Category
+
+level_attributes:
+
+  - unique_name: Sub Category
+    label: Sub Category
+    dataset: normalized_target_dim_product_sub_category
+    name_column: product_sub_category
+    key_columns:
+      - product_sub_category_id
+
+relationships:
+
+  - unique_name: SubCategoryDimension_ProductCategory
+    from:
+      hierarchy: Sub Category Hierarchy
+      level: Sub Category
+      dataset: normalized_target_dim_product_sub_category
+      join_columns:
+        - product_category_id
+    to:
+      dimension: Product Category
+      level: Product
+    type: embedded
+
+modeler_metadata:
+  version: 0
+  modified: "false"

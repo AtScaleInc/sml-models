@@ -1,0 +1,63 @@
+unique_name: Customer Demographics
+object_type: dimension
+label: Customer Demographics
+type: standard
+
+hierarchies:
+
+  - unique_name: Customer Demographics
+    label: Customer Demographics
+    folder: Customer Information
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Customer Demographics
+
+        secondary_attributes:
+
+          - unique_name: d_cd_credit_rating
+            label: Credit Rating
+            folder: Customer Information
+            dataset: customer_demographics
+            name_column: CD_CREDIT_RATING
+            key_columns:
+              - CD_CREDIT_RATING
+            sort_column: CD_CREDIT_RATING
+
+          - unique_name: d_cd_education_status
+            label: Education Status
+            folder: Customer Information
+            dataset: customer_demographics
+            name_column: CD_EDUCATION_STATUS
+            key_columns:
+              - CD_EDUCATION_STATUS
+            sort_column: CD_EDUCATION_STATUS
+
+          - unique_name: d_cd_gender
+            label: Gender
+            folder: Customer Information
+            dataset: customer_demographics
+            name_column: CD_GENDER
+            key_columns:
+              - CD_GENDER
+            sort_column: CD_GENDER
+
+          - unique_name: d_cd_marital_status
+            label: Marital Status
+            folder: Customer Information
+            dataset: customer_demographics
+            name_column: CD_MARITAL_STATUS
+            key_columns:
+              - CD_MARITAL_STATUS
+            sort_column: CD_MARITAL_STATUS
+
+level_attributes:
+
+  - unique_name: Customer Demographics
+    label: Customer Number
+    is_unique_key: true
+    dataset: customer_demographics
+    name_column: CD_DEMO_SK
+    key_columns:
+      - CD_DEMO_SK

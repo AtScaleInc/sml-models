@@ -1,0 +1,6 @@
+unique_name: m_CS_BILL_CUSTOMER_SK_count
+object_type: metric
+label: Catalog Customer Count
+calculation_method: count non-null
+dataset: catalog_sales
+column: CS_BILL_CUSTOMER_SK

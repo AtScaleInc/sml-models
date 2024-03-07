@@ -1,0 +1,113 @@
+unique_name: Date Dimension
+object_type: dimension
+label: Date Dimension
+type: time
+
+hierarchies:
+
+  - unique_name: Date Hierarchy
+    label: Date Hierarchy
+    folder: Date
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Year
+        time_unit: year
+
+      - unique_name: Quarter
+        time_unit: quarter
+
+      - unique_name: Month
+        time_unit: month
+
+      - unique_name: Week
+        time_unit: week
+
+      - unique_name: 'Date '
+        time_unit: day
+
+level_attributes:
+
+  - unique_name: 'Date '
+    label: 'Date '
+    dataset: normalized_target_dim_calendar
+    name_column: date
+    key_columns:
+      - date_key
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
+  - unique_name: Month
+    label: Month
+    dataset: normalized_target_dim_calendar
+    name_column: month
+    key_columns:
+      - month
+      - year
+    sort_column: month_number
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
+  - unique_name: Quarter
+    label: Quarter
+    dataset: normalized_target_dim_calendar
+    name_column: quarter
+    key_columns:
+      - quarter
+      - year
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
+  - unique_name: Week
+    label: 'Week '
+    dataset: normalized_target_dim_calendar
+    name_column: week_filter_sun_start
+    key_columns:
+      - week_filter_sun_start
+      - date
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
+  - unique_name: Year
+    label: Year
+    dataset: normalized_target_dim_calendar
+    name_column: year
+    key_columns:
+      - year
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
+modeler_metadata:
+  version: 0
+  modified: "false"

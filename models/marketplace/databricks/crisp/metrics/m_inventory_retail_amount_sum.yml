@@ -1,0 +1,6 @@
+unique_name: m_inventory_retail_amount_sum
+object_type: metric
+label: Inventory Retail Amount
+calculation_method: sum
+dataset: normalized_target_fact_gross_margin
+column: inventory_retail_amount

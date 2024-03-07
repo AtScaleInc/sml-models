@@ -1,0 +1,11 @@
+unique_name: normalized_target_dim_region
+object_type: dataset
+label: normalized_target_dim_region
+connection_id: Databricks - Crisp
+table: normalized_target_dim_region
+
+columns:
+  - name: region_id
+    data_type: long
+  - name: region_key
+    data_type: string

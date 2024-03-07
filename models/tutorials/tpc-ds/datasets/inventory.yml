@@ -1,0 +1,15 @@
+unique_name: inventory
+object_type: dataset
+label: inventory
+connection_id: Snowflake
+table: INVENTORY
+
+columns:
+  - name: INV_DATE_SK
+    data_type: long
+  - name: INV_ITEM_SK
+    data_type: long
+  - name: INV_QUANTITY_ON_HAND
+    data_type: long
+  - name: INV_WAREHOUSE_SK
+    data_type: long

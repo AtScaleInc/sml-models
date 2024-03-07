@@ -1,0 +1,6 @@
+unique_name: m_gross_margin_amount_sum
+object_type: metric
+label: Gross Margin Amount
+calculation_method: sum
+dataset: normalized_target_fact_gross_margin
+column: gross_margin_amount

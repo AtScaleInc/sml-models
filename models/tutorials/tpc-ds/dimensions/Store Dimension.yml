@@ -1,0 +1,175 @@
+unique_name: Store Dimension
+object_type: dimension
+label: Store Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Store Dimension
+    label: Store Dimension
+    folder: Store Attributes
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: d_store_country
+
+      - unique_name: d_store_state
+
+      - unique_name: d_store_county
+
+      - unique_name: d_store_city
+
+      - unique_name: Store Dimension
+
+        secondary_attributes:
+
+          - unique_name: d_s_floor_space
+            label: Store Floor Space
+            folder: Store Attributes
+            dataset: store
+            name_column: S_FLOOR_SPACE
+            key_columns:
+              - S_FLOOR_SPACE
+            sort_column: S_FLOOR_SPACE
+
+          - unique_name: d_s_hours
+            label: Store Hours
+            folder: Store Attributes
+            dataset: store
+            name_column: S_HOURS
+            key_columns:
+              - S_HOURS
+            sort_column: S_HOURS
+
+          - unique_name: d_s_manager
+            label: Store Manager
+            folder: Store Attributes
+            dataset: store
+            name_column: S_MANAGER
+            key_columns:
+              - S_MANAGER
+            sort_column: S_MANAGER
+
+          - unique_name: d_s_number_employees
+            label: Store Number of Employees
+            folder: Store Attributes
+            dataset: store
+            name_column: S_NUMBER_EMPLOYEES
+            key_columns:
+              - S_NUMBER_EMPLOYEES
+            sort_column: S_NUMBER_EMPLOYEES
+
+          - unique_name: d_store_company_id
+            label: Store Company ID
+            folder: Store Attributes
+            dataset: store
+            name_column: S_COMPANY_ID
+            key_columns:
+              - S_COMPANY_ID
+            sort_column: S_COMPANY_ID
+
+          - unique_name: d_store_gmt_offset
+            label: Store GMT Offset
+            folder: Store Attributes
+            dataset: store
+            name_column: S_GMT_OFFSET
+            key_columns:
+              - S_GMT_OFFSET
+            sort_column: S_GMT_OFFSET
+
+          - unique_name: d_store_name
+            label: Store Name
+            folder: Store Attributes
+            dataset: store
+            name_column: S_STORE_NAME
+            key_columns:
+              - S_STORE_NAME
+            sort_column: S_STORE_NAME
+
+          - unique_name: d_store_street_name
+            label: Store Street Name
+            folder: Store Attributes
+            dataset: store
+            name_column: S_STREET_NAME
+            key_columns:
+              - S_STREET_NAME
+            sort_column: S_STREET_NAME
+
+          - unique_name: d_store_street_number
+            label: Store Street Number
+            folder: Store Attributes
+            dataset: store
+            name_column: S_STREET_NUMBER
+            key_columns:
+              - S_STREET_NUMBER
+            sort_column: S_STREET_NUMBER
+
+          - unique_name: d_store_street_type
+            label: Store Street Type
+            folder: Store Attributes
+            dataset: store
+            name_column: S_STREET_TYPE
+            key_columns:
+              - S_STREET_TYPE
+            sort_column: S_STREET_TYPE
+
+          - unique_name: d_store_suite_number
+            label: Store Suite Number
+            folder: Store Attributes
+            dataset: store
+            name_column: S_SUITE_NUMBER
+            key_columns:
+              - S_SUITE_NUMBER
+            sort_column: S_SUITE_NUMBER
+
+          - unique_name: d_store_zip_code
+            label: Store Zip Code
+            folder: Store Attributes
+            dataset: store
+            name_column: S_ZIP
+            key_columns:
+              - S_ZIP
+            sort_column: S_ZIP
+
+level_attributes:
+
+  - unique_name: d_store_city
+    label: Store City
+    dataset: store
+    name_column: S_CITY
+    key_columns:
+      - S_COUNTRY
+      - S_STATE
+      - S_CITY
+
+  - unique_name: d_store_country
+    label: Store Country
+    dataset: store
+    name_column: S_COUNTRY
+    key_columns:
+      - S_COUNTRY
+
+  - unique_name: d_store_county
+    label: Store County
+    dataset: store
+    name_column: S_COUNTY
+    key_columns:
+      - S_STATE
+      - S_COUNTY
+
+  - unique_name: d_store_state
+    label: Store State
+    dataset: store
+    name_column: S_STATE
+    key_columns:
+      - S_COUNTRY
+      - S_STATE
+
+  - unique_name: Store Dimension
+    label: Store Number
+    is_unique_key: true
+    dataset: store
+    name_column: S_STORE_SK
+    key_columns:
+      - S_STORE_SK

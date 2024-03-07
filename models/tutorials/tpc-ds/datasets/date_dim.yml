@@ -1,0 +1,74 @@
+unique_name: date_dim
+object_type: dataset
+label: date_dim
+connection_id: Snowflake
+table: DATE_DIM
+
+columns:
+  - name: D_CURRENT_DAY
+    data_type: string
+  - name: D_CURRENT_MONTH
+    data_type: string
+  - name: D_CURRENT_QUARTER
+    data_type: string
+  - name: D_CURRENT_WEEK
+    data_type: string
+  - name: D_CURRENT_YEAR
+    data_type: string
+  - name: D_DATE
+    data_type: string
+  - name: D_DATE_ID
+    data_type: string
+  - name: D_DATE_SK
+    data_type: int
+  - name: D_DAY_NAME
+    data_type: string
+  - name: D_DOM
+    data_type: int
+  - name: D_DOW
+    data_type: int
+  - name: D_FIRST_DOM
+    data_type: int
+  - name: D_FOLLOWING_HOLIDAY
+    data_type: string
+  - name: D_FY_QUARTER_SEQ
+    data_type: int
+  - name: D_FY_WEEK_SEQ
+    data_type: int
+  - name: D_FY_YEAR
+    data_type: int
+  - name: D_HOLIDAY
+    data_type: string
+  - name: D_LAST_DOM
+    data_type: int
+  - name: D_MONTH_SEQ
+    data_type: int
+  - name: D_MOY
+    data_type: int
+  - name: D_QOY
+    data_type: int
+  - name: D_QUARTER_NAME
+    data_type: string
+  - name: D_QUARTER_SEQ
+    data_type: int
+  - name: D_SAME_DAY_LQ
+    data_type: int
+  - name: D_SAME_DAY_LY
+    data_type: int
+  - name: D_WEEK_SEQ
+    data_type: int
+  - name: D_WEEKEND
+    data_type: string
+  - name: D_YEAR
+    data_type: int
+  - name: YEAR_MONTH
+    data_type: date
+    sql: "TO_DATE(SUBSTRING(\"D_DATE\",1,4) || '-' || SUBSTRING(\"D_DATE\",6,2) ||\
+      \ '-01')"
+  - name: YEAR_QUARTER
+    data_type: date
+    sql: "TO_DATE(SUBSTRING(\"D_DATE\",1,4) || '-' || LPAD(\"D_QOY\", 2, '0') || '-01')"
+  - name: YEAR_WEEK
+    data_type: string
+    sql: "SUBSTRING(\"D_DATE\",1,4) || '-' || SUBSTRING(\"D_DATE\",6,2) || '-' ||\
+      \ LPAD(\"D_WEEK_SEQ\", 2, '0')"

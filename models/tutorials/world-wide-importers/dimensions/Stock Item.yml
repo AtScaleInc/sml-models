@@ -1,0 +1,144 @@
+unique_name: Stock Item
+object_type: dimension
+label: Stock Item
+type: standard
+
+hierarchies:
+
+  - unique_name: Stock Items
+    label: Stock Items
+    folder: Stock
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Stock Item
+
+        secondary_attributes:
+
+          - unique_name: d_Barcode
+            label: Bar Code
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Barcode
+            key_columns:
+              - Barcode
+            sort_column: Barcode
+
+          - unique_name: d_Brand
+            label: Brand
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Brand
+            key_columns:
+              - Brand
+            sort_column: Brand
+
+          - unique_name: d_Buying_Package
+            label: Buying Package
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Buying_Package
+            key_columns:
+              - Buying_Package
+            sort_column: Buying_Package
+
+          - unique_name: d_Color
+            label: Color
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Color
+            key_columns:
+              - Color
+            sort_column: Color
+
+          - unique_name: d_Is_Chiller_Stock
+            label: Is Chiller Stock
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Is_Chiller_Stock
+            key_columns:
+              - Is_Chiller_Stock
+            sort_column: Is_Chiller_Stock
+
+          - unique_name: d_Lead_Time_Days
+            label: Lead Time Days
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Lead_Time_Days
+            key_columns:
+              - Lead_Time_Days
+            sort_column: Lead_Time_Days
+
+          - unique_name: d_Quantity_Per_Outer
+            label: Quantity Per Outer
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Quantity_Per_Outer
+            key_columns:
+              - Quantity_Per_Outer
+            sort_column: Quantity_Per_Outer
+
+          - unique_name: d_Recommended_Retail_Price
+            label: Recommended Retail Price
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Recommended_Retail_Price
+            key_columns:
+              - Recommended_Retail_Price
+            sort_column: Recommended_Retail_Price
+
+          - unique_name: d_Selling_Package
+            label: Selling Package
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Selling_Package
+            key_columns:
+              - Selling_Package
+            sort_column: Selling_Package
+
+          - unique_name: d_Size
+            label: Size
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Size
+            key_columns:
+              - Size
+            sort_column: Size
+
+          - unique_name: d_Tax_Rate
+            label: Tax Rate
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Tax_Rate
+            key_columns:
+              - Tax_Rate
+            sort_column: Tax_Rate
+
+          - unique_name: d_Typical_Weight_Per_Unit
+            label: Typical Weight Per Unit
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Typical_Weight_Per_Unit
+            key_columns:
+              - Typical_Weight_Per_Unit
+            sort_column: Typical_Weight_Per_Unit
+
+          - unique_name: d_Unit_Price
+            label: Unit Price
+            folder: Stock
+            dataset: dimension-stock-item
+            name_column: Unit_Price
+            key_columns:
+              - Unit_Price
+            sort_column: Unit_Price
+
+level_attributes:
+
+  - unique_name: Stock Item
+    label: Stock Item
+    is_unique_key: true
+    dataset: dimension-stock-item
+    name_column: Stock_Item
+    key_columns:
+      - Stock_Item_Key

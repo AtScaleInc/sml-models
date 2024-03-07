@@ -1,0 +1,29 @@
+unique_name: normalized_target_dim_product
+object_type: dataset
+label: normalized_target_dim_product
+connection_id: Databricks - Crisp
+table: normalized_target_dim_product
+
+columns:
+  - name: brand_id
+    data_type: long
+  - name: dpci
+    data_type: string
+  - name: gtin_13
+    data_type: string
+  - name: gtin_item_reference
+    data_type: string
+  - name: product
+    data_type: string
+  - name: product_department_id
+    data_type: long
+  - name: product_id
+    data_type: long
+  - name: product_mdse_id
+    data_type: long
+  - name: product_sub_category_id
+    data_type: long
+  - name: supplier_id
+    data_type: long
+  - name: upc
+    data_type: string

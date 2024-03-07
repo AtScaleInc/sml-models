@@ -1,0 +1,28 @@
+unique_name: Fulfillment Dimension
+object_type: dimension
+label: Fulfillment Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Fulfillment Hierarchy
+    label: Fulfillment Hierarchy
+    folder: 'Fulfillment '
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Fulfillment
+
+level_attributes:
+
+  - unique_name: Fulfillment
+    label: Fulfillment
+    dataset: normalized_target_dim_fulfillment_type
+    name_column: fulfillment_type
+    key_columns:
+      - fulfillment_type_id
+
+modeler_metadata:
+  version: 0
+  modified: "false"

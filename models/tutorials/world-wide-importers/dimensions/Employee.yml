@@ -1,0 +1,45 @@
+unique_name: Employee
+object_type: dimension
+label: Employee
+type: standard
+
+hierarchies:
+
+  - unique_name: Employee
+    label: Employee
+    folder: Employees
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Employee
+
+        secondary_attributes:
+
+          - unique_name: d_Is_Salesperson
+            label: Is Sales Person
+            folder: Employees
+            dataset: dimension-employee
+            name_column: Is_Salesperson
+            key_columns:
+              - Is_Salesperson
+            sort_column: Is_Salesperson
+
+          - unique_name: d_Preferred_Name
+            label: Preferred Name
+            folder: Employees
+            dataset: dimension-employee
+            name_column: Preferred_Name
+            key_columns:
+              - Preferred_Name
+            sort_column: Preferred_Name
+
+level_attributes:
+
+  - unique_name: Employee
+    label: Employee
+    is_unique_key: true
+    dataset: dimension-employee
+    name_column: Employee
+    key_columns:
+      - Employee_Key

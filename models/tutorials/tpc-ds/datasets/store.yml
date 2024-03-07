@@ -1,0 +1,65 @@
+unique_name: store
+object_type: dataset
+label: store
+connection_id: Snowflake
+table: STORE
+
+columns:
+  - name: S_CITY
+    data_type: string
+  - name: S_CLOSED_DATE_SK
+    data_type: int
+  - name: S_COMPANY_ID
+    data_type: int
+  - name: S_COMPANY_NAME
+    data_type: string
+  - name: S_COUNTRY
+    data_type: string
+  - name: S_COUNTY
+    data_type: string
+  - name: S_DIVISION_ID
+    data_type: int
+  - name: S_DIVISION_NAME
+    data_type: string
+  - name: S_FLOOR_SPACE
+    data_type: int
+  - name: S_GEOGRAPHY_CLASS
+    data_type: string
+  - name: S_GMT_OFFSET
+    data_type: decimal
+  - name: S_HOURS
+    data_type: string
+  - name: S_MANAGER
+    data_type: string
+  - name: S_MARKET_DESC
+    data_type: string
+  - name: S_MARKET_ID
+    data_type: int
+  - name: S_MARKET_MANAGER
+    data_type: string
+  - name: S_NUMBER_EMPLOYEES
+    data_type: int
+  - name: S_REC_END_DATE
+    data_type: string
+  - name: S_REC_START_DATE
+    data_type: string
+  - name: S_STATE
+    data_type: string
+  - name: S_STORE_ID
+    data_type: string
+  - name: S_STORE_NAME
+    data_type: string
+  - name: S_STORE_SK
+    data_type: int
+  - name: S_STREET_NAME
+    data_type: string
+  - name: S_STREET_NUMBER
+    data_type: string
+  - name: S_STREET_TYPE
+    data_type: string
+  - name: S_SUITE_NUMBER
+    data_type: string
+  - name: S_TAX_PRECENTAGE
+    data_type: decimal
+  - name: S_ZIP
+    data_type: string

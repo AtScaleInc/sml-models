@@ -1,0 +1,19 @@
+unique_name: ship_mode
+object_type: dataset
+label: ship_mode
+connection_id: Snowflake
+table: SHIP_MODE
+
+columns:
+  - name: SM_CARRIER
+    data_type: string
+  - name: SM_CODE
+    data_type: string
+  - name: SM_CONTRACT
+    data_type: string
+  - name: SM_SHIP_MODE_ID
+    data_type: string
+  - name: SM_SHIP_MODE_SK
+    data_type: int
+  - name: SM_TYPE
+    data_type: string

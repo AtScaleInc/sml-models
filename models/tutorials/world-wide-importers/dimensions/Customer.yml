@@ -1,0 +1,54 @@
+unique_name: Customer
+object_type: dimension
+label: Customer
+type: standard
+
+hierarchies:
+
+  - unique_name: Dimension Customer Hierarchy
+    label: Customer
+    folder: Customers
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Dimension Customer Level
+
+        secondary_attributes:
+
+          - unique_name: d_Category
+            label: Customer Category
+            folder: Customers
+            dataset: dimension-customer
+            name_column: Category
+            key_columns:
+              - Category
+            sort_column: Category
+
+          - unique_name: d_Postal_Code
+            label: Customer Postal Code
+            folder: Customers
+            dataset: dimension-customer
+            name_column: Postal_Code
+            key_columns:
+              - Postal_Code
+            sort_column: Postal_Code
+
+          - unique_name: d_Primary_Contact
+            label: Primary Contact
+            folder: Customers
+            dataset: dimension-customer
+            name_column: Primary_Contact
+            key_columns:
+              - Primary_Contact
+            sort_column: Primary_Contact
+
+level_attributes:
+
+  - unique_name: Dimension Customer Level
+    label: Customer Name
+    is_unique_key: true
+    dataset: dimension-customer
+    name_column: Customer
+    key_columns:
+      - Customer_Key

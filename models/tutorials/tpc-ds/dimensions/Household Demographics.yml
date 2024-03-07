@@ -1,0 +1,68 @@
+unique_name: Household Demographics
+object_type: dimension
+label: Household Demographics
+type: standard
+
+hierarchies:
+
+  - unique_name: Household Demographics
+    label: Household Demographics
+    folder: Household Demographics
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Household Demographics
+
+        secondary_attributes:
+
+          - unique_name: d_hd_buy_potential
+            label: Buy Potential
+            folder: Household Demographics
+            dataset: household_demographics
+            name_column: HD_BUY_POTENTIAL
+            key_columns:
+              - HD_BUY_POTENTIAL
+            sort_column: HD_BUY_POTENTIAL
+
+          - unique_name: d_hd_dep_count
+            label: Dependents Count
+            folder: Household Demographics
+            dataset: household_demographics
+            name_column: HD_DEP_COUNT
+            key_columns:
+              - HD_DEP_COUNT
+            sort_column: HD_DEP_COUNT
+
+          - unique_name: d_hd_vehicle_count
+            label: Vehicle Count
+            folder: Household Demographics
+            dataset: household_demographics
+            name_column: HD_VEHICLE_COUNT
+            key_columns:
+              - HD_VEHICLE_COUNT
+            sort_column: HD_VEHICLE_COUNT
+
+level_attributes:
+
+  - unique_name: Household Demographics
+    label: Household Demographics
+    is_unique_key: true
+    dataset: household_demographics
+    name_column: HD_DEMO_SK
+    key_columns:
+      - HD_DEMO_SK
+
+relationships:
+
+  - unique_name: HouseholdDemographics_IncomeBand
+    from:
+      hierarchy: Household Demographics
+      level: Household Demographics
+      dataset: household_demographics
+      join_columns:
+        - HD_INCOME_BAND_SK
+    to:
+      dimension: Income Band
+      level: Income Band
+    type: embedded

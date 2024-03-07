@@ -1,0 +1,95 @@
+unique_name: store_promotion
+object_type: dataset
+label: store_promotion
+connection_id: Snowflake
+sql: "SELECT p.*, ss.* \nFROM benchmark.TPCDS_SF100GB.promotion p\nINNER JOIN benchmark.TPCDS_SF100GB.store_sales\
+  \ ss\nON ss.ss_promo_sk = p.p_promo_sk"
+
+columns:
+  - name: P_CHANNEL_CATALOG
+    data_type: string
+  - name: P_CHANNEL_DEMO
+    data_type: string
+  - name: P_CHANNEL_DETAILS
+    data_type: string
+  - name: P_CHANNEL_DMAIL
+    data_type: string
+  - name: P_CHANNEL_EMAIL
+    data_type: string
+  - name: P_CHANNEL_EVENT
+    data_type: string
+  - name: P_CHANNEL_PRESS
+    data_type: string
+  - name: P_CHANNEL_RADIO
+    data_type: string
+  - name: P_CHANNEL_TV
+    data_type: string
+  - name: P_COST
+    data_type: "decimal(15,2)"
+  - name: P_DISCOUNT_ACTIVE
+    data_type: string
+  - name: P_END_DATE_SK
+    data_type: long
+  - name: P_ITEM_SK
+    data_type: long
+  - name: P_PROMO_ID
+    data_type: string
+  - name: P_PROMO_NAME
+    data_type: string
+  - name: P_PROMO_SK
+    data_type: long
+  - name: P_PURPOSE
+    data_type: string
+  - name: P_RESPONSE_TARGET
+    data_type: long
+  - name: P_START_DATE_SK
+    data_type: long
+  - name: PROMO_ID_NAME
+    data_type: string
+    sql: "concat (p_promo_id, ' - ',p_promo_name)"
+  - name: SS_ADDR_SK
+    data_type: long
+  - name: SS_CDEMO_SK
+    data_type: long
+  - name: SS_COUPON_AMT
+    data_type: "decimal(7,2)"
+  - name: SS_CUSTOMER_SK
+    data_type: long
+  - name: SS_EXT_DISCOUNT_AMT
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_TAX
+    data_type: "decimal(7,2)"
+  - name: SS_EXT_WHOLESALE_COST
+    data_type: "decimal(7,2)"
+  - name: SS_HDEMO_SK
+    data_type: long
+  - name: SS_ITEM_SK
+    data_type: long
+  - name: SS_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_NET_PAID
+    data_type: "decimal(7,2)"
+  - name: SS_NET_PAID_INC_TAX
+    data_type: "decimal(7,2)"
+  - name: SS_NET_PROFIT
+    data_type: "decimal(7,2)"
+  - name: SS_PROMO_SK
+    data_type: long
+  - name: SS_QUANTITY
+    data_type: long
+  - name: SS_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: SS_SOLD_DATE_SK
+    data_type: long
+  - name: SS_SOLD_TIME_SK
+    data_type: long
+  - name: SS_STORE_SK
+    data_type: long
+  - name: SS_TICKET_NUMBER
+    data_type: long
+  - name: SS_WHOLESALE_COST
+    data_type: "decimal(7,2)"

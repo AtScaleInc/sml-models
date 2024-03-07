@@ -1,0 +1,91 @@
+unique_name: catalog_sales
+object_type: dataset
+label: catalog_sales
+connection_id: Snowflake
+table: CATALOG_SALES
+
+columns:
+  - name: Catalog Sales Net Paid
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"CS_NET_PAID\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
+  - name: Catalog Sales Price Tier
+    data_type: string
+    sql: CASE WHEN "CS_SALES_PRICE" BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More
+      than 500' END
+  - name: Catalog Sales
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"CS_SALES_PRICE\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
+  - name: CS ROW COUNTER
+    data_type: long
+    sql: 1
+  - name: CS_BILL_ADDR_SK
+    data_type: long
+  - name: CS_BILL_CDEMO_SK
+    data_type: long
+  - name: CS_BILL_CUSTOMER_SK
+    data_type: long
+  - name: CS_BILL_HDEMO_SK
+    data_type: long
+  - name: CS_CALL_CENTER_SK
+    data_type: long
+  - name: CS_CATALOG_PAGE_SK
+    data_type: long
+  - name: CS_COUPON_AMT
+    data_type: "decimal(7,2)"
+  - name: CS_EXT_DISCOUNT_AMT
+    data_type: "decimal(7,2)"
+  - name: CS_EXT_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: CS_EXT_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: CS_EXT_SHIP_COST
+    data_type: "decimal(7,2)"
+  - name: CS_EXT_TAX
+    data_type: "decimal(7,2)"
+  - name: CS_EXT_WHOLESALE_COST
+    data_type: "decimal(7,2)"
+  - name: CS_ITEM_SK
+    data_type: long
+  - name: CS_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: CS_NET_PAID
+    data_type: "decimal(7,2)"
+  - name: CS_NET_PAID_INC_SHIP
+    data_type: "decimal(7,2)"
+  - name: CS_NET_PAID_INC_SHIP_TAX
+    data_type: "decimal(7,2)"
+  - name: CS_NET_PAID_INC_TAX
+    data_type: "decimal(7,2)"
+  - name: CS_NET_PROFIT
+    data_type: "decimal(7,2)"
+  - name: CS_ORDER_NUMBER
+    data_type: long
+  - name: CS_PROMO_SK
+    data_type: long
+  - name: CS_QUANTITY
+    data_type: long
+  - name: CS_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: CS_SHIP_ADDR_SK
+    data_type: long
+  - name: CS_SHIP_CDEMO_SK
+    data_type: long
+  - name: CS_SHIP_CUSTOMER_SK
+    data_type: long
+  - name: CS_SHIP_DATE_SK
+    data_type: long
+  - name: CS_SHIP_HDEMO_SK
+    data_type: long
+  - name: CS_SHIP_MODE_SK
+    data_type: long
+  - name: CS_SOLD_DATE_SK
+    data_type: long
+  - name: CS_SOLD_TIME_SK
+    data_type: long
+  - name: CS_WAREHOUSE_SK
+    data_type: long
+  - name: CS_WHOLESALE_COST
+    data_type: "decimal(7,2)"
+  - name: Purchased Amount in Catalog
+    data_type: "decimal(16,8)"
+    sql: (("CS_EXT_LIST_PRICE"-"CS_EXT_WHOLESALE_COST"-"CS_EXT_DISCOUNT_AMT")+"CS_EXT_SALES_PRICE")/2

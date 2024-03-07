@@ -1,0 +1,45 @@
+unique_name: dimension-stock-item
+object_type: dataset
+label: dimension-stock-item
+connection_id: BigQuery
+table: dimension-stock-item
+
+columns:
+  - name: Barcode
+    data_type: string
+  - name: Brand
+    data_type: string
+  - name: Buying_Package
+    data_type: string
+  - name: Color
+    data_type: string
+  - name: Is_Chiller_Stock
+    data_type: boolean
+  - name: Lead_Time_Days
+    data_type: long
+  - name: Lineage_Key
+    data_type: long
+  - name: Quantity_Per_Outer
+    data_type: long
+  - name: Recommended_Retail_Price
+    data_type: double
+  - name: Selling_Package
+    data_type: string
+  - name: Size
+    data_type: string
+  - name: Stock_Item
+    data_type: string
+  - name: Stock_Item_Key
+    data_type: long
+  - name: Tax_Rate
+    data_type: double
+  - name: Typical_Weight_Per_Unit
+    data_type: double
+  - name: Unit_Price
+    data_type: double
+  - name: Valid_From
+    data_type: datetime
+  - name: Valid_To
+    data_type: datetime
+  - name: WWI_Stock_Item_ID
+    data_type: long

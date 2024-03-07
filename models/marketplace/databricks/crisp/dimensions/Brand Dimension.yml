@@ -1,0 +1,28 @@
+unique_name: Brand Dimension
+object_type: dimension
+label: Brand Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Brand Hierarchy
+    label: Brand Hierarchy
+    folder: Brand
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Brand
+
+level_attributes:
+
+  - unique_name: Brand
+    label: Brand
+    dataset: normalized_target_dim_brand
+    name_column: brand
+    key_columns:
+      - brand_id
+
+modeler_metadata:
+  version: 0
+  modified: "false"

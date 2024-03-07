@@ -1,0 +1,6 @@
+unique_name: m_SS_EXT_WHOLESALE_COST_avg
+object_type: metric
+label: Average Ext Wholesale Cost
+calculation_method: average
+dataset: store_sales
+column: SS_EXT_WHOLESALE_COST

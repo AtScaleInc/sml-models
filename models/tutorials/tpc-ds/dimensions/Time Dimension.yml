@@ -1,0 +1,119 @@
+unique_name: Time Dimension
+object_type: dimension
+label: Time Dimension
+type: time
+
+hierarchies:
+
+  - unique_name: Time Dimension
+    label: Time Dimension
+    folder: Time
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Time
+        time_unit: second
+
+        secondary_attributes:
+
+          - unique_name: d_am_or_pm
+            label: Time AM or PM
+            folder: Time
+            dataset: TIME_DIM
+            name_column: T_AM_PM
+            key_columns:
+              - T_AM_PM
+            sort_column: T_AM_PM
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_hour
+            label: Hour
+            folder: Time
+            dataset: TIME_DIM
+            name_column: T_HOUR
+            key_columns:
+              - T_HOUR
+            sort_column: T_HOUR
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_meal_time
+            label: Meal Time
+            folder: Time
+            dataset: TIME_DIM
+            name_column: T_MEAL_TIME
+            key_columns:
+              - T_MEAL_TIME
+            sort_column: T_MEAL_TIME
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_minute
+            label: Minute
+            folder: Time
+            dataset: TIME_DIM
+            name_column: T_MINUTE
+            key_columns:
+              - T_MINUTE
+            sort_column: T_MINUTE
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_morning _time_tier
+            label: Morning  Time Tier
+            folder: Time
+            dataset: TIME_DIM
+            name_column: Morning  Time Tier
+            key_columns:
+              - Morning  Time Tier
+            sort_column: Morning  Time Tier
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_second
+            label: Second
+            folder: Time
+            dataset: TIME_DIM
+            name_column: T_SECOND
+            key_columns:
+              - T_SECOND
+            sort_column: T_SECOND
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+          - unique_name: d_time_sequence
+            label: Time Sequence
+            folder: Time
+            dataset: TIME_DIM
+            name_column: T_TIME
+            key_columns:
+              - T_TIME
+            sort_column: T_TIME
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
+level_attributes:
+
+  - unique_name: Time
+    label: Time SK
+    is_unique_key: true
+    dataset: TIME_DIM
+    name_column: T_TIME_ID
+    key_columns:
+      - T_TIME_SK

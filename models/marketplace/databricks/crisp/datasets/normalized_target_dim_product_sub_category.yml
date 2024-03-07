@@ -1,0 +1,13 @@
+unique_name: normalized_target_dim_product_sub_category
+object_type: dataset
+label: normalized_target_dim_product_sub_category
+connection_id: Databricks - Crisp
+table: normalized_target_dim_product_sub_category
+
+columns:
+  - name: product_category_id
+    data_type: long
+  - name: product_sub_category
+    data_type: string
+  - name: product_sub_category_id
+    data_type: long

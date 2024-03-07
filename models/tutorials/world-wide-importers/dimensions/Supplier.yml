@@ -1,0 +1,72 @@
+unique_name: Supplier
+object_type: dimension
+label: Supplier
+type: standard
+
+hierarchies:
+
+  - unique_name: Supplier
+    label: Supplier
+    folder: Suppliers
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Supplier
+
+        secondary_attributes:
+
+          - unique_name: d_Category_2
+            label: Category
+            folder: Suppliers
+            dataset: dimension-supplier
+            name_column: Category
+            key_columns:
+              - Category
+            sort_column: Category
+
+          - unique_name: d_Payment_Days
+            label: Payment Days
+            folder: Suppliers
+            dataset: dimension-supplier
+            name_column: Payment_Days
+            key_columns:
+              - Payment_Days
+            sort_column: Payment_Days
+
+          - unique_name: d_Postal_Code_2
+            label: Postal Code
+            folder: Suppliers
+            dataset: dimension-supplier
+            name_column: Postal_Code
+            key_columns:
+              - Postal_Code
+            sort_column: Postal_Code
+
+          - unique_name: d_Primary_Contact_2
+            label: Primary Contact
+            folder: Suppliers
+            dataset: dimension-supplier
+            name_column: Primary_Contact
+            key_columns:
+              - Primary_Contact
+            sort_column: Primary_Contact
+
+          - unique_name: d_Supplier_Reference
+            label: Supplier Reference
+            folder: Suppliers
+            dataset: dimension-supplier
+            name_column: Supplier_Reference
+            key_columns:
+              - Supplier_Reference
+            sort_column: Supplier_Reference
+
+level_attributes:
+
+  - unique_name: Supplier
+    label: Supplier
+    is_unique_key: true
+    dataset: dimension-supplier
+    name_column: Supplier
+    key_columns:
+      - Supplier_Key

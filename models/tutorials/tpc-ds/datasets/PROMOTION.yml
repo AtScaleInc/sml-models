@@ -1,0 +1,45 @@
+unique_name: PROMOTION
+object_type: dataset
+label: PROMOTION
+connection_id: Snowflake
+table: PROMOTION
+
+columns:
+  - name: P_CHANNEL_CATALOG
+    data_type: string
+  - name: P_CHANNEL_DEMO
+    data_type: string
+  - name: P_CHANNEL_DETAILS
+    data_type: string
+  - name: P_CHANNEL_DMAIL
+    data_type: string
+  - name: P_CHANNEL_EMAIL
+    data_type: string
+  - name: P_CHANNEL_EVENT
+    data_type: string
+  - name: P_CHANNEL_PRESS
+    data_type: string
+  - name: P_CHANNEL_RADIO
+    data_type: string
+  - name: P_CHANNEL_TV
+    data_type: string
+  - name: P_COST
+    data_type: "decimal(15,2)"
+  - name: P_DISCOUNT_ACTIVE
+    data_type: string
+  - name: P_END_DATE_SK
+    data_type: long
+  - name: P_ITEM_SK
+    data_type: long
+  - name: P_PROMO_ID
+    data_type: string
+  - name: P_PROMO_NAME
+    data_type: string
+  - name: P_PROMO_SK
+    data_type: long
+  - name: P_PURPOSE
+    data_type: string
+  - name: P_RESPONSE_TARGET
+    data_type: long
+  - name: P_START_DATE_SK
+    data_type: long

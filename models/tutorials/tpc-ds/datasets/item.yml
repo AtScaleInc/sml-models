@@ -1,0 +1,51 @@
+unique_name: item
+object_type: dataset
+label: item
+connection_id: Snowflake
+table: ITEM
+
+columns:
+  - name: I_BRAND
+    data_type: string
+  - name: I_BRAND_ID
+    data_type: int
+  - name: I_CATEGORY
+    data_type: string
+  - name: I_CATEGORY_ID
+    data_type: int
+  - name: I_CLASS
+    data_type: string
+  - name: I_CLASS_ID
+    data_type: int
+  - name: I_COLOR
+    data_type: string
+  - name: I_CONTAINER
+    data_type: string
+  - name: I_CURRENT_PRICE
+    data_type: decimal
+  - name: I_FORMULATION
+    data_type: string
+  - name: I_ITEM_DESC
+    data_type: string
+  - name: I_ITEM_ID
+    data_type: string
+  - name: I_ITEM_SK
+    data_type: int
+  - name: I_MANAGER_ID
+    data_type: int
+  - name: I_MANUFACT
+    data_type: string
+  - name: I_MANUFACT_ID
+    data_type: int
+  - name: I_PRODUCT_NAME
+    data_type: string
+  - name: I_REC_END_DATE
+    data_type: string
+  - name: I_REC_START_DATE
+    data_type: string
+  - name: I_SIZE
+    data_type: string
+  - name: I_UNITS
+    data_type: string
+  - name: I_WHOLESALE_COST
+    data_type: decimal

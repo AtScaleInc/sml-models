@@ -1,0 +1,104 @@
+unique_name: Customer Dimension
+object_type: dimension
+label: Customer Dimension
+type: standard
+
+hierarchies:
+
+  - unique_name: Customer Dimension
+    label: Customer Dimension
+    folder: Customer Information
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Customer Dimension
+
+        secondary_attributes:
+
+          - unique_name: d_birth_country
+            label: Birth Country
+            folder: Customer Information
+            dataset: customer
+            name_column: C_BIRTH_COUNTRY
+            key_columns:
+              - C_BIRTH_COUNTRY
+            sort_column: C_BIRTH_COUNTRY
+
+          - unique_name: d_c_preferred_cust_flag
+            label: Preferred Customer Ind
+            folder: Customer Information
+            dataset: customer
+            name_column: C_PREFERRED_CUST_FLAG
+            key_columns:
+              - C_PREFERRED_CUST_FLAG
+            sort_column: C_PREFERRED_CUST_FLAG
+
+          - unique_name: d_customer_email_address
+            label: Customer Email Address
+            folder: Customer Information
+            dataset: customer
+            name_column: C_EMAIL_ADDRESS
+            key_columns:
+              - C_EMAIL_ADDRESS
+            sort_column: C_EMAIL_ADDRESS
+
+          - unique_name: d_customer_first_name
+            label: Customer First Name
+            folder: Customer Information
+            dataset: customer
+            name_column: C_FIRST_NAME
+            key_columns:
+              - C_FIRST_NAME
+            sort_column: C_FIRST_NAME
+
+          - unique_name: d_customer_id
+            label: Customer ID
+            folder: Customer Information
+            dataset: customer
+            name_column: C_CUSTOMER_ID
+            key_columns:
+              - C_CUSTOMER_ID
+            sort_column: C_CUSTOMER_ID
+
+          - unique_name: d_customer_last_name
+            label: Customer Last Name
+            folder: Customer Information
+            dataset: customer
+            name_column: C_LAST_NAME
+            key_columns:
+              - C_LAST_NAME
+            sort_column: C_LAST_NAME
+
+          - unique_name: d_customer_login
+            label: Customer Login
+            folder: Customer Information
+            dataset: customer
+            name_column: C_LOGIN
+            key_columns:
+              - C_LOGIN
+            sort_column: C_LOGIN
+
+level_attributes:
+
+  - unique_name: Customer Dimension
+    label: Customer Number
+    is_unique_key: true
+    dataset: customer
+    name_column: C_CUSTOMER_SK
+    key_columns:
+      - C_CUSTOMER_SK
+
+relationships:
+
+  - unique_name: CustomerDimension_CustomerAddress
+    from:
+      hierarchy: Customer Dimension
+      level: Customer Dimension
+      dataset: customer
+      join_columns:
+        - C_CURRENT_ADDR_SK
+    to:
+      dimension: Customer Address
+      level: Customer Address
+    type: embedded

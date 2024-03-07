@@ -1,0 +1,13 @@
+unique_name: normalized_target_dim_supplier
+object_type: dataset
+label: normalized_target_dim_supplier
+connection_id: Databricks - Crisp
+table: normalized_target_dim_supplier
+
+columns:
+  - name: supplier
+    data_type: string
+  - name: supplier_id
+    data_type: long
+  - name: supplier_number
+    data_type: string

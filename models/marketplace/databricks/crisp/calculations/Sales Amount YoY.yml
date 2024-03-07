@@ -1,0 +1,5 @@
+unique_name: Sales Amount YoY
+object_type: metric_calc
+label: Sales Amount YoY
+expression: "([Measures].[m_sales_amount_sum]-[Measures].[Sales Amount PY])/[Measures].[Sales\
+  \ Amount PY]"

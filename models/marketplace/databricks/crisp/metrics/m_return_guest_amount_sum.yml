@@ -1,0 +1,6 @@
+unique_name: m_return_guest_amount_sum
+object_type: metric
+label: Return Guest Amount
+calculation_method: sum
+dataset: normalized_target_fact_sales
+column: return_guest_amount

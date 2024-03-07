@@ -1,0 +1,25 @@
+unique_name: Transaction Type
+object_type: dimension
+label: Transaction Type
+type: standard
+
+hierarchies:
+
+  - unique_name: Transaction Type
+    label: Transaction Type
+    folder: Transactions
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Transaction Type Level
+
+level_attributes:
+
+  - unique_name: Transaction Type Level
+    label: Transaction Type Level
+    is_unique_key: true
+    dataset: dimension-transaction-type
+    name_column: Transaction_Type
+    key_columns:
+      - Transaction_Type_Key

@@ -1,0 +1,6 @@
+unique_name: Sales Amount YTD PY
+object_type: metric_calc
+label: Sales Amount YTD PY
+expression: "Avg(\nPeriodsToDate([Date Dimension].[Date Hierarchy].[Year], ParallelPeriod([Date\
+  \ Dimension].[Date Hierarchy].[Year], 1, [Date Dimension].[Date Hierarchy].CurrentMember)),\
+  \ \n[Measures].[m_sales_amount_sum])\n"

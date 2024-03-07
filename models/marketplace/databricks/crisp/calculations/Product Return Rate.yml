@@ -1,0 +1,5 @@
+unique_name: Product Return Rate
+object_type: metric_calc
+label: Product Return Rate
+expression: "[Measures].[m_return_guest_quantity_sum]/[Measures].[m_sales_quantity_sum]"
+format: Percent

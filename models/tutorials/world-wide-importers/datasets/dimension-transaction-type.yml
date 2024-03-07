@@ -1,0 +1,19 @@
+unique_name: dimension-transaction-type
+object_type: dataset
+label: dimension-transaction-type
+connection_id: BigQuery
+table: dimension-transaction-type
+
+columns:
+  - name: Lineage_Key
+    data_type: long
+  - name: Transaction_Type
+    data_type: string
+  - name: Transaction_Type_Key
+    data_type: long
+  - name: Valid_From
+    data_type: datetime
+  - name: Valid_To
+    data_type: datetime
+  - name: WWI_Transaction_Type_ID
+    data_type: long

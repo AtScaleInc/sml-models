@@ -1,0 +1,38 @@
+unique_name: dimension-date
+object_type: dataset
+label: dimension-date
+connection_id: BigQuery
+table: dimension-date
+
+columns:
+  - name: Calendar_Month_Label
+    data_type: string
+  - name: Calendar_Month_Number
+    data_type: long
+  - name: Calendar_Year
+    data_type: long
+  - name: Calendar_Year_Label
+    data_type: string
+  - name: Date
+    data_type: date
+  - name: Day
+    data_type: long
+  - name: Day_Number
+    data_type: long
+  - name: Fiscal_Month_Label
+    data_type: string
+  - name: Fiscal_Month_Number
+    data_type: long
+  - name: Fiscal_Year
+    data_type: long
+  - name: Fiscal_Year_Label
+    data_type: string
+  - name: ISO_Week_Number
+    data_type: long
+  - name: Month
+    data_type: string
+  - name: Short_Month
+    data_type: string
+  - name: Year-Month
+    data_type: string
+    sql: "substring(string(date),1,7)"

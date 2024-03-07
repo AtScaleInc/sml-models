@@ -1,0 +1,35 @@
+unique_name: dimension-city
+object_type: dataset
+label: dimension-city
+connection_id: BigQuery
+table: dimension-city
+
+columns:
+  - name: City
+    data_type: string
+  - name: City_Key
+    data_type: long
+  - name: Continent
+    data_type: string
+  - name: Country
+    data_type: string
+  - name: Latest_Recorded_Population
+    data_type: datetime
+  - name: Lineage_Key
+    data_type: long
+  - name: Location
+    data_type: long
+  - name: Region
+    data_type: string
+  - name: Sales_Territory
+    data_type: string
+  - name: State_Province
+    data_type: string
+  - name: Subregion
+    data_type: string
+  - name: Valid_From
+    data_type: datetime
+  - name: Valid_To
+    data_type: long
+  - name: WWI_City_ID
+    data_type: long

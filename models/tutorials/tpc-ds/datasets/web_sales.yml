@@ -1,0 +1,87 @@
+unique_name: web_sales
+object_type: dataset
+label: web_sales
+connection_id: Snowflake
+table: WEB_SALES
+
+columns:
+  - name: Purchased Amount on Web
+    data_type: "decimal(16,8)"
+    sql: (("WS_EXT_LIST_PRICE"-"WS_EXT_WHOLESALE_COST"-"WS_EXT_DISCOUNT_AMT")+"WS_EXT_SALES_PRICE")/2
+  - name: Web Sales Net Paid
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"WS_NET_PAID\"*\"WS_QUANTITY\" AS DECIMAL(38,2))"
+  - name: Web Sales
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"WS_EXT_SALES_PRICE\"*\"WS_QUANTITY\" AS DECIMAL(38,2))"
+  - name: WS ROW COUNTER
+    data_type: int
+    sql: 1
+  - name: WS_BILL_ADDR_SK
+    data_type: long
+  - name: WS_BILL_CDEMO_SK
+    data_type: long
+  - name: WS_BILL_CUSTOMER_SK
+    data_type: long
+  - name: WS_BILL_HDEMO_SK
+    data_type: long
+  - name: WS_COUPON_AMT
+    data_type: "decimal(7,2)"
+  - name: WS_EXT_DISCOUNT_AMT
+    data_type: "decimal(7,2)"
+  - name: WS_EXT_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: WS_EXT_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: WS_EXT_SHIP_COST
+    data_type: "decimal(7,2)"
+  - name: WS_EXT_TAX
+    data_type: "decimal(7,2)"
+  - name: WS_EXT_WHOLESALE_COST
+    data_type: "decimal(7,2)"
+  - name: WS_ITEM_SK
+    data_type: long
+  - name: WS_LIST_PRICE
+    data_type: "decimal(7,2)"
+  - name: WS_NET_PAID
+    data_type: "decimal(7,2)"
+  - name: WS_NET_PAID_INC_SHIP
+    data_type: "decimal(7,2)"
+  - name: WS_NET_PAID_INC_SHIP_TAX
+    data_type: "decimal(7,2)"
+  - name: WS_NET_PAID_INC_TAX
+    data_type: "decimal(7,2)"
+  - name: WS_NET_PROFIT
+    data_type: "decimal(7,2)"
+  - name: WS_ORDER_NUMBER
+    data_type: long
+  - name: WS_PROMO_SK
+    data_type: long
+  - name: WS_QUANTITY
+    data_type: long
+  - name: WS_SALES_PRICE
+    data_type: "decimal(7,2)"
+  - name: WS_SHIP_ADDR_SK
+    data_type: long
+  - name: WS_SHIP_CDEMO_SK
+    data_type: long
+  - name: WS_SHIP_CUSTOMER_SK
+    data_type: long
+  - name: WS_SHIP_DATE_SK
+    data_type: long
+  - name: WS_SHIP_HDEMO_SK
+    data_type: long
+  - name: WS_SHIP_MODE_SK
+    data_type: long
+  - name: WS_SOLD_DATE_SK
+    data_type: long
+  - name: WS_SOLD_TIME_SK
+    data_type: long
+  - name: WS_WAREHOUSE_SK
+    data_type: long
+  - name: WS_WEB_PAGE_SK
+    data_type: long
+  - name: WS_WEB_SITE_SK
+    data_type: long
+  - name: WS_WHOLESALE_COST
+    data_type: "decimal(7,2)"

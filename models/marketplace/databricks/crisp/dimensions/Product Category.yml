@@ -1,0 +1,28 @@
+unique_name: Product Category
+object_type: dimension
+label: Product Category
+type: standard
+
+hierarchies:
+
+  - unique_name: Product Category
+    label: Product Category
+    folder: Product Category
+    filter_empty: "yes"
+
+    levels:
+
+      - unique_name: Product
+
+level_attributes:
+
+  - unique_name: Product
+    label: Product
+    dataset: normalized_target_dim_product_category
+    name_column: product_category
+    key_columns:
+      - product_category_id
+
+modeler_metadata:
+  version: 0
+  modified: "false"

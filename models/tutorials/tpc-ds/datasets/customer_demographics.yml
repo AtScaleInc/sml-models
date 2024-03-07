@@ -1,0 +1,25 @@
+unique_name: customer_demographics
+object_type: dataset
+label: customer_demographics
+connection_id: Snowflake
+table: CUSTOMER_DEMOGRAPHICS
+
+columns:
+  - name: CD_CREDIT_RATING
+    data_type: string
+  - name: CD_DEMO_SK
+    data_type: int
+  - name: CD_DEP_COLLEGE_COUNT
+    data_type: int
+  - name: CD_DEP_COUNT
+    data_type: int
+  - name: CD_DEP_EMPLOYED_COUNT
+    data_type: int
+  - name: CD_EDUCATION_STATUS
+    data_type: string
+  - name: CD_GENDER
+    data_type: string
+  - name: CD_MARITAL_STATUS
+    data_type: string
+  - name: CD_PURCHASE_ESTIMATE
+    data_type: int
