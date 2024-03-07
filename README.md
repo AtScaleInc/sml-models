@@ -10,6 +10,13 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model that represents a fictional wholesale and distribution company
 3. [TPC-DS](models/tutorials/tpc-ds) - a complex, multi-fact model that encodes the [TPC-DS](https://www.tpc.org/tpcds/) benchmark model in SML
 
+## Marketplace Models
+### Snowflake
+1. [Snowplow](models/marketplace/snowflake/snowplow) - a multi-fact model for the Snowplow Digital Analytics platform
+
+### Databricks
+1. [CRISP]() - a mulit-fact model for the CRISP Inc.'s **Retail and Distributor Data Samples** Free Marketplace dataset 
+
 # Getting Started
 
 ## How to Install AtScale
@@ -18,4 +25,5 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 ### How to Add a Data Warehouse Connection
 ### How to Deploy a Model
 ### How to Query a Model
+
 ## Resources
