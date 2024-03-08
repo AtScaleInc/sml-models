@@ -13,7 +13,7 @@ The World Wide Importers dataset serves as a comprehensive example for business 
 
 ## Data Model Overview
 
-![Internet Sales Model](../../../images/internet-sales-model.png)
+![Worldwide Importers](../../../images/world-wide-importers-model.png)
 
 ## Data Loading Instructions
 
