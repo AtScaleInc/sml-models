@@ -1,6 +1,6 @@
 unique_name: Databricks - Crisp
 label: Databricks - Crisp
 object_type: connection
-as_connection: Databricks - Crisp
+as_connection: Databricks
 database: crisp
 schema: schema_81419_5226
