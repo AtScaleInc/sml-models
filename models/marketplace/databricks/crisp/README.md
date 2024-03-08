@@ -20,7 +20,7 @@ Much more. Crisp also provides many other datasets, depending on source availabi
 
 ## Data Model Overview
 
-![CRISPl](../../../images/crisp-model.png)
+![CRISPl](../../../../images/crisp-model.png)
 
 ## Data Loading Instructions
 
