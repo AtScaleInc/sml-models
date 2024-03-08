@@ -15,7 +15,7 @@ The [TPC-DS](https://www.tpc.org/tpcds/) (Transaction Processing Performance Cou
 
 ## Data Model Overview
 
-![Internet Sales Model](../../../images/internet-sales-model.png)
+![tpc-ds model](../../../images/tpc-ds-model.png)
 
 ## Data Loading Instructions
 
