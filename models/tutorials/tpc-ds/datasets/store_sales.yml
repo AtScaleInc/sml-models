@@ -27,7 +27,7 @@ columns:
       \ \nELSE ' 50 and Less' END"
   - name: SS ROW COUNTER
     data_type: int
-    sql: 1
+    sql: "1"
   - name: SS_ADDR_SK
     data_type: long
   - name: SS_CDEMO_SK
