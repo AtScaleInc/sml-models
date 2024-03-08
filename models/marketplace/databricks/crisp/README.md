@@ -20,7 +20,7 @@ Much more. Crisp also provides many other datasets, depending on source availabi
 
 ## Data Model Overview
 
-![Internet Sales Model](../../../images/crisp-model.png)
+![CRISPl](../../../images/crisp-model.png)
 
 ## Data Loading Instructions
 
