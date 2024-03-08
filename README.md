@@ -15,7 +15,7 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 1. [Snowplow](models/marketplace/snowflake/snowplow) - a multi-fact model for the Snowplow Digital Analytics platform
 
 ### Databricks
-1. [CRISP]() - a mulit-fact model for the CRISP Inc.'s **Retail and Distributor Data Samples** Free Marketplace dataset 
+1. [CRISP](models/marketplace/databricks/crisp) - a mulit-fact model for the CRISP Inc.'s **Retail and Distributor Data Samples** Free Marketplace dataset 
 
 # Getting Started
 
