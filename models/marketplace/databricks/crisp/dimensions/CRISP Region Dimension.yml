@@ -1,4 +1,4 @@
-unique_name: Region Dimension
+unique_name: CRISP Region Dimension
 object_type: dimension
 label: Region Dimension
 type: standard

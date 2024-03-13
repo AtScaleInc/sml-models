@@ -1,4 +1,4 @@
-unique_name: Supplier Dimension
+unique_name: CRISP Supplier Dimension
 object_type: dimension
 label: Supplier Dimension
 type: standard

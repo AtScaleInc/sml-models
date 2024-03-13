@@ -11,7 +11,7 @@ relationships:
       join_columns:
         - product_id
     to:
-      dimension: Product Dimension
+      dimension: CRISP Product Dimension
       level: Product2
 
   - unique_name: normalized_target_fact_gross_margin_Date_Dimension
@@ -20,7 +20,7 @@ relationships:
       join_columns:
         - date_key
     to:
-      dimension: Date Dimension
+      dimension: CRISP Date Dimension
       level: 'Date '
 
   - unique_name: normalized_target_fact_gross_margin_Store_Dimension
@@ -29,7 +29,7 @@ relationships:
       join_columns:
         - store_id
     to:
-      dimension: Store Dimension
+      dimension: CRISP Store Dimension
       level: Store
 
   - unique_name: normalized_target_fact_gross_margin_Fulfillment_Dimension
@@ -38,7 +38,7 @@ relationships:
       join_columns:
         - fulfillment_type_id
     to:
-      dimension: Fulfillment Dimension
+      dimension: CRISP Fulfillment Dimension
       level: Fulfillment
 
   - unique_name: normalized_target_fact_sales_Product_Dimension
@@ -47,7 +47,7 @@ relationships:
       join_columns:
         - product_id
     to:
-      dimension: Product Dimension
+      dimension: CRISP Product Dimension
       level: Product2
 
   - unique_name: normalized_target_fact_sales_Date_Dimension
@@ -56,7 +56,7 @@ relationships:
       join_columns:
         - date_key
     to:
-      dimension: Date Dimension
+      dimension: CRISP Date Dimension
       level: 'Date '
 
   - unique_name: normalized_target_fact_sales_Store_Dimension
@@ -65,7 +65,7 @@ relationships:
       join_columns:
         - store_id
     to:
-      dimension: Store Dimension
+      dimension: CRISP Store Dimension
       level: Store
 
   - unique_name: normalized_target_fact_sales_Fulfillment_Dimension
@@ -74,7 +74,7 @@ relationships:
       join_columns:
         - fulfillment_type_id
     to:
-      dimension: Fulfillment Dimension
+      dimension: CRISP Fulfillment Dimension
       level: Fulfillment
 
 metrics:

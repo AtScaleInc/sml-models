@@ -1,4 +1,4 @@
-unique_name: Date Dimension
+unique_name: CRISP Date Dimension
 object_type: dimension
 label: Date Dimension
 type: time
