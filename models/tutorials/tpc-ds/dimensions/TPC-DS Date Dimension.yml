@@ -165,7 +165,7 @@ hierarchies:
               - Range
               - Siblings
 
-      - unique_name: TPC-DS Date Week Hierarchy
+      - unique_name: TPC-DS Calendar Day
         time_unit: day
 
         secondary_attributes:
@@ -276,7 +276,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Date Week Hierarchy
+  - unique_name: TPC-DS Calendar Date
     label: Date
     is_unique_key: true
     dataset: date_dim
