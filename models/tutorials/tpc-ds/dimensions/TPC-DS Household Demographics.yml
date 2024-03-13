@@ -5,7 +5,7 @@ type: standard
 
 hierarchies:
 
-  - unique_name: Household Demographics
+  - unique_name: Household Demographics Hierarchy
     label: Household Demographics
     folder: Household Demographics
     filter_empty: "yes"

@@ -5,7 +5,7 @@ type: standard
 
 hierarchies:
 
-  - unique_name: Supplier Hierarchy
+  - unique_name: CRISP Supplier Hierarchy
     label: Supplier Hierarchy
     folder: Supplier
     filter_empty: "yes"
