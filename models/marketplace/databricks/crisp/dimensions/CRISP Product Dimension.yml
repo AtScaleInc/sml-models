@@ -49,7 +49,7 @@ relationships:
       join_columns:
         - brand_id
     to:
-      dimension: Brand Dimension
+      dimension: CRISP Brand Dimension
       level: Brand
     type: embedded
 
@@ -61,7 +61,7 @@ relationships:
       join_columns:
         - product_sub_category_id
     to:
-      dimension: Sub Category Dimension
+      dimension: CRISP Sub Category Dimension
       level: Sub Category
     type: embedded
 
@@ -81,8 +81,8 @@ relationships:
       join_columns:
         - supplier_id
     to:
-      dimension: Supplier Dimension
-      level: Supplier
+      dimension: CRISP Supplier Dimension
+      level: CRISP Supplier
     type: embedded
 
 modeler_metadata:

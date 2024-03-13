@@ -33,8 +33,8 @@ relationships:
       join_columns:
         - region_id
     to:
-      dimension: Region Dimension
-      level: Region
+      dimension: CRISP Region Dimension
+      level: CRISP Region
     type: embedded
 
 modeler_metadata:

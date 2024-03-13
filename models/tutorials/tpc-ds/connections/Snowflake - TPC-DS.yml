@@ -1,4 +1,4 @@
-unique_name: Snowflake
+unique_name: Snowflake - TPC-DS
 label: Snowflake
 object_type: connection
 as_connection: Snowflake

@@ -33,7 +33,7 @@ relationships:
       join_columns:
         - product_category_id
     to:
-      dimension: Product Category
+      dimension: CRISP Product Category
       level: Product
     type: embedded
 
