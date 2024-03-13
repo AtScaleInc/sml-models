@@ -1,0 +1,13 @@
+unique_name: dim_geo_state
+object_type: dataset
+label: dim_geo_state
+connection_id: BigQuery
+table: dim_geo_state
+
+columns:
+  - name: country
+    data_type: string
+  - name: state
+    data_type: string
+  - name: statekey
+    data_type: string

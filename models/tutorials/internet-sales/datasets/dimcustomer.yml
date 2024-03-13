@@ -1,0 +1,23 @@
+unique_name: dimcustomer
+object_type: dataset
+label: dimcustomer
+connection_id: BigQuery
+table: dimcustomer
+
+columns:
+  - name: customerkey
+    data_type: long
+  - name: datefirstpurchase
+    data_type: string
+  - name: firstname
+    data_type: string
+  - name: fullname
+    data_type: string
+  - name: gender
+    data_type: string
+  - name: geographykey
+    data_type: long
+  - name: lastname
+    data_type: string
+  - name: occupation
+    data_type: string

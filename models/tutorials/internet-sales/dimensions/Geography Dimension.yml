@@ -1,0 +1,152 @@
+unique_name: Geography Dimension
+object_type: dimension
+label: Geography Dimension
+type: other
+
+hierarchies:
+
+  - unique_name: Geography City
+    label: Geography City
+    folder: Customer Attributes
+
+    levels:
+
+      - unique_name: CountryCity
+
+      - unique_name: State
+
+      - unique_name: City
+
+        secondary_attributes:
+
+          - unique_name: d_city
+            label: City
+            is_hidden: false
+            dataset: dim_geo_city
+            name_column: city
+            key_columns:
+              - city
+
+      - unique_name: GeoKeyCity
+        is_hidden: true
+
+  - unique_name: Geography Zip
+    label: Geography Zip
+    folder: Customer Attributes
+
+    levels:
+
+      - unique_name: CountryZip
+
+      - unique_name: Zip Code
+
+        secondary_attributes:
+
+          - unique_name: d_postalcode
+            label: Postal Code
+            is_hidden: false
+            dataset: dim_geo_postalcode
+            name_column: postalcode
+            key_columns:
+              - postalcode
+
+      - unique_name: GeoKeyZip
+        is_hidden: true
+
+level_attributes:
+
+  - unique_name: City
+    label: City
+    dataset: dim_geo_city
+    name_column: citystatekey
+    key_columns:
+      - statekey
+      - city
+
+  - unique_name: CountryCity
+    label: Country
+    is_unique_key: true
+    dataset: dim_geo_country
+    name_column: country
+    key_columns:
+      - country
+
+  - unique_name: CountryZip
+    label: Country
+    dataset: dim_geo_country
+    name_column: country
+    key_columns:
+      - country
+
+  - unique_name: GeoKeyCity
+    label: GeoKey
+    is_hidden: true
+    is_unique_key: true
+    dataset: dim_geo_city
+    name_column: geographykey
+    key_columns:
+      - geographykey
+
+  - unique_name: GeoKeyZip
+    label: GeoKey
+    is_hidden: true
+    is_unique_key: true
+    dataset: dim_geo_postalcode
+    name_column: geographykey
+    key_columns:
+      - geographykey
+
+  - unique_name: State
+    label: State
+    is_unique_key: true
+    dataset: dim_geo_state
+    name_column: state
+    key_columns:
+      - statekey
+
+  - unique_name: Zip Code
+    label: Zip Code
+    is_unique_key: true
+    dataset: dim_geo_postalcode
+    name_column: countrypostalcode
+    key_columns:
+      - country
+      - postalcode
+
+relationships:
+
+  - unique_name: GeographyDimension_RowLevelSecuritybyRegion
+    from:
+      hierarchy: Geography City
+      level: CountryCity
+      dataset: dim_geo_country
+      join_columns:
+        - country
+    to:
+      dimension: Row Level Security by Region
+      level: Row Level Security by Region_user_id
+    type: embedded
+
+  - from:
+      dataset: dim_geo_city
+      join_columns:
+        - statekey
+    to:
+      level: State
+    type: snowflake
+
+  - from:
+      dataset: dim_geo_postalcode
+      join_columns:
+        - country
+    to:
+      level: CountryZip
+    type: snowflake
+
+  - from:
+      dataset: dim_geo_state
+      join_columns:
+        - country
+    to:
+      level: CountryCity
+    type: snowflake
