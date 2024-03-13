@@ -64,7 +64,7 @@ hierarchies:
               - Range
               - Siblings
 
-      - unique_name: TPC-DS Time Dimension
+      - unique_name: TPC-DS Time Dimension Day
         time_unit: day
 
         secondary_attributes:
