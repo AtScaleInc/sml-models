@@ -1,4 +1,4 @@
-unique_name: Ss_Ticket_Number
+unique_name: TPC-DS Ss_Ticket_Number
 object_type: dimension
 label: Ss_Ticket_Number
 is_degenerate: true

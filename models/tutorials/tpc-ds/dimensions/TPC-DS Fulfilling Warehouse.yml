@@ -1,11 +1,11 @@
-unique_name: Fulfilling Warehouse
+unique_name: TPC-DS Fulfilling Warehouse
 object_type: dimension
 label: Fulfilling Warehouse
 type: standard
 
 hierarchies:
 
-  - unique_name: Fulfilling Warehouse
+  - unique_name: Fulfilling Warehouse Hierarchy
     label: Warehouse
     folder: Fulfillment
     filter_empty: "yes"

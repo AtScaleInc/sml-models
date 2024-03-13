@@ -1,11 +1,11 @@
-unique_name: Supplier
+unique_name: WW Supplier
 object_type: dimension
 label: Supplier
 type: standard
 
 hierarchies:
 
-  - unique_name: Supplier
+  - unique_name: Supplier Hierarchy
     label: Supplier
     folder: Suppliers
     filter_empty: "yes"

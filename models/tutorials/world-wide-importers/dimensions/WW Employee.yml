@@ -1,11 +1,11 @@
-unique_name: Employee
+unique_name: WW Employee
 object_type: dimension
 label: Employee
 type: standard
 
 hierarchies:
 
-  - unique_name: Employee
+  - unique_name: Employee Hierarchy
     label: Employee
     folder: Employees
     filter_empty: "yes"

@@ -1,4 +1,4 @@
-unique_name: Household Demographics
+unique_name: TPC-DS Household Demographics
 object_type: dimension
 label: Household Demographics
 type: standard

@@ -1,11 +1,11 @@
-unique_name: Income Band
+unique_name: TPC-DS Income Band
 object_type: dimension
 label: Income Band
 type: standard
 
 hierarchies:
 
-  - unique_name: Income Band
+  - unique_name: Income Band Hierarchy
     label: Income Band
 
     levels:

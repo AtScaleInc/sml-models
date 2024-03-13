@@ -1,4 +1,4 @@
-unique_name: Transaction Type
+unique_name: WW Transaction Type
 object_type: dimension
 label: Transaction Type
 type: standard

@@ -16,7 +16,7 @@ hierarchies:
 
 level_attributes:
 
-  - unique_name: Region
+  - unique_name: CRISP Region
     label: Region
     dataset: normalized_target_dim_region
     name_column: region_key

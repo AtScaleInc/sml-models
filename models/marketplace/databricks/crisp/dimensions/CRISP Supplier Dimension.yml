@@ -16,7 +16,7 @@ hierarchies:
 
 level_attributes:
 
-  - unique_name: Supplier
+  - unique_name: CRISP Supplier
     label: Supplier
     dataset: normalized_target_dim_supplier
     name_column: supplier_id

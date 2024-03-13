@@ -1,11 +1,11 @@
-unique_name: Ship Mode
+unique_name: TPC-DS Ship Mode
 object_type: dimension
 label: Ship Mode
 type: standard
 
 hierarchies:
 
-  - unique_name: Ship Mode
+  - unique_name: Ship Mode Hierarchy
     label: Ship Mode
     folder: Fulfillment
     filter_empty: "yes"

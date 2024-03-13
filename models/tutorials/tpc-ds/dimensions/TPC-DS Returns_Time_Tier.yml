@@ -1,4 +1,4 @@
-unique_name: Returns_Time_Tier
+unique_name: TPC-DS Returns_Time_Tier
 object_type: dimension
 label: Returns_Time_Tier
 is_degenerate: true

@@ -1,4 +1,4 @@
-unique_name: Payment Method
+unique_name: WW Payment Method
 object_type: dimension
 label: Payment Method
 type: standard

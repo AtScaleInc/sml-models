@@ -1,4 +1,4 @@
-unique_name: Net_Profit_Tier
+unique_name: TPC-DS Net_Profit_Tier
 object_type: dimension
 label: Net_Profit_Tier
 is_degenerate: true

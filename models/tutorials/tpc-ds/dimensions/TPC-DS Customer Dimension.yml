@@ -1,11 +1,11 @@
-unique_name: Customer Dimension
+unique_name: TPC-DS Customer Dimension
 object_type: dimension
 label: Customer Dimension
 type: standard
 
 hierarchies:
 
-  - unique_name: Customer Dimension
+  - unique_name: Customer Dimension Hierarchy
     label: Customer Dimension
     folder: Customer Information
     filter_empty: "yes"
