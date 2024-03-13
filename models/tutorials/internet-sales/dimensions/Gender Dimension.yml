@@ -1,7 +1,7 @@
 unique_name: Gender Dimension
 object_type: dimension
 label: Gender Dimension
-type: other
+type: standard
 
 hierarchies:
 

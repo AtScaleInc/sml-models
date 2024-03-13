@@ -12,25 +12,25 @@ hierarchies:
 
     levels:
 
-      - unique_name: Year
+      - unique_name: TPC-DS Year
         time_unit: year
 
-      - unique_name: Quarter
+      - unique_name: TPC-DS Quarter
         time_unit: quarter
 
-      - unique_name: Month
+      - unique_name: TPC-DS Month
         time_unit: month
 
-      - unique_name: Week
+      - unique_name: TPC-DS Week
         time_unit: week
 
-      - unique_name: 'Date '
+      - unique_name: TPC-DS Date
         time_unit: day
 
 level_attributes:
 
-  - unique_name: 'Date '
-    label: 'Date '
+  - unique_name: TPC-DS Date
+    label: 'Date'
     dataset: normalized_target_dim_calendar
     name_column: date
     key_columns:
@@ -44,7 +44,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: Month
+  - unique_name: TPC-DS Month
     label: Month
     dataset: normalized_target_dim_calendar
     name_column: month
@@ -61,7 +61,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: Quarter
+  - unique_name: TPC-DS Quarter
     label: Quarter
     dataset: normalized_target_dim_calendar
     name_column: quarter
@@ -77,7 +77,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: Week
+  - unique_name: TPC-DS Week
     label: 'Week '
     dataset: normalized_target_dim_calendar
     name_column: week_filter_sun_start
@@ -93,7 +93,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: Year
+  - unique_name: TPC-DS Year
     label: Year
     dataset: normalized_target_dim_calendar
     name_column: year

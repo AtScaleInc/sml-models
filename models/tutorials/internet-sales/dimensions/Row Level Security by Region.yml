@@ -1,11 +1,11 @@
 unique_name: Row Level Security by Region
 object_type: dimension
 label: Row Level Security by Region
-type: other
+type: standard
 
 hierarchies:
 
-  - unique_name: Row Level Security by Region
+  - unique_name: Row Level Security by Region Hierarchy
     label: Row Level Security by Region
 
     levels:

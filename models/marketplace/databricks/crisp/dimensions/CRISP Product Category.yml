@@ -5,7 +5,7 @@ type: standard
 
 hierarchies:
 
-  - unique_name: Product Category
+  - unique_name: CRISP Product Category Hierarchy
     label: Product Category
     folder: Product Category
     filter_empty: "yes"

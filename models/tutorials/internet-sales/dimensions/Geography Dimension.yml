@@ -1,7 +1,7 @@
 unique_name: Geography Dimension
 object_type: dimension
 label: Geography Dimension
-type: other
+type: standard
 
 hierarchies:
 
@@ -11,11 +11,11 @@ hierarchies:
 
     levels:
 
-      - unique_name: CountryCity
+      - unique_name: IS CountryCity
 
-      - unique_name: State
+      - unique_name: IS State
 
-      - unique_name: City
+      - unique_name: IS City
 
         secondary_attributes:
 
@@ -55,7 +55,7 @@ hierarchies:
 
 level_attributes:
 
-  - unique_name: City
+  - unique_name: IS City
     label: City
     dataset: dim_geo_city
     name_column: citystatekey
@@ -96,7 +96,7 @@ level_attributes:
     key_columns:
       - geographykey
 
-  - unique_name: State
+  - unique_name: IS State
     label: State
     is_unique_key: true
     dataset: dim_geo_state
@@ -104,7 +104,7 @@ level_attributes:
     key_columns:
       - statekey
 
-  - unique_name: Zip Code
+  - unique_name: IS Zip Code
     label: Zip Code
     is_unique_key: true
     dataset: dim_geo_postalcode

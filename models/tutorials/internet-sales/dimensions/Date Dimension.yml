@@ -38,7 +38,7 @@ hierarchies:
 
         secondary_attributes:
 
-          - unique_name: d_month_of_year
+          - unique_name: d_month_of_year_is
             label: Month Of Year
             is_hidden: false
             folder: Date Attributes

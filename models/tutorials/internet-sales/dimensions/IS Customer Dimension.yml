@@ -1,12 +1,12 @@
-unique_name: Customer Dimension
+unique_name: IS Customer Dimension
 object_type: dimension
 label: Customer Dimension
 description: Customer Key
-type: other
+type: standard
 
 hierarchies:
 
-  - unique_name: Customer Hierarchy
+  - unique_name: IS Customer Hierarchy
     label: Customer Hierarchy
     folder: Customer Attributes
 

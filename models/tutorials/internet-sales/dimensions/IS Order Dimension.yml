@@ -1,11 +1,11 @@
-unique_name: Order Dimension
+unique_name: IS Order Dimension
 object_type: dimension
 label: Order Dimension
-type: other
+type: standard
 
 hierarchies:
 
-  - unique_name: Order Dimension
+  - unique_name: IS Order Dimension Hierarchy
     label: Order Dimension
     folder: Orders
 
