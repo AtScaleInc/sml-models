@@ -1,7 +1,7 @@
 unique_name: dimension-supplier
 object_type: dataset
 label: dimension-supplier
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: dimension-supplier
 
 columns:

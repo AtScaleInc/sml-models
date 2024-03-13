@@ -1,7 +1,7 @@
 unique_name: warehouse
 object_type: dataset
 label: warehouse
-connection_id: Snowflake
+connection_id: Snowflake - TPC-DS
 table: WAREHOUSE
 
 columns:

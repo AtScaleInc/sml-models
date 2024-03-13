@@ -1,7 +1,7 @@
 unique_name: date_dim
 object_type: dataset
 label: date_dim
-connection_id: Snowflake
+connection_id: Snowflake - TPC-DS
 table: DATE_DIM
 
 columns:

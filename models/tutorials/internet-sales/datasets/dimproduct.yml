@@ -1,7 +1,7 @@
 unique_name: dimproduct
 object_type: dataset
 label: dimproduct
-connection_id: BigQuery
+connection_id: Snowflake - Internet Sales
 table: dimproduct
 
 columns:

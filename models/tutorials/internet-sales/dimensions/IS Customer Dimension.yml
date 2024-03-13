@@ -56,7 +56,7 @@ relationships:
 
   - unique_name: CustomerDimension_GeographyDimension
     from:
-      hierarchy: Customer Hierarchy
+      hierarchy: IS Customer Hierarchy
       level: Customer Name
       dataset: dimcustomer
       join_columns:
@@ -68,7 +68,7 @@ relationships:
 
   - unique_name: CustomerDimension_GenderDimension
     from:
-      hierarchy: Customer Hierarchy
+      hierarchy: IS Customer Hierarchy
       level: Customer Name
       dataset: dimcustomer
       join_columns:
@@ -80,7 +80,7 @@ relationships:
 
   - unique_name: CustomerDimension_GeographyDimension_1
     from:
-      hierarchy: Customer Hierarchy
+      hierarchy: IS Customer Hierarchy
       level: Customer Name
       dataset: dimcustomer
       join_columns:

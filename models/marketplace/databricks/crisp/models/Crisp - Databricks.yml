@@ -21,7 +21,7 @@ relationships:
         - date_key
     to:
       dimension: CRISP Date Dimension
-      level: 'Date '
+      level: CRISP Date
 
   - unique_name: normalized_target_fact_gross_margin_Store_Dimension
     from:

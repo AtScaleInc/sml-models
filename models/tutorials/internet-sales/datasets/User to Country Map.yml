@@ -1,7 +1,7 @@
 unique_name: User to Country Map
 object_type: dataset
 label: User to Country Map
-connection_id: BigQuery
+connection_id: Snowflake - Internet Sales
 sql: |-
   select 'France' as country, 'joe' as username
   union all

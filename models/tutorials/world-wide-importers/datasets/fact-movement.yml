@@ -1,7 +1,7 @@
 unique_name: fact-movement
 object_type: dataset
 label: fact-movement
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: fact-movement
 
 columns:

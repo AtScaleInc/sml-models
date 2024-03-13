@@ -1,7 +1,7 @@
 unique_name: dimension-transaction-type
 object_type: dataset
 label: dimension-transaction-type
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: dimension-transaction-type
 
 columns:

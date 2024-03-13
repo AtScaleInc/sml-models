@@ -1,7 +1,7 @@
 unique_name: dimension-employee
 object_type: dataset
 label: dimension-employee
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: dimension-employee
 
 columns:

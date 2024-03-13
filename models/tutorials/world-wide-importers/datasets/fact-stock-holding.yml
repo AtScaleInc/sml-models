@@ -1,7 +1,7 @@
 unique_name: fact-stock-holding
 object_type: dataset
 label: fact-stock-holding
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: fact-stock-holding
 
 columns:

@@ -1,7 +1,7 @@
 unique_name: fact-transaction
 object_type: dataset
 label: fact-transaction
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: fact-transaction
 
 columns:

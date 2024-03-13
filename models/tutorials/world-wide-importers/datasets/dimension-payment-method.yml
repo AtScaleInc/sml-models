@@ -1,7 +1,7 @@
 unique_name: dimension-payment-method
 object_type: dataset
 label: dimension-payment-method
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: dimension-payment-method
 
 columns:

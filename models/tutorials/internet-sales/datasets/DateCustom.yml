@@ -1,7 +1,7 @@
 unique_name: DateCustom
 object_type: dataset
 label: DateCustom
-connection_id: BigQuery
+connection_id: Snowflake - Internet Sales
 table: datecustom
 
 columns:

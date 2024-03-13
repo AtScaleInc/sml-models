@@ -1,7 +1,7 @@
 unique_name: fact-sale
 object_type: dataset
 label: fact-sale
-connection_id: BigQuery
+connection_id: BigQuery - WW
 table: fact-sale
 
 columns:

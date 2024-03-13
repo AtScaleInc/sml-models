@@ -1,7 +1,7 @@
 unique_name: ship_mode
 object_type: dataset
 label: ship_mode
-connection_id: Snowflake
+connection_id: Snowflake - TPC-DS
 table: SHIP_MODE
 
 columns:

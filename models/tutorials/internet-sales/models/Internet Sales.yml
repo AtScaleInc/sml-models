@@ -234,7 +234,7 @@ relationships:
       join_columns:
         - productkey
     to:
-      dimension: Product Dimension
+      dimension: IS Product Dimension
       level: Product Name
   - unique_name: factinternetsales_Order_Dimension
     from:
@@ -244,7 +244,7 @@ relationships:
         - salesordernumber
         - currencykey
     to:
-      dimension: Order Dimension
+      dimension: IS Order Dimension
       level: order_line_item
   - unique_name: factinternetsales_Date_Dimension_Order_2
     from:
@@ -270,6 +270,6 @@ relationships:
       join_columns:
         - customerkey
     to:
-      dimension: Customer Dimension
+      dimension: IS Customer Dimension
       level: Customer Name
 visible: true
