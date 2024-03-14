@@ -86,7 +86,7 @@ relationships:
         - WS_SHIP_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Date Week Hierarchy
     role_play: "Ship {0}"
 
   - unique_name: web_sales_Time_Dimension_Sold
