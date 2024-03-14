@@ -1,4 +1,4 @@
-unique_name: Catalog_Sales_Price_Tier
+unique_name: TPC-DS Catalog_Sales_Price_Tier
 object_type: dimension
 label: Catalog_Sales_Price_Tier
 is_degenerate: true
