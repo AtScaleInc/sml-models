@@ -99,16 +99,6 @@ relationships:
       level: Time
     role_play: "Sold {0}"
 
-  - unique_name: web_sales_Date_Dimension_Ship_1
-    from:
-      dataset: web_sales
-      join_columns:
-        - WS_SHIP_DATE_SK
-    to:
-      dimension: TPC-DS Date Dimension
-      level: TPC-DS Calendar Date
-    role_play: "Ship {0}"
-
   - unique_name: web_sales_Ship_Mode
     from:
       dataset: web_sales
@@ -201,16 +191,6 @@ relationships:
       level: Time
     role_play: "Return {0}"
 
-  - unique_name: store_returns_Date_Dimension_Return_1
-    from:
-      dataset: store_returns
-      join_columns:
-        - SR_RETURNED_DATE_SK
-    to:
-      dimension: TPC-DS Date Dimension
-      level: TPC-DS Calendar Date
-    role_play: "Return {0}"
-
   - unique_name: store_promotion_Customer_Demographics
     from:
       dataset: store_promotion
@@ -275,16 +255,6 @@ relationships:
       level: Store Dimension
 
   - unique_name: store_promotion_Date_Dimension_Sold
-    from:
-      dataset: store_promotion
-      join_columns:
-        - SS_SOLD_DATE_SK
-    to:
-      dimension: TPC-DS Date Dimension
-      level: TPC-DS Calendar Date
-    role_play: "Sold {0}"
-
-  - unique_name: store_promotion_Date_Dimension_Sold_1
     from:
       dataset: store_promotion
       join_columns:
@@ -423,16 +393,6 @@ relationships:
     to:
       dimension: TPC-DS Time Dimension
       level: Time
-    role_play: "Sold {0}"
-
-  - unique_name: store_sales_Date_Dimension_Sold_1
-    from:
-      dataset: store_sales
-      join_columns:
-        - SS_SOLD_DATE_SK
-    to:
-      dimension: TPC-DS Date Dimension
-      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: store_sales_Promotions
