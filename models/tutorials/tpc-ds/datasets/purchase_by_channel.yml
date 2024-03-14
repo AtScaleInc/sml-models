@@ -1,7 +1,7 @@
 unique_name: purchase_by_channel
 object_type: dataset
 label: purchase_by_channel
-connection_id: Snowflake - TPC-DS
+connection_id: Connection - TPC-DS
 sql: |-
   SELECT
       customer_sk,

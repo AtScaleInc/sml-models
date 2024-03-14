@@ -1,4 +1,4 @@
-unique_name: BigQuery - WW
+unique_name: Connection - WW
 label: BigQuery
 object_type: connection
 as_connection: BigQuery

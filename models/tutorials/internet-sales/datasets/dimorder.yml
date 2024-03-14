@@ -1,7 +1,7 @@
 unique_name: dimorder
 object_type: dataset
 label: dimorder
-connection_id: BigQuery - WW
+connection_id: Connection - WW
 table: dimorder
 
 columns:

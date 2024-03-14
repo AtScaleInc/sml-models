@@ -1,7 +1,7 @@
 unique_name: dimension-customer
 object_type: dataset
 label: dimension-customer
-connection_id: BigQuery - WW
+connection_id: Connection - WW
 table: dimension-customer
 
 columns:

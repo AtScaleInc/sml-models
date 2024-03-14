@@ -1,7 +1,7 @@
 unique_name: store_promotion
 object_type: dataset
 label: store_promotion
-connection_id: Snowflake - TPC-DS
+connection_id: Connection - TPC-DS
 sql: "SELECT p.*, ss.* \nFROM benchmark.TPCDS_SF100GB.promotion p\nINNER JOIN benchmark.TPCDS_SF100GB.store_sales\
   \ ss\nON ss.ss_promo_sk = p.p_promo_sk"
 

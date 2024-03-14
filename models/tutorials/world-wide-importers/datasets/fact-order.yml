@@ -1,7 +1,7 @@
 unique_name: fact-order
 object_type: dataset
 label: fact-order
-connection_id: BigQuery - WW
+connection_id: Connection - WW
 table: fact-order
 
 columns:

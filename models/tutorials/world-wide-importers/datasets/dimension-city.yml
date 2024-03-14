@@ -1,7 +1,7 @@
 unique_name: dimension-city
 object_type: dataset
 label: dimension-city
-connection_id: BigQuery - WW
+connection_id: Connection - WW
 table: dimension-city
 
 columns:

@@ -1,7 +1,7 @@
 unique_name: fact-purchase
 object_type: dataset
 label: fact-purchase
-connection_id: BigQuery - WW
+connection_id: Connection - WW
 table: fact-purchase
 
 columns:

@@ -1,7 +1,7 @@
 unique_name: dimension-date
 object_type: dataset
 label: dimension-date
-connection_id: BigQuery - WW
+connection_id: Connection - WW
 table: dimension-date
 
 columns:

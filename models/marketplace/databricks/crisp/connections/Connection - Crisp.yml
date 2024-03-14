@@ -1,5 +1,5 @@
-unique_name: Databricks - Crisp
-label: Databricks - Crisp
+unique_name: Connection - CRISP
+label: Connection - CRISP
 object_type: connection
 as_connection: Databricks
 database: crisp

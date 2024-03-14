@@ -1,7 +1,7 @@
 unique_name: household_demographics
 object_type: dataset
 label: household_demographics
-connection_id: Snowflake - TPC-DS
+connection_id: Connection - TPC-DS
 table: HOUSEHOLD_DEMOGRAPHICS
 
 columns:

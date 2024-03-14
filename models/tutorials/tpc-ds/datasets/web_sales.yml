@@ -1,7 +1,7 @@
 unique_name: web_sales
 object_type: dataset
 label: web_sales
-connection_id: Snowflake - TPC-DS
+connection_id: Connection - TPC-DS
 table: WEB_SALES
 
 columns:

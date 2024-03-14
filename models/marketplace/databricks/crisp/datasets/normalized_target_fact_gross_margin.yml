@@ -1,7 +1,7 @@
 unique_name: normalized_target_fact_gross_margin
 object_type: dataset
 label: normalized_target_fact_gross_margin
-connection_id: Databricks - Crisp
+connection_id: Connection - CRISP
 table: normalized_target_fact_gross_margin
 
 columns:

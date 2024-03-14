@@ -1,7 +1,7 @@
 unique_name: catalog_sales
 object_type: dataset
 label: catalog_sales
-connection_id: Snowflake - TPC-DS
+connection_id: Connection - TPC-DS
 table: CATALOG_SALES
 
 columns:

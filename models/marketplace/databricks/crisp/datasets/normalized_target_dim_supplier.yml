@@ -1,7 +1,7 @@
 unique_name: normalized_target_dim_supplier
 object_type: dataset
 label: normalized_target_dim_supplier
-connection_id: Databricks - Crisp
+connection_id: Connection - CRISP
 table: normalized_target_dim_supplier
 
 columns:

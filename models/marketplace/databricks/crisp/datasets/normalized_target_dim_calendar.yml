@@ -1,7 +1,7 @@
 unique_name: normalized_target_dim_calendar
 object_type: dataset
 label: normalized_target_dim_calendar
-connection_id: Databricks - Crisp
+connection_id: Connection - CRISP
 table: normalized_target_dim_calendar
 
 columns:

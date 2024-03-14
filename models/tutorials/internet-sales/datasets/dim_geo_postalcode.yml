@@ -1,7 +1,7 @@
 unique_name: dim_geo_postalcode
 object_type: dataset
 label: dim_geo_postalcode
-connection_id: Snowflake - Internet Sales
+connection_id: Connection - Internet Sales
 table: dim_geo_postalcode
 
 columns:

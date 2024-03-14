@@ -1,7 +1,7 @@
 unique_name: factinternetsales
 object_type: dataset
 label: factinternetsales
-connection_id: Snowflake - Internet Sales
+connection_id: Connection - Internet Sales
 table: factinternetsales
 
 columns:
