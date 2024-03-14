@@ -451,7 +451,7 @@ relationships:
       join_columns:
         - SS_PROMO_SK
     to:
-      dimension: TPC-DSPromotions
+      dimension: TPC-DS Promotions
       level: Promotions
 
   - unique_name: catalog_sales_Fulfilling_Warehouse
@@ -460,7 +460,7 @@ relationships:
       join_columns:
         - CS_WAREHOUSE_SK
     to:
-      dimension: TPC-DSFulfilling Warehouse
+      dimension: TPC-DS Fulfilling Warehouse
       level: Fulfilling Warehouse
 
   - unique_name: catalog_sales_Customer_Demographics
