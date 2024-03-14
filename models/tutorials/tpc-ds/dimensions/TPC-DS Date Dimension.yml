@@ -165,7 +165,7 @@ hierarchies:
               - Range
               - Siblings
 
-      - unique_name: TPC-DS Calendar Date
+      - unique_name: TPC-DS Calendar Week Date
         time_unit: day
 
         secondary_attributes:
