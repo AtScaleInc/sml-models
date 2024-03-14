@@ -29,7 +29,7 @@ relationships:
       join_columns:
         - WS_ITEM_SK
     to:
-      dimension: Product Dimension
+      dimension: TPC-DS Product Dimension
       level: Product Dimension
 
   - unique_name: web_sales_Household_Demographics
@@ -76,7 +76,7 @@ relationships:
         - WS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: web_sales_Date_Dimension_Ship
@@ -106,7 +106,7 @@ relationships:
         - WS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: web_sales_Date_Dimension_Ship_1
@@ -116,7 +116,7 @@ relationships:
         - WS_SHIP_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Ship {0}"
 
   - unique_name: web_sales_Ship_Mode
@@ -188,7 +188,7 @@ relationships:
       join_columns:
         - SR_STORE_SK
     to:
-      dimension: Store Dimension
+      dimension: TPC-DS Store Dimension
       level: Store Dimension
 
   - unique_name: store_returns_Date_Dimension_Return
@@ -198,7 +198,7 @@ relationships:
         - SR_RETURNED_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Calendar Date
     role_play: "Return {0}"
 
   - unique_name: store_returns_Time_Dimension_Return
@@ -218,7 +218,7 @@ relationships:
         - SR_RETURNED_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Return {0}"
 
   - unique_name: store_promotion_Customer_Demographics
@@ -291,7 +291,7 @@ relationships:
         - SS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: store_promotion_Date_Dimension_Sold_1
@@ -301,7 +301,7 @@ relationships:
         - SS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: store_promotion_Promotions
@@ -338,7 +338,7 @@ relationships:
         - INV_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Calendar Date
     role_play: "Inventory {0}"
 
   - unique_name: inventory_Date_Dimension_Inventory_1
@@ -348,7 +348,7 @@ relationships:
         - INV_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Inventory {0}"
 
   - unique_name: purchase_by_channel_Customer_Dimension
@@ -422,7 +422,7 @@ relationships:
         - SS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: store_sales_Time_Dimension_Sold
@@ -442,7 +442,7 @@ relationships:
         - SS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: store_sales_Promotions
@@ -525,7 +525,7 @@ relationships:
         - CS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: catalog_sales_Date_Dimension_Ship
@@ -535,7 +535,7 @@ relationships:
         - CS_SHIP_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Date Week Hierarchy
+      level: TPC-DS Calendar Date
     role_play: "Ship {0}"
 
   - unique_name: catalog_sales_Time_Dimension_Sold
@@ -555,7 +555,7 @@ relationships:
         - CS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Sold {0}"
 
   - unique_name: catalog_sales_Date_Dimension_Ship_1
@@ -565,7 +565,7 @@ relationships:
         - CS_SHIP_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: Time Dimension
+      level: TPC-DS Calendar Date
     role_play: "Ship {0}"
 
   - unique_name: catalog_sales_Ship_Mode

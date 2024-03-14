@@ -132,7 +132,7 @@ relationships:
       join_columns:
         - statekey
     to:
-      level: State
+      level: IS State
     type: snowflake
 
   - from:

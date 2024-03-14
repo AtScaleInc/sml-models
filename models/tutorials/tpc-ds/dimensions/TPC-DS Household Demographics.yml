@@ -57,12 +57,12 @@ relationships:
 
   - unique_name: HouseholdDemographics_IncomeBand
     from:
-      hierarchy: Household Demographics
+      hierarchy: Household Demographics Hierarchy
       level: Household Demographics
       dataset: household_demographics
       join_columns:
         - HD_INCOME_BAND_SK
     to:
-      dimension: Income Band
+      dimension: TPC-DS Income Band
       level: Income Band
     type: embedded

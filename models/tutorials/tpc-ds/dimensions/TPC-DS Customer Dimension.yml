@@ -93,12 +93,12 @@ relationships:
 
   - unique_name: CustomerDimension_CustomerAddress
     from:
-      hierarchy: Customer Dimension
+      hierarchy: Customer Dimension Hierarchy
       level: Customer Dimension
       dataset: customer
       join_columns:
         - C_CURRENT_ADDR_SK
     to:
-      dimension: Customer Address
+      dimension: TPC-DS Customer Address
       level: Customer Address
     type: embedded
