@@ -106,7 +106,7 @@ relationships:
         - WS_SOLD_DATE_SK
     to:
       dimension: TPC-DS Date Dimension
-      level: TPC-DS Calendar Date
+      level: TPC-DS Calendar Week Date
     role_play: "Sold {0}"
 
   - unique_name: web_sales_Date_Dimension_Ship_1
