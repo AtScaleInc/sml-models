@@ -301,16 +301,6 @@ relationships:
       level: TPC-DS Calendar Date
     role_play: "Inventory {0}"
 
-  - unique_name: inventory_Date_Dimension_Inventory_1
-    from:
-      dataset: inventory
-      join_columns:
-        - INV_DATE_SK
-    to:
-      dimension: TPC-DS Date Dimension
-      level: TPC-DS Calendar Date
-    role_play: "Inventory {0}"
-
   - unique_name: purchase_by_channel_Customer_Dimension
     from:
       dataset: purchase_by_channel
@@ -507,16 +497,6 @@ relationships:
       dimension: TPC-DS Date Dimension
       level: TPC-DS Calendar Date
     role_play: "Sold {0}"
-
-  - unique_name: catalog_sales_Date_Dimension_Ship_1
-    from:
-      dataset: catalog_sales
-      join_columns:
-        - CS_SHIP_DATE_SK
-    to:
-      dimension: TPC-DS Date Dimension
-      level: TPC-DS Calendar Date
-    role_play: "Ship {0}"
 
   - unique_name: catalog_sales_Ship_Mode
     from:
