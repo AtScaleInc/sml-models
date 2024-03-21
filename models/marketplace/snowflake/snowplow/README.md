@@ -16,7 +16,7 @@ With Snowplow, organizations like Strava, Burberry, and Autotrader acquire, enga
 
 ## Data Model Overview
 
-![Snowplow](../../../images/snowplow-model.png)
+![Snowplow](../../../../images/snowplow-model.png)
 
 ## Data Loading Instructions
 
