@@ -2,5 +2,6 @@ unique_name: Sales Amount LM
 object_type: metric_calc
 label: Sales Amount LM
 expression: "CASE WHEN ISEMPTY([Measures].[m_sales_amount_sum]) THEN \nNULL\nELSE\
-  \ (ParallelPeriod([Date Dimension].[Date Hierarchy].[Month], 1, [Date Dimension].[Date\
+  \ (ParallelPeriod([CRISP Date Dimension].[CRISP Date Hierarchy].[Month], 1, [CRISP Date Dimension].[CRISP Date\
   \ Hierarchy].CurrentMember), [Measures].[m_sales_amount_sum]) END"
+format: '$#,##0.00'

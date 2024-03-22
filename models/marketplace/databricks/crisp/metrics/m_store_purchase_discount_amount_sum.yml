@@ -4,3 +4,5 @@ label: Store Purchase Discount Amount
 calculation_method: sum
 dataset: normalized_target_fact_gross_margin
 column: store_purchase_discount_amount
+format: '$#,##0.00'
+unrelated_dimensions_handling: repeat

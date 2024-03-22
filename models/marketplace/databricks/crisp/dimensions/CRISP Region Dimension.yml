@@ -12,7 +12,7 @@ hierarchies:
 
     levels:
 
-      - unique_name: Region
+      - unique_name: CRISP Region
 
 level_attributes:
 

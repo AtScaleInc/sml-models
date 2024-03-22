@@ -5,31 +5,31 @@ type: time
 
 hierarchies:
 
-  - unique_name: Date Hierarchy
+  - unique_name: CRISP Date Hierarchy
     label: Date Hierarchy
     folder: Date
     filter_empty: "yes"
 
     levels:
 
-      - unique_name: TPC-DS Year
+      - unique_name: Year
         time_unit: year
 
-      - unique_name: TPC-DS Quarter
+      - unique_name: Quarter
         time_unit: quarter
 
-      - unique_name: TPC-DS Month
+      - unique_name: Month
         time_unit: month
 
-      - unique_name: TPC-DS Week
+      - unique_name: Week
         time_unit: week
 
-      - unique_name: TPC-DS Date
+      - unique_name: Date
         time_unit: day
 
 level_attributes:
 
-  - unique_name: TPC-DS Date
+  - unique_name: Date
     label: 'Date'
     dataset: normalized_target_dim_calendar
     name_column: date
@@ -44,7 +44,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Month
+  - unique_name: Month
     label: Month
     dataset: normalized_target_dim_calendar
     name_column: month
@@ -61,7 +61,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Quarter
+  - unique_name: Quarter
     label: Quarter
     dataset: normalized_target_dim_calendar
     name_column: quarter
@@ -77,7 +77,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Week
+  - unique_name: Week
     label: 'Week '
     dataset: normalized_target_dim_calendar
     name_column: week_filter_sun_start
@@ -93,7 +93,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Year
+  - unique_name: Year
     label: Year
     dataset: normalized_target_dim_calendar
     name_column: year
