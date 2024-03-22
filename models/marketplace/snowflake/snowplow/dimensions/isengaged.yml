@@ -1,0 +1,23 @@
+unique_name: isengaged
+object_type: dimension
+label: Is Engaged
+description: Is Engaged
+hierarchies:
+  - unique_name: isengaged Hierarchy
+    label: Is Engaged
+    folder: User Profile
+    levels:
+      - unique_name: isengaged Level
+is_degenerate: true
+level_attributes:
+  - unique_name: isengaged Level
+    label: Is Engaged
+    description: 'is engaged'
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    is_hidden: false
+    is_unique_key: false
+    key_columns:
+      - IS_ENGAGED
+    name_column: IS_ENGAGED
+type: standard

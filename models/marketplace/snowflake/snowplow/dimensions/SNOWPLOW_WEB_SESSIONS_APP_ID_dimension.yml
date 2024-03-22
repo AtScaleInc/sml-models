@@ -1,0 +1,19 @@
+unique_name: SNOWPLOW_WEB_SESSIONS_APP_ID_dimension
+object_type: dimension
+label: Application
+hierarchies:
+  - unique_name: APP_ID hierarchy
+    label: Application
+    folder: Sessions
+    levels:
+      - unique_name: APP_ID
+is_degenerate: true
+level_attributes:
+  - unique_name: APP_ID
+    label: Applicatiom
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    key_columns:
+      - APP_ID
+    name_column: APP_ID
+type: standard

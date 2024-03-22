@@ -1,0 +1,19 @@
+unique_name: SNOWPLOW_WEB_SESSIONS_OS_TIMEZONE_dimension
+object_type: dimension
+label: Timezone
+hierarchies:
+  - unique_name: OS_TIMEZONE hierarchy
+    label: Timezone
+    folder: Browser
+    levels:
+      - unique_name: OS_TIMEZONE
+is_degenerate: true
+level_attributes:
+  - unique_name: OS_TIMEZONE
+    label: Timezone
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    key_columns:
+      - OS_TIMEZONE
+    name_column: OS_TIMEZONE
+type: standard

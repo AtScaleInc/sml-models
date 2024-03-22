@@ -1,0 +1,26 @@
+unique_name: pagetitle
+object_type: dimension
+label: Page
+description: 'Page Title'
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: pagetitle hierarchy
+    label: Page
+    folder: Sessions
+
+    levels:
+
+      - unique_name: pagetitle level
+
+level_attributes:
+
+  - unique_name: pagetitle level
+    label: Page
+    description: Page Title
+    is_hidden: false
+    dataset: SNOWPLOW_WEB_PAGE_VIEWS
+    name_column: PAGE_TITLE
+    key_columns:
+      - PAGE_TITLE

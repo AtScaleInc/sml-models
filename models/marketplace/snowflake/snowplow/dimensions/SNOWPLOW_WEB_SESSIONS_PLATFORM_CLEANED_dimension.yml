@@ -1,0 +1,19 @@
+unique_name: SNOWPLOW_WEB_SESSIONS_PLATFORM_CLEANED_dimension
+object_type: dimension
+label: Platform
+hierarchies:
+  - unique_name: PLATFORM_CLEANED hierarchy
+    label: Platform
+    folder: Browser
+    levels:
+      - unique_name: PLATFORM_CLEANED
+is_degenerate: true
+level_attributes:
+  - unique_name: PLATFORM_CLEANED
+    label: Platform
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    key_columns:
+      - PLATFORM_CLEANED
+    name_column: PLATFORM_CLEANED
+type: standard

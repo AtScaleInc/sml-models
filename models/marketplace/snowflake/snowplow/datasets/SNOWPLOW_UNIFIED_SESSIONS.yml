@@ -1,0 +1,264 @@
+unique_name: SNOWPLOW_UNIFIED_SESSIONS
+object_type: dataset
+label: SNOWPLOW_UNIFIED_SESSIONS
+columns:
+  - data_type: long
+    name: CALCULATED_DATE
+    sql: 'YEAR(DATE("MODEL_TSTAMP")) * 10000 + MONTH(DATE("MODEL_TSTAMP")) * 100 + DAY(DATE("MODEL_TSTAMP"))'
+    dialects:
+      - dialect: Snowflake 
+        sql: 'YEAR(DATE("MODEL_TSTAMP")) * 10000 + MONTH(DATE("MODEL_TSTAMP")) * 100 + DAY(DATE("MODEL_TSTAMP"))'
+  - data_type: string
+    name: APP_ID
+  - data_type: decimal(38,0)
+    name: DEVICE_SESSION_INDEX
+  - data_type: datetime
+    name: START_TSTAMP
+  - data_type: datetime
+    name: END_TSTAMP
+  - data_type: datetime
+    name: MODEL_TSTAMP
+  - data_type: string
+    name: USER_ID
+  - data_type: string
+    name: DEVICE_IDENTIFIER
+  - data_type: string
+    name: STITCHED_USER_ID
+  - data_type: string
+    name: NETWORK_USERID
+  - data_type: decimal(18,0)
+    name: VIEWS
+  - data_type: decimal(22,0)
+    name: ENGAGED_TIME_IN_S
+  - data_type: decimal(18,0)
+    name: TOTAL_EVENTS
+  - data_type: boolean
+    name: IS_ENGAGED
+  - data_type: decimal(19,0)
+    name: ABSOLUTE_TIME_IN_S
+  - data_type: string
+    name: FIRST_PAGE_TITLE
+  - data_type: string
+    name: FIRST_PAGE_URL
+  - data_type: string
+    name: FIRST_PAGE_URLSCHEME
+  - data_type: string
+    name: FIRST_PAGE_URLHOST
+  - data_type: string
+    name: FIRST_PAGE_URLPATH
+  - data_type: string
+    name: FIRST_PAGE_URLQUERY
+  - data_type: string
+    name: FIRST_PAGE_URLFRAGMENT
+  - data_type: string
+    name: LAST_PAGE_TITLE
+  - data_type: string
+    name: LAST_PAGE_URL
+  - data_type: string
+    name: LAST_PAGE_URLSCHEME
+  - data_type: string
+    name: LAST_PAGE_URLHOST
+  - data_type: string
+    name: LAST_PAGE_URLPATH
+  - data_type: string
+    name: LAST_PAGE_URLQUERY
+  - data_type: string
+    name: LAST_PAGE_URLFRAGMENT
+  - data_type: string
+    name: PAGE_REFERRER
+  - data_type: string
+    name: REFR_URLSCHEME
+  - data_type: string
+    name: REFR_URLHOST
+  - data_type: string
+    name: REFR_URLPATH
+  - data_type: string
+    name: REFR_URLQUERY
+  - data_type: string
+    name: REFR_URLFRAGMENT
+  - data_type: string
+    name: REFR_MEDIUM
+  - data_type: string
+    name: REFR_SOURCE
+  - data_type: string
+    name: REFR_TERM
+  - data_type: string
+    name: MKT_MEDIUM
+  - data_type: string
+    name: MKT_SOURCE
+  - data_type: string
+    name: MKT_TERM
+  - data_type: string
+    name: MKT_CONTENT
+  - data_type: string
+    name: MKT_CAMPAIGN
+  - data_type: string
+    name: MKT_CLICKID
+  - data_type: string
+    name: MKT_NETWORK
+  - data_type: string
+    name: MKT_SOURCE_PLATFORM
+  - data_type: string
+    name: DEFAULT_CHANNEL_GROUP
+  - data_type: string
+    name: FIRST_GEO_COUNTRY
+  - data_type: string
+    name: FIRST_GEO_REGION_NAME
+  - data_type: string
+    name: FIRST_GEO_CITY
+  - data_type: string
+    name: GEO_ZIPCODE
+  - data_type: double
+    name: GEO_LATITUDE
+  - data_type: double
+    name: GEO_LONGITUDE
+  - data_type: string
+    name: GEO_TIMEZONE
+  - data_type: string
+    name: FIRST_GEO_COUNTRY_NAME
+  - data_type: string
+    name: FIRST_GEO_CONTINENT
+  - data_type: string
+    name: LAST_GEO_COUNTRY
+  - data_type: string
+    name: LAST_GEO_REGION_NAME
+  - data_type: string
+    name: LAST_GEO_CITY
+  - data_type: string
+    name: LAST_GEO_COUNTRY_NAME
+  - data_type: string
+    name: LAST_GEO_CONTINENT
+  - data_type: string
+    name: USERAGENT
+  - data_type: string
+    name: BR_RENDERENGINE
+  - data_type: string
+    name: FIRST_BR_LANG
+  - data_type: string
+    name: FIRST_BR_LANG_NAME
+  - data_type: string
+    name: LAST_BR_LANG
+  - data_type: string
+    name: LAST_BR_LANG_NAME
+  - data_type: string
+    name: OS_TIMEZONE
+  - data_type: string
+    name: IAB__CATEGORY
+  - data_type: string
+    name: IAB__PRIMARY_IMPACT
+  - data_type: string
+    name: IAB__REASON
+  - data_type: boolean
+    name: IAB__SPIDER_OR_ROBOT
+  - data_type: string
+    name: UA__USERAGENT_FAMILY
+  - data_type: string
+    name: UA__USERAGENT_MAJOR
+  - data_type: string
+    name: UA__USERAGENT_MINOR
+  - data_type: string
+    name: UA__USERAGENT_PATCH
+  - data_type: string
+    name: UA__USERAGENT_VERSION
+  - data_type: string
+    name: UA__OS_MAJOR
+  - data_type: string
+    name: UA__OS_MINOR
+  - data_type: string
+    name: UA__OS_PATCH
+  - data_type: string
+    name: UA__OS_PATCH_MINOR
+  - data_type: string
+    name: OS_VERSION
+  - data_type: string
+    name: UA__DEVICE_FAMILY
+  - data_type: string
+    name: YAUAA__DEVICE_CLASS
+  - data_type: string
+    name: YAUAA__AGENT_CLASS
+  - data_type: string
+    name: YAUAA__AGENT_NAME
+  - data_type: string
+    name: YAUAA__AGENT_NAME_VERSION
+  - data_type: string
+    name: YAUAA__AGENT_NAME_VERSION_MAJOR
+  - data_type: string
+    name: YAUAA__AGENT_VERSION
+  - data_type: string
+    name: YAUAA__AGENT_VERSION_MAJOR
+  - data_type: string
+    name: YAUAA__DEVICE_NAME
+  - data_type: string
+    name: YAUAA__DEVICE_VERSION
+  - data_type: string
+    name: YAUAA__LAYOUT_ENGINE_CLASS
+  - data_type: string
+    name: YAUAA__LAYOUT_ENGINE_NAME
+  - data_type: string
+    name: YAUAA__LAYOUT_ENGINE_NAME_VERSION
+  - data_type: string
+    name: YAUAA__LAYOUT_ENGINE_NAME_VERSION_MAJOR
+  - data_type: string
+    name: YAUAA__LAYOUT_ENGINE_VERSION
+  - data_type: string
+    name: YAUAA__LAYOUT_ENGINE_VERSION_MAJOR
+  - data_type: string
+    name: YAUAA__OPERATING_SYSTEM_CLASS
+  - data_type: string
+    name: YAUAA__OPERATING_SYSTEM_NAME
+  - data_type: string
+    name: YAUAA__OPERATING_SYSTEM_NAME_VERSION
+  - data_type: string
+    name: YAUAA__OPERATING_SYSTEM_VERSION
+  - data_type: decimal(18,0)
+    name: CV_VIEW_PAGE_VOLUME
+  - data_type: datetime
+    name: CV_VIEW_PAGE_FIRST_CONVERSION
+  - data_type: boolean
+    name: CV_VIEW_PAGE_CONVERTED
+  - data_type: decimal(18,0)
+    name: CV__ALL_VOLUME
+  - data_type: double
+    name: CV__ALL_TOTAL
+  - data_type: string
+    name: PLATFORM
+  - data_type: string
+    name: DEVICE_CATEGORY
+  - data_type: string
+    name: SCREEN_RESOLUTION
+  - data_type: string
+    name: OS_TYPE
+  - data_type: decimal(18,0)
+    name: SESSION_DURATION_S
+  - data_type: string
+    name: SESSION_IDENTIFIER
+  - data_type: string
+    name: SESSION__PREVIOUS_SESSION_ID
+  - data_type: string
+    name: USER_IDENTIFIER
+  - data_type: string
+    name: FIRST_EVENT_NAME
+  - data_type: string
+    name: FIRST_SCREEN_VIEW__NAME
+  - data_type: string
+    name: FIRST_SCREEN_VIEW__TYPE
+  - data_type: string
+    name: LAST_EVENT_NAME
+  - data_type: string
+    name: LAST_SCREEN_VIEW__NAME
+  - data_type: string
+    name: LAST_SCREEN_VIEW__TRANSITION_TYPE
+  - data_type: string
+    name: LAST_SCREEN_VIEW__TYPE
+  - data_type: decimal(18,0)
+    name: SCREEN_NAMES_VIEWED
+  - data_type: string
+    name: SCREEN_VIEW__PREVIOUS_ID
+  - data_type: string
+    name: SCREEN_VIEW__PREVIOUS_NAME
+  - data_type: string
+    name: SCREEN_VIEW__PREVIOUS_TYPE
+  - data_type: string
+    name: USER_IPADDRESS
+connection_id: con_SNOWPLOW_DIGITAL_ANALYTICS_SHARED_DATA
+table: SNOWPLOW_UNIFIED_SESSIONS

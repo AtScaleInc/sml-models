@@ -1,0 +1,218 @@
+unique_name: SNOWPLOW_WEB_PAGE_VIEWS
+object_type: dataset
+label: SNOWPLOW_WEB_PAGE_VIEWS
+columns:
+  - data_type: long
+    name: CALCULATED_DATE
+    sql: 'YEAR(DATE("MODEL_TSTAMP")) * 10000 + MONTH(DATE("MODEL_TSTAMP")) * 100 + DAY(DATE("MODEL_TSTAMP"))'
+    dialects:
+      - dialect: Snowflake 
+        sql: 'YEAR(DATE("MODEL_TSTAMP")) * 10000 + MONTH(DATE("MODEL_TSTAMP")) * 100 + DAY(DATE("MODEL_TSTAMP"))'
+  - data_type: string
+    name: PAGE_VIEW_ID
+  - data_type: string
+    name: EVENT_ID
+  - data_type: string
+    name: APP_ID
+  - data_type: string
+    name: USER_ID
+  - data_type: string
+    name: DOMAIN_USERID
+  - data_type: string
+    name: NETWORK_USERID
+  - data_type: string
+    name: DOMAIN_SESSIONID
+  - data_type: decimal(38,0)
+    name: DOMAIN_SESSIONIDX
+  - data_type: decimal(38,0)
+    name: PAGE_VIEW_IN_SESSION_INDEX
+  - data_type: decimal(38,0)
+    name: PAGE_VIEWS_IN_SESSION
+  - data_type: datetime
+    name: DVCE_CREATED_TSTAMP
+  - data_type: datetime
+    name: COLLECTOR_TSTAMP
+  - data_type: datetime
+    name: DERIVED_TSTAMP
+  - data_type: datetime
+    name: START_TSTAMP
+  - data_type: datetime
+    name: END_TSTAMP
+  - data_type: datetime
+    name: MODEL_TSTAMP
+  - data_type: decimal(38,0)
+    name: ENGAGED_TIME_IN_S
+  - data_type: decimal(38,0)
+    name: ABSOLUTE_TIME_IN_S
+  - data_type: decimal(38,0)
+    name: HORIZONTAL_PIXELS_SCROLLED
+  - data_type: decimal(38,0)
+    name: VERTICAL_PIXELS_SCROLLED
+  - data_type: double
+    name: HORIZONTAL_PERCENTAGE_SCROLLED
+  - data_type: double
+    name: VERTICAL_PERCENTAGE_SCROLLED
+  - data_type: decimal(38,0)
+    name: DOC_WIDTH
+  - data_type: decimal(38,0)
+    name: DOC_HEIGHT
+  - data_type: string
+    name: PAGE_TITLE
+  - data_type: string
+    name: PAGE_URL
+  - data_type: string
+    name: PAGE_URLSCHEME
+  - data_type: string
+    name: PAGE_URLHOST
+  - data_type: string
+    name: PAGE_URLPATH
+  - data_type: string
+    name: PAGE_URLQUERY
+  - data_type: string
+    name: PAGE_URLFRAGMENT
+  - data_type: string
+    name: MKT_MEDIUM
+  - data_type: string
+    name: MKT_SOURCE
+  - data_type: string
+    name: MKT_TERM
+  - data_type: string
+    name: MKT_CONTENT
+  - data_type: string
+    name: MKT_CAMPAIGN
+  - data_type: string
+    name: MKT_CLICKID
+  - data_type: string
+    name: MKT_NETWORK
+  - data_type: string
+    name: PAGE_REFERRER
+  - data_type: string
+    name: REFR_URLSCHEME
+  - data_type: string
+    name: REFR_URLHOST
+  - data_type: string
+    name: REFR_URLPATH
+  - data_type: string
+    name: REFR_URLQUERY
+  - data_type: string
+    name: REFR_URLFRAGMENT
+  - data_type: string
+    name: REFR_MEDIUM
+  - data_type: string
+    name: REFR_SOURCE
+  - data_type: string
+    name: REFR_TERM
+  - data_type: string
+    name: GEO_COUNTRY
+  - data_type: string
+    name: GEO_REGION
+  - data_type: string
+    name: GEO_REGION_NAME
+  - data_type: string
+    name: GEO_CITY
+  - data_type: string
+    name: GEO_ZIPCODE
+  - data_type: double
+    name: GEO_LATITUDE
+  - data_type: double
+    name: GEO_LONGITUDE
+  - data_type: string
+    name: GEO_TIMEZONE
+  - data_type: string
+    name: USERAGENT
+  - data_type: string
+    name: BR_LANG
+  - data_type: decimal(38,0)
+    name: BR_VIEWWIDTH
+  - data_type: decimal(38,0)
+    name: BR_VIEWHEIGHT
+  - data_type: string
+    name: BR_COLORDEPTH
+  - data_type: string
+    name: BR_RENDERENGINE
+  - data_type: string
+    name: OS_TIMEZONE
+  - data_type: string
+    name: CATEGORY
+  - data_type: string
+    name: PRIMARY_IMPACT
+  - data_type: string
+    name: REASON
+  - data_type: boolean
+    name: SPIDER_OR_ROBOT
+  - data_type: string
+    name: USERAGENT_FAMILY
+  - data_type: string
+    name: USERAGENT_MAJOR
+  - data_type: string
+    name: USERAGENT_MINOR
+  - data_type: string
+    name: USERAGENT_PATCH
+  - data_type: string
+    name: USERAGENT_VERSION
+  - data_type: string
+    name: OS_FAMILY
+  - data_type: string
+    name: OS_MAJOR
+  - data_type: string
+    name: OS_MINOR
+  - data_type: string
+    name: OS_PATCH
+  - data_type: string
+    name: OS_PATCH_MINOR
+  - data_type: string
+    name: OS_VERSION
+  - data_type: string
+    name: DEVICE_FAMILY
+  - data_type: string
+    name: DEVICE_CLASS
+  - data_type: string
+    name: AGENT_CLASS
+  - data_type: string
+    name: AGENT_NAME
+  - data_type: string
+    name: AGENT_NAME_VERSION
+  - data_type: string
+    name: AGENT_NAME_VERSION_MAJOR
+  - data_type: string
+    name: AGENT_VERSION
+  - data_type: string
+    name: AGENT_VERSION_MAJOR
+  - data_type: string
+    name: DEVICE_BRAND
+  - data_type: string
+    name: DEVICE_NAME
+  - data_type: string
+    name: DEVICE_VERSION
+  - data_type: string
+    name: LAYOUT_ENGINE_CLASS
+  - data_type: string
+    name: LAYOUT_ENGINE_NAME
+  - data_type: string
+    name: LAYOUT_ENGINE_NAME_VERSION
+  - data_type: string
+    name: LAYOUT_ENGINE_NAME_VERSION_MAJOR
+  - data_type: string
+    name: LAYOUT_ENGINE_VERSION
+  - data_type: string
+    name: LAYOUT_ENGINE_VERSION_MAJOR
+  - data_type: string
+    name: OPERATING_SYSTEM_CLASS
+  - data_type: string
+    name: OPERATING_SYSTEM_NAME
+  - data_type: string
+    name: OPERATING_SYSTEM_NAME_VERSION
+  - data_type: string
+    name: OPERATING_SYSTEM_VERSION
+  - data_type: string
+    name: PLATFORM
+  - data_type: string
+    name: DEVICE_CATEGORY
+  - data_type: string
+    name: SCREEN_RESOLUTION
+  - data_type: string
+    name: CONTENT_GROUP
+  - data_type: string
+    name: USER_IPADDRESS
+connection_id: con_SNOWPLOW_DIGITAL_ANALYTICS_SHARED_DATA
+table: SNOWPLOW_WEB_PAGE_VIEWS

@@ -1,0 +1,8 @@
+unique_name: signup
+object_type: metric
+label: SIgn Up
+calculation_method: sum
+column: SIGN_UP
+format: '#,##0'
+dataset: SNOWPLOW_WEB_SESSIONS
+unrelated_dimensions_handling: repeat

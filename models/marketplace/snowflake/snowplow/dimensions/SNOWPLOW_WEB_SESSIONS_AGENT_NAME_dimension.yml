@@ -1,0 +1,19 @@
+unique_name: SNOWPLOW_WEB_SESSIONS_AGENT_NAME_dimension
+object_type: dimension
+label: Agent
+hierarchies:
+  - unique_name: AGENT_NAME hierarchy
+    label: Agent
+    folder: Browser
+    levels:
+      - unique_name: AGENT_NAME
+is_degenerate: true
+level_attributes:
+  - unique_name: AGENT_NAME
+    label: Agent
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    key_columns:
+      - AGENT_NAME
+    name_column: AGENT_NAME
+type: standard

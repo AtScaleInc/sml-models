@@ -1,0 +1,5 @@
+unique_name: Average Time per Event
+object_type: metric_calc
+label: Average Time per Event
+expression: "([Measures].[timeinseconds] / [Measures].[totalevents])"
+folder: Time Relative

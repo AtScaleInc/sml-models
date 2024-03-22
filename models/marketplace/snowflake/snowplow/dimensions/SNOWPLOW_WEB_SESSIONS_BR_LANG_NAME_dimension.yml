@@ -1,0 +1,19 @@
+unique_name: SNOWPLOW_WEB_SESSIONS_BR_LANG_NAME_dimension
+object_type: dimension
+label: Language
+hierarchies:
+  - unique_name: BR_LANG_NAME hierarchy
+    label: Language
+    folder: Browser
+    levels:
+      - unique_name: BR_LANG_NAME
+is_degenerate: true
+level_attributes:
+  - unique_name: BR_LANG_NAME
+    label: Browser Language
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    key_columns:
+      - BR_LANG_NAME
+    name_column: BR_LANG_NAME
+type: standard

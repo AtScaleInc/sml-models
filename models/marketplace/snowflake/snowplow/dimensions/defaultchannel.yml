@@ -1,0 +1,20 @@
+unique_name: defaultchannel
+object_type: dimension
+label: Channel
+hierarchies:
+  - unique_name: defaultchannel Hierarchy
+    label: Channel
+    folder: Sessions
+    levels:
+      - unique_name: defaultchannel Level
+is_degenerate: true
+level_attributes:
+  - unique_name: defaultchannel Level
+    label: Channel
+    contains_unique_names: false
+    dataset: SNOWPLOW_UNIFIED_SESSIONS
+    is_unique_key: false
+    key_columns:
+      - DEFAULT_CHANNEL_GROUP
+    name_column: DEFAULT_CHANNEL_GROUP
+type: standard

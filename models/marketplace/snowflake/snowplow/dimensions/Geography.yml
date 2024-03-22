@@ -1,0 +1,40 @@
+unique_name: Geography
+object_type: dimension
+label: Geography
+hierarchies:
+  - unique_name: Geography Hierarchy
+    label: Geography Hierarchy
+    folder: User Profile
+    levels:
+      - unique_name: country
+      - unique_name: region
+      - unique_name: city
+level_attributes:
+  - unique_name: country
+    label: Country
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    is_hidden: false
+    is_unique_key: false
+    key_columns:
+      - GEO_COUNTRY_NAME
+    name_column: GEO_COUNTRY_NAME
+  - unique_name: region
+    label: Region
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    is_hidden: false
+    is_unique_key: false
+    key_columns:
+      - GEO_REGION_NAME
+    name_column: GEO_REGION_NAME
+  - unique_name: city
+    label: City
+    contains_unique_names: false
+    dataset: SNOWPLOW_WEB_SESSIONS
+    is_hidden: false
+    is_unique_key: false
+    key_columns:
+      - GEO_CITY
+    name_column: GEO_CITY
+type: standard

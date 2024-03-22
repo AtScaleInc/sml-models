@@ -1,0 +1,8 @@
+unique_name: distinct_userid
+object_type: metric
+label: Distinct User Count
+calculation_method: count distinct
+column: DOMAIN_USERID
+dataset: SNOWPLOW_WEB_SESSIONS
+format: '#,##0'
+unrelated_dimensions_handling: repeat
