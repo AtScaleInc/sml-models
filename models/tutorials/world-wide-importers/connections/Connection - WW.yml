@@ -1,6 +1,6 @@
 unique_name: Connection - WW
 label: BigQuery
 object_type: connection
-as_connection: BigQuery
+as_connection: Snowflake
 database: atscale-data-warehouse
 schema: worldwideimporters

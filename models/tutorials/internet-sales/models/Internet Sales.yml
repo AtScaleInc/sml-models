@@ -6,17 +6,6 @@ dimensions:
   - Size Dimension
   - Style Dimension
   - Weight
-drillthroughs:
-  - unique_name: Customer Details
-    attributes:
-      - dimension: Geography Dimension
-        name: State
-      - dimension: Customer Dimension
-        name: Customer Name
-      - dimension: Geography Dimension
-        name: City
-      - dimension: Geography Dimension
-        name: Zip Code
 metrics:
   - unique_name: customercount1
     folder: Customer Metrics
