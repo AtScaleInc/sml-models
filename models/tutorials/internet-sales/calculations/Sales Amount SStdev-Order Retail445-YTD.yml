@@ -6,5 +6,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[salesamountsstdev1]) THEN NULL \nELSE
   Avg(PeriodsToDate([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ [Order Date Dimension].[Order Retail445].CurrentMember), [Measures].[salesamountsstdev1])\
   \ \nEND "
-folder: Time Relative
 format: "$#,##0.00"

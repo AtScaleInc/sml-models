@@ -12,11 +12,11 @@ hierarchies:
 
     levels:
 
-      - unique_name: Style Level
+      - unique_name: Style
 
 level_attributes:
 
-  - unique_name: Style Level
+  - unique_name: Style
     label: Style
     description: Product Style
     is_hidden: true
@@ -24,3 +24,7 @@ level_attributes:
     name_column: style
     key_columns:
       - style
+
+modeler_metadata:
+  version: 0
+  modified: "false"

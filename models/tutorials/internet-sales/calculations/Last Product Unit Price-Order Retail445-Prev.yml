@@ -5,5 +5,4 @@ description: Order Reporting Hierarchy Previous Period Sales
 expression: "CASE WHEN ISEMPTY([Measures].[lastproductunitprice]) \nTHEN NULL\nELSE\n\
   ([Order Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[lastproductunitprice])\n\
   END\n"
-folder: Time Relative
 format: "$#,##0.00"

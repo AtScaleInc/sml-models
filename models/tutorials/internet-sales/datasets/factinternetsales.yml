@@ -1,45 +1,40 @@
 unique_name: factinternetsales
 object_type: dataset
 label: factinternetsales
-connection_id: Connection - Internet Sales
-table: factinternetsales
+connection_id: Snowflake - QT
+table: FACTINTERNETSALES
 
 columns:
+  - name: CURRENCYKEY
+    data_type: "decimal(38,0)"
+  - name: CUSTOMERKEY
+    data_type: "decimal(38,0)"
   - name: Calculated Tax
     data_type: double
-    sql: salesamount*0.085
-    dialects:
-      - dialect: Snowflake
-        sql: '"salesamount"*0.085'
-      - dialect: Oracle
-        sql: '"salesamount"*0.085'
-  - name: currencykey
-    data_type: long
-  - name: customerkey
-    data_type: long
-  - name: orderdate
+    sql: '"SALESAMOUNT"*0.085'
+  - name: ORDERDATE
     data_type: string
-  - name: orderdatekey
-    data_type: long
-  - name: orderquantity
-    data_type: long
-  - name: productkey
-    data_type: long
-  - name: sales_reasons
+  - name: ORDERDATEKEY
+    data_type: "decimal(38,0)"
+  - name: ORDERQUANTITY
+    data_type: "decimal(38,0)"
+  - name: PRODUCTKEY
+    data_type: "decimal(38,0)"
+  - name: SALESAMOUNT
+    data_type: double
+  - name: SALESORDERLINENUMBER
+    data_type: "decimal(38,0)"
+  - name: SALESORDERNUMBER
     data_type: string
-  - name: salesamount
-    data_type: double
-  - name: salesorderlinenumber
-    data_type: long
-  - name: salesordernumber
+  - name: SALES_REASONS
     data_type: string
-  - name: shipdatekey
-    data_type: long
-  - name: taxamt
+  - name: SHIPDATEKEY
+    data_type: "decimal(38,0)"
+  - name: TAXAMT
     data_type: double
-  - name: unitprice
+  - name: UNITPRICE
     data_type: double
-  - name: product_info
+  - name: PRODUCT_INFO
     map:
       field_terminator: ","
       key_terminator: ':'
@@ -47,13 +42,13 @@ columns:
       value_type: String
   - name: color
     data_type: string
-    parent_column: product_info
+    parent_column: PRODUCT_INFO
   - name: size
     data_type: string
-    parent_column: product_info
+    parent_column: PRODUCT_INFO
   - name: style
     data_type: string
-    parent_column: product_info
+    parent_column: PRODUCT_INFO
   - name: weight
     data_type: string
-    parent_column: product_info
+    parent_column: PRODUCT_INFO

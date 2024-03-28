@@ -1,21 +1,21 @@
 unique_name: dimproduct
 object_type: dataset
 label: dimproduct
-connection_id: Connection - Internet Sales
-table: dimproduct
+connection_id: Snowflake - QT
+table: DIMPRODUCT
 
 columns:
-  - name: englishproductname
+  - name: ENGLISHPRODUCTNAME
     data_type: string
-  - name: listprice
+  - name: LISTPRICE
     data_type: double
-  - name: productkey
-    data_type: long
-  - name: productline
+  - name: PRODUCTKEY
+    data_type: "decimal(38,0)"
+  - name: PRODUCTLINE
     data_type: string
-  - name: productsubcategorykey
-    data_type: long
-  - name: productsubcategoryname
+  - name: PRODUCTSUBCATEGORYKEY
+    data_type: "decimal(38,0)"
+  - name: PRODUCTSUBCATEGORYNAME
     data_type: string
-  - name: startdate
+  - name: STARTDATE
     data_type: string

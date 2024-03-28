@@ -1,23 +1,23 @@
 unique_name: dimorder
 object_type: dataset
 label: dimorder
-connection_id: Connection - WW
-table: dimorder
+connection_id: Snowflake - QT
+table: DIMORDER
 
 columns:
-  - name: currency_name
+  - name: CURRENCYKEY
+    data_type: "decimal(38,0)"
+  - name: CURRENCY_NAME
     data_type: string
-  - name: currencykey
-    data_type: long
-  - name: linename
+  - name: LINENAME
     data_type: string
-  - name: ordername
+  - name: ORDERNAME
     data_type: string
-  - name: ordernumberlinekey
+  - name: ORDERNUMBERLINEKEY
     data_type: string
-  - name: salesorderlinenumber
-    data_type: long
-  - name: salesordernumber
+  - name: SALESORDERLINENUMBER
+    data_type: "decimal(38,0)"
+  - name: SALESORDERNUMBER
     data_type: string
-  - name: type
+  - name: TYPE
     data_type: string

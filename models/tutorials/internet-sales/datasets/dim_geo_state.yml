@@ -1,13 +1,13 @@
 unique_name: dim_geo_state
 object_type: dataset
 label: dim_geo_state
-connection_id: Connection - Internet Sales
-table: dim_geo_state
+connection_id: Snowflake - QT
+table: DIM_GEO_STATE
 
 columns:
-  - name: country
+  - name: COUNTRY
     data_type: string
-  - name: state
+  - name: STATE
     data_type: string
-  - name: statekey
+  - name: STATEKEY
     data_type: string

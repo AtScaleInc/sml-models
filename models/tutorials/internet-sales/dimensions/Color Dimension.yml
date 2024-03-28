@@ -12,11 +12,11 @@ hierarchies:
 
     levels:
 
-      - unique_name: Color Level
+      - unique_name: Color
 
 level_attributes:
 
-  - unique_name: Color Level
+  - unique_name: Color
     label: Color
     description: Product Color
     is_hidden: true
@@ -24,3 +24,7 @@ level_attributes:
     name_column: color
     key_columns:
       - color
+
+modeler_metadata:
+  version: 0
+  modified: "false"

@@ -1,15 +1,15 @@
 unique_name: dim_geo_city
 object_type: dataset
 label: dim_geo_city
-connection_id: Connection - Internet Sales
-table: dim_geo_city
+connection_id: Snowflake - QT
+table: DIM_GEO_CITY
 
 columns:
-  - name: city
+  - name: CITY
     data_type: string
-  - name: citystatekey
+  - name: CITYSTATEKEY
     data_type: string
-  - name: geographykey
-    data_type: long
-  - name: statekey
+  - name: GEOGRAPHYKEY
+    data_type: "decimal(38,0)"
+  - name: STATEKEY
     data_type: string

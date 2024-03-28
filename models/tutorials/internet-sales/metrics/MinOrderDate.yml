@@ -2,6 +2,5 @@ unique_name: MinOrderDate
 object_type: metric
 label: MinOrderDate
 calculation_method: minimum
-folder: Time Relative
 dataset: factinternetsales
-column: orderdatekey
+column: ORDERDATEKEY

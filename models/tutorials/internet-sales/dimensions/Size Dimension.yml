@@ -12,13 +12,17 @@ hierarchies:
 
     levels:
 
-      - unique_name: Size Level
+      - unique_name: Size
 
 level_attributes:
 
-  - unique_name: Size Level
+  - unique_name: Size
     label: Size
     dataset: factinternetsales
     name_column: size
     key_columns:
       - size
+
+modeler_metadata:
+  version: 0
+  modified: "false"

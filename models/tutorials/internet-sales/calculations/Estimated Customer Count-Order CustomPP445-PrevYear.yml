@@ -6,4 +6,3 @@ expression: "CASE WHEN ISEMPTY([Measures].[customercountestimate1]) THEN \nNULL\
   ELSE (ParallelPeriod([Order Date Dimension].[Order CustomPP445].[Order customyear],\
   \ 1, [Order Date Dimension].[Order CustomPP445].CurrentMember), [Measures].[customercountestimate1])\
   \ END"
-folder: Time Relative

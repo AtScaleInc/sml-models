@@ -5,5 +5,4 @@ description: Next Period's  Sales Amount on Order Retail445
 expression: "CASE WHEN ISEMPTY([Measures].[maxtaxamount1]) \nTHEN NULL\nELSE\n([Order\
   \ Date Dimension].[Order Retail445].CurrentMember.NextMember, [Measures].[maxtaxamount1])\n\
   END\n"
-folder: Time Relative
 format: "$#,##0.00"

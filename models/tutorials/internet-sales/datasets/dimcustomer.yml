@@ -1,23 +1,23 @@
 unique_name: dimcustomer
 object_type: dataset
 label: dimcustomer
-connection_id: Connection - Internet Sales
-table: dimcustomer
+connection_id: Snowflake - QT
+table: DIMCUSTOMER
 
 columns:
-  - name: customerkey
-    data_type: long
-  - name: datefirstpurchase
+  - name: CUSTOMERKEY
+    data_type: "decimal(38,0)"
+  - name: DATEFIRSTPURCHASE
     data_type: string
-  - name: firstname
+  - name: FIRSTNAME
     data_type: string
-  - name: fullname
+  - name: FULLNAME
     data_type: string
-  - name: gender
+  - name: GENDER
     data_type: string
-  - name: geographykey
-    data_type: long
-  - name: lastname
+  - name: GEOGRAPHYKEY
+    data_type: "decimal(38,0)"
+  - name: LASTNAME
     data_type: string
-  - name: occupation
+  - name: OCCUPATION
     data_type: string

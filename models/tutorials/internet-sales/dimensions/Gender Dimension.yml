@@ -19,6 +19,6 @@ level_attributes:
     label: Gender
     is_unique_key: true
     dataset: dimgender
-    name_column: gendername
+    name_column: GENDERNAME
     key_columns:
-      - genderkey
+      - GENDERKEY

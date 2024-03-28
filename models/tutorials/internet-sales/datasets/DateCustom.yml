@@ -1,205 +1,205 @@
 unique_name: DateCustom
 object_type: dataset
 label: DateCustom
-connection_id: Connection - Internet Sales
-table: datecustom
+connection_id: Snowflake - QT
+table: DATECUSTOM
 
 columns:
-  - name: date_name
+  - name: DATEKEY
+    data_type: "decimal(38,0)"
+  - name: DATE_NAME
     data_type: string
-  - name: datekey
-    data_type: long
-  - name: day_of_half_year
-    data_type: long
-  - name: day_of_half_year_name
+  - name: DAY_OF_HALF_YEAR
+    data_type: "decimal(38,0)"
+  - name: DAY_OF_HALF_YEAR_NAME
     data_type: string
-  - name: day_of_month
-    data_type: long
-  - name: day_of_month_name
+  - name: DAY_OF_MONTH
+    data_type: "decimal(38,0)"
+  - name: DAY_OF_MONTH_NAME
     data_type: string
-  - name: day_of_quarter
-    data_type: long
-  - name: day_of_quarter_name
+  - name: DAY_OF_QUARTER
+    data_type: "decimal(38,0)"
+  - name: DAY_OF_QUARTER_NAME
     data_type: string
-  - name: day_of_week
-    data_type: long
-  - name: day_of_week_name
+  - name: DAY_OF_WEEK
+    data_type: "decimal(38,0)"
+  - name: DAY_OF_WEEK_NAME
     data_type: string
-  - name: day_of_year
-    data_type: long
-  - name: day_of_year_name
+  - name: DAY_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: DAY_OF_YEAR_NAME
     data_type: string
-  - name: half_year
+  - name: HALF_YEAR
     data_type: datetime
-  - name: half_year_name
+  - name: HALF_YEAR_NAME
     data_type: string
-  - name: half_year_of_year
-    data_type: long
-  - name: half_year_of_year_name
+  - name: HALF_YEAR_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: HALF_YEAR_OF_YEAR_NAME
     data_type: string
-  - name: iso_8601_day
+  - name: ISO_8601_DAY
     data_type: datetime
-  - name: iso_8601_day_name
+  - name: ISO_8601_DAY_NAME
     data_type: string
-  - name: iso_8601_day_of_week
-    data_type: long
-  - name: iso_8601_day_of_week_name
+  - name: ISO_8601_DAY_OF_WEEK
+    data_type: "decimal(38,0)"
+  - name: ISO_8601_DAY_OF_WEEK_NAME
     data_type: string
-  - name: iso_8601_day_of_year
-    data_type: long
-  - name: iso_8601_day_of_year_name
+  - name: ISO_8601_DAY_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: ISO_8601_DAY_OF_YEAR_NAME
     data_type: string
-  - name: iso_8601_week
+  - name: ISO_8601_WEEK
     data_type: datetime
-  - name: iso_8601_week_name
+  - name: ISO_8601_WEEK_NAME
     data_type: string
-  - name: iso_8601_week_of_year
-    data_type: long
-  - name: iso_8601_week_of_year_name_reporting_day_ctl
+  - name: ISO_8601_WEEK_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: ISO_8601_WEEK_OF_YEAR_NAME_REPORTING_DAY_CTL
     data_type: string
-  - name: iso_8601_year
+  - name: ISO_8601_YEAR
     data_type: datetime
-  - name: iso_8601_year_name
+  - name: ISO_8601_YEAR_NAME
     data_type: string
-  - name: month
+  - name: MONTH
     data_type: datetime
-  - name: month_name
+  - name: MONTH_NAME
     data_type: string
-  - name: month_of_half_year
-    data_type: long
-  - name: month_of_half_year_name
+  - name: MONTH_OF_HALF_YEAR
+    data_type: "decimal(38,0)"
+  - name: MONTH_OF_HALF_YEAR_NAME
     data_type: string
-  - name: month_of_quarter
-    data_type: long
-  - name: month_of_quarter_name
+  - name: MONTH_OF_QUARTER
+    data_type: "decimal(38,0)"
+  - name: MONTH_OF_QUARTER_NAME
     data_type: string
-  - name: month_of_year
-    data_type: long
-  - name: month_of_year_name
+  - name: MONTH_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: MONTH_OF_YEAR_NAME
     data_type: string
-  - name: pk_date
+  - name: PK_DATE
     data_type: datetime
-  - name: quarter
+  - name: QUARTER
     data_type: datetime
-  - name: quarter_name
+  - name: QUARTER_NAME
     data_type: string
-  - name: quarter_of_half_year
-    data_type: long
-  - name: quarter_of_half_year_name
+  - name: QUARTER_OF_HALF_YEAR
+    data_type: "decimal(38,0)"
+  - name: QUARTER_OF_HALF_YEAR_NAME
     data_type: string
-  - name: quarter_of_year
-    data_type: long
-  - name: quarter_of_year_name
+  - name: QUARTER_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: QUARTER_OF_YEAR_NAME
     data_type: string
-  - name: reporting_day
+  - name: REPORTING_DAY
     data_type: datetime
-  - name: reporting_day_lykey
+  - name: REPORTING_DAY_LYKEY
     data_type: datetime
-  - name: reporting_day_name
+  - name: REPORTING_DAY_NAME
     data_type: string
-  - name: reporting_day_of_half_year
-    data_type: long
-  - name: reporting_day_of_half_year_name
+  - name: REPORTING_DAY_OF_HALF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_DAY_OF_HALF_YEAR_NAME
     data_type: string
-  - name: reporting_day_of_month
-    data_type: long
-  - name: reporting_day_of_month_name
+  - name: REPORTING_DAY_OF_MONTH
+    data_type: "decimal(38,0)"
+  - name: REPORTING_DAY_OF_MONTH_NAME
     data_type: string
-  - name: reporting_day_of_quarter
-    data_type: long
-  - name: reporting_day_of_quarter_name
+  - name: REPORTING_DAY_OF_QUARTER
+    data_type: "decimal(38,0)"
+  - name: REPORTING_DAY_OF_QUARTER_NAME
     data_type: string
-  - name: reporting_day_of_week
-    data_type: long
-  - name: reporting_day_of_week_name
+  - name: REPORTING_DAY_OF_WEEK
+    data_type: "decimal(38,0)"
+  - name: REPORTING_DAY_OF_WEEK_NAME
     data_type: string
-  - name: reporting_day_of_year
-    data_type: long
-  - name: reporting_day_of_year_name
+  - name: REPORTING_DAY_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_DAY_OF_YEAR_NAME
     data_type: string
-  - name: reporting_half_year
+  - name: REPORTING_HALF_YEAR
     data_type: datetime
-  - name: reporting_half_year_lykey
+  - name: REPORTING_HALF_YEAR_LYKEY
     data_type: datetime
-  - name: reporting_half_year_name
+  - name: REPORTING_HALF_YEAR_NAME
     data_type: string
-  - name: reporting_half_year_of_year
-    data_type: long
-  - name: reporting_half_year_of_year_name
+  - name: REPORTING_HALF_YEAR_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_HALF_YEAR_OF_YEAR_NAME
     data_type: string
-  - name: reporting_month
+  - name: REPORTING_MONTH
     data_type: datetime
-  - name: reporting_month_lykey
+  - name: REPORTING_MONTH_LYKEY
     data_type: datetime
-  - name: reporting_month_name
+  - name: REPORTING_MONTH_NAME
     data_type: string
-  - name: reporting_month_name2
+  - name: REPORTING_MONTH_NAME2
     data_type: string
-  - name: reporting_month_of_half_year
-    data_type: long
-  - name: reporting_month_of_half_year_name
+  - name: REPORTING_MONTH_OF_HALF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_MONTH_OF_HALF_YEAR_NAME
     data_type: string
-  - name: reporting_month_of_quarter
-    data_type: long
-  - name: reporting_month_of_quarter_name
+  - name: REPORTING_MONTH_OF_QUARTER
+    data_type: "decimal(38,0)"
+  - name: REPORTING_MONTH_OF_QUARTER_NAME
     data_type: string
-  - name: reporting_month_of_year
-    data_type: long
-  - name: reporting_month_of_year_name
+  - name: REPORTING_MONTH_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_MONTH_OF_YEAR_NAME
     data_type: string
-  - name: reporting_quarter
+  - name: REPORTING_QUARTER
     data_type: datetime
-  - name: reporting_quarter_lykey
+  - name: REPORTING_QUARTER_LYKEY
     data_type: datetime
-  - name: reporting_quarter_name
+  - name: REPORTING_QUARTER_NAME
     data_type: string
-  - name: reporting_quarter_of_half_year
-    data_type: long
-  - name: reporting_quarter_of_half_year_name
+  - name: REPORTING_QUARTER_OF_HALF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_QUARTER_OF_HALF_YEAR_NAME
     data_type: string
-  - name: reporting_quarter_of_year
-    data_type: long
-  - name: reporting_quarter_of_year_name
+  - name: REPORTING_QUARTER_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_QUARTER_OF_YEAR_NAME
     data_type: string
-  - name: reporting_week
+  - name: REPORTING_WEEK
     data_type: datetime
-  - name: reporting_week_ctl
+  - name: REPORTING_WEEK_CTL
     data_type: datetime
-  - name: reporting_week_lykey
+  - name: REPORTING_WEEK_LYKEY
     data_type: datetime
-  - name: reporting_week_name
+  - name: REPORTING_WEEK_NAME
     data_type: string
-  - name: reporting_week_of_half_year
-    data_type: long
-  - name: reporting_week_of_half_year_name
+  - name: REPORTING_WEEK_OF_HALF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_WEEK_OF_HALF_YEAR_NAME
     data_type: string
-  - name: reporting_week_of_month
-    data_type: long
-  - name: reporting_week_of_month_name
+  - name: REPORTING_WEEK_OF_MONTH
+    data_type: "decimal(38,0)"
+  - name: REPORTING_WEEK_OF_MONTH_NAME
     data_type: string
-  - name: reporting_week_of_quarter
-    data_type: long
-  - name: reporting_week_of_quarter_name
+  - name: REPORTING_WEEK_OF_QUARTER
+    data_type: "decimal(38,0)"
+  - name: REPORTING_WEEK_OF_QUARTER_NAME
     data_type: string
-  - name: reporting_week_of_year
-    data_type: long
-  - name: reporting_week_of_year_name
+  - name: REPORTING_WEEK_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: REPORTING_WEEK_OF_YEAR_NAME
     data_type: string
-  - name: reporting_year
+  - name: REPORTING_YEAR
     data_type: datetime
-  - name: reporting_year_lykey
+  - name: REPORTING_YEAR_LYKEY
     data_type: datetime
-  - name: reporting_year_name
+  - name: REPORTING_YEAR_NAME
     data_type: string
-  - name: week
+  - name: WEEK
     data_type: datetime
-  - name: week_name
+  - name: WEEK_NAME
     data_type: string
-  - name: week_of_year
-    data_type: long
-  - name: week_of_year_name
+  - name: WEEK_OF_YEAR
+    data_type: "decimal(38,0)"
+  - name: WEEK_OF_YEAR_NAME
     data_type: string
-  - name: year
+  - name: YEAR
     data_type: datetime
-  - name: year_name
+  - name: YEAR_NAME
     data_type: string

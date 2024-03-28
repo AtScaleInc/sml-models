@@ -1,15 +1,15 @@
 unique_name: dim_geo_postalcode
 object_type: dataset
 label: dim_geo_postalcode
-connection_id: Connection - Internet Sales
-table: dim_geo_postalcode
+connection_id: Snowflake - QT
+table: DIM_GEO_POSTALCODE
 
 columns:
-  - name: country
+  - name: COUNTRY
     data_type: string
-  - name: countrypostalcode
+  - name: COUNTRYPOSTALCODE
     data_type: string
-  - name: geographykey
-    data_type: long
-  - name: postalcode
+  - name: GEOGRAPHYKEY
+    data_type: "decimal(38,0)"
+  - name: POSTALCODE
     data_type: string

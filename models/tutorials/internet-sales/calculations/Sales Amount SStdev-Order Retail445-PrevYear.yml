@@ -6,5 +6,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[salesamountsstdev1]) THEN \nNULL \nEL
   \ (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ 1, [Order Date Dimension].[Order Retail445].CurrentMember), [Measures].[salesamountsstdev1])\
   \ END"
-folder: Time Relative
 format: "$#,##0.00"

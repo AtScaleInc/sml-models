@@ -5,5 +5,4 @@ description: Order Sales Amount Prev Year (Retail445)
 expression: "CASE WHEN ISEMPTY([Measures].[salesamount1]) THEN \nNULL \nELSE (ParallelPeriod([Order\
   \ Date Dimension].[Order Retail445].[Order ReportIng_Year], 1, [Order Date Dimension].[Order\
   \ Retail445].CurrentMember), [Measures].[salesamount1]) END"
-folder: Time Relative
 format: "$#,##0.00"

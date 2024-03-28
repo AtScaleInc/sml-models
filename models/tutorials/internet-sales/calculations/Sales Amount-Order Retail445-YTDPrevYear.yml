@@ -6,5 +6,4 @@ expression: "Aggregate(\nPeriodsToDate([Order Date Dimension].[Order Retail445].
   \ ReportIng_Year], ParallelPeriod([Order Date Dimension].[Order Retail445].[Order\
   \ ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember)),\
   \ \n[Measures].[salesamount1])\n"
-folder: Time Relative
 format: "$#,##0.00"

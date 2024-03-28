@@ -1,9 +1,9 @@
 unique_name: dim_geo_country
 object_type: dataset
 label: dim_geo_country
-connection_id: Connection - Internet Sales
-table: dim_geo_country
+connection_id: Snowflake - QT
+table: DIM_GEO_COUNTRY
 
 columns:
-  - name: country
+  - name: COUNTRY
     data_type: string
