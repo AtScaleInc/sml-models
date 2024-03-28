@@ -797,8 +797,8 @@ metrics:
   - unique_name: Catalog and Web Sales Net
     folder: Total Sales Measures
 
-  - unique_name: Catalog and Web Sales per Warehouse SqFt
-    folder: Total Sales Measures
+#  - unique_name: Catalog and Web Sales per Warehouse SqFt
+#    folder: Total Sales Measures
 
   - unique_name: Catalog and Web Sales
     folder: Total Sales Measures
