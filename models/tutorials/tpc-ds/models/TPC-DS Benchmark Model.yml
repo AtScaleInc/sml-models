@@ -11,8 +11,8 @@ relationships:
       join_columns:
         - CUSTOMER_SK
     to:
-      dimension: Customer Dimension
-      level: Customer Dimension
+      dimension: Customer Dimension - TPC-DS
+      level: Customer Dimension - TPC-DS
 
   - unique_name: catalog_sales_Date_Dimension_Sold
     from:
@@ -134,8 +134,8 @@ relationships:
       join_columns:
         - CS_BILL_CUSTOMER_SK
     to:
-      dimension: Customer Dimension
-      level: Customer Dimension
+      dimension: Customer Dimension - TPC-DS
+      level: Customer Dimension - TPC-DS
 
   - unique_name: catalog_sales_Product_Dimension
     from:
@@ -143,8 +143,8 @@ relationships:
       join_columns:
         - CS_ITEM_SK
     to:
-      dimension: Product Dimension
-      level: Product Dimension
+      dimension: Product Dimension - TPC-DS
+      level: Product Dimension - TPC-DS
 
   - unique_name: store_promotion_Store_Dimension
     from:
@@ -217,8 +217,8 @@ relationships:
       join_columns:
         - SS_CUSTOMER_SK
     to:
-      dimension: Customer Dimension
-      level: Customer Dimension
+      dimension: Customer Dimension - TPC-DS
+      level: Customer Dimension - TPC-DS
 
   - unique_name: store_promotion_Product_Dimension
     from:
@@ -226,8 +226,8 @@ relationships:
       join_columns:
         - P_ITEM_SK
     to:
-      dimension: Product Dimension
-      level: Product Dimension
+      dimension: Product Dimension - TPC-DS
+      level: Product Dimension - TPC-DS
 
   - unique_name: store_promotion_Product_Dimension_1
     from:
@@ -235,8 +235,8 @@ relationships:
       join_columns:
         - SS_ITEM_SK
     to:
-      dimension: Product Dimension
-      level: Product Dimension
+      dimension: Product Dimension - TPC-DS
+      level: Product Dimension - TPC-DS
 
   - unique_name: web_sales_Date_Dimension_Sold
     from:
@@ -358,8 +358,8 @@ relationships:
       join_columns:
         - WS_BILL_CUSTOMER_SK
     to:
-      dimension: Customer Dimension
-      level: Customer Dimension
+      dimension: Customer Dimension - TPC-DS
+      level: Customer Dimension - TPC-DS
 
   - unique_name: web_sales_Product_Dimension
     from:
@@ -367,8 +367,8 @@ relationships:
       join_columns:
         - WS_ITEM_SK
     to:
-      dimension: Product Dimension
-      level: Product Dimension
+      dimension: Product Dimension - TPC-DS
+      level: Product Dimension - TPC-DS
 
   - unique_name: store_returns_Store_Dimension
     from:
@@ -442,8 +442,8 @@ relationships:
       join_columns:
         - SR_CUSTOMER_SK
     to:
-      dimension: Customer Dimension
-      level: Customer Dimension
+      dimension: Customer Dimension - TPC-DS
+      level: Customer Dimension - TPC-DS
 
   - unique_name: store_returns_Product_Dimension
     from:
@@ -451,8 +451,8 @@ relationships:
       join_columns:
         - SR_ITEM_SK
     to:
-      dimension: Product Dimension
-      level: Product Dimension
+      dimension: Product Dimension - TPC-DS
+      level: Product Dimension - TPC-DS
 
   - unique_name: store_sales_Store_Dimension
     from:
@@ -536,8 +536,8 @@ relationships:
       join_columns:
         - SS_CUSTOMER_SK
     to:
-      dimension: Customer Dimension
-      level: Customer Dimension
+      dimension: Customer Dimension - TPC-DS
+      level: Customer Dimension - TPC-DS
 
   - unique_name: store_sales_Product_Dimension
     from:
@@ -545,8 +545,8 @@ relationships:
       join_columns:
         - SS_ITEM_SK
     to:
-      dimension: Product Dimension
-      level: Product Dimension
+      dimension: Product Dimension - TPC-DS
+      level: Product Dimension - TPC-DS
 
   - unique_name: inventory_Date_Dimension_Inventory
     from:
@@ -583,8 +583,8 @@ relationships:
       join_columns:
         - INV_ITEM_SK
     to:
-      dimension: Product Dimension
-      level: Product Dimension
+      dimension: Product Dimension - TPC-DS
+      level: Product Dimension - TPC-DS
 
 dimensions:
   - Catalog_Preferred
@@ -797,8 +797,8 @@ metrics:
   - unique_name: Catalog and Web Sales Net
     folder: Total Sales Measures
 
-#  - unique_name: Catalog and Web Sales per Warehouse SqFt
-#    folder: Total Sales Measures
+  - unique_name: Catalog and Web Sales per Warehouse SqFt
+    folder: Total Sales Measures
 
   - unique_name: Catalog and Web Sales
     folder: Total Sales Measures
@@ -1003,10 +1003,10 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: I Category
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_product_manufacturer_id
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: Calendar Year-Week
         dimension: Date Dimension - TPC-DS
@@ -1028,10 +1028,10 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: I Category
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_product_manager_id
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: Calendar Year-Week
         dimension: Date Dimension - TPC-DS
@@ -1139,7 +1139,7 @@ aggregates:
     attributes:
 
       - name: d_product_brand_name
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_month_of_year
         dimension: Date Dimension - TPC-DS
@@ -1147,10 +1147,10 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: d_product_brand_id
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_product_manager_id
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: Calendar Year-Week
         dimension: Date Dimension - TPC-DS
@@ -1167,13 +1167,13 @@ aggregates:
     attributes:
 
       - name: d_product_brand_name
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_product_class_name
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: I Category
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: Calendar Quarter
         dimension: Date Dimension - TPC-DS
@@ -1181,7 +1181,7 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: d_product_manufacturer_id
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
     metrics:
       - Avg Quarterly Store Sales for 1998-1999
@@ -1200,7 +1200,7 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: d_product_item_id
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_customer_gmt_offset
         dimension: Customer Address
@@ -1213,10 +1213,10 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: I Category
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_i_color
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
     metrics:
       - Total  Ext Sales Price
@@ -1246,7 +1246,7 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: I Category
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_channel_email
         dimension: Promotions
@@ -1276,7 +1276,7 @@ aggregates:
           - store_sales_Date_Dimension_Sold_1
 
       - name: d_product_item_id
-        dimension: Product Dimension
+        dimension: Product Dimension - TPC-DS
 
       - name: d_cd_education_status
         dimension: Customer Demographics

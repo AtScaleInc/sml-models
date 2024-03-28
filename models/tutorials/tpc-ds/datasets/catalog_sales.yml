@@ -7,7 +7,7 @@ table: CATALOG_SALES
 columns:
   - name: CS ROW COUNTER
     data_type: long
-    sql: "1"
+    sql: 1
   - name: CS_BILL_ADDR_SK
     data_type: long
   - name: CS_BILL_CDEMO_SK

@@ -1,12 +1,12 @@
-unique_name: Product Dimension
+unique_name: Product Dimension - TPC-DS
 object_type: dimension
-label: Product Dimension
+label: Product Dimension - TPC-DS
 type: standard
 
 hierarchies:
 
-  - unique_name: Product Dimension
-    label: Product Dimension
+  - unique_name: Product Dimension - TPC-DS
+    label: Product Dimension - TPC-DS
     folder: Product Attributes
     filter_empty: "yes"
 
@@ -14,7 +14,7 @@ hierarchies:
 
       - unique_name: I Category
 
-      - unique_name: Product Dimension
+      - unique_name: Product Dimension - TPC-DS
 
         secondary_attributes:
 
@@ -126,7 +126,7 @@ level_attributes:
     key_columns:
       - I_CATEGORY
 
-  - unique_name: Product Dimension
+  - unique_name: Product Dimension - TPC-DS
     label: Product Item
     is_unique_key: true
     dataset: item
