@@ -1,0 +1,6 @@
+unique_name: Connection - TPC-DS
+label: Connection - TPC-DS
+object_type: connection
+as_connection: Connection - TPC-DS
+database: BENCHMARK
+schema: TPCDS_SF100GB

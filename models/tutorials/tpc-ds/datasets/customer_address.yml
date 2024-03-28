@@ -1,7 +1,7 @@
 unique_name: customer_address
 object_type: dataset
 label: customer_address
-connection_id: Snowflake
+connection_id: Connection - TPC-DS
 table: CUSTOMER_ADDRESS
 
 columns:

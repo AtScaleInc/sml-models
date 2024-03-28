@@ -1,7 +1,7 @@
 unique_name: TIME_DIM
 object_type: dataset
 label: TIME_DIM
-connection_id: Snowflake
+connection_id: Connection - TPC-DS
 table: TIME_DIM
 
 columns:
