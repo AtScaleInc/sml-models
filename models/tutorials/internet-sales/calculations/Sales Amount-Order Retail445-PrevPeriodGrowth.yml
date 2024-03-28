@@ -1,0 +1,9 @@
+unique_name: Sales Amount-Order Retail445-PrevPeriodGrowth
+object_type: metric_calc
+label: Sales Amount-Order Retail445-PrevPeriodGrowth
+description: Order Retail 445 Growth since previous period.
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order Retail445-Prev]) OR\
+  \ ISEMPTY([Measures].[salesamount1])\nTHEN NULL \nELSE \n([Order Date Dimension].[Order\
+  \ Retail445].CurrentMember, [Measures].[salesamount1]) - [Measures].[Sales Amount-Order\
+  \ Retail445-Prev]\nEND"
+format: "$#,##0.00"

@@ -1,0 +1,7 @@
+unique_name: Customer Count-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+object_type: metric_calc
+label: Customer Count-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
+expression: |
+  ([Measures].[Customer Count-Order Retail445-30PrdMvAvg] - [Measures].[Customer Count-Order Retail445-30PrdMvAvgPrevYear])  / [Measures].[Customer Count-Order Retail445-30PrdMvAvgPrevYear]
+format: Percent

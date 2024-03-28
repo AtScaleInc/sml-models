@@ -1,0 +1,8 @@
+unique_name: Max Tax Amount-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+object_type: metric_calc
+label: Max Tax Amount-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
+expression: "([Measures].[Max Tax Amount-Order Retail445-30PrdMvAvg] - [Measures].[Max\
+  \ Tax Amount-Order Retail445-30PrdMvAvgPrevYear])  / [Measures].[Max Tax Amount-Order\
+  \ Retail445-30PrdMvAvgPrevYear]"
+format: Percent

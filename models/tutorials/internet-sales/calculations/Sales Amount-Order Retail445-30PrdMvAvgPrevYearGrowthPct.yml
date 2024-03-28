@@ -1,0 +1,10 @@
+unique_name: Sales Amount-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+object_type: metric_calc
+label: Sales Amount-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order Retail445-30PrdMvAvgPrevYear])\
+  \ OR ISEMPTY([Measures].[Sales Amount-Order Retail445-30PrdMvAvg]) THEN \nNULL \n\
+  ELSE \n([Measures].[Sales Amount-Order Retail445-30PrdMvAvg] - [Measures].[Sales\
+  \ Amount-Order Retail445-30PrdMvAvgPrevYear])  / [Measures].[Sales Amount-Order\
+  \ Retail445-30PrdMvAvgPrevYear]\nEND"
+format: Percent

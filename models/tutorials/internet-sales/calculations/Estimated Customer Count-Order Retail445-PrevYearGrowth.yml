@@ -1,0 +1,9 @@
+unique_name: Estimated Customer Count-Order Retail445-PrevYearGrowth
+object_type: metric_calc
+label: Estimated Customer Count-Order Retail445-PrevYearGrowth
+description: Parallel Period Sales Growth  Since the Previous Year
+expression: "CASE WHEN ISEMPTY([Measures].[Estimated Customer Count-Order Retail445-PrevYear])\
+  \ or ISEMPTY(([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[customercountestimate1]))\
+  \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[customercountestimate1])\
+  \ - [Measures].[Estimated Customer Count-Order Retail445-PrevYear]\nEND\n"
+format: General Number

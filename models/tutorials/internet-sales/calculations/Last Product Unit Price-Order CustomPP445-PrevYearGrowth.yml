@@ -1,0 +1,11 @@
+unique_name: Last Product Unit Price-Order CustomPP445-PrevYearGrowth
+object_type: metric_calc
+label: Last Product Unit Price-Order CustomPP445-PrevYearGrowth
+description: "Growth over Previous Period Sales with a custom lookback key.  Use with\
+  \ [Order CustomPP445]"
+expression: "CASE WHEN ISEMPTY([Measures].[Last Product Unit Price-Order CustomPP445-PrevYear])\
+  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[lastproductunitprice]))\
+  \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
+  \ [Measures].[lastproductunitprice]) - [Measures].[Last Product Unit Price-Order\
+  \ CustomPP445-PrevYear]\nEND"
+format: "$#,##0.00"

@@ -1,0 +1,7 @@
+unique_name: Estimated Customer Count-Order Retail445-30PrdMvLowerBand
+object_type: metric_calc
+label: Estimated Customer Count-Order Retail445-30PrdMvLowerBand
+description: "Sales 30 Day Moving Average - 1 Stdev, use on [Order Retail445]"
+expression: "[Measures].[Estimated Customer Count-Order Retail445-30PrdMvAvg] - [Measures].[Estimated\
+  \ Customer Count-Order Retail445-30PrdMvStdev]"
+format: General Number

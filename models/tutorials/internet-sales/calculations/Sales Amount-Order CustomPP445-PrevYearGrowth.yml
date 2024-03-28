@@ -1,0 +1,11 @@
+unique_name: Sales Amount-Order CustomPP445-PrevYearGrowth
+object_type: metric_calc
+label: Sales Amount-Order CustomPP445-PrevYearGrowth
+description: "Growth over Previous Period Sales with a custom lookback key.  Use with\
+  \ [Order CustomPP445]"
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order CustomPP445-PrevYear])\
+  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[salesamount1]))\
+  \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
+  \ [Measures].[salesamount1]) - [Measures].[Sales Amount-Order CustomPP445-PrevYear]\n\
+  END"
+format: "$#,##0.00"

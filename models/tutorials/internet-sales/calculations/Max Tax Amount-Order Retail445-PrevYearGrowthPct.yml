@@ -1,0 +1,8 @@
+unique_name: Max Tax Amount-Order Retail445-PrevYearGrowthPct
+object_type: metric_calc
+label: Max Tax Amount-Order Retail445-PrevYearGrowthPct
+description: Order Retail445 Sales Amount Year-over-year growth as percent
+expression: "CASE WHEN ISEMPTY([Measures].[Max Tax Amount-Order Retail445-PrevYear])\
+  \ THEN NULL \nELSE [Measures].[Max Tax Amount-Order Retail445-PrevYearGrowth] /\
+  \ [Measures].[Max Tax Amount-Order Retail445-PrevYear] \nEND"
+format: Percent

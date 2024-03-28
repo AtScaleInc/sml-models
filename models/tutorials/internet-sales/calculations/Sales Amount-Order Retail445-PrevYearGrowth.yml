@@ -1,0 +1,9 @@
+unique_name: Sales Amount-Order Retail445-PrevYearGrowth
+object_type: metric_calc
+label: Sales Amount-Order Retail445-PrevYearGrowth
+description: Parallel Period Sales Growth  Since the Previous Year
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order Retail445-PrevYear])\
+  \ or ISEMPTY(([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[salesamount1]))\
+  \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[salesamount1])\
+  \ - [Measures].[Sales Amount-Order Retail445-PrevYear]\nEND\n"
+format: "$#,##0.00"

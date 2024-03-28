@@ -1,0 +1,7 @@
+unique_name: Last Product Unit Price-Order Retail445-30PrdMvUpperBand
+object_type: metric_calc
+label: Last Product Unit Price-Order Retail445-30PrdMvUpperBand
+description: "Sales 30 Day Moving Average + 1 Standard Deviation use on [Order Retail445]"
+expression: "[Measures].[Last Product Unit Price-Order Retail445-30PrdMvAvg] + [Measures].[Last\
+  \ Product Unit Price-Order Retail445-30PrdMvStdev]"
+format: "$#,##0.00"

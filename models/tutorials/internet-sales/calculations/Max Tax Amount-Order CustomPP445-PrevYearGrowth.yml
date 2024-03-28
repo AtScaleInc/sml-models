@@ -1,0 +1,11 @@
+unique_name: Max Tax Amount-Order CustomPP445-PrevYearGrowth
+object_type: metric_calc
+label: Max Tax Amount-Order CustomPP445-PrevYearGrowth
+description: "Growth over Previous Period Sales with a custom lookback key.  Use with\
+  \ [Order CustomPP445]"
+expression: "CASE WHEN ISEMPTY([Measures].[Max Tax Amount-Order CustomPP445-PrevYear])\
+  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[maxtaxamount1]))\
+  \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
+  \ [Measures].[maxtaxamount1]) - [Measures].[Max Tax Amount-Order CustomPP445-PrevYear]\n\
+  END"
+format: "$#,##0.00"

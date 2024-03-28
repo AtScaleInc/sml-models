@@ -1,0 +1,7 @@
+unique_name: Sales Amount SStdev-Order Retail445-30PrdMvLowerBand
+object_type: metric_calc
+label: Sales Amount SStdev-Order Retail445-30PrdMvLowerBand
+description: "Sales 30 Day Moving Average - 1 Stdev, use on [Order Retail445]"
+expression: "[Measures].[Sales Amount SStdev-Order Retail445-30PrdMvAvg] - [Measures].[Sales\
+  \ Amount SStdev-Order Retail445-30PrdMvStdev]"
+format: "$#,##0.00"

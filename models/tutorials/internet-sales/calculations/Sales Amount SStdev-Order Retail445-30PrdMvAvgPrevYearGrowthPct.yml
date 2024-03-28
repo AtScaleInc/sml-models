@@ -1,0 +1,8 @@
+unique_name: Sales Amount SStdev-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+object_type: metric_calc
+label: Sales Amount SStdev-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
+expression: "([Measures].[Sales Amount SStdev-Order Retail445-30PrdMvAvg] - [Measures].[Sales\
+  \ Amount SStdev-Order Retail445-30PrdMvAvgPrevYear])  / [Measures].[Sales Amount\
+  \ SStdev-Order Retail445-30PrdMvAvgPrevYear]"
+format: Percent

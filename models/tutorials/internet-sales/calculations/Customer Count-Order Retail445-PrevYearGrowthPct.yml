@@ -1,0 +1,8 @@
+unique_name: Customer Count-Order Retail445-PrevYearGrowthPct
+object_type: metric_calc
+label: Customer Count-Order Retail445-PrevYearGrowthPct
+description: Order Retail445 Sales Amount Year-over-year growth as percent
+expression: "CASE WHEN ISEMPTY([Measures].[Customer Count-Order Retail445-PrevYear])\
+  \ THEN NULL \nELSE [Measures].[Customer Count-Order Retail445-PrevYearGrowth] /\
+  \ [Measures].[Customer Count-Order Retail445-PrevYear] \nEND"
+format: Percent

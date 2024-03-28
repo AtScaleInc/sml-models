@@ -1,0 +1,7 @@
+unique_name: SoldProductNDC-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+object_type: metric_calc
+label: SoldProductNDC-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
+expression: "([Measures].[SoldProductNDC-Order Retail445-30PrdMvAvg] - [Measures].[SoldProductNDC-Order\
+  \ Retail445-30PrdMvAvgPrevYear])  / [Measures].[SoldProductNDC-Order Retail445-30PrdMvAvgPrevYear]"
+format: Percent

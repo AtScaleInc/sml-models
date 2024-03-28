@@ -1,0 +1,9 @@
+unique_name: Sales Amount SStdev-Order CustomPP445-PrevYearGrowthPct
+object_type: metric_calc
+label: Sales Amount SStdev-Order CustomPP445-PrevYearGrowthPct
+description: "Percent growth over Previous Period Sales with a custom lookback key.\
+  \  Use with [Order CustomPP445]"
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount SStdev-Order CustomPP445-PrevYear])\
+  \ THEN NULL \nELSE [Measures].[Sales Amount SStdev-Order CustomPP445-PrevYearGrowth]\
+  \ / [Measures].[Sales Amount SStdev-Order CustomPP445-PrevYear] \nEND"
+format: Percent

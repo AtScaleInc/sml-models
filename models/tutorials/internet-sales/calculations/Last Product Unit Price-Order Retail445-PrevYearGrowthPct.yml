@@ -1,0 +1,8 @@
+unique_name: Last Product Unit Price-Order Retail445-PrevYearGrowthPct
+object_type: metric_calc
+label: Last Product Unit Price-Order Retail445-PrevYearGrowthPct
+description: Order Retail445 Sales Amount Year-over-year growth as percent
+expression: "CASE WHEN ISEMPTY([Measures].[Last Product Unit Price-Order Retail445-PrevYear])\
+  \ THEN NULL \nELSE [Measures].[Last Product Unit Price-Order Retail445-PrevYearGrowth]\
+  \ / [Measures].[Last Product Unit Price-Order Retail445-PrevYear] \nEND"
+format: Percent

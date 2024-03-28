@@ -1,0 +1,6 @@
+unique_name: Snowflake - QT
+label: Snowflake - QT
+object_type: connection
+as_connection: Snowflake - QT
+database: DEMO
+schema: AS_ADVENTURE
