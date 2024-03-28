@@ -10,7 +10,7 @@ columns:
     sql: (("WS_EXT_LIST_PRICE"-"WS_EXT_WHOLESALE_COST"-"WS_EXT_DISCOUNT_AMT")+"WS_EXT_SALES_PRICE")/2
   - name: WS ROW COUNTER
     data_type: int
-    sql: "1"
+    sql: 1
   - name: WS_BILL_ADDR_SK
     data_type: long
   - name: WS_BILL_CDEMO_SK
