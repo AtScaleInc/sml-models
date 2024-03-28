@@ -1,8 +1,0 @@
-unique_name: m_free_shipping_discount_amount_sum
-object_type: metric
-label: Free Shipping Discount Amount
-calculation_method: sum
-dataset: normalized_target_fact_gross_margin
-column: free_shipping_discount_amount
-format: '$#,##0.00'
-unrelated_dimensions_handling: repeat

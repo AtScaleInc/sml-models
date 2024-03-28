@@ -1,6 +1,0 @@
-unique_name: Connection - CRISP
-label: Connection - CRISP
-object_type: connection
-as_connection: Databricks
-database: crisp
-schema: schema_81419_5226

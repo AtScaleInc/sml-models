@@ -1,8 +1,0 @@
-unique_name: m_employee_discount_amount_sum
-object_type: metric
-label: Employee Discount Amount
-calculation_method: sum
-dataset: normalized_target_fact_gross_margin
-column: employee_discount_amount
-format: '$#,##0.00'
-unrelated_dimensions_handling: repeat

@@ -1,8 +1,0 @@
-unique_name: timeinseconds
-object_type: metric
-label: Time in Seconds
-calculation_method: sum
-column: ABSOLUTE_TIME_IN_S
-format: '#,##0'
-dataset: SNOWPLOW_WEB_SESSIONS
-unrelated_dimensions_handling: repeat

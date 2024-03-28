@@ -1,7 +1,0 @@
-unique_name: Sales Amount YTD PY
-object_type: metric_calc
-label: Sales Amount YTD PY
-expression: "Avg(\nPeriodsToDate([CRISP Date Dimension].[CRISP Date Hierarchy].[Year], ParallelPeriod([CRISP Date\
-  \ Dimension].[CRISP Date Hierarchy].[Year], 1, [CRISP Date Dimension].[CRISP Date Hierarchy].CurrentMember)),\
-  \ \n[Measures].[m_sales_amount_sum])\n"
-format: '$#,##0.00'

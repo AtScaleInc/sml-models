@@ -1,8 +1,0 @@
-unique_name: totalevents
-object_type: metric
-label: Total Events
-calculation_method: sum
-column: TOTAL_EVENTS
-format: '#,##0'
-dataset: SNOWPLOW_WEB_SESSIONS
-unrelated_dimensions_handling: repeat

@@ -1,6 +1,0 @@
-unique_name: con_SNOWPLOW_DIGITAL_ANALYTICS_SHARED_DATA
-object_type: connection
-label: con_SNOWPLOW_DIGITAL_ANALYTICS_SHARED_DATA
-as_connection: Snowflake - DA37161
-database: SNOWPLOW_DIGITAL_ANALYTICS
-schema: SHARED_DATA

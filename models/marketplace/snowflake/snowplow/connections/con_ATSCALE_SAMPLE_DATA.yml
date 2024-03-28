@@ -1,6 +1,0 @@
-unique_name: con_ATSCALE_SAMPLE_DATA
-object_type: connection
-label: con_ATSCALE_SAMPLE_DATA
-as_connection: Snowflake - DA37161
-database: ATSCALE_SAMPLE_DATA
-schema: as_adventure

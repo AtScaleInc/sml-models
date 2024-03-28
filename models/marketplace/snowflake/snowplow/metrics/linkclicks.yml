@@ -1,8 +1,0 @@
-unique_name: linkclicks
-object_type: metric
-label: Link Clicks
-calculation_method: sum
-column: LINK_CLICKS
-dataset: SNOWPLOW_WEB_SESSIONS
-format: '#,##0'
-unrelated_dimensions_handling: repeat

@@ -1,8 +1,0 @@
-unique_name: purchase
-object_type: metric
-label: Purchase
-calculation_method: sum
-column: PURCHASE
-format: '#,##0'
-dataset: SNOWPLOW_WEB_SESSIONS
-unrelated_dimensions_handling: repeat

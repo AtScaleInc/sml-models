@@ -1,7 +1,0 @@
-unique_name: pageview
-object_type: metric
-label: Page View
-calculation_method: sum
-column: PAGE_VIEW
-format: '#,##0'
-dataset: SNOWPLOW_WEB_SESSIONS

@@ -1,7 +1,0 @@
-unique_name: Sales Amount YTD
-object_type: metric_calc
-label: Sales Amount YTD
-expression: "CASE WHEN ISEMPTY([Measures].[m_sales_amount_sum]) THEN NULL \nELSE \n\
-  Avg(PeriodsToDate([CRISP Date Dimension].[CRISP Date Hierarchy].[Year], [CRISP Date Dimension].[CRISP Date\
-  \ Hierarchy].CurrentMember), [Measures].[m_sales_amount_sum]) \nEND "
-format: '$#,##0.00'

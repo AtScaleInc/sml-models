@@ -1,6 +1,0 @@
-unique_name: Sales Amount T_12
-object_type: metric_calc
-label: Sales Amount Last 4
-expression: "Sum([CRISP Date Dimension].[CRISP Date Hierarchy].CurrentMember.Lag(4):[CRISP Date Dimension].[CRISP Date\
-  \ Hierarchy].CurrentMember.Lag(1), [Measures].[m_sales_amount_sum])"
-format: '$#,##0.00'

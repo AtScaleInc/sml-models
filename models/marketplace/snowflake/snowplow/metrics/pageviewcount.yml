@@ -1,8 +1,0 @@
-unique_name: pageviewcount
-object_type: metric
-label: Page View Count
-calculation_method: sum
-dataset: SNOWPLOW_WEB_SESSIONS
-format: '#,##0'
-column: PAGE_VIEWS
-unrelated_dimensions_handling: repeat

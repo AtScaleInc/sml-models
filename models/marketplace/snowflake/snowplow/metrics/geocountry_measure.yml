@@ -1,8 +1,0 @@
-unique_name: geocountry_measure
-object_type: metric
-label: geocountry_measure
-calculation_method: count distinct
-column: GEO_COUNTRY
-dataset: SNOWPLOW_WEB_SESSIONS
-format: '#,##0'
-unrelated_dimensions_handling: repeat

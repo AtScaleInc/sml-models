@@ -1,8 +1,0 @@
-unique_name: pageping
-object_type: metric
-label: Page Ping
-calculation_method: sum
-column: PAGE_PING
-dataset: SNOWPLOW_WEB_SESSIONS
-format: '#,##0'
-unrelated_dimensions_handling: repeat
