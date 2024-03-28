@@ -1,6 +1,6 @@
 unique_name: Connection - WW
 label: Connection - WW
 object_type: connection
-as_connection: Snowflake
+as_connection: Snowflake - DA37161
 database: atscale-data-warehouse
 schema: worldwideimporters

@@ -1,6 +1,6 @@
 unique_name: Connection - Internet Sales
 label: Connection - Internet Sales
 object_type: connection
-as_connection: Snowflake
-database: DEMO
-schema: AS_ADVENTURE
+as_connection: Snowflake - DA37161
+database: ATSCALE_SAMPLE_DATA
+schema: atscale
