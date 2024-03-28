@@ -1,7 +1,7 @@
 unique_name: dimorder
 object_type: dataset
 label: dimorder
-connection_id: Snowflake - QT
+connection_id: Connection - Internet Sales
 table: DIMORDER
 
 columns:

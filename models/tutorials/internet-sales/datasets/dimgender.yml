@@ -1,7 +1,7 @@
 unique_name: dimgender
 object_type: dataset
 label: dimgender
-connection_id: Snowflake - QT
+connection_id: Connection - Internet Sales
 table: DIMGENDER
 
 columns:

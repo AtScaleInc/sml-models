@@ -1,7 +1,7 @@
 unique_name: DateCustom
 object_type: dataset
 label: DateCustom
-connection_id: Snowflake - QT
+connection_id: Connection - Internet Sales
 table: DATECUSTOM
 
 columns:

@@ -1,7 +1,7 @@
 unique_name: dim_geo_city
 object_type: dataset
 label: dim_geo_city
-connection_id: Snowflake - QT
+connection_id: Connection - Internet Sales
 table: DIM_GEO_CITY
 
 columns:

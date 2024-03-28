@@ -1,7 +1,7 @@
 unique_name: dimcustomer
 object_type: dataset
 label: dimcustomer
-connection_id: Snowflake - QT
+connection_id: Connection - Internet Sales
 table: DIMCUSTOMER
 
 columns:
