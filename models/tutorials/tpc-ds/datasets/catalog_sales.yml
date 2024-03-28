@@ -1,23 +1,13 @@
 unique_name: catalog_sales
 object_type: dataset
 label: catalog_sales
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: CATALOG_SALES
 
 columns:
-  - name: Catalog Sales Net Paid
-    data_type: "decimal(38,2)"
-    sql: "CAST(\"CS_NET_PAID\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
-  - name: Catalog Sales Price Tier
-    data_type: string
-    sql: CASE WHEN "CS_SALES_PRICE" BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More
-      than 500' END
-  - name: Catalog Sales
-    data_type: "decimal(38,2)"
-    sql: "CAST(\"CS_SALES_PRICE\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
   - name: CS ROW COUNTER
     data_type: long
-    sql: "1"
+    sql: 1
   - name: CS_BILL_ADDR_SK
     data_type: long
   - name: CS_BILL_CDEMO_SK
@@ -86,6 +76,16 @@ columns:
     data_type: long
   - name: CS_WHOLESALE_COST
     data_type: "decimal(7,2)"
+  - name: Catalog Sales Net Paid
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"CS_NET_PAID\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
+  - name: Catalog Sales Price Tier
+    data_type: string
+    sql: CASE WHEN "CS_SALES_PRICE" BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More
+      than 500' END
+  - name: Catalog Sales
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"CS_SALES_PRICE\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
   - name: Purchased Amount in Catalog
     data_type: "decimal(16,8)"
     sql: (("CS_EXT_LIST_PRICE"-"CS_EXT_WHOLESALE_COST"-"CS_EXT_DISCOUNT_AMT")+"CS_EXT_SALES_PRICE")/2

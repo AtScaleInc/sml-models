@@ -1,11 +1,11 @@
-unique_name: TPC-DS Store Dimension
+unique_name: Store Dimension
 object_type: dimension
 label: Store Dimension
 type: standard
 
 hierarchies:
 
-  - unique_name: Store Dimension Hierarchy
+  - unique_name: Store Dimension
     label: Store Dimension
     folder: Store Attributes
     filter_empty: "yes"

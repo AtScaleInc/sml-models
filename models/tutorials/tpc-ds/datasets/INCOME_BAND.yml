@@ -1,7 +1,7 @@
 unique_name: INCOME_BAND
 object_type: dataset
 label: INCOME_BAND
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: INCOME_BAND
 
 columns:

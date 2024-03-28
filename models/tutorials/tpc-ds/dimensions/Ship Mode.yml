@@ -1,11 +1,11 @@
-unique_name: TPC-DS Ship Mode
+unique_name: Ship Mode
 object_type: dimension
 label: Ship Mode
 type: standard
 
 hierarchies:
 
-  - unique_name: Ship Mode Hierarchy
+  - unique_name: Ship Mode
     label: Ship Mode
     folder: Fulfillment
     filter_empty: "yes"
@@ -37,6 +37,13 @@ level_attributes:
     key_columns:
       - SM_TYPE
 
+  - unique_name: Ship Mode_1
+    label: Ship Mode
+    dataset: ship_mode
+    name_column: SM_CODE
+    key_columns:
+      - SM_CODE
+
   - unique_name: Ship Mode
     label: Ship Mode ID
     is_hidden: true
@@ -44,10 +51,3 @@ level_attributes:
     name_column: SM_SHIP_MODE_SK
     key_columns:
       - SM_SHIP_MODE_SK
-
-  - unique_name: Ship Mode_1
-    label: Ship Mode
-    dataset: ship_mode
-    name_column: SM_CODE
-    key_columns:
-      - SM_CODE

@@ -1,22 +1,16 @@
 unique_name: web_sales
 object_type: dataset
 label: web_sales
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: WEB_SALES
 
 columns:
   - name: Purchased Amount on Web
     data_type: "decimal(16,8)"
     sql: (("WS_EXT_LIST_PRICE"-"WS_EXT_WHOLESALE_COST"-"WS_EXT_DISCOUNT_AMT")+"WS_EXT_SALES_PRICE")/2
-  - name: Web Sales Net Paid
-    data_type: "decimal(38,2)"
-    sql: "CAST(\"WS_NET_PAID\"*\"WS_QUANTITY\" AS DECIMAL(38,2))"
-  - name: Web Sales
-    data_type: "decimal(38,2)"
-    sql: "CAST(\"WS_EXT_SALES_PRICE\"*\"WS_QUANTITY\" AS DECIMAL(38,2))"
   - name: WS ROW COUNTER
     data_type: int
-    sql: "1"
+    sql: 1
   - name: WS_BILL_ADDR_SK
     data_type: long
   - name: WS_BILL_CDEMO_SK
@@ -85,3 +79,9 @@ columns:
     data_type: long
   - name: WS_WHOLESALE_COST
     data_type: "decimal(7,2)"
+  - name: Web Sales Net Paid
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"WS_NET_PAID\"*\"WS_QUANTITY\" AS DECIMAL(38,2))"
+  - name: Web Sales
+    data_type: "decimal(38,2)"
+    sql: "CAST(\"WS_EXT_SALES_PRICE\"*\"WS_QUANTITY\" AS DECIMAL(38,2))"

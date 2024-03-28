@@ -1,7 +1,7 @@
 unique_name: customer_demographics
 object_type: dataset
 label: customer_demographics
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: CUSTOMER_DEMOGRAPHICS
 
 columns:

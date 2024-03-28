@@ -1,11 +1,11 @@
-unique_name: TPC-DS Customer Address
+unique_name: Customer Address
 object_type: dimension
 label: Customer Address
 type: standard
 
 hierarchies:
 
-  - unique_name: Customer Address Hierarchy
+  - unique_name: Customer Address
     label: Customer Address
     folder: Customer Information
     filter_empty: "yes"

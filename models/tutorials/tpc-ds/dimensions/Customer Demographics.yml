@@ -1,11 +1,11 @@
-unique_name: TPC-DS Customer Demographics
+unique_name: Customer Demographics
 object_type: dimension
 label: Customer Demographics
 type: standard
 
 hierarchies:
 
-  - unique_name: Customer Demographics Hierarchy
+  - unique_name: Customer Demographics
     label: Customer Demographics
     folder: Customer Information
     filter_empty: "yes"

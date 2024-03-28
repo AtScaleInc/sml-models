@@ -1,11 +1,11 @@
-unique_name: TPC-DS Customer Dimension
+unique_name: Customer Dimension
 object_type: dimension
 label: Customer Dimension
 type: standard
 
 hierarchies:
 
-  - unique_name: Customer Dimension Hierarchy
+  - unique_name: Customer Dimension
     label: Customer Dimension
     folder: Customer Information
     filter_empty: "yes"
@@ -93,12 +93,12 @@ relationships:
 
   - unique_name: CustomerDimension_CustomerAddress
     from:
-      hierarchy: Customer Dimension Hierarchy
+      hierarchy: Customer Dimension
       level: Customer Dimension
       dataset: customer
       join_columns:
         - C_CURRENT_ADDR_SK
     to:
-      dimension: TPC-DS Customer Address
+      dimension: Customer Address
       level: Customer Address
     type: embedded

@@ -1,7 +1,7 @@
 unique_name: store_returns
 object_type: dataset
 label: store_returns
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 sql: "SELECT ss.*, sr.*,\n  case when (sr_returned_date_sk - ss_sold_date_sk <= 30)\
   \ then '<= 30 days' \n  when (sr_returned_date_sk - ss_sold_date_sk > 30) and \n\
   \                 (sr_returned_date_sk - ss_sold_date_sk <= 60) then '31-60 days'\
@@ -36,6 +36,8 @@ columns:
     data_type: long
   - name: SR_REFUNDED_CASH
     data_type: "decimal(7,2)"
+  - name: SR_RETURNED_DATE_SK
+    data_type: long
   - name: SR_RETURN_AMT
     data_type: "decimal(7,2)"
   - name: SR_RETURN_AMT_INC_TAX
@@ -47,8 +49,6 @@ columns:
   - name: SR_RETURN_TAX
     data_type: "decimal(7,2)"
   - name: SR_RETURN_TIME_SK
-    data_type: long
-  - name: SR_RETURNED_DATE_SK
     data_type: long
   - name: SR_REVERSED_CHARGE
     data_type: "decimal(7,2)"

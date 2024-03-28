@@ -1,7 +1,7 @@
 unique_name: customer
 object_type: dataset
 label: customer
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: CUSTOMER
 
 columns:

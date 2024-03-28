@@ -1,11 +1,11 @@
-unique_name: TPC-DS Product Dimension
+unique_name: Product Dimension
 object_type: dimension
 label: Product Dimension
 type: standard
 
 hierarchies:
 
-  - unique_name: Product Dimension Hierarchy
+  - unique_name: Product Dimension
     label: Product Dimension
     folder: Product Attributes
     filter_empty: "yes"

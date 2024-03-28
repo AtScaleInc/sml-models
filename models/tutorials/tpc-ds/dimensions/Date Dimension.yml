@@ -1,21 +1,21 @@
-unique_name: TPC-DS Date Dimension
+unique_name: Date Dimension
 object_type: dimension
 label: Date Dimension
 type: time
 
 hierarchies:
 
-  - unique_name: TPC-DS Date Dimension Hierarchy
+  - unique_name: Date Dimension
     label: Date Month Hierarchy
     folder: Date Attributes
     filter_empty: "yes"
 
     levels:
 
-      - unique_name: TPC-DS Calendar Year
+      - unique_name: Calendar Year
         time_unit: year
 
-      - unique_name: TPC-DS Calendar Quarter
+      - unique_name: Calendar Quarter
         time_unit: quarter
 
         secondary_attributes:
@@ -33,7 +33,7 @@ hierarchies:
               - Range
               - Siblings
 
-      - unique_name: TPC-DS Calendar Month
+      - unique_name: Calendar Month
         time_unit: month
 
         secondary_attributes:
@@ -64,7 +64,7 @@ hierarchies:
               - Range
               - Siblings
 
-      - unique_name: TPC-DS Calendar Date
+      - unique_name: Time Dimension
         time_unit: day
 
         secondary_attributes:
@@ -134,20 +134,20 @@ hierarchies:
               - Range
               - Siblings
 
-  - unique_name: TPC-DS Date Week Hierarchy
+  - unique_name: Date Week Hierarchy
     label: Date Week Hierarchy
     folder: Date Attributes
     filter_empty: "yes"
 
     levels:
 
-      - unique_name: TPC-DS Calendar Year-Week
+      - unique_name: Calendar Year-Week
         time_unit: year
 
-      - unique_name: TPC-DS Calendar Month-Week
+      - unique_name: Calendar Month-Week
         time_unit: month
 
-      - unique_name: TPC-DS Calendar Week
+      - unique_name: Calendar Week
         time_unit: week
 
         secondary_attributes:
@@ -165,7 +165,7 @@ hierarchies:
               - Range
               - Siblings
 
-      - unique_name: TPC-DS Calendar Date
+      - unique_name: Date Week Hierarchy
         time_unit: day
 
         secondary_attributes:
@@ -185,7 +185,7 @@ hierarchies:
 
 level_attributes:
 
-  - unique_name: TPC-DS Calendar Month-Week
+  - unique_name: Calendar Month-Week
     label: Calendar Month
     dataset: date_dim
     name_column: YEAR_MONTH
@@ -200,7 +200,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Calendar Month
+  - unique_name: Calendar Month
     label: Calendar Month
     dataset: date_dim
     name_column: YEAR_MONTH
@@ -215,7 +215,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Calendar Quarter
+  - unique_name: Calendar Quarter
     label: Calendar Quarter
     dataset: date_dim
     name_column: D_QUARTER_NAME
@@ -231,7 +231,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Calendar Week
+  - unique_name: Calendar Week
     label: Calendar Week
     dataset: date_dim
     name_column: D_WEEK_SEQ
@@ -246,7 +246,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Calendar Year-Week
+  - unique_name: Calendar Year-Week
     label: Calendar Year
     dataset: date_dim
     name_column: D_YEAR
@@ -261,7 +261,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Calendar Year
+  - unique_name: Calendar Year
     label: Calendar Year
     dataset: date_dim
     name_column: D_YEAR
@@ -276,7 +276,23 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: TPC-DS Calendar Date
+  - unique_name: Date Week Hierarchy
+    label: Date
+    is_unique_key: true
+    dataset: date_dim
+    name_column: D_DATE
+    key_columns:
+      - D_DATE_SK
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
+  - unique_name: Time Dimension
     label: Date
     is_unique_key: true
     dataset: date_dim

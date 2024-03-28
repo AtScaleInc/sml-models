@@ -1,7 +1,7 @@
 unique_name: date_dim
 object_type: dataset
 label: date_dim
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: DATE_DIM
 
 columns:
@@ -55,10 +55,10 @@ columns:
     data_type: int
   - name: D_SAME_DAY_LY
     data_type: int
-  - name: D_WEEK_SEQ
-    data_type: int
   - name: D_WEEKEND
     data_type: string
+  - name: D_WEEK_SEQ
+    data_type: int
   - name: D_YEAR
     data_type: int
   - name: YEAR_MONTH

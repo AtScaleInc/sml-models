@@ -1,7 +1,7 @@
 unique_name: inventory
 object_type: dataset
 label: inventory
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: INVENTORY
 
 columns:

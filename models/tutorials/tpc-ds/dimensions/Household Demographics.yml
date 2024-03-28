@@ -1,11 +1,11 @@
-unique_name: TPC-DS Household Demographics
+unique_name: Household Demographics
 object_type: dimension
 label: Household Demographics
 type: standard
 
 hierarchies:
 
-  - unique_name: Household Demographics Hierarchy
+  - unique_name: Household Demographics
     label: Household Demographics
     folder: Household Demographics
     filter_empty: "yes"
@@ -57,12 +57,12 @@ relationships:
 
   - unique_name: HouseholdDemographics_IncomeBand
     from:
-      hierarchy: Household Demographics Hierarchy
+      hierarchy: Household Demographics
       level: Household Demographics
       dataset: household_demographics
       join_columns:
         - HD_INCOME_BAND_SK
     to:
-      dimension: TPC-DS Income Band
+      dimension: Income Band
       level: Income Band
     type: embedded

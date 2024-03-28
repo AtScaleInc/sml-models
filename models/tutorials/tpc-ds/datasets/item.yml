@@ -1,7 +1,7 @@
 unique_name: item
 object_type: dataset
 label: item
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: ITEM
 
 columns:

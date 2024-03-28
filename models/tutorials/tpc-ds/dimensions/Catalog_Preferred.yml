@@ -1,4 +1,4 @@
-unique_name: TPC-DS Catalog_Preferred
+unique_name: Catalog_Preferred
 object_type: dimension
 label: Catalog_Preferred
 is_degenerate: true

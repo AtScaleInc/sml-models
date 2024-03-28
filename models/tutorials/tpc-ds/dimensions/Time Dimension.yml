@@ -1,11 +1,11 @@
-unique_name: TPC-DS Time Dimension
+unique_name: Time Dimension
 object_type: dimension
 label: Time Dimension
 type: time
 
 hierarchies:
 
-  - unique_name: Time Dimension Hierarchy
+  - unique_name: Time Dimension
     label: Time Dimension
     folder: Time
     filter_empty: "yes"

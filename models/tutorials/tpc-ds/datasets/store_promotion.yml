@@ -1,11 +1,14 @@
 unique_name: store_promotion
 object_type: dataset
 label: store_promotion
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 sql: "SELECT p.*, ss.* \nFROM benchmark.TPCDS_SF100GB.promotion p\nINNER JOIN benchmark.TPCDS_SF100GB.store_sales\
   \ ss\nON ss.ss_promo_sk = p.p_promo_sk"
 
 columns:
+  - name: PROMO_ID_NAME
+    data_type: string
+    sql: "concat (p_promo_id, ' - ',p_promo_name)"
   - name: P_CHANNEL_CATALOG
     data_type: string
   - name: P_CHANNEL_DEMO
@@ -44,9 +47,6 @@ columns:
     data_type: long
   - name: P_START_DATE_SK
     data_type: long
-  - name: PROMO_ID_NAME
-    data_type: string
-    sql: "concat (p_promo_id, ' - ',p_promo_name)"
   - name: SS_ADDR_SK
     data_type: long
   - name: SS_CDEMO_SK

@@ -1,11 +1,11 @@
-unique_name: TPC-DS Promotions
+unique_name: Promotions
 object_type: dimension
 label: Promotions
 type: standard
 
 hierarchies:
 
-  - unique_name: Promotions Hierarchy
+  - unique_name: Promotions
     label: Promotions
     folder: Promotion Attributes
     filter_empty: "yes"

@@ -1,7 +1,7 @@
 unique_name: store_sales
 object_type: dataset
 label: store_sales
-connection_id: Connection - TPC-DS
+connection_id: Snowflake
 table: STORE_SALES
 
 columns:
@@ -19,15 +19,9 @@ columns:
   - name: Purchased Amount in Store
     data_type: "decimal(16,8)"
     sql: (("SS_EXT_LIST_PRICE"-"SS_EXT_WHOLESALE_COST"-"SS_EXT_DISCOUNT_AMT")+"SS_EXT_SALES_PRICE")/2
-  - name: Sales Price Tier
-    data_type: string
-    sql: "CASE WHEN \"SS_SALES_PRICE\" > 200 THEN '200 and More' \nWHEN \"SS_SALES_PRICE\"\
-      BETWEEN 150 AND 200 THEN '150-200' \nWHEN \"SS_SALES_PRICE\" BETWEEN 100 AND\
-      \ 150 THEN '100-150' \nWHEN \"SS_SALES_PRICE\" BETWEEN 50 AND 100 THEN ' 50-100'\
-      \ \nELSE ' 50 and Less' END"
   - name: SS ROW COUNTER
     data_type: int
-    sql: "1"
+    sql: 1
   - name: SS_ADDR_SK
     data_type: long
   - name: SS_CDEMO_SK
@@ -74,3 +68,9 @@ columns:
     data_type: long
   - name: SS_WHOLESALE_COST
     data_type: "decimal(7,2)"
+  - name: Sales Price Tier
+    data_type: string
+    sql: "CASE WHEN \"SS_SALES_PRICE\" > 200 THEN '200 and More' \nWHEN \"SS_SALES_PRICE\"\
+      BETWEEN 150 AND 200 THEN '150-200' \nWHEN \"SS_SALES_PRICE\" BETWEEN 100 AND\
+      \ 150 THEN '100-150' \nWHEN \"SS_SALES_PRICE\" BETWEEN 50 AND 100 THEN ' 50-100'\
+      \ \nELSE ' 50 and Less' END"
