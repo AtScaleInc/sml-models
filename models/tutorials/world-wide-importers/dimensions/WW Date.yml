@@ -38,7 +38,7 @@ level_attributes:
     label: Calendar Day
     description: Date Dimension
     is_unique_key: true
-    dataset: DATE
+    dataset: dimension-date
     name_column: DATE
     key_columns:
       - DATE
@@ -46,7 +46,7 @@ level_attributes:
 
   - unique_name: Calendar Month
     label: Calendar Month
-    dataset: DATE
+    dataset: dimension-date
     name_column: CALENDAR_MONTH_LABEL
     key_columns:
       - CALENDAR_MONTH_LABEL
@@ -54,7 +54,7 @@ level_attributes:
 
   - unique_name: Calendar Year
     label: Calendar Year
-    dataset: DATE
+    dataset: dimension-date
     name_column: CALENDAR_YEAR_LABEL
     key_columns:
       - CALENDAR_YEAR_LABEL
@@ -62,7 +62,7 @@ level_attributes:
 
   - unique_name: Fiscal Day
     label: Fiscal Day
-    dataset: DATE
+    dataset: dimension-date
     name_column: DATE
     key_columns:
       - DATE
@@ -70,7 +70,7 @@ level_attributes:
 
   - unique_name: Fiscal Month
     label: Fiscal Month
-    dataset: DATE
+    dataset: dimension-date
     name_column: FISCAL_MONTH_LABEL
     key_columns:
       - FISCAL_MONTH_LABEL
@@ -78,7 +78,7 @@ level_attributes:
 
   - unique_name: Fiscal Year
     label: Fiscal Year
-    dataset: DATE
+    dataset: dimension-date
     name_column: FISCAL_YEAR_LABEL
     key_columns:
       - FISCAL_YEAR_LABEL

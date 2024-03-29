@@ -268,7 +268,7 @@ relationships:
     from:
       dataset: FACT_SALE
       join_columns:
-        - City_Key
+        - CITY_KEY
     to:
       dimension: WW Geography
       level: City-Region
@@ -318,7 +318,7 @@ relationships:
     from:
       dataset: FACT_SALE
       join_columns:
-        - Salesperson_Key
+        - SALESPERSON_KEY
     to:
       dimension: WW Employee
       level: Employee
