@@ -19,7 +19,7 @@ hierarchies:
 
       - unique_name: State Province
 
-      - unique_name: City
+      - unique_name: City-State
 
   - unique_name: City-Region Hiearchy
     label: 'City-Region Hiearchy '
@@ -43,7 +43,7 @@ level_attributes:
     key_columns:
       - City_Key
 
-  - unique_name: City
+  - unique_name: City-State
     label: City
     description: City Dimension
     is_unique_key: true

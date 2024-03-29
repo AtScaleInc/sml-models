@@ -151,7 +151,7 @@ relationships:
         - City_Key
     to:
       dimension: WW Geography
-      level: City
+      level: City-State
     role_play: "Order {0}"
 
   - unique_name: fact-order_Stock_Item_Order
@@ -251,7 +251,7 @@ relationships:
         - City_Key
     to:
       dimension: WW Geography
-      level: City
+      level: City-State
     role_play: "Sale {0}"
 
   - unique_name: fact-sale_Stock_Item_Sale
