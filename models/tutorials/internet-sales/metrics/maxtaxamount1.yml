@@ -4,4 +4,4 @@ label: Max Tax Amount
 calculation_method: maximum
 format: "$#,##0.00"
 dataset: factinternetsales
-column: TAXAMT
+column: taxamt

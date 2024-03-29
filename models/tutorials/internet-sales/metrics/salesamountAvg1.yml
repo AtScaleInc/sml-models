@@ -5,4 +5,4 @@ description: Average Sales Amount
 calculation_method: average
 format: "$#,##0.00"
 dataset: factinternetsales
-column: SALESAMOUNT
+column: salesamount

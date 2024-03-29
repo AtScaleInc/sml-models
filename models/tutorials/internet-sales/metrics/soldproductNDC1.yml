@@ -5,4 +5,4 @@ description: Sold Product Non-Distinct Count
 calculation_method: count non-null
 format: General Number
 dataset: factinternetsales
-column: PRODUCTKEY
+column: productkey

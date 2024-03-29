@@ -9,4 +9,4 @@ semi_additive:
   hierarchy: Product Dimension
   level: Product Name
 dataset: factinternetsales
-column: UNITPRICE
+column: unitprice

@@ -4,4 +4,4 @@ label: Estimated Customer Count
 calculation_method: estimated count distinct
 format: General Number
 dataset: factinternetsales
-column: CUSTOMERKEY
+column: customerkey

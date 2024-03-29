@@ -4,4 +4,4 @@ label: Sales Amount
 calculation_method: sum
 format: "$#,##0.00"
 dataset: factinternetsales
-column: SALESAMOUNT
+column: salesamount
