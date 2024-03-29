@@ -6,267 +6,267 @@ visible: true
 
 relationships:
 
-  - unique_name: fact-movement_Stock_Item_Movement
+  - unique_name: FACT_MOVEMENT_Stock_Item_Movement
     from:
-      dataset: fact-movement
+      dataset: FACT_MOVEMENT
       join_columns:
-        - Stock_Item_Key
+        - STOCK_ITEM_KEY
     to:
       dimension: WW Stock Item
       level: Stock Item
     role_play: "Movement {0}"
 
-  - unique_name: fact-movement_Customer_Movement
+  - unique_name: FACT_MOVEMENT_Customer_Movement
     from:
-      dataset: fact-movement
+      dataset: FACT_MOVEMENT
       join_columns:
-        - Customer_Key
+        - CUSTOMER_KEY
     to:
       dimension: WW Customer
       level: Dimension Customer Level
     role_play: "Movement {0}"
 
-  - unique_name: fact-movement_Date_Movement
+  - unique_name: FACT_MOVEMENT_Date_Movement
     from:
-      dataset: fact-movement
+      dataset: FACT_MOVEMENT
       join_columns:
-        - Date_Key
+        - DATE_KEY
     to:
       dimension: WW Date
       level: Fiscal Day
     role_play: "Movement {0}"
 
-  - unique_name: fact-movement_Supplier_MovementSupplier
+  - unique_name: FACT_MOVEMENT_Supplier_MovementSupplier
     from:
-      dataset: fact-movement
+      dataset: FACT_MOVEMENT
       join_columns:
-        - Supplier_Key
+        - SUPPLIER_KEY
     to:
       dimension: WW Supplier
       level: Supplier
     role_play: "Movement Supplier {0}"
 
-  - unique_name: fact-movement_Date_Movement_1
+  - unique_name: FACT_MOVEMENT_Date_Movement_1
     from:
-      dataset: fact-movement
+      dataset: FACT_MOVEMENT
       join_columns:
-        - Date_Key
+        - DATE_KEY
     to:
       dimension: WW Date
       level: Calendar Day
     role_play: "Movement {0}"
 
-  - unique_name: fact-movement_Transaction_Type_Movement
+  - unique_name: FACT_MOVEMENT_Transaction_Type_Movement
     from:
-      dataset: fact-movement
+      dataset: FACT_MOVEMENT
       join_columns:
-        - Transaction_Type_Key
+        - TRANSACTION_TYPE_KEY
     to:
       dimension: WW Transaction Type
       level: Transaction Type Level
     role_play: "Movement {0}"
 
-  - unique_name: fact-transaction_Customer_TransactionBillto
+  - unique_name: FACT_TRANSACTION_Customer_TransactionBillto
     from:
-      dataset: fact-transaction
+      dataset: FACT_TRANSACTION
       join_columns:
-        - Bill_To_Customer_Key
+        - BILL_TO_CUSTOMER_KEY
     to:
       dimension: WW Customer
       level: Dimension Customer Level
     role_play: "Transaction Bill to {0}"
 
-  - unique_name: fact-transaction_Customer_Transaction
+  - unique_name: FACT_TRANSACTION_Customer_Transaction
     from:
-      dataset: fact-transaction
+      dataset: FACT_TRANSACTION
       join_columns:
-        - Customer_Key
+        - CUSTOMER_KEY
     to:
       dimension: WW Customer
       level: Dimension Customer Level
     role_play: "Transaction {0}"
 
-  - unique_name: fact-transaction_Date_Transaction
+  - unique_name: FACT_TRANSACTION_Date_Transaction
     from:
-      dataset: fact-transaction
+      dataset: FACT_TRANSACTION
       join_columns:
-        - Date_Key
+        - DATE_KEY
     to:
       dimension: WW Date
       level: Fiscal Day
     role_play: "Transaction {0}"
 
-  - unique_name: fact-transaction_Payment_Method_Transaction
+  - unique_name: FACT_TRANSACTION_Payment_Method_Transaction
     from:
-      dataset: fact-transaction
+      dataset: FACT_TRANSACTION
       join_columns:
-        - Payment_Method_Key
+        - PAYMENT_METHOD_KEY
     to:
       dimension: WW Payment Method
       level: Payment Method Level
     role_play: "Transaction {0}"
 
-  - unique_name: fact-transaction_Supplier_TransactionSupplier
+  - unique_name: FACT_TRANSACTION_Supplier_TransactionSupplier
     from:
-      dataset: fact-transaction
+      dataset: FACT_TRANSACTION
       join_columns:
-        - Supplier_Key
+        - SUPPLIER_KEY
     to:
       dimension: WW Supplier
       level: Supplier
     role_play: "Transaction Supplier {0}"
 
-  - unique_name: fact-transaction_Date_Transaction_1
+  - unique_name: FACT_TRANSACTION_Date_Transaction_1
     from:
-      dataset: fact-transaction
+      dataset: FACT_TRANSACTION
       join_columns:
-        - Date_Key
+        - DATE_KEY
     to:
       dimension: WW Date
       level: Calendar Day
     role_play: "Transaction {0}"
 
-  - unique_name: fact-transaction_Transaction_Type
+  - unique_name: FACT_TRANSACTION_Transaction_Type
     from:
-      dataset: fact-transaction
+      dataset: FACT_TRANSACTION
       join_columns:
-        - Transaction_Type_Key
+        - TRANSACTION_TYPE_KEY
     to:
       dimension: WW Transaction Type
       level: Transaction Type Level
 
-  - unique_name: fact-stock-holding_Stock_Item
+  - unique_name: FACT_STOCKHOLDING_Stock_Item
     from:
-      dataset: fact-stock-holding
+      dataset: FACT_STOCKHOLDING
       join_columns:
-        - Stock_Item_Key
+        - STOCK_ITEM_KEY
     to:
       dimension: WW Stock Item
       level: Stock Item
 
-  - unique_name: fact-order_Geography_Order
+  - unique_name: FACT_ORDER_Geography_Order
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - City_Key
+        - CITY_KEY
     to:
       dimension: WW Geography
       level: City-State
     role_play: "Order {0}"
 
-  - unique_name: fact-order_Stock_Item_Order
+  - unique_name: FACT_ORDER_Stock_Item_Order
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Stock_Item_Key
+        - STOCK_ITEM_KEY
     to:
       dimension: WW Stock Item
       level: Stock Item
     role_play: "Order {0}"
 
-  - unique_name: fact-order_Geography_Order_1
+  - unique_name: FACT_ORDER_Geography_Order_1
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - City_Key
+        - CITY_KEY
     to:
       dimension: WW Geography
       level: City-Region
     role_play: "Order {0}"
 
-  - unique_name: fact-order_Customer_Order
+  - unique_name: FACT_ORDER_Customer_Order
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Customer_Key
+        - CUSTOMER_KEY
     to:
       dimension: WW Customer
       level: Dimension Customer Level
     role_play: "Order {0}"
 
-  - unique_name: fact-order_Date_Order
+  - unique_name: FACT_ORDER_Date_Order
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Order_Date_Key
+        - ORDER_DATE_KEY
     to:
       dimension: WW Date
       level: Fiscal Day
     role_play: "Order {0}"
 
-  - unique_name: fact-order_Date_OrderPicked
+  - unique_name: FACT_ORDER_Date_OrderPicked
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Picked_Date_Key
+        - PICKED_DATE_KEY
     to:
       dimension: WW Date
       level: Fiscal Day
     role_play: "Order Picked {0}"
 
-  - unique_name: fact-order_Employee_OrderSalesperson
+  - unique_name: FACT_ORDER_Employee_OrderSalesperson
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Salesperson_Key
+        - SALESPERSON_KEY
     to:
       dimension: WW Employee
       level: Employee
     role_play: "Order Salesperson {0}"
 
-  - unique_name: fact-order_Employee_OrderPicker
+  - unique_name: FACT_ORDER_Employee_OrderPicker
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Picker_Key
+        - PICKER_KEY
     to:
       dimension: WW Employee
       level: Employee
     role_play: "Order Picker {0}"
 
-  - unique_name: fact-order_Date_Order_1
+  - unique_name: FACT_ORDER_Date_Order_1
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Order_Date_Key
+        - ORDER_DATE_KEY
     to:
       dimension: WW Date
       level: Calendar Day
     role_play: "Order {0}"
 
-  - unique_name: fact-order_Date_OrderPicked_1
+  - unique_name: FACT_ORDER_Date_OrderPicked_1
     from:
-      dataset: fact-order
+      dataset: FACT_ORDER
       join_columns:
-        - Picked_Date_Key
+        - PICKED_DATE_KEY
     to:
       dimension: WW Date
       level: Calendar Day
     role_play: "Order Picked {0}"
 
-  - unique_name: fact-sale_Geography_Sale
+  - unique_name: FACT_SALE_Geography_Sale
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - City_Key
+        - CITY_KEY
     to:
       dimension: WW Geography
       level: City-State
     role_play: "Sale {0}"
 
-  - unique_name: fact-sale_Stock_Item_Sale
+  - unique_name: FACT_SALE_Stock_Item_Sale
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - Stock_Item_Key
+        - STOCK_ITEM_KEY
     to:
       dimension: WW Stock Item
       level: Stock Item
     role_play: "Sale {0}"
 
-  - unique_name: fact-sale_Geography_Sale_1
+  - unique_name: FACT_SALE_Geography_Sale_1
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
         - City_Key
     to:
@@ -274,49 +274,49 @@ relationships:
       level: City-Region
     role_play: "Sale {0}"
 
-  - unique_name: fact-sale_Customer_Sale
+  - unique_name: FACT_SALE_Customer_Sale
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - Customer_Key
+        - CUSTOMER_KEY
     to:
       dimension: WW Customer
       level: Dimension Customer Level
     role_play: "Sale {0}"
 
-  - unique_name: fact-sale_Customer_SaleBillto
+  - unique_name: FACT_SALE_Customer_SaleBillto
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - Bill_To_Customer_Key
+        - BILL_TO_CUSTOMER_KEY
     to:
       dimension: WW Customer
       level: Dimension Customer Level
     role_play: "Sale Bill to {0}"
 
-  - unique_name: fact-sale_Date_SaleDelivery
+  - unique_name: FACT_SALE_Date_SaleDelivery
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - Delivery_Date_Key
+        - DELIVERY_DATE_KEY
     to:
       dimension: WW Date
       level: Fiscal Day
     role_play: "Sale Delivery {0}"
 
-  - unique_name: fact-sale_Date_SaleInvoice
+  - unique_name: FACT_SALE_Date_SaleInvoice
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - Invoice_Date_Key
+        - INVOICE_DATE_KEY
     to:
       dimension: WW Date
       level: Fiscal Day
     role_play: "Sale Invoice {0}"
 
-  - unique_name: fact-sale_Employee_SaleSalesperson
+  - unique_name: FACT_SALE_Employee_SaleSalesperson
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
         - Salesperson_Key
     to:
@@ -324,61 +324,61 @@ relationships:
       level: Employee
     role_play: "Sale Salesperson {0}"
 
-  - unique_name: fact-sale_Date_SaleDelivery_1
+  - unique_name: FACT_SALE_Date_SaleDelivery_1
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - Delivery_Date_Key
+        - DELIVERY_DATE_KEY
     to:
       dimension: WW Date
       level: Calendar Day
     role_play: "Sale Delivery {0}"
 
-  - unique_name: fact-sale_Date_SaleInvoice_1
+  - unique_name: FACT_SALE_Date_SaleInvoice_1
     from:
-      dataset: fact-sale
+      dataset: FACT_SALE
       join_columns:
-        - Invoice_Date_Key
+        - INVOICE_DATE_KEY
     to:
       dimension: WW Date
       level: Calendar Day
     role_play: "Sale Invoice {0}"
 
-  - unique_name: fact-purchase_Stock_Item_Purchase
+  - unique_name: FACT_PURCHASE_Stock_Item_Purchase
     from:
-      dataset: fact-purchase
+      dataset: FACT_PURCHASE
       join_columns:
-        - Stock_Item_Key
+        - STOCK_ITEM_KEY
     to:
       dimension: WW Stock Item
       level: Stock Item
     role_play: "Purchase {0}"
 
-  - unique_name: fact-purchase_Date_Purchase
+  - unique_name: FACT_PURCHASE_Date_Purchase
     from:
-      dataset: fact-purchase
+      dataset: FACT_PURCHASE
       join_columns:
-        - Date_Key
+        - DATE_KEY
     to:
       dimension: WW Date
       level: Fiscal Day
     role_play: "Purchase {0}"
 
-  - unique_name: fact-purchase_Supplier_PurchaseSupplier
+  - unique_name: FACT_PURCHASE_Supplier_PurchaseSupplier
     from:
-      dataset: fact-purchase
+      dataset: FACT_PURCHASE
       join_columns:
-        - Supplier_Key
+        - SUPPLIER_KEY
     to:
       dimension: WW Supplier
       level: Supplier
     role_play: "Purchase Supplier {0}"
 
-  - unique_name: fact-purchase_Date_Purchase_1
+  - unique_name: FACT_PURCHASE_Date_Purchase_1
     from:
-      dataset: fact-purchase
+      dataset: FACT_PURCHASE
       join_columns:
-        - Date_Key
+        - DATE_KEY
     to:
       dimension: WW Date
       level: Calendar Day

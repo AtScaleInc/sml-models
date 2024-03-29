@@ -3,5 +3,5 @@ object_type: metric
 label: Ordered Outers
 calculation_method: sum
 format: "#,##0"
-dataset: fact-purchase
-column: Ordered_Outers
+dataset: FACT_PURCHASE
+column: ORDERED_OUTERS

@@ -3,5 +3,5 @@ object_type: metric
 label: Purchase Ordered Quantity
 calculation_method: sum
 format: "#,##0"
-dataset: fact-purchase
-column: Ordered_Quantity
+dataset: FACT_PURCHASE
+column: ORDERED_QUANTITY

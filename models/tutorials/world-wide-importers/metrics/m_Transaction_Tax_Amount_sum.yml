@@ -3,5 +3,5 @@ object_type: metric
 label: Transaction Tax Amount
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: fact-transaction
-column: Tax_Amount
+dataset: FACT_TRANSACTION
+column: TAX_AMOUNT

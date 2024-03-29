@@ -1,19 +1,19 @@
-unique_name: dimension-payment-method
+unique_name: PAYMENTMETHOD
 object_type: dataset
-label: dimension-payment-method
+label: PAYMENTMETHOD
 connection_id: Connection - WW
-table: dimension-payment-method
+table: PAYMENTMETHOD
 
 columns:
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Payment_Method
+  - name: PAYMENT_METHOD
     data_type: string
-  - name: Payment_Method_Key
+  - name: PAYMENT_METHOD_KEY
     data_type: long
-  - name: Valid_From
+  - name: VALID_FROM
     data_type: datetime
-  - name: Valid_To
+  - name: VALID_TO
     data_type: datetime
-  - name: WWI_Payment_Method_ID
+  - name: WWI_PAYMENT_METHOD_ID
     data_type: long

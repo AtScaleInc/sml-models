@@ -3,5 +3,5 @@ object_type: metric
 label: Total Chiller Items
 calculation_method: sum
 format: "#,##0"
-dataset: fact-sale
-column: Total_Chiller_Items
+dataset: FACT_SALE
+column: TOTAL_CHILLER_ITEMS

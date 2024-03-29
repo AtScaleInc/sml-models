@@ -1,29 +1,29 @@
-unique_name: dimension-supplier
+unique_name: SUPPLIER
 object_type: dataset
-label: dimension-supplier
+label: SUPPLIER
 connection_id: Connection - WW
-table: dimension-supplier
+table: SUPPLIER
 
 columns:
-  - name: Category
+  - name: CATEGORY
     data_type: string
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Payment_Days
+  - name: PAYMENT_DAYS
     data_type: long
-  - name: Postal_Code
+  - name: POSTAL_CODE
     data_type: string
-  - name: Primary_Contact
+  - name: PRIMARY_CONTACT
     data_type: string
-  - name: Supplier
+  - name: SUPPLIER
     data_type: string
-  - name: Supplier_Key
+  - name: SUPPLIER_KEY
     data_type: long
-  - name: Supplier_Reference
+  - name: SUPPLIER_REFERENCE
     data_type: string
-  - name: Valid_From
+  - name: VALID_FROM
     data_type: datetime
-  - name: Valid_To
+  - name: VALID_TO
     data_type: datetime
-  - name: WWI_Supplier_ID
+  - name: WWI_SUPPLIER_ID
     data_type: long

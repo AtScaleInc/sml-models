@@ -1,35 +1,35 @@
-unique_name: dimension-city
+unique_name: CITY
 object_type: dataset
-label: dimension-city
+label: CITY
 connection_id: Connection - WW
-table: dimension-city
+table: CITY
 
 columns:
-  - name: City
+  - name: CITY
     data_type: string
-  - name: City_Key
+  - name: CITY_KEY
     data_type: long
-  - name: Continent
+  - name: CONTINENT
     data_type: string
-  - name: Country
+  - name: COUNTRY
     data_type: string
-  - name: Latest_Recorded_Population
+  - name: LATEST_RECORDED_POPULATION
     data_type: datetime
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Location
+  - name: LOCATION
     data_type: long
-  - name: Region
+  - name: REGION
     data_type: string
-  - name: Sales_Territory
+  - name: SALES_TERRITORY
     data_type: string
-  - name: State_Province
+  - name: STATE_PROVINCE
     data_type: string
-  - name: Subregion
+  - name: SUBREGION
     data_type: string
-  - name: Valid_From
+  - name: VALID_FROM
     data_type: datetime
-  - name: Valid_To
+  - name: VALID_TO
     data_type: long
-  - name: WWI_City_ID
+  - name: WWI_CITY_ID
     data_type: long

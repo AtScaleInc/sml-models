@@ -3,5 +3,5 @@ object_type: metric
 label: Order Total Excluding Tax
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: fact-order
-column: Total_Excluding_Tax
+dataset: FACT_ORDER
+column: TOTAL_EXCLUDING_TAX

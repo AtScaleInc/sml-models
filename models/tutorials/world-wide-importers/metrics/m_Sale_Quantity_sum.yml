@@ -3,5 +3,5 @@ object_type: metric
 label: Sale Quantity
 calculation_method: sum
 format: "#,##0"
-dataset: fact-sale
-column: Quantity
+dataset: FACT_SALE
+column: QUANTITY

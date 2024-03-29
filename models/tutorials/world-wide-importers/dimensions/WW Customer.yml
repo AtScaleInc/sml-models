@@ -19,36 +19,36 @@ hierarchies:
           - unique_name: d_Category
             label: Customer Category
             folder: Customers
-            dataset: dimension-customer
-            name_column: Category
+            dataset: CUSTOMER
+            name_column: CATEGORY
             key_columns:
-              - Category
-            sort_column: Category
+              - CATEGORY
+            sort_column: CATEGORY
 
           - unique_name: d_Postal_Code
             label: Customer Postal Code
             folder: Customers
-            dataset: dimension-customer
-            name_column: Postal_Code
+            dataset: CUSTOMER
+            name_column: POSTAL_CODE
             key_columns:
-              - Postal_Code
-            sort_column: Postal_Code
+              - POSTAL_CODE
+            sort_column: POSTAL_CODE
 
           - unique_name: d_Primary_Contact
             label: Primary Contact
             folder: Customers
-            dataset: dimension-customer
-            name_column: Primary_Contact
+            dataset: CUSTOMER
+            name_column: PRIMARY_CONTACT
             key_columns:
-              - Primary_Contact
-            sort_column: Primary_Contact
+              - PRIMARY_CONTACT
+            sort_column: PRIMARY_CONTACT
 
 level_attributes:
 
   - unique_name: Dimension Customer Level
     label: Customer Name
     is_unique_key: true
-    dataset: dimension-customer
-    name_column: Customer
+    dataset: CUSTOMER
+    name_column: CUSTOMER
     key_columns:
-      - Customer_Key
+      - CUSTOMER_KEY

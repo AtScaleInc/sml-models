@@ -1,29 +1,29 @@
 unique_name: dimension-customer
 object_type: dataset
-label: dimension-customer
+label: CUSTOMER
 connection_id: Connection - WW
-table: dimension-customer
+table: CUSTOMER
 
 columns:
-  - name: Bill_To_Customer
+  - name: BILL_TO_CUSTOMER
     data_type: string
-  - name: Buying_Group
+  - name: BUYING_GROUP
     data_type: string
-  - name: Category
+  - name: CATEGORY
     data_type: string
-  - name: Customer
+  - name: CUSTOMER
     data_type: string
-  - name: Customer_Key
+  - name: CUSTOMER_KEY
     data_type: long
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Postal_Code
+  - name: POSTAL_CODE
     data_type: string
-  - name: Primary_Contact
+  - name: PRIMARY_CONTACT
     data_type: string
-  - name: Valid_From
+  - name: VALID_FROM
     data_type: datetime
-  - name: Valid_To
+  - name: VALID_TO
     data_type: datetime
-  - name: WWI_Customer_ID
+  - name: WWI_CUSTOMER_ID
     data_type: long

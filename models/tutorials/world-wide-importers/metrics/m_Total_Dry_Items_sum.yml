@@ -3,5 +3,5 @@ object_type: metric
 label: Total Dry Items
 calculation_method: sum
 format: "#,##0"
-dataset: fact-sale
-column: Total_Dry_Items
+dataset: FACT_SALE
+column: TOTAL_DRY_ITEMS

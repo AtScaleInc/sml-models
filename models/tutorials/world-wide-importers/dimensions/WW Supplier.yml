@@ -19,54 +19,54 @@ hierarchies:
           - unique_name: d_Category_2
             label: Category
             folder: Suppliers
-            dataset: dimension-supplier
-            name_column: Category
+            dataset: SUPPLIER
+            name_column: CATEGORY
             key_columns:
-              - Category
-            sort_column: Category
+              - CATEGORY
+            sort_column: CATEGORY
 
           - unique_name: d_Payment_Days
             label: Payment Days
             folder: Suppliers
-            dataset: dimension-supplier
-            name_column: Payment_Days
+            dataset: SUPPLIER
+            name_column: PAYMENT_DAYS
             key_columns:
-              - Payment_Days
-            sort_column: Payment_Days
+              - PAYMENT_DAYS
+            sort_column: PAYMENT_DAYS
 
           - unique_name: d_Postal_Code_2
             label: Postal Code
             folder: Suppliers
-            dataset: dimension-supplier
-            name_column: Postal_Code
+            dataset: SUPPLIER
+            name_column: POSTAL_CODE
             key_columns:
-              - Postal_Code
-            sort_column: Postal_Code
+              - POSTAL_CODE
+            sort_column: POSTAL_CODE
 
           - unique_name: d_Primary_Contact_2
             label: Primary Contact
             folder: Suppliers
-            dataset: dimension-supplier
-            name_column: Primary_Contact
+            dataset: SUPPLIER
+            name_column: PRIMARY_CONTACT
             key_columns:
-              - Primary_Contact
-            sort_column: Primary_Contact
+              - PRIMARY_CONTACT
+            sort_column: PRIMARY_CONTACT
 
           - unique_name: d_Supplier_Reference
             label: Supplier Reference
             folder: Suppliers
-            dataset: dimension-supplier
-            name_column: Supplier_Reference
+            dataset: SUPPLIER
+            name_column: SUPPLIER_REFERENCE
             key_columns:
-              - Supplier_Reference
-            sort_column: Supplier_Reference
+              - SUPPLIER_REFERENCE
+            sort_column: SUPPLIER_REFERENCE
 
 level_attributes:
 
   - unique_name: Supplier
     label: Supplier
     is_unique_key: true
-    dataset: dimension-supplier
-    name_column: Supplier
+    dataset: SUPPLIER
+    name_column: SUPPLIER
     key_columns:
-      - Supplier_Key
+      - SUPPLIER_KEY

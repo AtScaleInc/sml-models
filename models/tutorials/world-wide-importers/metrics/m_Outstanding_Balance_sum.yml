@@ -3,5 +3,5 @@ object_type: metric
 label: Outstanding Balance
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: fact-transaction
-column: Outstanding_Balance
+dataset: FACT_TRANSACTION
+column: OUTSTANDING_BALANCE

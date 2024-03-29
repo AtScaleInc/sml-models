@@ -3,5 +3,5 @@ object_type: metric
 label: Order Quantity
 calculation_method: sum
 format: "#,##0"
-dataset: fact-order
-column: Quantity
+dataset: FACT_ORDER
+column: QUANTITY

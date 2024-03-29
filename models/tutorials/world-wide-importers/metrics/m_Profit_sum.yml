@@ -3,5 +3,5 @@ object_type: metric
 label: Profit
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: fact-sale
-column: Profit
+dataset: FACT_SALE
+column: PROFIT

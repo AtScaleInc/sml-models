@@ -19,126 +19,126 @@ hierarchies:
           - unique_name: d_Barcode
             label: Bar Code
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Barcode
+            dataset: STOCKITEM
+            name_column: BARCODE
             key_columns:
-              - Barcode
-            sort_column: Barcode
+              - BARCODE
+            sort_column: BARCODE
 
           - unique_name: d_Brand
             label: Brand
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Brand
+            dataset: STOCKITEM
+            name_column: BRAND
             key_columns:
-              - Brand
-            sort_column: Brand
+              - BRAND
+            sort_column: BRAND
 
           - unique_name: d_Buying_Package
             label: Buying Package
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Buying_Package
+            dataset: STOCKITEM
+            name_column: BUYING_PACKAGE
             key_columns:
-              - Buying_Package
-            sort_column: Buying_Package
+              - BUYING_PACKAGE
+            sort_column: BUYING_PACKAGE
 
           - unique_name: d_Color
             label: Color
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Color
+            dataset: STOCKITEM
+            name_column: COLOR
             key_columns:
-              - Color
-            sort_column: Color
+              - COLOR
+            sort_column: COLOR
 
           - unique_name: d_Is_Chiller_Stock
             label: Is Chiller Stock
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Is_Chiller_Stock
+            dataset: STOCKITEM
+            name_column: IS_CHILLER_STOCK
             key_columns:
-              - Is_Chiller_Stock
-            sort_column: Is_Chiller_Stock
+              - IS_CHILLER_STOCK
+            sort_column: IS_CHILLER_STOCK
 
           - unique_name: d_Lead_Time_Days
             label: Lead Time Days
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Lead_Time_Days
+            dataset: STOCKITEM
+            name_column: LEAD_TIME_DAYS
             key_columns:
-              - Lead_Time_Days
-            sort_column: Lead_Time_Days
+              - LEAD_TIME_DAYS
+            sort_column: LEAD_TIME_DAYS
 
           - unique_name: d_Quantity_Per_Outer
             label: Quantity Per Outer
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Quantity_Per_Outer
+            dataset: STOCKITEM
+            name_column: QUANTITY_PER_OUTER
             key_columns:
-              - Quantity_Per_Outer
-            sort_column: Quantity_Per_Outer
+              - QUANTITY_PER_OUTER
+            sort_column: QUANTITY_PER_OUTER
 
           - unique_name: d_Recommended_Retail_Price
             label: Recommended Retail Price
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Recommended_Retail_Price
+            dataset: STOCKITEM
+            name_column: RECOMMENDED_RETAIL_PRICE
             key_columns:
-              - Recommended_Retail_Price
-            sort_column: Recommended_Retail_Price
+              - RECOMMENDED_RETAIL_PRICE
+            sort_column: RECOMMENDED_RETAIL_PRICE
 
           - unique_name: d_Selling_Package
             label: Selling Package
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Selling_Package
+            dataset: STOCKITEM
+            name_column: SELLING_PACKAGE
             key_columns:
-              - Selling_Package
-            sort_column: Selling_Package
+              - SELLING_PACKAGE
+            sort_column: SELLING_PACKAGE
 
           - unique_name: d_Size
             label: Size
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Size
+            dataset: STOCKITEM
+            name_column: SIZE
             key_columns:
-              - Size
-            sort_column: Size
+              - SIZE
+            sort_column: SIZE
 
           - unique_name: d_Tax_Rate
             label: Tax Rate
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Tax_Rate
+            dataset: STOCKITEM
+            name_column: TAX_RATE
             key_columns:
-              - Tax_Rate
-            sort_column: Tax_Rate
+              - TAX_RATE
+            sort_column: TAX_RATE
 
           - unique_name: d_Typical_Weight_Per_Unit
             label: Typical Weight Per Unit
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Typical_Weight_Per_Unit
+            dataset: STOCKITEM
+            name_column: TYPICAL_WEIGHT_PER_UNIT
             key_columns:
-              - Typical_Weight_Per_Unit
-            sort_column: Typical_Weight_Per_Unit
+              - TYPICAL_WEIGHT_PER_UNIT
+            sort_column: TYPICAL_WEIGHT_PER_UNIT
 
           - unique_name: d_Unit_Price
             label: Unit Price
             folder: Stock
-            dataset: dimension-stock-item
-            name_column: Unit_Price
+            dataset: STOCKITEM
+            name_column: UNIT_PRICE
             key_columns:
-              - Unit_Price
-            sort_column: Unit_Price
+              - UNIT_PRICE
+            sort_column: UNIT_PRICE
 
 level_attributes:
 
   - unique_name: Stock Item
     label: Stock Item
     is_unique_key: true
-    dataset: dimension-stock-item
-    name_column: Stock_Item
+    dataset: STOCKITEM
+    name_column: STOCK_ITEM
     key_columns:
-      - Stock_Item_Key
+      - STOCK_ITEM_KEY

@@ -1,19 +1,19 @@
-unique_name: dimension-transaction-type
+unique_name: TRANSACTIONTYPE
 object_type: dataset
-label: dimension-transaction-type
+label: TRANSACTIONTYPE
 connection_id: Connection - WW
-table: dimension-transaction-type
+table: TRANSACTIONTYPE
 
 columns:
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Transaction_Type
+  - name: TRANSACTION_TYPE
     data_type: string
-  - name: Transaction_Type_Key
+  - name: TRANSACTION_TYPE_KEY
     data_type: long
-  - name: Valid_From
+  - name: VALID_FROM
     data_type: datetime
-  - name: Valid_To
+  - name: VALID_TO
     data_type: datetime
-  - name: WWI_Transaction_Type_ID
+  - name: WWI_TRANSACTION_TYPE_ID
     data_type: long

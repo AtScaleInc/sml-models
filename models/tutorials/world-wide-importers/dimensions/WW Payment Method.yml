@@ -19,7 +19,7 @@ level_attributes:
   - unique_name: Payment Method Level
     label: Payment Method Level
     is_unique_key: true
-    dataset: dimension-payment-method
-    name_column: Payment_Method
+    dataset: PAYMENTMETHOD
+    name_column: PAYMENT_METHOD
     key_columns:
-      - Payment_Method_Key
+      - PAYMENT_METHOD_KEY

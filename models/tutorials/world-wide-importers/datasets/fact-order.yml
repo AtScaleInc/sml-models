@@ -1,45 +1,45 @@
-unique_name: fact-order
+unique_name: FACT_ORDER
 object_type: dataset
-label: fact-order
+label: FACT_ORDER
 connection_id: Connection - WW
-table: fact-order
+table: FACT_ORDER
 
 columns:
-  - name: City_Key
+  - name: CITY_KEY
     data_type: long
-  - name: Customer_Key
+  - name: CUSTOMER_KEY
     data_type: long
-  - name: Description
+  - name: DESCRIPTION
     data_type: string
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Order_Date_Key
+  - name: ORDER_DATE_KEY
     data_type: date
-  - name: Order_Key
+  - name: ORDER_KEY
     data_type: long
-  - name: Package
+  - name: PACKAGE
     data_type: string
-  - name: Picked_Date_Key
+  - name: PICKED_DATE_KEY
     data_type: date
-  - name: Picker_Key
+  - name: PICKER_KEY
     data_type: long
-  - name: Quantity
+  - name: QUANTITY
     data_type: long
-  - name: Salesperson_Key
+  - name: SALESPERSON_KEY
     data_type: long
-  - name: Stock_Item_Key
+  - name: STOCK_ITEM_KEY
     data_type: long
-  - name: Tax_Amount
+  - name: TAX_AMOUNT
     data_type: double
-  - name: Tax_Rate
+  - name: TAX_RATE
     data_type: double
-  - name: Total_Excluding_Tax
+  - name: TOTAL_EXCLUDING_TAX
     data_type: double
-  - name: Total_Including_Tax
+  - name: TOTAL_INCLUDING_TAX
     data_type: double
-  - name: Unit_Price
+  - name: UNIT_PRICE
     data_type: double
-  - name: WWI_Backorder_ID
+  - name: WWI_BACKORDER_ID
     data_type: long
-  - name: WWI_Order_ID
+  - name: WWI_ORDER_ID
     data_type: long

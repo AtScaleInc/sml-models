@@ -1,45 +1,45 @@
-unique_name: dimension-stock-item
+unique_name: STOCKITEM
 object_type: dataset
-label: dimension-stock-item
+label: STOCKITEM
 connection_id: Connection - WW
-table: dimension-stock-item
+table: STOCKITEM
 
 columns:
-  - name: Barcode
+  - name: BARCODE
     data_type: string
-  - name: Brand
+  - name: BRAND
     data_type: string
-  - name: Buying_Package
+  - name: BUYING_PACKAGE
     data_type: string
-  - name: Color
+  - name: COLOR
     data_type: string
-  - name: Is_Chiller_Stock
+  - name: IS_CHILLER_STOCK
     data_type: boolean
-  - name: Lead_Time_Days
+  - name: LEAD_TIME_DAYS
     data_type: long
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Quantity_Per_Outer
+  - name: QUANTITY_PER_OUTER
     data_type: long
-  - name: Recommended_Retail_Price
+  - name: RECOMMENDED_RETAIL_PRICE
     data_type: double
-  - name: Selling_Package
+  - name: SELLING_PACKAGE
     data_type: string
-  - name: Size
+  - name: SIZE
     data_type: string
-  - name: Stock_Item
+  - name: STOCK_ITEM
     data_type: string
-  - name: Stock_Item_Key
+  - name: STOCK_ITEM_KEY
     data_type: long
-  - name: Tax_Rate
+  - name: TAX_RATE
     data_type: double
-  - name: Typical_Weight_Per_Unit
+  - name: TYPICAL_WEIGHT_PER_UNIT
     data_type: double
-  - name: Unit_Price
+  - name: UNIT_PRICE
     data_type: double
-  - name: Valid_From
+  - name: VALID_FROM
     data_type: datetime
-  - name: Valid_To
+  - name: VALID_TO
     data_type: datetime
-  - name: WWI_Stock_Item_ID
+  - name: WWI_STOCK_ITEM_ID
     data_type: long

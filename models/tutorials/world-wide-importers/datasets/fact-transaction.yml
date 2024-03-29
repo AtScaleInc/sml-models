@@ -1,43 +1,43 @@
-unique_name: fact-transaction
+unique_name: FACT_TRANSACTION
 object_type: dataset
-label: fact-transaction
+label: FACT_TRANSACTION
 connection_id: Connection - WW
-table: fact-transaction
+table: FACT_TRANSACTION
 
 columns:
-  - name: Bill_To_Customer_Key
+  - name: BILL_TO_CUSTOMER_KEY
     data_type: long
-  - name: Customer_Key
+  - name: CUSTOMER_KEY
     data_type: long
-  - name: Date_Key
+  - name: DATE_KEY
     data_type: date
-  - name: Is_Finalized
+  - name: IS_FINALIZED
     data_type: boolean
-  - name: Lineage_Key
+  - name: LINEAGE_KEY
     data_type: long
-  - name: Outstanding_Balance
+  - name: OUTSTANDING_BALANCE
     data_type: double
-  - name: Payment_Method_Key
+  - name: PAYMENT_METHOD_KEY
     data_type: long
-  - name: Supplier_Invoice_Number
+  - name: SUPPLIER_INVOICE_NUMBER
     data_type: string
-  - name: Supplier_Key
+  - name: SUPPLIER_KEY
     data_type: long
-  - name: Tax_Amount
+  - name: TAX_AMOUNT
     data_type: double
-  - name: Total_Excluding_Tax
+  - name: TOTAL_EXCLUDING_TAX
     data_type: double
-  - name: Total_Including_Tax
+  - name: TOTAL_INCLUDING_TAX
     data_type: double
-  - name: Transaction_Key
+  - name: TRANSACTION_KEY
     data_type: long
-  - name: Transaction_Type_Key
+  - name: TRANSACTION_TYPE_KEY
     data_type: long
-  - name: WWI_Customer_Transaction_ID
+  - name: WWI_CUSTOMER_TRANSACTION_ID
     data_type: long
-  - name: WWI_Invoice_ID
+  - name: WWI_INVOICE_ID
     data_type: long
-  - name: WWI_Purchase_Order_ID
+  - name: WWI_PURCHASE_ORDER_ID
     data_type: string
-  - name: WWI_Supplier_Transaction_ID
+  - name: WWI_SUPPLIER_TRANSACTION_ID
     data_type: string
