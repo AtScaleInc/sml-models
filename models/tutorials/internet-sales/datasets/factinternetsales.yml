@@ -38,8 +38,8 @@ columns:
     map:
       field_terminator: ","
       key_terminator: ':'
-      key_type: string
-      value_type: string
+      key_type: String
+      value_type: String
   - name: color
     data_type: string
     parent_column: product_info
