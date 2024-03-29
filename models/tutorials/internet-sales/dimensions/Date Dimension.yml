@@ -237,10 +237,10 @@ hierarchies:
             label: ReportIng Day Of Month
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_DAY_OF_MONTH_NAME
+            name_column: reporting_day_of_month_name
             key_columns:
-              - REPORTING_DAY_OF_MONTH
-            sort_column: REPORTING_DAY_OF_MONTH_NAME
+              - reporting_day_of_month
+            sort_column: reporting_day_of_month_name
 
           - unique_name: Reporting_Day_Of_Week
             label: ReportIng Day Of Week
