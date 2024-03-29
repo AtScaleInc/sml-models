@@ -22,9 +22,9 @@ hierarchies:
             label: Product Subcategory ID
             description: ID of the product category
             dataset: dimproduct
-            name_column: PRODUCTSUBCATEGORYKEY
+            name_column: productsubcategorykey
             key_columns:
-              - PRODUCTSUBCATEGORYKEY
+              - productsubcategorykey
 
       - unique_name: Product Name
 
@@ -35,7 +35,7 @@ hierarchies:
             calculation_method: sum
             folder: Product Metrics
             dataset: dimproduct
-            column: LISTPRICE
+            column: listprice
 
 level_attributes:
 
@@ -43,24 +43,24 @@ level_attributes:
     label: Product Category
     description: Product Sub Category
     dataset: dimproduct
-    name_column: PRODUCTSUBCATEGORYNAME
+    name_column: productsubcategoryname
     key_columns:
-      - PRODUCTLINE
-      - PRODUCTSUBCATEGORYKEY
+      - productline
+      - productsubcategorykey
 
   - unique_name: Product Line
     label: Product Line
     description: Product Line
     dataset: dimproduct
-    name_column: PRODUCTLINE
+    name_column: productline
     key_columns:
-      - PRODUCTLINE
+      - productline
 
   - unique_name: Product Name
     label: Product Name
     description: Full Product Name
     is_unique_key: true
     dataset: dimproduct
-    name_column: ENGLISHPRODUCTNAME
+    name_column: englishproductname
     key_columns:
-      - PRODUCTKEY
+      - productkey

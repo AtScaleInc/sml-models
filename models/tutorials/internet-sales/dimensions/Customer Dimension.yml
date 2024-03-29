@@ -19,24 +19,24 @@ hierarchies:
           - unique_name: d_firstname
             label: First Name
             dataset: dimcustomer
-            name_column: FIRSTNAME
+            name_column: firstname
             key_columns:
-              - FIRSTNAME
+              - firstname
 
           - unique_name: d_lastname
             label: Last Name
             dataset: dimcustomer
-            name_column: LASTNAME
+            name_column: lastname
             key_columns:
-              - LASTNAME
+              - lastname
 
           - unique_name: Occupation
             label: Occupation
             folder: Customer Attributes
             dataset: dimcustomer
-            name_column: OCCUPATION
+            name_column: occupation
             key_columns:
-              - OCCUPATION
+              - occupation
 
 level_attributes:
 
@@ -45,9 +45,9 @@ level_attributes:
     description: Customer Key
     is_unique_key: true
     dataset: dimcustomer
-    name_column: FULLNAME
+    name_column: fullname
     key_columns:
-      - CUSTOMERKEY
+      - customerkey
 
 relationships:
 
@@ -57,7 +57,7 @@ relationships:
       level: Customer Name
       dataset: dimcustomer
       join_columns:
-        - GEOGRAPHYKEY
+        - geographykey
     to:
       dimension: Geography Dimension
       level: GeoKeyZip
@@ -69,7 +69,7 @@ relationships:
       level: Customer Name
       dataset: dimcustomer
       join_columns:
-        - GENDER
+        - gender
     to:
       dimension: Gender Dimension
       level: Gender
@@ -81,7 +81,7 @@ relationships:
       level: Customer Name
       dataset: dimcustomer
       join_columns:
-        - GEOGRAPHYKEY
+        - geographykey
     to:
       dimension: Geography Dimension
       level: GeoKeyCity

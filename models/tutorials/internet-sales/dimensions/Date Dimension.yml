@@ -27,10 +27,10 @@ hierarchies:
             label: Quarter Number
             folder: Date Attributes
             dataset: DateCustom
-            name_column: QUARTER_OF_YEAR
+            name_column: quarter_of_year
             key_columns:
-              - QUARTER_OF_YEAR
-            sort_column: QUARTER_OF_YEAR
+              - quarter_of_year
+            sort_column: quarter_of_year
 
       - unique_name: Month1
         time_unit: month
@@ -41,10 +41,10 @@ hierarchies:
             label: Month Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: MONTH_OF_YEAR
+            name_column: month_of_year
             key_columns:
-              - MONTH_OF_YEAR
-            sort_column: MONTH_OF_YEAR
+              - month_of_year
+            sort_column: month_of_year
 
       - unique_name: DayMonth
         time_unit: day
@@ -56,70 +56,70 @@ hierarchies:
             folder: Date Attributes
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
-            name_column: DAY_OF_MONTH
+            name_column: day_of_month
             key_columns:
-              - DAY_OF_MONTH
-            sort_column: DAY_OF_MONTH
+              - day_of_month
+            sort_column: day_of_month
 
           - unique_name: d_day_of_week_name
             label: Day Of Week Name
             folder: Date Attributes
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
-            name_column: DAY_OF_WEEK_NAME
+            name_column: day_of_week_name
             key_columns:
-              - DAY_OF_WEEK_NAME
-            sort_column: DAY_OF_WEEK_NAME
+              - day_of_week_name
+            sort_column: day_of_week_name
 
           - unique_name: d_day_of_week_number
             label: Day Of Week Number
             folder: Date Attributes
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
-            name_column: DAY_OF_WEEK
+            name_column: day_of_week
             key_columns:
-              - DAY_OF_WEEK
-            sort_column: DAY_OF_WEEK
+              - day_of_week
+            sort_column: day_of_week
 
           - unique_name: Day_Date
             label: Day Date
             folder: Date Attributes
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
-            name_column: PK_DATE
+            name_column: pk_date
             key_columns:
-              - PK_DATE
-            sort_column: PK_DATE
+              - pk_date
+            sort_column: pk_date
 
           - unique_name: W_Day_Date
             label: W Day Date
             folder: Date Attributes
             associated_hierarchy: Date Week Hierarchy
             dataset: DateCustom
-            name_column: PK_DATE
+            name_column: pk_date
             key_columns:
-              - PK_DATE
-            sort_column: PK_DATE
+              - pk_date
+            sort_column: pk_date
 
           - unique_name: w_day_of_week_name
             label: W Day Of Week Name
             folder: Date Attributes
             associated_hierarchy: Date Week Hierarchy
             dataset: DateCustom
-            name_column: DAY_OF_WEEK_NAME
+            name_column: day_of_week_name
             key_columns:
-              - DAY_OF_WEEK_NAME
-            sort_column: DAY_OF_WEEK_NAME
+              - day_of_week_name
+            sort_column: day_of_week_name
 
           - unique_name: w_day_of_week_number
             label: W Day Of Week Number
             folder: Date Attributes
             associated_hierarchy: Date Week Hierarchy
             dataset: DateCustom
-            name_column: DAY_OF_WEEK
+            name_column: day_of_week
             key_columns:
-              - DAY_OF_WEEK
-            sort_column: DAY_OF_WEEK
+              - day_of_week
+            sort_column: day_of_week
 
   - unique_name: Date Week Hierarchy
     label: Date Week Hierarchy
@@ -140,10 +140,10 @@ hierarchies:
             label: Week Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: WEEK_OF_YEAR
+            name_column: week_of_year
             key_columns:
-              - WEEK_OF_YEAR
-            sort_column: WEEK_OF_YEAR
+              - week_of_year
+            sort_column: week_of_year
 
       - unique_name: DayMonth
         time_unit: day
@@ -168,10 +168,10 @@ hierarchies:
             label: ReportIng Half Year Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_HALF_YEAR_OF_YEAR_NAME
+            name_column: reporting_half_year_of_year_name
             key_columns:
-              - REPORTING_HALF_YEAR_OF_YEAR
-            sort_column: REPORTING_HALF_YEAR_OF_YEAR_NAME
+              - reporting_half_year_of_year
+            sort_column: reporting_half_year_of_year_name
 
       - unique_name: ReportIng_Month
         time_unit: month
@@ -182,28 +182,28 @@ hierarchies:
             label: ReportIng Month Name
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_MONTH_NAME2
+            name_column: reporting_month_name2
             key_columns:
-              - REPORTING_MONTH_NAME
-            sort_column: REPORTING_MONTH_NAME2
+              - reporting_month_name
+            sort_column: reporting_month_name2
 
           - unique_name: Reporting_Month_Of_Quarter
             label: ReportIng Month Of Quarter
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_MONTH_OF_QUARTER_NAME
+            name_column: reporting_month_of_quarter_name
             key_columns:
-              - REPORTING_MONTH_OF_QUARTER
-            sort_column: REPORTING_MONTH_OF_QUARTER_NAME
+              - reporting_month_of_quarter
+            sort_column: reporting_month_of_quarter_name
 
           - unique_name: Reporting_Month_Of_Year
             label: ReportIng Month Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_MONTH_OF_YEAR_NAME
+            name_column: reporting_month_of_year_name
             key_columns:
-              - REPORTING_MONTH_OF_YEAR
-            sort_column: REPORTING_MONTH_OF_YEAR_NAME
+              - reporting_month_of_year
+            sort_column: reporting_month_of_year_name
 
       - unique_name: ReportIng_Week
         time_unit: week
@@ -214,19 +214,19 @@ hierarchies:
             label: ReportIng Week Of Month
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_WEEK_OF_MONTH_NAME
+            name_column: reporting_week_of_month_name
             key_columns:
-              - REPORTING_WEEK_OF_MONTH
-            sort_column: REPORTING_WEEK_OF_MONTH_NAME
+              - reporting_week_of_month
+            sort_column: reporting_week_of_month_name
 
           - unique_name: Reporting_Week_Of_Year
             label: ReportIng Week Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_WEEK_OF_YEAR_NAME
+            name_column: reporting_week_of_year_name
             key_columns:
-              - REPORTING_WEEK_OF_YEAR
-            sort_column: REPORTING_WEEK_OF_YEAR_NAME
+              - reporting_week_of_year
+            sort_column: reporting_week_of_year_name
 
       - unique_name: Reporting_Day
         time_unit: day
@@ -246,19 +246,19 @@ hierarchies:
             label: ReportIng Day Of Week
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_DAY_OF_WEEK_NAME
+            name_column: reporting_day_of_week_name
             key_columns:
-              - REPORTING_DAY_OF_WEEK
-            sort_column: REPORTING_DAY_OF_WEEK_NAME
+              - reporting_day_of_week
+            sort_column: reporting_day_of_week_name
 
           - unique_name: Reporting_Day_Of_Year
             label: ReportIng Day Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_DAY_OF_YEAR_NAME
+            name_column: reporting_day_of_year_name
             key_columns:
-              - REPORTING_DAY_OF_YEAR
-            sort_column: REPORTING_DAY_OF_YEAR_NAME
+              - reporting_day_of_year
+            sort_column: reporting_day_of_year_name
 
   - unique_name: CustomPP445
     label: CustomPP445
@@ -281,7 +281,7 @@ hierarchies:
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: REPORTING_QUARTER_LYKEY
+              - name: reporting_quarter_lykey
                 data_type: datetime
 
         secondary_attributes:
@@ -290,16 +290,16 @@ hierarchies:
             label: Custom Quarter Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_QUARTER_OF_YEAR_NAME
+            name_column: reporting_quarter_of_year_name
             key_columns:
-              - REPORTING_QUARTER_OF_YEAR_NAME
+              - reporting_quarter_of_year_name
 
       - unique_name: custommonth
         time_unit: month
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: REPORTING_MONTH_LYKEY
+              - name: reporting_month_lykey
                 data_type: datetime
 
         secondary_attributes:
@@ -308,35 +308,35 @@ hierarchies:
             label: Custom Month Name
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_MONTH_NAME2
+            name_column: reporting_month_name2
             key_columns:
-              - REPORTING_MONTH_NAME2
-            sort_column: REPORTING_MONTH_NAME2
+              - reporting_month_name2
+            sort_column: reporting_month_name2
 
           - unique_name: d_Custom_Month_Of_Quarter
             label: Custom Month Of Quarter
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_MONTH_OF_QUARTER_NAME
+            name_column: reporting_month_of_quarter_name
             key_columns:
-              - REPORTING_MONTH_OF_QUARTER_NAME
-            sort_column: REPORTING_MONTH_OF_QUARTER_NAME
+              - reporting_month_of_quarter_name
+            sort_column: reporting_month_of_quarter_name
 
           - unique_name: d_Custom_Month_Of_Year
             label: Custom Month Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_MONTH_OF_YEAR_NAME
+            name_column: reporting_month_of_year_name
             key_columns:
-              - REPORTING_MONTH_OF_YEAR_NAME
-            sort_column: REPORTING_MONTH_OF_YEAR_NAME
+              - reporting_month_of_year_name
+            sort_column: reporting_month_of_year_name
 
       - unique_name: customweek
         time_unit: week
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: REPORTING_WEEK_LYKEY
+              - name: reporting_week_lykey
                 data_type: datetime
 
         secondary_attributes:
@@ -345,26 +345,26 @@ hierarchies:
             label: Custom Week Of Month
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_WEEK_OF_MONTH_NAME
+            name_column: reporting_week_of_month_name
             key_columns:
-              - REPORTING_WEEK_OF_MONTH_NAME
-            sort_column: REPORTING_WEEK_OF_MONTH_NAME
+              - reporting_week_of_month_name
+            sort_column: reporting_week_of_month_name
 
           - unique_name: d_Custom_Week_Of_Year
             label: Custom Week Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_WEEK_OF_YEAR_NAME
+            name_column: reporting_week_of_year_name
             key_columns:
-              - REPORTING_WEEK_OF_YEAR_NAME
-            sort_column: REPORTING_WEEK_OF_YEAR_NAME
+              - reporting_week_of_year_name
+            sort_column: reporting_week_of_year_name
 
       - unique_name: customday
         time_unit: day
         parallel_periods:
           - level: customyear
             key_columns:
-              - name: REPORTING_DAY_LYKEY
+              - name: reporting_day_lykey
                 data_type: datetime
 
         secondary_attributes:
@@ -373,28 +373,28 @@ hierarchies:
             label: Custom Day Of Month
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_DAY_OF_MONTH_NAME
+            name_column: reporting_day_of_month_name
             key_columns:
-              - REPORTING_DAY_OF_MONTH_NAME
-            sort_column: REPORTING_DAY_OF_MONTH_NAME
+              - reporting_day_of_month_name
+            sort_column: reporting_day_of_month_name
 
           - unique_name: d_Custom_Day_Of_Week
             label: Custom Day Of Week
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_DAY_OF_WEEK_NAME
+            name_column: reporting_day_of_week_name
             key_columns:
-              - REPORTING_DAY_OF_WEEK_NAME
-            sort_column: REPORTING_DAY_OF_WEEK_NAME
+              - reporting_day_of_week_name
+            sort_column: reporting_day_of_week_name
 
           - unique_name: d_Custom_Day_Of_Year
             label: Custom Day Of Year
             folder: Date Attributes
             dataset: DateCustom
-            name_column: REPORTING_DAY_OF_YEAR_NAME
+            name_column: reporting_day_of_year_name
             key_columns:
-              - REPORTING_DAY_OF_YEAR_NAME
-            sort_column: REPORTING_DAY_OF_YEAR_NAME
+              - reporting_day_of_year_name
+            sort_column: reporting_day_of_year_name
 
 level_attributes:
 
@@ -408,144 +408,144 @@ level_attributes:
       comparison requirements.
     is_unique_key: true
     dataset: DateCustom
-    name_column: REPORTING_DAY
+    name_column: reporting_day
     key_columns:
-      - DATEKEY
-    sort_column: DATEKEY
+      - datekey
+    sort_column: datekey
 
   - unique_name: custommonth
     label: Custom Month
     description: "Same as [Retail445].[Reporting Month] but has a custom parallel\
       \ period key."
     dataset: DateCustom
-    name_column: REPORTING_MONTH_NAME2
+    name_column: reporting_month_name2
     key_columns:
-      - REPORTING_MONTH
-    sort_column: REPORTING_MONTH
+      - reporting_month
+    sort_column: reporting_month
 
   - unique_name: customquarter
     label: Custom Quarter
     description: "Same as [Retail445].[Reporting Quarter] but has a custom parallel\
       \ period key."
     dataset: DateCustom
-    name_column: REPORTING_QUARTER_NAME
+    name_column: reporting_quarter_name
     key_columns:
-      - REPORTING_QUARTER
-    sort_column: REPORTING_QUARTER
+      - reporting_quarter
+    sort_column: reporting_quarter
 
   - unique_name: customweek
     label: Custom Week
     description: "Same as [Retail445].[Reporting Week] but has a custom parallel period\
       \ key."
     dataset: DateCustom
-    name_column: REPORTING_WEEK_NAME
+    name_column: reporting_week_name
     key_columns:
-      - REPORTING_WEEK
-    sort_column: REPORTING_WEEK
+      - reporting_week
+    sort_column: reporting_week
 
   - unique_name: customyear
     label: Custom Year
     description: "Same as [Retail445].[Reporting Year] but has a custom parallel period\
       \ key."
     dataset: DateCustom
-    name_column: REPORTING_YEAR_NAME
+    name_column: reporting_year_name
     key_columns:
-      - REPORTING_YEAR
-    sort_column: REPORTING_YEAR
+      - reporting_year
+    sort_column: reporting_year
 
   - unique_name: DayMonth
     label: Day
     description: Day level of standard calendar Month Hierarchy
     is_unique_key: true
     dataset: DateCustom
-    name_column: DATE_NAME
+    name_column: date_name
     key_columns:
-      - DATEKEY
-    sort_column: DATEKEY
+      - datekey
+    sort_column: datekey
 
   - unique_name: Month1
     label: Month
     dataset: DateCustom
-    name_column: MONTH_NAME
+    name_column: month_name
     key_columns:
-      - MONTH
-    sort_column: MONTH
+      - month
+    sort_column: month
 
   - unique_name: Quarter
     label: Quarter
     dataset: DateCustom
-    name_column: QUARTER_NAME
+    name_column: quarter_name
     key_columns:
-      - QUARTER
-    sort_column: QUARTER
+      - quarter
+    sort_column: quarter
 
   - unique_name: Reporting_Day
     label: Reporting Day
     description: A Retail 4-4-5 calendar
     is_unique_key: true
     dataset: DateCustom
-    name_column: REPORTING_DAY
+    name_column: reporting_day
     key_columns:
-      - DATEKEY
-    sort_column: DATEKEY
+      - datekey
+    sort_column: datekey
 
   - unique_name: ReportIng_Half_Year
     label: ReportIng Half Year
     dataset: DateCustom
-    name_column: REPORTING_HALF_YEAR_NAME
+    name_column: reporting_half_year_name
     key_columns:
-      - REPORTING_HALF_YEAR
-    sort_column: REPORTING_HALF_YEAR
+      - reporting_half_year
+    sort_column: reporting_half_year
 
   - unique_name: ReportIng_Month
     label: ReportIng Month
     dataset: DateCustom
-    name_column: REPORTING_MONTH_NAME2
+    name_column: reporting_month_name2
     key_columns:
-      - REPORTING_MONTH
-    sort_column: REPORTING_MONTH
+      - reporting_month
+    sort_column: reporting_month
 
   - unique_name: ReportIng_Week
     label: ReportIng Week
     description: Week level of the 4-4-5 calendar
     dataset: DateCustom
-    name_column: REPORTING_WEEK_NAME
+    name_column: reporting_week_name
     key_columns:
-      - REPORTING_WEEK
-    sort_column: REPORTING_WEEK
+      - reporting_week
+    sort_column: reporting_week
 
   - unique_name: ReportIng_Year
     label: ReportIng Year
     dataset: DateCustom
-    name_column: REPORTING_YEAR_NAME
+    name_column: reporting_year_name
     key_columns:
-      - REPORTING_YEAR
-    sort_column: REPORTING_YEAR
+      - reporting_year
+    sort_column: reporting_year
 
   - unique_name: Week
     label: Week
     dataset: DateCustom
-    name_column: WEEK_NAME
+    name_column: week_name
     key_columns:
-      - WEEK
-    sort_column: WEEK
+      - week
+    sort_column: week
 
   - unique_name: YearMonth
     label: Year
     description: Year level of the Standard Calendar Month Hierarchy.
     dataset: DateCustom
-    name_column: YEAR_NAME
+    name_column: year_name
     key_columns:
-      - YEAR
-    sort_column: YEAR
+      - year
+    sort_column: year
 
   - unique_name: YearWeek
     label: Year
     dataset: DateCustom
-    name_column: YEAR_NAME
+    name_column: year_name
     key_columns:
-      - YEAR
-    sort_column: YEAR
+      - year
+    sort_column: year
 
 modeler_metadata:
   version: 0
