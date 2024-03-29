@@ -2,20 +2,20 @@ unique_name: dimproduct
 object_type: dataset
 label: dimproduct
 connection_id: Connection - Internet Sales
-table: DIMPRODUCT
+table: dimproduct
 
 columns:
-  - name: ENGLISHPRODUCTNAME
+  - name: englishproductname
     data_type: string
-  - name: LISTPRICE
+  - name: listprice
     data_type: double
-  - name: PRODUCTKEY
+  - name: productkey
     data_type: "decimal(38,0)"
-  - name: PRODUCTLINE
+  - name: productline
     data_type: string
-  - name: PRODUCTSUBCATEGORYKEY
+  - name: productsubcategorykey
     data_type: "decimal(38,0)"
-  - name: PRODUCTSUBCATEGORYNAME
+  - name: productsubcategoryname
     data_type: string
-  - name: STARTDATE
+  - name: startdate
     data_type: string

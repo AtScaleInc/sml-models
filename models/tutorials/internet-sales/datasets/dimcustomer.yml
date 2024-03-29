@@ -2,22 +2,22 @@ unique_name: dimcustomer
 object_type: dataset
 label: dimcustomer
 connection_id: Connection - Internet Sales
-table: DIMCUSTOMER
+table: dimcustomer
 
 columns:
-  - name: CUSTOMERKEY
+  - name: customerkey
     data_type: "decimal(38,0)"
-  - name: DATEFIRSTPURCHASE
+  - name: datefirstpurchase
     data_type: string
-  - name: FIRSTNAME
+  - name: firstname
     data_type: string
-  - name: FULLNAME
+  - name: fullname
     data_type: string
-  - name: GENDER
+  - name: gender
     data_type: string
-  - name: GEOGRAPHYKEY
+  - name: geographykey
     data_type: "decimal(38,0)"
-  - name: LASTNAME
+  - name: lastname
     data_type: string
-  - name: OCCUPATION
+  - name: occupation
     data_type: string

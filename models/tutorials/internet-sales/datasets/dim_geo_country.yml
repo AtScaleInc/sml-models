@@ -2,8 +2,8 @@ unique_name: dim_geo_country
 object_type: dataset
 label: dim_geo_country
 connection_id: Connection - Internet Sales
-table: DIM_GEO_COUNTRY
+table: dim_geo_country
 
 columns:
-  - name: COUNTRY
+  - name: country
     data_type: string

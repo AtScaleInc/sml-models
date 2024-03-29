@@ -2,22 +2,22 @@ unique_name: dimorder
 object_type: dataset
 label: dimorder
 connection_id: Connection - Internet Sales
-table: DIMORDER
+table: dimorder
 
 columns:
-  - name: CURRENCYKEY
+  - name: currencykey
     data_type: "decimal(38,0)"
-  - name: CURRENCY_NAME
+  - name: currency_name
     data_type: string
-  - name: LINENAME
+  - name: linename
     data_type: string
-  - name: ORDERNAME
+  - name: ordername
     data_type: string
-  - name: ORDERNUMBERLINEKEY
+  - name: ordernumberlinekey
     data_type: string
-  - name: SALESORDERLINENUMBER
+  - name: salesorderlinenumber
     data_type: "decimal(38,0)"
-  - name: SALESORDERNUMBER
+  - name: salesordernumber
     data_type: string
-  - name: TYPE
+  - name: type
     data_type: string

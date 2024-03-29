@@ -2,10 +2,10 @@ unique_name: dimgender
 object_type: dataset
 label: dimgender
 connection_id: Connection - Internet Sales
-table: DIMGENDER
+table: dimgender
 
 columns:
-  - name: GENDERKEY
+  - name: genderkey
     data_type: string
-  - name: GENDERNAME
+  - name: gendername
     data_type: string

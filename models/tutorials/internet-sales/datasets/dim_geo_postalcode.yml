@@ -2,14 +2,14 @@ unique_name: dim_geo_postalcode
 object_type: dataset
 label: dim_geo_postalcode
 connection_id: Connection - Internet Sales
-table: DIM_GEO_POSTALCODE
+table: dim_geo_postalcode
 
 columns:
-  - name: COUNTRY
+  - name: country
     data_type: string
-  - name: COUNTRYPOSTALCODE
+  - name: countrypostalcode
     data_type: string
-  - name: GEOGRAPHYKEY
+  - name: geographykey
     data_type: "decimal(38,0)"
-  - name: POSTALCODE
+  - name: postalcode
     data_type: string

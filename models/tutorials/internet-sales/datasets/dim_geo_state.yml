@@ -2,12 +2,12 @@ unique_name: dim_geo_state
 object_type: dataset
 label: dim_geo_state
 connection_id: Connection - Internet Sales
-table: DIM_GEO_STATE
+table: dim_geo_state
 
 columns:
-  - name: COUNTRY
+  - name: country
     data_type: string
-  - name: STATE
+  - name: state
     data_type: string
-  - name: STATEKEY
+  - name: statekey
     data_type: string

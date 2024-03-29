@@ -2,53 +2,53 @@ unique_name: factinternetsales
 object_type: dataset
 label: factinternetsales
 connection_id: Connection - Internet Sales
-table: FACTINTERNETSALES
+table: factinternetsales
 
 columns:
-  - name: CURRENCYKEY
+  - name: currencykey
     data_type: "decimal(38,0)"
-  - name: CUSTOMERKEY
+  - name: customerkey
     data_type: "decimal(38,0)"
-  - name: Calculated Tax
+  - name: calculated tax
     data_type: double
-    sql: '"SALESAMOUNT"*0.085'
-  - name: ORDERDATE
+    sql: '"salesamount"*0.085'
+  - name: orderdate
     data_type: string
-  - name: ORDERDATEKEY
+  - name: orderdatekey
     data_type: "decimal(38,0)"
-  - name: ORDERQUANTITY
+  - name: orderquantity
     data_type: "decimal(38,0)"
-  - name: PRODUCTKEY
+  - name: productkey
     data_type: "decimal(38,0)"
-  - name: SALESAMOUNT
+  - name: salesamount
     data_type: double
-  - name: SALESORDERLINENUMBER
+  - name: salesorderlinenumber
     data_type: "decimal(38,0)"
-  - name: SALESORDERNUMBER
+  - name: salesordernumber
     data_type: string
-  - name: SALES_REASONS
+  - name: sales_reasons
     data_type: string
-  - name: SHIPDATEKEY
+  - name: shipdatekey
     data_type: "decimal(38,0)"
-  - name: TAXAMT
+  - name: taxamt
     data_type: double
-  - name: UNITPRICE
+  - name: unitprice
     data_type: double
-  - name: PRODUCT_INFO
+  - name: product_info
     map:
       field_terminator: ","
       key_terminator: ':'
-      key_type: String
-      value_type: String
+      key_type: string
+      value_type: string
   - name: color
     data_type: string
-    parent_column: PRODUCT_INFO
+    parent_column: product_info
   - name: size
     data_type: string
-    parent_column: PRODUCT_INFO
+    parent_column: product_info
   - name: style
     data_type: string
-    parent_column: PRODUCT_INFO
+    parent_column: product_info
   - name: weight
     data_type: string
-    parent_column: PRODUCT_INFO
+    parent_column: product_info

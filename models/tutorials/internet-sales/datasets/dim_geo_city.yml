@@ -2,14 +2,14 @@ unique_name: dim_geo_city
 object_type: dataset
 label: dim_geo_city
 connection_id: Connection - Internet Sales
-table: DIM_GEO_CITY
+table: dim_geo_city
 
 columns:
-  - name: CITY
+  - name: city
     data_type: string
-  - name: CITYSTATEKEY
+  - name: citystatekey
     data_type: string
-  - name: GEOGRAPHYKEY
+  - name: geographykey
     data_type: "decimal(38,0)"
-  - name: STATEKEY
+  - name: statekey
     data_type: string
