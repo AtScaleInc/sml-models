@@ -5,3 +5,4 @@ calculation_method: sum
 format: "#,##0"
 dataset: FACT_PURCHASE
 column: ORDERED_QUANTITY
+unrelated_dimensions_handling: repeat

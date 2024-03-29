@@ -5,3 +5,4 @@ calculation_method: sum
 format: "$#,##0;($#,##0)"
 dataset: FACT_TRANSACTION
 column: TAX_AMOUNT
+unrelated_dimensions_handling: repeat

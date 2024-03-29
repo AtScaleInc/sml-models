@@ -5,3 +5,4 @@ calculation_method: sum
 format: "#,##0"
 dataset: FACT_STOCKHOLDING
 column: QUANTITY_ON_HAND
+unrelated_dimensions_handling: repeat
