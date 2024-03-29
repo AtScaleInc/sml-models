@@ -9,7 +9,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - ORDERDATEKEY
+        - orderdatekey
     to:
       dimension: Date Dimension
       level: DayMonth
@@ -19,7 +19,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - SHIPDATEKEY
+        - shipdatekey
     to:
       dimension: Date Dimension
       level: DayMonth
@@ -29,7 +29,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - ORDERDATEKEY
+        - orderdatekey
     to:
       dimension: Date Dimension
       level: Reporting_Day
@@ -39,7 +39,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - SHIPDATEKEY
+        - shipdatekey
     to:
       dimension: Date Dimension
       level: Reporting_Day
@@ -49,7 +49,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - PRODUCTKEY
+        - productkey
     to:
       dimension: Product Dimension
       level: Product Name
@@ -58,9 +58,9 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - SALESORDERLINENUMBER
-        - SALESORDERNUMBER
-        - CURRENCYKEY
+        - salesorderlinenumber
+        - salesordernumber
+        - currencykey
     to:
       dimension: Order Dimension
       level: order_line_item
@@ -69,7 +69,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - ORDERDATEKEY
+        - orderdatekey
     to:
       dimension: Date Dimension
       level: customday
@@ -79,7 +79,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - SHIPDATEKEY
+        - shipdatekey
     to:
       dimension: Date Dimension
       level: customday
@@ -89,7 +89,7 @@ relationships:
     from:
       dataset: factinternetsales
       join_columns:
-        - CUSTOMERKEY
+        - customerkey
     to:
       dimension: Customer Dimension
       level: Customer Name
