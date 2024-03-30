@@ -5,7 +5,7 @@ type: time
 
 hierarchies:
 
-  - unique_name: Date Dimension TPC-DS
+  - unique_name: Date Dimension - TPC-DS
     label: Date Month Hierarchy
     folder: Date Attributes
     filter_empty: "yes"
