@@ -1,11 +1,11 @@
-unique_name: Date Dimension - TPC-DS
+unique_name: Date Dimension
 object_type: dimension
-label: Date Dimension - TPC-DS
+label: Date Dimension
 type: time
 
 hierarchies:
 
-  - unique_name: Date Dimension - TPC-DS
+  - unique_name: Date Dimension
     label: Date Month Hierarchy
     folder: Date Attributes
     filter_empty: "yes"
