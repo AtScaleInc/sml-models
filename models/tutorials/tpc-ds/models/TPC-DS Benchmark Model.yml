@@ -21,7 +21,7 @@ relationships:
         - CS_SOLD_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Sold {0}"
 
   - unique_name: catalog_sales_Date_Dimension_Ship
@@ -31,7 +31,7 @@ relationships:
         - CS_SHIP_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Ship {0}"
 
   - unique_name: catalog_sales_Fulfilling_Warehouse
@@ -162,7 +162,7 @@ relationships:
         - SS_SOLD_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Sold {0}"
 
   - unique_name: store_promotion_Promotions
@@ -245,7 +245,7 @@ relationships:
         - WS_SOLD_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Sold {0}"
 
   - unique_name: web_sales_Date_Dimension_Ship
@@ -255,7 +255,7 @@ relationships:
         - WS_SHIP_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Ship {0}"
 
   - unique_name: web_sales_Fulfilling_Warehouse
@@ -386,7 +386,7 @@ relationships:
         - SR_RETURNED_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Return {0}"
 
   - unique_name: store_returns_Time_Dimension_Return
@@ -470,7 +470,7 @@ relationships:
         - SS_SOLD_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Sold {0}"
 
   - unique_name: store_sales_Time_Dimension_Sold
@@ -555,7 +555,7 @@ relationships:
         - INV_DATE_SK
     to:
       dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy
+      level: Date Week Hierarchy - TPC-DS
     role_play: "Inventory {0}"
 
   - unique_name: inventory_Fulfilling_Warehouse

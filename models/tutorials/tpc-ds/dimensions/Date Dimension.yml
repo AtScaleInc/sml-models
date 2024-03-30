@@ -1,11 +1,11 @@
-unique_name: Date Dimension
+unique_name: Date Dimension - TPC-DS
 object_type: dimension
 label: Date Dimension
 type: time
 
 hierarchies:
 
-  - unique_name: Date Dimension
+  - unique_name: Date Dimension TPC-DS
     label: Date Month Hierarchy
     folder: Date Attributes
     filter_empty: "yes"
@@ -134,8 +134,8 @@ hierarchies:
               - Range
               - Siblings
 
-  - unique_name: Date Week Hierarchy
-    label: Date Week Hierarchy
+  - unique_name: Date Week Hierarchy - TPC-DS
+    label: Date Week Hierarchy - TPC-DS
     folder: Date Attributes
     filter_empty: "yes"
 
@@ -165,7 +165,7 @@ hierarchies:
               - Range
               - Siblings
 
-      - unique_name: Date Week Hierarchy
+      - unique_name: Date Week Hierarchy - TPC-DS
         time_unit: day
 
         secondary_attributes:
@@ -276,7 +276,7 @@ level_attributes:
       - Range
       - Siblings
 
-  - unique_name: Date Week Hierarchy
+  - unique_name: Date Week Hierarchy - TPC-DS
     label: Date
     is_unique_key: true
     dataset: date_dim
