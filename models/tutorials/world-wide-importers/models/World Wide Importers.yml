@@ -33,7 +33,7 @@ relationships:
         - DATE_KEY
     to:
       dimension: WW Date
-      level: Fiscal Day
+      level: Fiscal Day - WW
     role_play: "Movement {0}"
 
   - unique_name: FACT_MOVEMENT_Supplier_MovementSupplier
@@ -53,7 +53,7 @@ relationships:
         - DATE_KEY
     to:
       dimension: WW Date
-      level: Calendar Day
+      level: Calendar Day - WW
     role_play: "Movement {0}"
 
   - unique_name: FACT_MOVEMENT_Transaction_Type_Movement
@@ -93,7 +93,7 @@ relationships:
         - DATE_KEY
     to:
       dimension: WW Date
-      level: Fiscal Day
+      level: Fiscal Day - WW
     role_play: "Transaction {0}"
 
   - unique_name: FACT_TRANSACTION_Payment_Method_Transaction
@@ -123,7 +123,7 @@ relationships:
         - DATE_KEY
     to:
       dimension: WW Date
-      level: Calendar Day
+      level: Calendar Day - WW
     role_play: "Transaction {0}"
 
   - unique_name: FACT_TRANSACTION_Transaction_Type
@@ -191,7 +191,7 @@ relationships:
         - ORDER_DATE_KEY
     to:
       dimension: WW Date
-      level: Fiscal Day
+      level: Fiscal Day - WW
     role_play: "Order {0}"
 
   - unique_name: FACT_ORDER_Date_OrderPicked
@@ -201,7 +201,7 @@ relationships:
         - PICKED_DATE_KEY
     to:
       dimension: WW Date
-      level: Fiscal Day
+      level: Fiscal Day - WW
     role_play: "Order Picked {0}"
 
   - unique_name: FACT_ORDER_Employee_OrderSalesperson
@@ -231,7 +231,7 @@ relationships:
         - ORDER_DATE_KEY
     to:
       dimension: WW Date
-      level: Calendar Day
+      level: Calendar Day - WW
     role_play: "Order {0}"
 
   - unique_name: FACT_ORDER_Date_OrderPicked_1
@@ -241,7 +241,7 @@ relationships:
         - PICKED_DATE_KEY
     to:
       dimension: WW Date
-      level: Calendar Day
+      level: Calendar Day - WW
     role_play: "Order Picked {0}"
 
   - unique_name: FACT_SALE_Geography_Sale
@@ -301,7 +301,7 @@ relationships:
         - DELIVERY_DATE_KEY
     to:
       dimension: WW Date
-      level: Fiscal Day
+      level: Fiscal Day - WW
     role_play: "Sale Delivery {0}"
 
   - unique_name: FACT_SALE_Date_SaleInvoice
@@ -311,7 +311,7 @@ relationships:
         - INVOICE_DATE_KEY
     to:
       dimension: WW Date
-      level: Fiscal Day
+      level: Fiscal Day - WW
     role_play: "Sale Invoice {0}"
 
   - unique_name: FACT_SALE_Employee_SaleSalesperson
@@ -331,7 +331,7 @@ relationships:
         - DELIVERY_DATE_KEY
     to:
       dimension: WW Date
-      level: Calendar Day
+      level: Calendar Day - WW
     role_play: "Sale Delivery {0}"
 
   - unique_name: FACT_SALE_Date_SaleInvoice_1
@@ -341,7 +341,7 @@ relationships:
         - INVOICE_DATE_KEY
     to:
       dimension: WW Date
-      level: Calendar Day
+      level: Calendar Day - WW
     role_play: "Sale Invoice {0}"
 
   - unique_name: FACT_PURCHASE_Stock_Item_Purchase
@@ -361,7 +361,7 @@ relationships:
         - DATE_KEY
     to:
       dimension: WW Date
-      level: Fiscal Day
+      level: Fiscal Day - WW
     role_play: "Purchase {0}"
 
   - unique_name: FACT_PURCHASE_Supplier_PurchaseSupplier
@@ -381,7 +381,7 @@ relationships:
         - DATE_KEY
     to:
       dimension: WW Date
-      level: Calendar Day
+      level: Calendar Day - WW
     role_play: "Purchase {0}"
 
 metrics:
