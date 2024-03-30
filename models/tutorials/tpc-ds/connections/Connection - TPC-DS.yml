@@ -1,5 +1,5 @@
-unique_name: Connection - TPC-DS
-label: Connection - TPC-DS
+unique_name: Connection - TPCDS
+label: Connection - TPCDS
 object_type: connection
 as_connection: Snowflake - DA37161
 database: ATSCALE_TUTORIAL_DATA

@@ -1,7 +1,7 @@
 unique_name: purchase_by_channel
 object_type: dataset
 label: purchase_by_channel
-connection_id: Connection - TPC-DS
+connection_id: Connection - TPCDS
 sql: |-
   SELECT
       customer_sk,

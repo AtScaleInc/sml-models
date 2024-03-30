@@ -1,7 +1,7 @@
 unique_name: date_dim
 object_type: dataset
 label: date_dim
-connection_id: Connection - TPC-DS
+connection_id: Connection - TPCDS
 table: DATE_DIM
 
 columns:

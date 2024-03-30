@@ -1,7 +1,7 @@
 unique_name: store_sales
 object_type: dataset
 label: store_sales
-connection_id: Connection - TPC-DS
+connection_id: Connection - TPCDS
 table: STORE_SALES
 
 columns:

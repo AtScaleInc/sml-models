@@ -1,7 +1,7 @@
 unique_name: ship_mode
 object_type: dataset
 label: ship_mode
-connection_id: Connection - TPC-DS
+connection_id: Connection - TPCDS
 table: SHIP_MODE
 
 columns:

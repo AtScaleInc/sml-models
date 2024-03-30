@@ -1,7 +1,7 @@
 unique_name: store_returns
 object_type: dataset
 label: store_returns
-connection_id: Connection - TPC-DS
+connection_id: Connection - TPCDS
 sql: "SELECT ss.*, sr.*,\n  case when (sr_returned_date_sk - ss_sold_date_sk <= 30)\
   \ then '<= 30 days' \n  when (sr_returned_date_sk - ss_sold_date_sk > 30) and \n\
   \                 (sr_returned_date_sk - ss_sold_date_sk <= 60) then '31-60 days'\
