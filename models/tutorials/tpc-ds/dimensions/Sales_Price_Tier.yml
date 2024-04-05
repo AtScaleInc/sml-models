@@ -19,9 +19,9 @@ level_attributes:
   - unique_name: d_sales_price_tier
     label: Sales Price Tier
     dataset: store_sales
-    name_column: Sales Price Tier
+    name_column: sales price tier
     key_columns:
-      - Sales Price Tier
+      - sales price tier
 
 modeler_metadata:
   version: 0
