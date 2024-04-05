@@ -55,7 +55,7 @@ hierarchies:
             label: Month Sequence
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_MONTH_SEQ
+            name_column: d_month_seq
             key_columns:
               - d_month_seq
             sort_column: d_month_seq

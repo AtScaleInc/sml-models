@@ -40,7 +40,7 @@ hierarchies:
             label: Product Brand ID
             folder: Product Attributes
             dataset: item
-            name_column: I_BrAND_ID
+            name_column: i_brand_id
             key_columns:
               - i_brand_id
             sort_column: i_brand_id
@@ -122,14 +122,14 @@ level_attributes:
   - unique_name: I category
     label: Product category
     dataset: item
-    name_column: I_category
+    name_column: i_category
     key_columns:
-      - I_category
+      - i_category
 
   - unique_name: Product Dimension - TPC-DS
     label: Product Item
     is_unique_key: true
     dataset: item
-    name_column: I_ITEM_DESC
+    name_column: i_item_desc
     key_columns:
-      - I_ITEM_SK
+      - i_item_sk
