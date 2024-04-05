@@ -95,7 +95,7 @@ relationships:
     from:
       dataset: catalog_sales
       join_columns:
-        - CS_SHIP_DATE_SK
+        - cs_ship_date_sk
     to:
       dimension: Date Dimension - TPC-DS
       level: Time Dimension
