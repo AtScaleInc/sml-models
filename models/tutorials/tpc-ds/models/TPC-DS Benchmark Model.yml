@@ -496,7 +496,7 @@ relationships:
     from:
       dataset: store_sales
       join_columns:
-        - SS_ADDR_SK
+        - ss_addr_sk
     to:
       dimension: Customer Address
       level: Customer Address
