@@ -3,4 +3,4 @@ label: Connection - WW
 object_type: connection
 as_connection: Postgres
 database: atscale
-schema: worldwide_importers
+schema: ww_importers
