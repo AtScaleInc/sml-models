@@ -8,9 +8,9 @@ relationships:
 
   - unique_name: FACT_MOVEMENT_Stock_Item_Movement
     from:
-      dataset: FACT_MOVEMENT
+      dataset: fact_movement
       join_columns:
-        - STOCK_ITEM_KEY
+        - stock_item_key
     to:
       dimension: WW Stock Item
       level: Stock Item
@@ -18,7 +18,7 @@ relationships:
 
   - unique_name: FACT_MOVEMENT_Customer_Movement
     from:
-      dataset: FACT_MOVEMENT
+      dataset: fact_movement
       join_columns:
         - customer_key
     to:
@@ -28,9 +28,9 @@ relationships:
 
   - unique_name: FACT_MOVEMENT_Date_Movement
     from:
-      dataset: FACT_MOVEMENT
+      dataset: fact_movement
       join_columns:
-        - DATE_KEY
+        - date_key
     to:
       dimension: WW Date
       level: Fiscal Day - WW
@@ -38,9 +38,9 @@ relationships:
 
   - unique_name: FACT_MOVEMENT_Supplier_MovementSupplier
     from:
-      dataset: FACT_MOVEMENT
+      dataset: fact_movement
       join_columns:
-        - SUPPLIER_KEY
+        - supplier_key
     to:
       dimension: WW Supplier
       level: Supplier
@@ -48,9 +48,9 @@ relationships:
 
   - unique_name: FACT_MOVEMENT_Date_Movement_1
     from:
-      dataset: FACT_MOVEMENT
+      dataset: fact_movement
       join_columns:
-        - DATE_KEY
+        - date_key
     to:
       dimension: WW Date
       level: Calendar Day - WW
@@ -58,9 +58,9 @@ relationships:
 
   - unique_name: FACT_MOVEMENT_Transaction_Type_Movement
     from:
-      dataset: FACT_MOVEMENT
+      dataset: fact_movement
       join_columns:
-        - TRANSACTION_TYPE_KEY
+        - transaction_type_key
     to:
       dimension: WW Transaction Type
       level: Transaction Type Level
@@ -68,9 +68,9 @@ relationships:
 
   - unique_name: FACT_TRANSACTION_Customer_TransactionBillto
     from:
-      dataset: FACT_TRANSACTION
+      dataset: fact_transaction
       join_columns:
-        - BILL_TO_CUSTOMER_KEY
+        - bill_to_customer_key
     to:
       dimension: WW Customer
       level: Dimension Customer Level
@@ -78,7 +78,7 @@ relationships:
 
   - unique_name: FACT_TRANSACTION_Customer_Transaction
     from:
-      dataset: FACT_TRANSACTION
+      dataset: fact_transaction
       join_columns:
         - customer_key
     to:
@@ -88,9 +88,9 @@ relationships:
 
   - unique_name: FACT_TRANSACTION_Date_Transaction
     from:
-      dataset: FACT_TRANSACTION
+      dataset: fact_transaction
       join_columns:
-        - DATE_KEY
+        - date_key
     to:
       dimension: WW Date
       level: Fiscal Day - WW
@@ -98,7 +98,7 @@ relationships:
 
   - unique_name: FACT_TRANSACTION_Payment_Method_Transaction
     from:
-      dataset: FACT_TRANSACTION
+      dataset: fact_transaction
       join_columns:
         - payment_method_key
     to:
@@ -108,9 +108,9 @@ relationships:
 
   - unique_name: FACT_TRANSACTION_Supplier_TransactionSupplier
     from:
-      dataset: FACT_TRANSACTION
+      dataset: fact_transaction
       join_columns:
-        - SUPPLIER_KEY
+        - supplier_key
     to:
       dimension: WW Supplier
       level: Supplier
@@ -118,9 +118,9 @@ relationships:
 
   - unique_name: FACT_TRANSACTION_Date_Transaction_1
     from:
-      dataset: FACT_TRANSACTION
+      dataset: fact_transaction
       join_columns:
-        - DATE_KEY
+        - date_key
     to:
       dimension: WW Date
       level: Calendar Day - WW
@@ -128,25 +128,25 @@ relationships:
 
   - unique_name: FACT_TRANSACTION_Transaction_Type
     from:
-      dataset: FACT_TRANSACTION
+      dataset: fact_transaction
       join_columns:
-        - TRANSACTION_TYPE_KEY
+        - transaction_type_key
     to:
       dimension: WW Transaction Type
       level: Transaction Type Level
 
   - unique_name: FACT_STOCKHOLDING_Stock_Item
     from:
-      dataset: FACT_STOCKHOLDING
+      dataset: fact_stockholding
       join_columns:
-        - STOCK_ITEM_KEY
+        - stock_item_key
     to:
       dimension: WW Stock Item
       level: Stock Item
 
   - unique_name: FACT_ORDER_Geography_Order
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
         - city_key
     to:
@@ -156,9 +156,9 @@ relationships:
 
   - unique_name: FACT_ORDER_Stock_Item_Order
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
-        - STOCK_ITEM_KEY
+        - stock_item_key
     to:
       dimension: WW Stock Item
       level: Stock Item
@@ -166,7 +166,7 @@ relationships:
 
   - unique_name: FACT_ORDER_Geography_Order_1
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
         - city_key
     to:
@@ -176,7 +176,7 @@ relationships:
 
   - unique_name: FACT_ORDER_Customer_Order
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
         - customer_key
     to:
@@ -186,9 +186,9 @@ relationships:
 
   - unique_name: FACT_ORDER_Date_Order
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
-        - ORDER_DATE_KEY
+        - order_date_key
     to:
       dimension: WW Date
       level: Fiscal Day - WW
@@ -196,9 +196,9 @@ relationships:
 
   - unique_name: FACT_ORDER_Date_OrderPicked
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
-        - PICKED_DATE_KEY
+        - picked_date_key
     to:
       dimension: WW Date
       level: Fiscal Day - WW
@@ -206,9 +206,9 @@ relationships:
 
   - unique_name: FACT_ORDER_Employee_OrderSalesperson
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
-        - SALESPERSON_KEY
+        - salesperson_key
     to:
       dimension: WW Employee
       level: Employee
@@ -216,9 +216,9 @@ relationships:
 
   - unique_name: FACT_ORDER_Employee_OrderPicker
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
-        - PICKER_KEY
+        - picker_key
     to:
       dimension: WW Employee
       level: Employee
@@ -226,9 +226,9 @@ relationships:
 
   - unique_name: FACT_ORDER_Date_Order_1
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
-        - ORDER_DATE_KEY
+        - order_date_key
     to:
       dimension: WW Date
       level: Calendar Day - WW
@@ -236,9 +236,9 @@ relationships:
 
   - unique_name: FACT_ORDER_Date_OrderPicked_1
     from:
-      dataset: FACT_ORDER
+      dataset: fact_order
       join_columns:
-        - PICKED_DATE_KEY
+        - picked_date_key
     to:
       dimension: WW Date
       level: Calendar Day - WW
@@ -246,7 +246,7 @@ relationships:
 
   - unique_name: FACT_SALE_Geography_Sale
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
         - city_key
     to:
@@ -256,9 +256,9 @@ relationships:
 
   - unique_name: FACT_SALE_Stock_Item_Sale
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
-        - STOCK_ITEM_KEY
+        - stock_item_key
     to:
       dimension: WW Stock Item
       level: Stock Item
@@ -266,7 +266,7 @@ relationships:
 
   - unique_name: FACT_SALE_Geography_Sale_1
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
         - city_key
     to:
@@ -276,7 +276,7 @@ relationships:
 
   - unique_name: FACT_SALE_Customer_Sale
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
         - customer_key
     to:
@@ -286,9 +286,9 @@ relationships:
 
   - unique_name: FACT_SALE_Customer_SaleBillto
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
-        - BILL_TO_CUSTOMER_KEY
+        - bill_to_customer_key
     to:
       dimension: WW Customer
       level: Dimension Customer Level
@@ -296,9 +296,9 @@ relationships:
 
   - unique_name: FACT_SALE_Date_SaleDelivery
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
-        - DELIVERY_DATE_KEY
+        - delivery_date_key
     to:
       dimension: WW Date
       level: Fiscal Day - WW
@@ -306,9 +306,9 @@ relationships:
 
   - unique_name: FACT_SALE_Date_SaleInvoice
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
-        - INVOICE_DATE_KEY
+        - invoice_date_key
     to:
       dimension: WW Date
       level: Fiscal Day - WW
@@ -316,9 +316,9 @@ relationships:
 
   - unique_name: FACT_SALE_Employee_SaleSalesperson
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
-        - SALESPERSON_KEY
+        - salesperson_key
     to:
       dimension: WW Employee
       level: Employee
@@ -326,9 +326,9 @@ relationships:
 
   - unique_name: FACT_SALE_Date_SaleDelivery_1
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
-        - DELIVERY_DATE_KEY
+        - delivery_date_key
     to:
       dimension: WW Date
       level: Calendar Day - WW
@@ -336,9 +336,9 @@ relationships:
 
   - unique_name: FACT_SALE_Date_SaleInvoice_1
     from:
-      dataset: FACT_SALE
+      dataset: fact_sale
       join_columns:
-        - INVOICE_DATE_KEY
+        - invoice_date_key
     to:
       dimension: WW Date
       level: Calendar Day - WW
@@ -346,9 +346,9 @@ relationships:
 
   - unique_name: FACT_PURCHASE_Stock_Item_Purchase
     from:
-      dataset: FACT_PURCHASE
+      dataset: fact_purchase
       join_columns:
-        - STOCK_ITEM_KEY
+        - stock_item_key
     to:
       dimension: WW Stock Item
       level: Stock Item
@@ -356,9 +356,9 @@ relationships:
 
   - unique_name: FACT_PURCHASE_Date_Purchase
     from:
-      dataset: FACT_PURCHASE
+      dataset: fact_purchase
       join_columns:
-        - DATE_KEY
+        - date_key
     to:
       dimension: WW Date
       level: Fiscal Day - WW
@@ -366,9 +366,9 @@ relationships:
 
   - unique_name: FACT_PURCHASE_Supplier_PurchaseSupplier
     from:
-      dataset: FACT_PURCHASE
+      dataset: fact_purchase
       join_columns:
-        - SUPPLIER_KEY
+        - supplier_key
     to:
       dimension: WW Supplier
       level: Supplier
@@ -376,9 +376,9 @@ relationships:
 
   - unique_name: FACT_PURCHASE_Date_Purchase_1
     from:
-      dataset: FACT_PURCHASE
+      dataset: fact_purchase
       join_columns:
-        - DATE_KEY
+        - date_key
     to:
       dimension: WW Date
       level: Calendar Day - WW

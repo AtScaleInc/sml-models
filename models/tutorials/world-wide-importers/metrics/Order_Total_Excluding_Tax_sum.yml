@@ -3,6 +3,6 @@ object_type: metric
 label: Order Total Excluding Tax
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: FACT_ORDER
-column: TOTAL_EXCLUDING_TAX
+dataset: fact_order
+column: total_excluding_tax
 unrelated_dimensions_handling: repeat

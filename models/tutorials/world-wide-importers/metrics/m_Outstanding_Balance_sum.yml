@@ -3,6 +3,6 @@ object_type: metric
 label: Outstanding Balance
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: FACT_TRANSACTION
-column: OUTSTANDING_BALANCE
+dataset: fact_transaction
+column: outstanding_balance
 unrelated_dimensions_handling: repeat

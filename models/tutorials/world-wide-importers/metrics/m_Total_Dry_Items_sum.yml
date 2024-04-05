@@ -3,6 +3,6 @@ object_type: metric
 label: Total Dry Items
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_SALE
-column: TOTAL_DRY_ITEMS
+dataset: fact_sale
+column: total_dry_items
 unrelated_dimensions_handling: repeat

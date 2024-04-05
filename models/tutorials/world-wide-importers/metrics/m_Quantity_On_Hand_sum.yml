@@ -3,6 +3,6 @@ object_type: metric
 label: Stock Quantity On Hand
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_STOCKHOLDING
-column: QUANTITY_ON_HAND
+dataset: fact_stockholding
+column: quantity_on_hand
 unrelated_dimensions_handling: repeat

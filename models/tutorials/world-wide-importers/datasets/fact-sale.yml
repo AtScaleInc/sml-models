@@ -1,49 +1,49 @@
-unique_name: FACT_SALE
+unique_name: fact_sale
 object_type: dataset
-label: FACT_SALE
+label: fact_sale
 connection_id: Connection - WW
-table: FACT_SALE
+table: fact_sale
 
 columns:
-  - name: BILL_TO_CUSTOMER_KEY
+  - name: bill_to_customer_key
     data_type: long
   - name: city_key
     data_type: long
   - name: customer_key
     data_type: long
-  - name: DELIVERY_DATE_KEY
+  - name: delivery_date_key
     data_type: date
-  - name: DESCRIPTION
+  - name: description
     data_type: string
-  - name: INVOICE_DATE_KEY
+  - name: invoice_date_key
     data_type: date
-  - name: LINEAGE_KEY
+  - name: lineage_key
     data_type: long
-  - name: PACKAGE
+  - name: package
     data_type: string
-  - name: PROFIT
+  - name: profit
     data_type: double
-  - name: QUANTITY
+  - name: quantity
     data_type: long
-  - name: SALE_KEY
+  - name: sale_key
     data_type: long
-  - name: SALESPERSON_KEY
+  - name: salesperson_key
     data_type: long
-  - name: STOCK_ITEM_KEY
+  - name: stock_item_key
     data_type: long
-  - name: TAX_AMOUNT
+  - name: tax_amount
     data_type: double
-  - name: TAX_RATE
+  - name: tax_rate
     data_type: double
-  - name: TOTAL_CHILLER_ITEMS
+  - name: total_chiller_items
     data_type: long
-  - name: TOTAL_DRY_ITEMS
+  - name: total_dry_items
     data_type: long
-  - name: TOTAL_EXCLUDING_TAX
+  - name: total_excluding_tax
     data_type: double
-  - name: TOTAL_INCLUDING_TAX
+  - name: total_including_tax
     data_type: double
-  - name: UNIT_PRICE
+  - name: unit_price
     data_type: double
-  - name: WWI_INVOICE_ID
+  - name: wwi_invoice_id
     data_type: long

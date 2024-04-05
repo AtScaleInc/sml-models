@@ -3,6 +3,6 @@ object_type: metric
 label: Last Stocktake Quantity
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_STOCKHOLDING
-column: LAST_STOCKTAKE_QUANTITY
+dataset: fact_stockholding
+column: last_stocktake_quantity
 unrelated_dimensions_handling: repeat

@@ -1,29 +1,29 @@
-unique_name: FACT_MOVEMENT
+unique_name: fact_movement
 object_type: dataset
-label: FACT_MOVEMENT
+label: fact_movement
 connection_id: Connection - WW
-table: FACT_MOVEMENT
+table: fact_movement
 
 columns:
   - name: customer_key
     data_type: long
-  - name: DATE_KEY
+  - name: date_key
     data_type: date
-  - name: LINEAGE_KEY
+  - name: lineage_key
     data_type: long
-  - name: MOVEMENT_KEY
+  - name: movement_key
     data_type: long
-  - name: QUANTITY
+  - name: quantity
     data_type: long
-  - name: STOCK_ITEM_KEY
+  - name: stock_item_key
     data_type: long
-  - name: SUPPLIER_KEY
+  - name: supplier_key
     data_type: long
-  - name: TRANSACTION_TYPE_KEY
+  - name: transaction_type_key
     data_type: long
-  - name: WWI_INVOICE_ID
+  - name: wwi_invoice_id
     data_type: long
-  - name: WWI_PURCHASE_ORDER_ID
+  - name: wwi_purchase_order_id
     data_type: long
-  - name: WWI_STOCK_ITEM_TRANSACTION_ID
+  - name: wwi_stock_item_transaction_id
     data_type: long

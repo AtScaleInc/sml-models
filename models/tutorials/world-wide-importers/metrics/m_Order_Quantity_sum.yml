@@ -3,6 +3,6 @@ object_type: metric
 label: Order Quantity
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_ORDER
-column: QUANTITY
+dataset: fact_order
+column: quantity
 unrelated_dimensions_handling: repeat

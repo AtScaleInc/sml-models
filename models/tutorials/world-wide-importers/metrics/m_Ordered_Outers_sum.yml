@@ -3,6 +3,6 @@ object_type: metric
 label: Ordered Outers
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_PURCHASE
-column: ORDERED_OUTERS
+dataset: fact_purchase
+column: ordered_outers
 unrelated_dimensions_handling: repeat

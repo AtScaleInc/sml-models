@@ -3,6 +3,6 @@ object_type: metric
 label: Movement Quantity
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_MOVEMENT
-column: QUANTITY
+dataset: fact_movement
+column: quantity
 unrelated_dimensions_handling: repeat

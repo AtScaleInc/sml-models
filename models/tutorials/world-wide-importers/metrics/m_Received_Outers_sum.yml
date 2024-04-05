@@ -3,6 +3,6 @@ object_type: metric
 label: Received Outers
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_PURCHASE
-column: RECEIVED_OUTERS
+dataset: fact_purchase
+column: received_outers
 unrelated_dimensions_handling: repeat

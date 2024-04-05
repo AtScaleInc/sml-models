@@ -19,7 +19,7 @@ level_attributes:
   - unique_name: Transaction Type Level
     label: Transaction Type Level
     is_unique_key: true
-    dataset: TRANSACTIONTYPE
-    name_column: TRANSACTION_TYPE
+    dataset: transactiontype
+    name_column: transaction_type
     key_columns:
-      - TRANSACTION_TYPE_KEY
+      - transaction_type_key

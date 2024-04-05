@@ -3,6 +3,6 @@ object_type: metric
 label: Sale Total Including Tax
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: FACT_SALE
-column: TOTAL_INCLUDING_TAX
+dataset: fact_sale
+column: total_including_tax
 unrelated_dimensions_handling: repeat

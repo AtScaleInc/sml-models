@@ -3,6 +3,6 @@ object_type: metric
 label: Order Tax Amount
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: FACT_ORDER
-column: TAX_AMOUNT
+dataset: fact_order
+column: tax_amount
 unrelated_dimensions_handling: repeat

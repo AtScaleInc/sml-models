@@ -11,13 +11,13 @@ columns:
     data_type: long
   - name: is_salesperson
     data_type: boolean
-  - name: LINEAGE_KEY
+  - name: lineage_key
     data_type: long
   - name: preferred_name
     data_type: string
-  - name: VALID_FROM
+  - name: valid_from
     data_type: datetime
-  - name: VALID_TO
+  - name: valid_to
     data_type: datetime
-  - name: WWI_EMPLOYEE_ID
+  - name: wwi_employee_id
     data_type: long

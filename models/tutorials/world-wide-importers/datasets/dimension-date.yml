@@ -7,31 +7,31 @@ table: date
 columns:
   - name: calendar_month_label
     data_type: string
-  - name: CALENDAR_MONTH_NUMBER
+  - name: calendar_month_number
     data_type: long
-  - name: CALENDAR_YEAR
+  - name: calendar_year
     data_type: long
   - name: calendar_year_label
     data_type: string
   - name: date
     data_type: date
-  - name: DAY
+  - name: day
     data_type: long
-  - name: DAY_NUMBER
+  - name: day_number
     data_type: long
   - name: fiscal_month_label
     data_type: string
-  - name: FISCAL_MONTH_NUMBER
+  - name: fiscal_month_number
     data_type: long
-  - name: FISCAL_YEAR
+  - name: fiscal_year
     data_type: long
   - name: fiscal_year_label
     data_type: string
-  - name: ISO_WEEK_NUMBER
+  - name: iso_week_number
     data_type: long
-  - name: MONTH
+  - name: month
     data_type: string
-  - name: SHORT_MONTH
+  - name: short_month
     data_type: string
   - name: year_month
     data_type: string

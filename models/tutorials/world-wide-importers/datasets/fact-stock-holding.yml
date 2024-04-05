@@ -1,25 +1,25 @@
-unique_name: FACT_STOCKHOLDING
+unique_name: fact_stockholding
 object_type: dataset
-label: FACT_STOCKHOLDING
+label: fact_stockholding
 connection_id: Connection - WW
-table: FACT_STOCKHOLDING
+table: fact_stockholding
 
 columns:
-  - name: BIN_LOCATION
+  - name: bin_location
     data_type: string
-  - name: LAST_COST_PRICE
+  - name: last_cost_price
     data_type: double
-  - name: LAST_STOCKTAKE_QUANTITY
+  - name: last_stocktake_quantity
     data_type: long
-  - name: LINEAGE_KEY
+  - name: lineage_key
     data_type: long
-  - name: QUANTITY_ON_HAND
+  - name: quantity_on_hand
     data_type: long
-  - name: REORDER_LEVEL
+  - name: reorder_level
     data_type: long
-  - name: STOCK_HOLDING_KEY
+  - name: stock_holding_key
     data_type: long
-  - name: STOCK_ITEM_KEY
+  - name: stock_item_key
     data_type: long
-  - name: TARGET_STOCK_LEVEL
+  - name: target_stock_level
     data_type: long

@@ -3,6 +3,6 @@ object_type: metric
 label: Profit
 calculation_method: sum
 format: "$#,##0;($#,##0)"
-dataset: FACT_SALE
-column: PROFIT
+dataset: fact_sale
+column: profit
 unrelated_dimensions_handling: repeat

@@ -13,23 +13,23 @@ columns:
     data_type: string
   - name: country
     data_type: string
-  - name: LATEST_RECORDED_POPULATION
+  - name: latest_recorded_population
     data_type: datetime
-  - name: LINEAGE_KEY
+  - name: lineage_key
     data_type: long
-  - name: LOCATION
+  - name: location
     data_type: long
   - name: region
     data_type: string
-  - name: SALES_TERRITORY
+  - name: sales_territory
     data_type: string
   - name: state_province
     data_type: string
   - name: subregion
     data_type: string
-  - name: VALID_FROM
+  - name: valid_from
     data_type: datetime
-  - name: VALID_TO
+  - name: valid_to
     data_type: long
-  - name: WWI_CITY_ID
+  - name: wwi_city_id
     data_type: long

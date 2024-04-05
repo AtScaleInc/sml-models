@@ -3,6 +3,6 @@ object_type: metric
 label: Sale Quantity
 calculation_method: sum
 format: "#,##0"
-dataset: FACT_SALE
-column: QUANTITY
+dataset: fact_sale
+column: quantity
 unrelated_dimensions_handling: repeat

@@ -19,7 +19,7 @@ hierarchies:
           - unique_name: d_category_2
             label: category
             folder: Suppliers
-            dataset: SUPPLIER
+            dataset: supplier
             name_column: category
             key_columns:
               - category
@@ -28,16 +28,16 @@ hierarchies:
           - unique_name: d_Payment_Days
             label: Payment Days
             folder: Suppliers
-            dataset: SUPPLIER
-            name_column: PAYMENT_DAYS
+            dataset: supplier
+            name_column: payment_days
             key_columns:
-              - PAYMENT_DAYS
-            sort_column: PAYMENT_DAYS
+              - payment_days
+            sort_column: payment_days
 
           - unique_name: d_postal_code_2
             label: Postal Code
             folder: Suppliers
-            dataset: SUPPLIER
+            dataset: supplier
             name_column: postal_code
             key_columns:
               - postal_code
@@ -46,7 +46,7 @@ hierarchies:
           - unique_name: d_primary_contact_2
             label: Primary Contact
             folder: Suppliers
-            dataset: SUPPLIER
+            dataset: supplier
             name_column: primary_contact
             key_columns:
               - primary_contact
@@ -55,18 +55,18 @@ hierarchies:
           - unique_name: d_Supplier_Reference
             label: Supplier Reference
             folder: Suppliers
-            dataset: SUPPLIER
-            name_column: SUPPLIER_REFERENCE
+            dataset: supplier
+            name_column: supplier_reference
             key_columns:
-              - SUPPLIER_REFERENCE
-            sort_column: SUPPLIER_REFERENCE
+              - supplier_reference
+            sort_column: supplier_reference
 
 level_attributes:
 
   - unique_name: Supplier
     label: Supplier
     is_unique_key: true
-    dataset: SUPPLIER
-    name_column: SUPPLIER
+    dataset: supplier
+    name_column: supplier
     key_columns:
-      - SUPPLIER_KEY
+      - supplier_key

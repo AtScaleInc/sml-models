@@ -1,29 +1,29 @@
-unique_name: FACT_PURCHASE
+unique_name: fact_purchase
 object_type: dataset
-label: FACT_PURCHASE
+label: fact_purchase
 connection_id: Connection - WW
-table: FACT_PURCHASE
+table: fact_purchase
 
 columns:
-  - name: DATE_KEY
+  - name: date_key
     data_type: date
-  - name: IS_ORDER_FINALIZED
+  - name: is_order_finalized
     data_type: boolean
-  - name: LINEAGE_KEY
+  - name: lineage_key
     data_type: long
-  - name: ORDERED_OUTERS
+  - name: ordered_outers
     data_type: long
-  - name: ORDERED_QUANTITY
+  - name: ordered_quantity
     data_type: long
-  - name: PACKAGE
+  - name: package
     data_type: string
-  - name: PURCHASE_KEY
+  - name: purchase_key
     data_type: long
-  - name: RECEIVED_OUTERS
+  - name: received_outers
     data_type: long
-  - name: STOCK_ITEM_KEY
+  - name: stock_item_key
     data_type: long
-  - name: SUPPLIER_KEY
+  - name: supplier_key
     data_type: long
-  - name: WWI_PURCHASE_ORDER_ID
+  - name: wwi_purchase_order_id
     data_type: long
