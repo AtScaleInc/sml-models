@@ -1,6 +1,6 @@
-unique_name: PROMOTION
+unique_name: promotion
 object_type: dataset
-label: PROMOTION
+label: promotion
 connection_id: Connection - TPCDS
 table: promotion
 

@@ -1,6 +1,6 @@
-unique_name: INCOME_BAND
+unique_name: income_band
 object_type: dataset
-label: INCOME_BAND
+label: income_band
 connection_id: Connection - TPCDS
 table: income_band
 
