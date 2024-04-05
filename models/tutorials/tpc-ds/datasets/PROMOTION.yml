@@ -2,44 +2,44 @@ unique_name: PROMOTION
 object_type: dataset
 label: PROMOTION
 connection_id: Connection - TPCDS
-table: PROMOTION
+table: promotion
 
 columns:
-  - name: P_CHANNEL_CATALOG
+  - name: p_channel_catalog
     data_type: string
-  - name: P_CHANNEL_DEMO
+  - name: p_channel_demo
     data_type: string
-  - name: P_CHANNEL_DETAILS
+  - name: p_channel_details
     data_type: string
-  - name: P_CHANNEL_DMAIL
+  - name: p_channel_dmail
     data_type: string
-  - name: P_CHANNEL_EMAIL
+  - name: p_channel_email
     data_type: string
-  - name: P_CHANNEL_EVENT
+  - name: p_channel_event
     data_type: string
-  - name: P_CHANNEL_PRESS
+  - name: p_channel_press
     data_type: string
-  - name: P_CHANNEL_RADIO
+  - name: p_channel_radio
     data_type: string
-  - name: P_CHANNEL_TV
+  - name: p_channel_tv
     data_type: string
-  - name: P_COST
+  - name: p_cost
     data_type: "decimal(15,2)"
-  - name: P_DISCOUNT_ACTIVE
+  - name: p_discount_active
     data_type: string
-  - name: P_END_DATE_SK
+  - name: p_end_date_sk
     data_type: long
-  - name: P_ITEM_SK
+  - name: p_item_sk
     data_type: long
-  - name: P_PROMO_ID
+  - name: p_promo_id
     data_type: string
-  - name: P_PROMO_NAME
+  - name: p_promo_name
     data_type: string
-  - name: P_PROMO_SK
+  - name: p_promo_sk
     data_type: long
-  - name: P_PURPOSE
+  - name: p_purpose
     data_type: string
-  - name: P_RESPONSE_TARGET
+  - name: p_response_target
     data_type: long
-  - name: P_START_DATE_SK
+  - name: p_start_date_sk
     data_type: long

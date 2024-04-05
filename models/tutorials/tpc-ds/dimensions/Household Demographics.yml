@@ -20,28 +20,28 @@ hierarchies:
             label: Buy Potential
             folder: Household Demographics
             dataset: household_demographics
-            name_column: HD_BUY_POTENTIAL
+            name_column: hd_buy_potential
             key_columns:
-              - HD_BUY_POTENTIAL
-            sort_column: HD_BUY_POTENTIAL
+              - hd_buy_potential
+            sort_column: hd_buy_potential
 
           - unique_name: d_hd_dep_count
             label: Dependents Count
             folder: Household Demographics
             dataset: household_demographics
-            name_column: HD_DEP_COUNT
+            name_column: hd_dep_count
             key_columns:
-              - HD_DEP_COUNT
-            sort_column: HD_DEP_COUNT
+              - hd_dep_count
+            sort_column: hd_dep_count
 
           - unique_name: d_hd_vehicle_count
             label: Vehicle Count
             folder: Household Demographics
             dataset: household_demographics
-            name_column: HD_VEHICLE_COUNT
+            name_column: hd_vehicle_count
             key_columns:
-              - HD_VEHICLE_COUNT
-            sort_column: HD_VEHICLE_COUNT
+              - hd_vehicle_count
+            sort_column: hd_vehicle_count
 
 level_attributes:
 
@@ -49,9 +49,9 @@ level_attributes:
     label: Household Demographics
     is_unique_key: true
     dataset: household_demographics
-    name_column: HD_DEMO_SK
+    name_column: hd_demo_sk
     key_columns:
-      - HD_DEMO_SK
+      - hd_demo_sk
 
 relationships:
 
@@ -61,7 +61,7 @@ relationships:
       level: Household Demographics
       dataset: household_demographics
       join_columns:
-        - HD_INCOME_BAND_SK
+        - hd_income_band_sk
     to:
       dimension: Income Band
       level: Income Band

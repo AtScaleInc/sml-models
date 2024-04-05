@@ -20,11 +20,11 @@ hierarchies:
           - unique_name: d_am_or_pm
             label: Time AM or PM
             folder: Time
-            dataset: TIME_DIM
-            name_column: T_AM_PM
+            dataset: time_dim
+            name_column: t_am_pm
             key_columns:
-              - T_AM_PM
-            sort_column: T_AM_PM
+              - t_am_pm
+            sort_column: t_am_pm
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -33,11 +33,11 @@ hierarchies:
           - unique_name: d_hour
             label: Hour
             folder: Time
-            dataset: TIME_DIM
-            name_column: T_HOUR
+            dataset: time_dim
+            name_column: t_hour
             key_columns:
-              - T_HOUR
-            sort_column: T_HOUR
+              - t_hour
+            sort_column: t_hour
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -46,11 +46,11 @@ hierarchies:
           - unique_name: d_meal_time
             label: Meal Time
             folder: Time
-            dataset: TIME_DIM
-            name_column: T_MEAL_TIME
+            dataset: time_dim
+            name_column: t_meal_time
             key_columns:
-              - T_MEAL_TIME
-            sort_column: T_MEAL_TIME
+              - t_meal_time
+            sort_column: t_meal_time
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -59,11 +59,11 @@ hierarchies:
           - unique_name: d_minute
             label: Minute
             folder: Time
-            dataset: TIME_DIM
-            name_column: T_MINUTE
+            dataset: time_dim
+            name_column: t_minute
             key_columns:
-              - T_MINUTE
-            sort_column: T_MINUTE
+              - t_minute
+            sort_column: t_minute
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -72,7 +72,7 @@ hierarchies:
           - unique_name: d_morning _time_tier
             label: Morning  Time Tier
             folder: Time
-            dataset: TIME_DIM
+            dataset: time_dim
             name_column: Morning  Time Tier
             key_columns:
               - Morning  Time Tier
@@ -85,11 +85,11 @@ hierarchies:
           - unique_name: d_second
             label: Second
             folder: Time
-            dataset: TIME_DIM
-            name_column: T_SECOND
+            dataset: time_dim
+            name_column: t_second
             key_columns:
-              - T_SECOND
-            sort_column: T_SECOND
+              - t_second
+            sort_column: t_second
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -98,11 +98,11 @@ hierarchies:
           - unique_name: d_time_sequence
             label: Time Sequence
             folder: Time
-            dataset: TIME_DIM
-            name_column: T_TIME
+            dataset: time_dim
+            name_column: t_time
             key_columns:
-              - T_TIME
-            sort_column: T_TIME
+              - t_time
+            sort_column: t_time
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -113,7 +113,7 @@ level_attributes:
   - unique_name: Time
     label: Time SK
     is_unique_key: true
-    dataset: TIME_DIM
-    name_column: T_TIME_ID
+    dataset: time_dim
+    name_column: t_time_id
     key_columns:
-      - T_TIME_SK
+      - t_time_sk

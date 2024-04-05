@@ -3,4 +3,4 @@ object_type: metric
 label: Returns Count
 calculation_method: sum
 dataset: store_returns
-column: RETURNS_COUNT
+column: returns_count

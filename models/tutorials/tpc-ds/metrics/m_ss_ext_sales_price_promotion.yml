@@ -4,4 +4,4 @@ label: Store Ext Sales Price by Promotion
 calculation_method: sum
 unrelated_dimensions_handling: repeat
 dataset: store_promotion
-column: SS_EXT_SALES_PRICE
+column: ss_ext_sales_price

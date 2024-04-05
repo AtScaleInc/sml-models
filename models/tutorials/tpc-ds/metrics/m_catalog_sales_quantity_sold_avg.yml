@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Sales Average Quantity Sold
 calculation_method: average
 dataset: catalog_sales
-column: CS_QUANTITY
+column: cs_quantity

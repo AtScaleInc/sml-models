@@ -20,37 +20,37 @@ hierarchies:
             label: Credit Rating
             folder: Customer Information
             dataset: customer_demographics
-            name_column: CD_CREDIT_RATING
+            name_column: cd_credit_rating
             key_columns:
-              - CD_CREDIT_RATING
-            sort_column: CD_CREDIT_RATING
+              - cd_credit_rating
+            sort_column: cd_credit_rating
 
           - unique_name: d_cd_education_status
             label: Education Status
             folder: Customer Information
             dataset: customer_demographics
-            name_column: CD_EDUCATION_STATUS
+            name_column: cd_education_status
             key_columns:
-              - CD_EDUCATION_STATUS
-            sort_column: CD_EDUCATION_STATUS
+              - cd_education_status
+            sort_column: cd_education_status
 
           - unique_name: d_cd_gender
             label: Gender
             folder: Customer Information
             dataset: customer_demographics
-            name_column: CD_GENDER
+            name_column: cd_gender
             key_columns:
-              - CD_GENDER
-            sort_column: CD_GENDER
+              - cd_gender
+            sort_column: cd_gender
 
           - unique_name: d_cd_marital_status
             label: Marital Status
             folder: Customer Information
             dataset: customer_demographics
-            name_column: CD_MARITAL_STATUS
+            name_column: cd_marital_status
             key_columns:
-              - CD_MARITAL_STATUS
-            sort_column: CD_MARITAL_STATUS
+              - cd_marital_status
+            sort_column: cd_marital_status
 
 level_attributes:
 
@@ -58,6 +58,6 @@ level_attributes:
     label: Customer Number
     is_unique_key: true
     dataset: customer_demographics
-    name_column: CD_DEMO_SK
+    name_column: cd_demo_sk
     key_columns:
-      - CD_DEMO_SK
+      - cd_demo_sk

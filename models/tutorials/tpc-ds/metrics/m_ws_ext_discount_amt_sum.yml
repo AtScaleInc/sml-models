@@ -5,4 +5,4 @@ description: web_sales.ws_ext_discount_amt_sum
 calculation_method: sum
 unrelated_dimensions_handling: empty
 dataset: web_sales
-column: WS_EXT_DISCOUNT_AMT
+column: ws_ext_discount_amt

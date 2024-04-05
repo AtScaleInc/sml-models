@@ -1,19 +1,19 @@
 unique_name: dimension-employee
 object_type: dataset
-label: EMPLOYEE
+label: employee
 connection_id: Connection - WW
-table: EMPLOYEE
+table: employee
 
 columns:
-  - name: EMPLOYEE
+  - name: employee
     data_type: string
-  - name: EMPLOYEE_KEY
+  - name: employee_key
     data_type: long
-  - name: IS_SALESPERSON
+  - name: is_salesperson
     data_type: boolean
   - name: LINEAGE_KEY
     data_type: long
-  - name: PREFERRED_NAME
+  - name: preferred_name
     data_type: string
   - name: VALID_FROM
     data_type: datetime

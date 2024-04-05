@@ -19,9 +19,9 @@ level_attributes:
   - unique_name: Catalog Preferred
     label: Catalog Preferred
     dataset: purchase_by_channel
-    name_column: CATALOG_PREFERRED
+    name_column: catalog_preferred
     key_columns:
-      - CATALOG_PREFERRED
+      - catalog_preferred
 
 modeler_metadata:
   version: 0

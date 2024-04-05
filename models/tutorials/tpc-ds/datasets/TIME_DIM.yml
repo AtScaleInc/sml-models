@@ -2,36 +2,36 @@ unique_name: TIME_DIM
 object_type: dataset
 label: TIME_DIM
 connection_id: Connection - TPCDS
-table: TIME_DIM
+table: time_dim
 
 columns:
   - name: Morning  Time Tier
     data_type: string
-    sql: "CASE \nWHEN \"T_HOUR\" = 8 AND \"T_MINUTE\" >= 30 THEN '08:30 to 09:00'\n\
-      WHEN \"T_HOUR\" = 9 AND \"T_MINUTE\" < 30 THEN '09:00 to 09:30'\nWHEN \"T_HOUR\"\
-      \ = 9 AND \"T_MINUTE\" >= 30 THEN '09:30 to 10:00'\nWHEN \"T_HOUR\" = 10 AND\
-      \ \"T_MINUTE\" < 30 THEN '10:00 to 10:30'\nWHEN \"T_HOUR\" = 10 AND \"T_MINUTE\"\
-      \ >= 30 THEN '10:30 to 11:00'\nWHEN \"T_HOUR\" = 11 AND \"T_MINUTE\" < 30 THEN\
-      \ '11:00 to 11:30'\nWHEN \"T_HOUR\" = 11 AND \"T_MINUTE\" >= 30 THEN '11:30\
-      \ to 12:00'\nWHEN \"T_HOUR\" = 12 AND \"T_MINUTE\" < 30 THEN '12:00 to 12:30'\n\
+    sql: "CASE \nWHEN \"t_hour\" = 8 AND \"t_minute\" >= 30 THEN '08:30 to 09:00'\n\
+      WHEN \"t_hour\" = 9 AND \"t_minute\" < 30 THEN '09:00 to 09:30'\nWHEN \"t_hour\"\
+      \ = 9 AND \"t_minute\" >= 30 THEN '09:30 to 10:00'\nWHEN \"t_hour\" = 10 AND\
+      \ \"t_minute\" < 30 THEN '10:00 to 10:30'\nWHEN \"t_hour\" = 10 AND \"t_minute\"\
+      \ >= 30 THEN '10:30 to 11:00'\nWHEN \"t_hour\" = 11 AND \"t_minute\" < 30 THEN\
+      \ '11:00 to 11:30'\nWHEN \"t_hour\" = 11 AND \"t_minute\" >= 30 THEN '11:30\
+      \ to 12:00'\nWHEN \"t_hour\" = 12 AND \"t_minute\" < 30 THEN '12:00 to 12:30'\n\
       ELSE\n'Other'\nEND"
-  - name: T_AM_PM
+  - name: t_am_pm
     data_type: string
-  - name: T_HOUR
+  - name: t_hour
     data_type: long
-  - name: T_MEAL_TIME
+  - name: t_meal_time
     data_type: string
-  - name: T_MINUTE
+  - name: t_minute
     data_type: long
-  - name: T_SECOND
+  - name: t_second
     data_type: long
-  - name: T_SHIFT
+  - name: t_shift
     data_type: string
-  - name: T_SUB_SHIFT
+  - name: t_sub_shift
     data_type: string
-  - name: T_TIME
+  - name: t_time
     data_type: long
-  - name: T_TIME_ID
+  - name: t_time_id
     data_type: string
-  - name: T_TIME_SK
+  - name: t_time_sk
     data_type: long

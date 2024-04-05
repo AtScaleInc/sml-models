@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Ext Discount Amount
 calculation_method: sum
 dataset: catalog_sales
-column: CS_EXT_DISCOUNT_AMT
+column: cs_ext_discount_amt

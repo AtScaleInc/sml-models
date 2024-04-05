@@ -3,4 +3,4 @@ object_type: metric
 label: Inventory Quantity On Hand
 calculation_method: sum
 dataset: inventory
-column: INV_QUANTITY_ON_HAND
+column: inv_quantity_on_hand

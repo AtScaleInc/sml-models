@@ -28,148 +28,148 @@ hierarchies:
             label: Store Floor Space
             folder: Store Attributes
             dataset: store
-            name_column: S_FLOOR_SPACE
+            name_column: s_floor_space
             key_columns:
-              - S_FLOOR_SPACE
-            sort_column: S_FLOOR_SPACE
+              - s_floor_space
+            sort_column: s_floor_space
 
           - unique_name: d_s_hours
             label: Store Hours
             folder: Store Attributes
             dataset: store
-            name_column: S_HOURS
+            name_column: s_hours
             key_columns:
-              - S_HOURS
-            sort_column: S_HOURS
+              - s_hours
+            sort_column: s_hours
 
           - unique_name: d_s_manager
             label: Store Manager
             folder: Store Attributes
             dataset: store
-            name_column: S_MANAGER
+            name_column: s_manager
             key_columns:
-              - S_MANAGER
-            sort_column: S_MANAGER
+              - s_manager
+            sort_column: s_manager
 
           - unique_name: d_s_number_employees
             label: Store Number of Employees
             folder: Store Attributes
             dataset: store
-            name_column: S_NUMBER_EMPLOYEES
+            name_column: s_number_employees
             key_columns:
-              - S_NUMBER_EMPLOYEES
-            sort_column: S_NUMBER_EMPLOYEES
+              - s_number_employees
+            sort_column: s_number_employees
 
           - unique_name: d_store_company_id
             label: Store Company ID
             folder: Store Attributes
             dataset: store
-            name_column: S_COMPANY_ID
+            name_column: s_company_id
             key_columns:
-              - S_COMPANY_ID
-            sort_column: S_COMPANY_ID
+              - s_company_id
+            sort_column: s_company_id
 
           - unique_name: d_store_gmt_offset
             label: Store GMT Offset
             folder: Store Attributes
             dataset: store
-            name_column: S_GMT_OFFSET
+            name_column: s_gmt_offset
             key_columns:
-              - S_GMT_OFFSET
-            sort_column: S_GMT_OFFSET
+              - s_gmt_offset
+            sort_column: s_gmt_offset
 
           - unique_name: d_store_name
             label: Store Name
             folder: Store Attributes
             dataset: store
-            name_column: S_STORE_NAME
+            name_column: s_store_name
             key_columns:
-              - S_STORE_NAME
-            sort_column: S_STORE_NAME
+              - s_store_name
+            sort_column: s_store_name
 
           - unique_name: d_store_street_name
             label: Store Street Name
             folder: Store Attributes
             dataset: store
-            name_column: S_STREET_NAME
+            name_column: s_street_name
             key_columns:
-              - S_STREET_NAME
-            sort_column: S_STREET_NAME
+              - s_street_name
+            sort_column: s_street_name
 
           - unique_name: d_store_street_number
             label: Store Street Number
             folder: Store Attributes
             dataset: store
-            name_column: S_STREET_NUMBER
+            name_column: s_street_number
             key_columns:
-              - S_STREET_NUMBER
-            sort_column: S_STREET_NUMBER
+              - s_street_number
+            sort_column: s_street_number
 
           - unique_name: d_store_street_type
             label: Store Street Type
-            folder: Store Attributes
+            folder: store attributes
             dataset: store
-            name_column: S_STREET_TYPE
+            name_column: s_street_type
             key_columns:
-              - S_STREET_TYPE
-            sort_column: S_STREET_TYPE
+              - s_street_type
+            sort_column: s_street_type
 
           - unique_name: d_store_suite_number
             label: Store Suite Number
             folder: Store Attributes
             dataset: store
-            name_column: S_SUITE_NUMBER
+            name_column: s_suite_number
             key_columns:
-              - S_SUITE_NUMBER
-            sort_column: S_SUITE_NUMBER
+              - s_suite_number
+            sort_column: s_suite_number
 
           - unique_name: d_store_zip_code
             label: Store Zip Code
             folder: Store Attributes
             dataset: store
-            name_column: S_ZIP
+            name_column: s_zip
             key_columns:
-              - S_ZIP
-            sort_column: S_ZIP
+              - s_zip
+            sort_column: s_zip
 
 level_attributes:
 
   - unique_name: d_store_city
     label: Store City
     dataset: store
-    name_column: S_CITY
+    name_column: s_city
     key_columns:
-      - S_COUNTRY
-      - S_STATE
-      - S_CITY
+      - s_country
+      - s_state
+      - s_city
 
   - unique_name: d_store_country
     label: Store Country
     dataset: store
-    name_column: S_COUNTRY
+    name_column: s_country
     key_columns:
-      - S_COUNTRY
+      - s_country
 
   - unique_name: d_store_county
     label: Store County
     dataset: store
-    name_column: S_COUNTY
+    name_column: s_county
     key_columns:
-      - S_STATE
-      - S_COUNTY
+      - s_state
+      - s_county
 
   - unique_name: d_store_state
     label: Store State
     dataset: store
-    name_column: S_STATE
+    name_column: s_state
     key_columns:
-      - S_COUNTRY
-      - S_STATE
+      - s_country
+      - s_state
 
   - unique_name: Store Dimension
     label: Store Number
     is_unique_key: true
     dataset: store
-    name_column: S_STORE_SK
+    name_column: s_store_sk
     key_columns:
-      - S_STORE_SK
+      - s_store_sk

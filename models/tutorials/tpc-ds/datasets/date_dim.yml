@@ -2,73 +2,73 @@ unique_name: date_dim
 object_type: dataset
 label: date_dim
 connection_id: Connection - TPCDS
-table: DATE_DIM
+table: date_dim
 
 columns:
-  - name: D_CURRENT_DAY
+  - name: d_current_day
     data_type: string
-  - name: D_CURRENT_MONTH
+  - name: d_current_month
     data_type: string
-  - name: D_CURRENT_QUARTER
+  - name: d_current_quarter
     data_type: string
-  - name: D_CURRENT_WEEK
+  - name: d_current_week
     data_type: string
-  - name: D_CURRENT_YEAR
+  - name: d_current_year
     data_type: string
-  - name: D_DATE
+  - name: d_date
     data_type: string
-  - name: D_DATE_ID
+  - name: d_date_id
     data_type: string
-  - name: D_DATE_SK
+  - name: d_date_sk
     data_type: int
-  - name: D_DAY_NAME
+  - name: d_day_name
     data_type: string
-  - name: D_DOM
+  - name: d_dom
     data_type: int
-  - name: D_DOW
+  - name: d_dow
     data_type: int
-  - name: D_FIRST_DOM
+  - name: d_first_dom
     data_type: int
-  - name: D_FOLLOWING_HOLIDAY
+  - name: d_following_holiday
     data_type: string
-  - name: D_FY_QUARTER_SEQ
+  - name: d_fy_quarter_seq
     data_type: int
-  - name: D_FY_WEEK_SEQ
+  - name: d_fy_week_seq
     data_type: int
-  - name: D_FY_YEAR
+  - name: d_fy_year
     data_type: int
-  - name: D_HOLIDAY
+  - name: d_holiday
     data_type: string
-  - name: D_LAST_DOM
+  - name: d_last_dom
     data_type: int
-  - name: D_MONTH_SEQ
+  - name: d_month_seq
     data_type: int
-  - name: D_MOY
+  - name: d_moy
     data_type: int
-  - name: D_QOY
+  - name: d_qoy
     data_type: int
-  - name: D_QUARTER_NAME
+  - name: d_quarter_name
     data_type: string
-  - name: D_QUARTER_SEQ
+  - name: d_quarter_seq
     data_type: int
-  - name: D_SAME_DAY_LQ
+  - name: d_same_day_lq
     data_type: int
-  - name: D_SAME_DAY_LY
+  - name: d_same_day_ly
     data_type: int
-  - name: D_WEEKEND
+  - name: d_weekend
     data_type: string
-  - name: D_WEEK_SEQ
+  - name: d_week_seq
     data_type: int
-  - name: D_YEAR
+  - name: d_year
     data_type: int
-  - name: YEAR_MONTH
+  - name: year_month
     data_type: date
-    sql: "TO_DATE(SUBSTRING(\"D_DATE\",1,4) || '-' || SUBSTRING(\"D_DATE\",6,2) ||\
+    sql: "TO_DATE(SUBSTRING(\"d_date\",1,4) || '-' || SUBSTRING(\"d_date\",6,2) ||\
       \ '-01')"
-  - name: YEAR_QUARTER
+  - name: year_quarter
     data_type: date
-    sql: "TO_DATE(SUBSTRING(\"D_DATE\",1,4) || '-' || LPAD(\"D_QOY\", 2, '0') || '-01')"
-  - name: YEAR_WEEK
+    sql: "TO_DATE(SUBSTRING(\"d_date\",1,4) || '-' || LPAD(\"d_qoy\", 2, '0') || '-01')"
+  - name: year_week
     data_type: string
-    sql: "SUBSTRING(\"D_DATE\",1,4) || '-' || SUBSTRING(\"D_DATE\",6,2) || '-' ||\
-      \ LPAD(\"D_WEEK_SEQ\", 2, '0')"
+    sql: "SUBSTRING(\"d_date\",1,4) || '-' || SUBSTRING(\"d_date\",6,2) || '-' ||\
+      \ LPAD(\"d_week_seq\", 2, '0')"

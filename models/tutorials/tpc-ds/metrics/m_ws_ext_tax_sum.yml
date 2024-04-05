@@ -5,4 +5,4 @@ description: web_sales.ws_ext_tax_sum
 calculation_method: sum
 unrelated_dimensions_handling: empty
 dataset: web_sales
-column: WS_EXT_TAX
+column: ws_ext_tax

@@ -1,17 +1,17 @@
-unique_name: CITY
+unique_name: city
 object_type: dataset
-label: CITY
+label: city
 connection_id: Connection - WW
-table: CITY
+table: city
 
 columns:
-  - name: CITY
+  - name: city
     data_type: string
-  - name: CITY_KEY
+  - name: city_key
     data_type: long
-  - name: CONTINENT
+  - name: continent
     data_type: string
-  - name: COUNTRY
+  - name: country
     data_type: string
   - name: LATEST_RECORDED_POPULATION
     data_type: datetime
@@ -19,13 +19,13 @@ columns:
     data_type: long
   - name: LOCATION
     data_type: long
-  - name: REGION
+  - name: region
     data_type: string
   - name: SALES_TERRITORY
     data_type: string
-  - name: STATE_PROVINCE
+  - name: state_province
     data_type: string
-  - name: SUBREGION
+  - name: subregion
     data_type: string
   - name: VALID_FROM
     data_type: datetime

@@ -1,6 +1,6 @@
-unique_name: m_SS Row Counter_sum
+unique_name: m_ss row counter_sum
 object_type: metric
 label: Store Sales Row Counter
 calculation_method: sum
 dataset: store_sales
-column: SS ROW COUNTER
+column: ss row counter

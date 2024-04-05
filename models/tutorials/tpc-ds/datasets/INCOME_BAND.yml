@@ -2,12 +2,12 @@ unique_name: INCOME_BAND
 object_type: dataset
 label: INCOME_BAND
 connection_id: Connection - TPCDS
-table: INCOME_BAND
+table: income_band
 
 columns:
-  - name: IB_INCOME_BAND_SK
+  - name: ib_income_band_sk
     data_type: "decimal(38,0)"
-  - name: IB_LOWER_BOUND
+  - name: ib_lower_bound
     data_type: "decimal(38,0)"
-  - name: IB_UPPER_BOUND
+  - name: ib_upper_bound
     data_type: "decimal(38,0)"

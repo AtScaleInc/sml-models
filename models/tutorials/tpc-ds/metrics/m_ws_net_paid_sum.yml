@@ -5,4 +5,4 @@ description: web_sales.ws_net_paid_sum
 calculation_method: sum
 unrelated_dimensions_handling: empty
 dataset: web_sales
-column: WS_NET_PAID
+column: ws_net_paid

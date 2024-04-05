@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Ext List Price
 calculation_method: sum
 dataset: catalog_sales
-column: CS_EXT_LIST_PRICE
+column: cs_ext_list_price

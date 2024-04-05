@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Net Paid Inc Tax Amount
 calculation_method: sum
 dataset: catalog_sales
-column: CS_NET_PAID_INC_TAX
+column: cs_net_paid_inc_tax

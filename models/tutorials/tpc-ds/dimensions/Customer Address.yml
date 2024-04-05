@@ -26,28 +26,28 @@ hierarchies:
             label: Customer County
             folder: Customer Information
             dataset: customer_address
-            name_column: CA_COUNTY
+            name_column: ca_county
             key_columns:
-              - CA_COUNTY
-            sort_column: CA_COUNTY
+              - ca_county
+            sort_column: ca_county
 
           - unique_name: d_customer_gmt_offset
             label: Customer GMT Offset
             folder: Customer Information
             dataset: customer_address
-            name_column: CA_GMT_OFFSET
+            name_column: ca_gmt_offset
             key_columns:
-              - CA_GMT_OFFSET
-            sort_column: CA_GMT_OFFSET
+              - ca_gmt_offset
+            sort_column: ca_gmt_offset
 
           - unique_name: d_customer_zip_code
             label: Customer Zip Code
             folder: Customer Information
             dataset: customer_address
-            name_column: CA_ZIP
+            name_column: ca_zip
             key_columns:
-              - CA_ZIP
-            sort_column: CA_ZIP
+              - ca_zip
+            sort_column: ca_zip
 
 level_attributes:
 
@@ -55,30 +55,30 @@ level_attributes:
     label: Customer Address
     is_unique_key: true
     dataset: customer_address
-    name_column: CA_ADDRESS_ID
+    name_column: ca_address_id
     key_columns:
-      - CA_ADDRESS_SK
+      - ca_address_sk
 
   - unique_name: d_customer_city
     label: Customer City
     dataset: customer_address
-    name_column: CA_CITY
+    name_column: ca_city
     key_columns:
-      - CA_COUNTRY
-      - CA_STATE
-      - CA_CITY
+      - ca_country
+      - ca_state
+      - ca_city
 
   - unique_name: d_customer_country
     label: Customer Country
     dataset: customer_address
-    name_column: CA_COUNTRY
+    name_column: ca_country
     key_columns:
-      - CA_COUNTRY
+      - ca_country
 
   - unique_name: d_customer_state
     label: Customer State
     dataset: customer_address
-    name_column: CA_STATE
+    name_column: ca_state
     key_columns:
-      - CA_COUNTRY
-      - CA_STATE
+      - ca_country
+      - ca_state

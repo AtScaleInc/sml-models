@@ -1,15 +1,15 @@
-unique_name: PAYMENTMETHOD
+unique_name: paymentmethod
 object_type: dataset
-label: PAYMENTMETHOD
+label: paymentmethod
 connection_id: Connection - WW
-table: PAYMENTMETHOD
+table: paymentmethod
 
 columns:
   - name: LINEAGE_KEY
     data_type: long
-  - name: PAYMENT_METHOD
+  - name: payment_method
     data_type: string
-  - name: PAYMENT_METHOD_KEY
+  - name: payment_method_key
     data_type: long
   - name: VALID_FROM
     data_type: datetime

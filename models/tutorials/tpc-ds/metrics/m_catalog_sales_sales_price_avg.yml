@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Sales  Average Sales Price
 calculation_method: average
 dataset: catalog_sales
-column: CS_SALES_PRICE
+column: cs_sales_price

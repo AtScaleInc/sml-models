@@ -5,4 +5,4 @@ description: store_sales.ss_ext_list_price_sum
 calculation_method: sum
 unrelated_dimensions_handling: empty
 dataset: store_sales
-column: SS_EXT_LIST_PRICE
+column: ss_ext_list_price

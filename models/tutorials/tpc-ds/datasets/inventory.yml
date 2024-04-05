@@ -2,14 +2,14 @@ unique_name: inventory
 object_type: dataset
 label: inventory
 connection_id: Connection - TPCDS
-table: INVENTORY
+table: inventory
 
 columns:
-  - name: INV_DATE_SK
+  - name: inv_date_sk
     data_type: long
-  - name: INV_ITEM_SK
+  - name: inv_item_sk
     data_type: long
-  - name: INV_QUANTITY_ON_HAND
+  - name: inv_quantity_on_hand
     data_type: long
-  - name: INV_WAREHOUSE_SK
+  - name: inv_warehouse_sk
     data_type: long

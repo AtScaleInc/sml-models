@@ -2,64 +2,64 @@ unique_name: store
 object_type: dataset
 label: store
 connection_id: Connection - TPCDS
-table: STORE
+table: store
 
 columns:
-  - name: S_CITY
+  - name: s_city
     data_type: string
-  - name: S_CLOSED_DATE_SK
+  - name: s_closed_date_sk
     data_type: int
-  - name: S_COMPANY_ID
+  - name: s_company_id
     data_type: int
-  - name: S_COMPANY_NAME
+  - name: s_company_name
     data_type: string
-  - name: S_COUNTRY
+  - name: s_country
     data_type: string
-  - name: S_COUNTY
+  - name: s_county
     data_type: string
-  - name: S_DIVISION_ID
+  - name: s_division_id
     data_type: int
-  - name: S_DIVISION_NAME
+  - name: s_division_name
     data_type: string
-  - name: S_FLOOR_SPACE
+  - name: s_floor_space
     data_type: int
-  - name: S_GEOGRAPHY_CLASS
+  - name: s_geography_class
     data_type: string
-  - name: S_GMT_OFFSET
+  - name: s_gmt_offset
     data_type: decimal
-  - name: S_HOURS
+  - name: s_hours
     data_type: string
-  - name: S_MANAGER
+  - name: s_manager
     data_type: string
-  - name: S_MARKET_DESC
+  - name: s_market_desc
     data_type: string
-  - name: S_MARKET_ID
+  - name: s_market_id
     data_type: int
-  - name: S_MARKET_MANAGER
+  - name: s_market_manager
     data_type: string
-  - name: S_NUMBER_EMPLOYEES
+  - name: s_number_employees
     data_type: int
-  - name: S_REC_END_DATE
+  - name: s_rec_end_date
     data_type: string
-  - name: S_REC_START_DATE
+  - name: s_rec_start_date
     data_type: string
-  - name: S_STATE
+  - name: s_state
     data_type: string
-  - name: S_STORE_ID
+  - name: s_store_id
     data_type: string
-  - name: S_STORE_NAME
+  - name: s_store_name
     data_type: string
-  - name: S_STORE_SK
+  - name: s_store_sk
     data_type: int
-  - name: S_STREET_NAME
+  - name: s_street_name
     data_type: string
-  - name: S_STREET_NUMBER
+  - name: s_street_number
     data_type: string
-  - name: S_STREET_TYPE
+  - name: s_street_type
     data_type: string
-  - name: S_SUITE_NUMBER
+  - name: s_suite_number
     data_type: string
-  - name: S_TAX_PRECENTAGE
+  - name: s_tax_precentage
     data_type: decimal
-  - name: S_ZIP
+  - name: s_zip
     data_type: string

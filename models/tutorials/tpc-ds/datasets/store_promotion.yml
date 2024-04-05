@@ -2,94 +2,94 @@ unique_name: store_promotion
 object_type: dataset
 label: store_promotion
 connection_id: Connection - TPCDS
-sql: "SELECT p.*, ss.* \nFROM benchmark.TPCDS_SF100GB.promotion p\nINNER JOIN benchmark.TPCDS_SF100GB.store_sales\
+sql: "SELECT p.*, ss.* \nFROM atscale.tpcds.promotion p\nINNER JOIN atscale.tpcds.store_sales\
   \ ss\nON ss.ss_promo_sk = p.p_promo_sk"
 
 columns:
-  - name: PROMO_ID_NAME
+  - name: promo_id_name
     data_type: string
     sql: "concat (p_promo_id, ' - ',p_promo_name)"
-  - name: P_CHANNEL_CATALOG
+  - name: p_channel_catalog
     data_type: string
-  - name: P_CHANNEL_DEMO
+  - name: p_channel_demo
     data_type: string
-  - name: P_CHANNEL_DETAILS
+  - name: p_channel_details
     data_type: string
-  - name: P_CHANNEL_DMAIL
+  - name: p_channel_dmail
     data_type: string
-  - name: P_CHANNEL_EMAIL
+  - name: p_channel_email
     data_type: string
-  - name: P_CHANNEL_EVENT
+  - name: p_channel_event
     data_type: string
-  - name: P_CHANNEL_PRESS
+  - name: p_channel_press
     data_type: string
-  - name: P_CHANNEL_RADIO
+  - name: p_channel_radio
     data_type: string
-  - name: P_CHANNEL_TV
+  - name: p_channel_tv
     data_type: string
-  - name: P_COST
+  - name: p_cost
     data_type: "decimal(15,2)"
-  - name: P_DISCOUNT_ACTIVE
+  - name: p_discount_active
     data_type: string
-  - name: P_END_DATE_SK
+  - name: p_end_date_sk
     data_type: long
-  - name: P_ITEM_SK
+  - name: p_item_sk
     data_type: long
-  - name: P_PROMO_ID
+  - name: p_promo_id
     data_type: string
-  - name: P_PROMO_NAME
+  - name: p_promo_name
     data_type: string
-  - name: P_PROMO_SK
+  - name: p_promo_sk
     data_type: long
-  - name: P_PURPOSE
+  - name: p_purpose
     data_type: string
-  - name: P_RESPONSE_TARGET
+  - name: p_response_target
     data_type: long
-  - name: P_START_DATE_SK
+  - name: p_start_date_sk
     data_type: long
-  - name: SS_ADDR_SK
+  - name: ss_addr_sk
     data_type: long
-  - name: SS_CDEMO_SK
+  - name: ss_cdemo_sk
     data_type: long
-  - name: SS_COUPON_AMT
+  - name: ss_coupon_amt
     data_type: "decimal(7,2)"
-  - name: SS_CUSTOMER_SK
+  - name: ss_customer_sk
     data_type: long
-  - name: SS_EXT_DISCOUNT_AMT
+  - name: ss_ext_discount_amt
     data_type: "decimal(7,2)"
-  - name: SS_EXT_LIST_PRICE
+  - name: ss_ext_list_price
     data_type: "decimal(7,2)"
-  - name: SS_EXT_SALES_PRICE
+  - name: ss_ext_sales_price
     data_type: "decimal(7,2)"
-  - name: SS_EXT_TAX
+  - name: ss_ext_tax
     data_type: "decimal(7,2)"
-  - name: SS_EXT_WHOLESALE_COST
+  - name: ss_ext_wholesale_cost
     data_type: "decimal(7,2)"
-  - name: SS_HDEMO_SK
+  - name: ss_hdemo_sk
     data_type: long
-  - name: SS_ITEM_SK
+  - name: ss_item_sk
     data_type: long
-  - name: SS_LIST_PRICE
+  - name: ss_list_price
     data_type: "decimal(7,2)"
-  - name: SS_NET_PAID
+  - name: ss_net_paid
     data_type: "decimal(7,2)"
-  - name: SS_NET_PAID_INC_TAX
+  - name: ss_net_paid_inc_tax
     data_type: "decimal(7,2)"
-  - name: SS_NET_PROFIT
+  - name: ss_net_profit
     data_type: "decimal(7,2)"
-  - name: SS_PROMO_SK
+  - name: ss_promo_sk
     data_type: long
-  - name: SS_QUANTITY
+  - name: ss_quantity
     data_type: long
-  - name: SS_SALES_PRICE
+  - name: ss_sales_price
     data_type: "decimal(7,2)"
-  - name: SS_SOLD_DATE_SK
+  - name: ss_sold_date_sk
     data_type: long
-  - name: SS_SOLD_TIME_SK
+  - name: ss_sold_time_sk
     data_type: long
-  - name: SS_STORE_SK
+  - name: ss_store_sk
     data_type: long
-  - name: SS_TICKET_NUMBER
+  - name: ss_ticket_number
     data_type: long
-  - name: SS_WHOLESALE_COST
+  - name: ss_wholesale_cost
     data_type: "decimal(7,2)"

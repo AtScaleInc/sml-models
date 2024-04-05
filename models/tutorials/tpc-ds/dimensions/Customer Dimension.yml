@@ -20,64 +20,64 @@ hierarchies:
             label: Birth Country
             folder: Customer Information
             dataset: customer
-            name_column: C_BIRTH_COUNTRY
+            name_column: c_birth_country
             key_columns:
-              - C_BIRTH_COUNTRY
-            sort_column: C_BIRTH_COUNTRY
+              - c_birth_country
+            sort_column: c_birth_country
 
           - unique_name: d_c_preferred_cust_flag
             label: Preferred Customer Ind
             folder: Customer Information
             dataset: customer
-            name_column: C_PREFERRED_CUST_FLAG
+            name_column: c_preferred_cust_flag
             key_columns:
-              - C_PREFERRED_CUST_FLAG
-            sort_column: C_PREFERRED_CUST_FLAG
+              - c_preferred_cust_flag
+            sort_column: c_preferred_cust_flag
 
           - unique_name: d_customer_email_address
             label: Customer Email Address
             folder: Customer Information
             dataset: customer
-            name_column: C_EMAIL_ADDRESS
+            name_column: c_email_address
             key_columns:
-              - C_EMAIL_ADDRESS
-            sort_column: C_EMAIL_ADDRESS
+              - c_email_address
+            sort_column: c_email_address
 
           - unique_name: d_customer_first_name
             label: Customer First Name
             folder: Customer Information
             dataset: customer
-            name_column: C_FIRST_NAME
+            name_column: c_first_name
             key_columns:
-              - C_FIRST_NAME
-            sort_column: C_FIRST_NAME
+              - c_first_name
+            sort_column: c_first_name
 
           - unique_name: d_customer_id
             label: Customer ID
             folder: Customer Information
             dataset: customer
-            name_column: C_CUSTOMER_ID
+            name_column: c_customer_id
             key_columns:
-              - C_CUSTOMER_ID
-            sort_column: C_CUSTOMER_ID
+              - c_customer_id
+            sort_column: c_customer_id
 
           - unique_name: d_customer_last_name
             label: Customer Last Name
             folder: Customer Information
             dataset: customer
-            name_column: C_LAST_NAME
+            name_column: c_last_name
             key_columns:
-              - C_LAST_NAME
-            sort_column: C_LAST_NAME
+              - c_last_name
+            sort_column: c_last_name
 
           - unique_name: d_customer_login
             label: Customer Login
             folder: Customer Information
             dataset: customer
-            name_column: C_LOGIN
+            name_column: c_login
             key_columns:
-              - C_LOGIN
-            sort_column: C_LOGIN
+              - c_login
+            sort_column: c_login
 
 level_attributes:
 
@@ -85,9 +85,9 @@ level_attributes:
     label: Customer Number
     is_unique_key: true
     dataset: customer
-    name_column: C_CUSTOMER_SK
+    name_column: c_customer_sk
     key_columns:
-      - C_CUSTOMER_SK
+      - c_customer_sk
 
 relationships:
 
@@ -97,7 +97,7 @@ relationships:
       level: Customer Dimension - TPC-DS
       dataset: customer
       join_columns:
-        - C_CURRENT_ADDR_SK
+        - c_current_addr_sk
     to:
       dimension: Customer Address
       level: Customer Address

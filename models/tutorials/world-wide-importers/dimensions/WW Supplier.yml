@@ -16,14 +16,14 @@ hierarchies:
 
         secondary_attributes:
 
-          - unique_name: d_Category_2
-            label: Category
+          - unique_name: d_category_2
+            label: category
             folder: Suppliers
             dataset: SUPPLIER
-            name_column: CATEGORY
+            name_column: category
             key_columns:
-              - CATEGORY
-            sort_column: CATEGORY
+              - category
+            sort_column: category
 
           - unique_name: d_Payment_Days
             label: Payment Days
@@ -34,23 +34,23 @@ hierarchies:
               - PAYMENT_DAYS
             sort_column: PAYMENT_DAYS
 
-          - unique_name: d_Postal_Code_2
+          - unique_name: d_postal_code_2
             label: Postal Code
             folder: Suppliers
             dataset: SUPPLIER
-            name_column: POSTAL_CODE
+            name_column: postal_code
             key_columns:
-              - POSTAL_CODE
-            sort_column: POSTAL_CODE
+              - postal_code
+            sort_column: postal_code
 
-          - unique_name: d_Primary_Contact_2
+          - unique_name: d_primary_contact_2
             label: Primary Contact
             folder: Suppliers
             dataset: SUPPLIER
-            name_column: PRIMARY_CONTACT
+            name_column: primary_contact
             key_columns:
-              - PRIMARY_CONTACT
-            sort_column: PRIMARY_CONTACT
+              - primary_contact
+            sort_column: primary_contact
 
           - unique_name: d_Supplier_Reference
             label: Supplier Reference

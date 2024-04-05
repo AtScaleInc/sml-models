@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Sales  Average Coupon Amount
 calculation_method: average
 dataset: catalog_sales
-column: CS_COUPON_AMT
+column: cs_sales_price

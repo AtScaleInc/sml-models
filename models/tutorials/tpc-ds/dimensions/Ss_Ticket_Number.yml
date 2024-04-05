@@ -19,9 +19,9 @@ level_attributes:
   - unique_name: d_store_sales_ticket_number
     label: Store Sales Ticket Number
     dataset: store_sales
-    name_column: SS_TICKET_NUMBER
+    name_column: ss_ticket_number
     key_columns:
-      - SS_TICKET_NUMBER
+      - ss_ticket_number
 
 modeler_metadata:
   version: 0

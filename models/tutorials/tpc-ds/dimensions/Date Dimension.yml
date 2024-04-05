@@ -24,10 +24,10 @@ hierarchies:
             label: Quarter of Year
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_QOY
+            name_column: d_qoy
             key_columns:
-              - D_QOY
-            sort_column: D_QOY
+              - d_qoy
+            sort_column: d_qoy
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -42,10 +42,10 @@ hierarchies:
             label: Month of Year
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_MOY
+            name_column: d_moy
             key_columns:
-              - D_MOY
-            sort_column: D_MOY
+              - d_moy
+            sort_column: d_moy
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -57,8 +57,8 @@ hierarchies:
             dataset: date_dim
             name_column: D_MONTH_SEQ
             key_columns:
-              - D_MONTH_SEQ
-            sort_column: D_MONTH_SEQ
+              - d_month_seq
+            sort_column: d_month_seq
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -73,10 +73,10 @@ hierarchies:
             label: Following Holiday Indicator
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_FOLLOWING_HOLIDAY
+            name_column: d_following_holiday
             key_columns:
-              - D_FOLLOWING_HOLIDAY
-            sort_column: D_FOLLOWING_HOLIDAY
+              - d_following_holiday
+            sort_column: d_following_holiday
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -86,10 +86,10 @@ hierarchies:
             label: Holiday Indicator
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_HOLIDAY
+            name_column: d_holiday
             key_columns:
-              - D_HOLIDAY
-            sort_column: D_HOLIDAY
+              - d_holiday
+            sort_column: d_holiday
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -99,10 +99,10 @@ hierarchies:
             label: Weekend Indicator
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_WEEKEND
+            name_column: d_weekend
             key_columns:
-              - D_WEEKEND
-            sort_column: D_WEEKEND
+              - d_weekend
+            sort_column: d_weekend
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -112,10 +112,10 @@ hierarchies:
             label: Day Name
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_DAY_NAME
+            name_column: d_day_name
             key_columns:
-              - D_DAY_NAME
-            sort_column: D_DAY_NAME
+              - d_day_name
+            sort_column: d_day_name
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -125,10 +125,10 @@ hierarchies:
             label: Day of Week
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_DOW
+            name_column: d_dow
             key_columns:
-              - D_DOW
-            sort_column: D_DOW
+              - d_dow
+            sort_column: d_dow
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -156,10 +156,10 @@ hierarchies:
             label: Week Sequence
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_WEEK_SEQ
+            name_column: d_week_seq
             key_columns:
-              - D_WEEK_SEQ
-            sort_column: D_WEEK_SEQ
+              - d_week_seq
+            sort_column: d_week_seq
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -174,10 +174,10 @@ hierarchies:
             label: Day Name (Week)
             folder: Date Attributes
             dataset: date_dim
-            name_column: D_DAY_NAME
+            name_column: d_day_name
             key_columns:
-              - D_DAY_NAME
-            sort_column: D_DAY_NAME
+              - d_day_name
+            sort_column: d_day_name
             allowed_calcs_for_dma:
               - Lag
               - Range
@@ -188,9 +188,9 @@ level_attributes:
   - unique_name: Calendar Month-Week
     label: Calendar Month
     dataset: date_dim
-    name_column: YEAR_MONTH
+    name_column: year_month
     key_columns:
-      - YEAR_MONTH
+      - year_month
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -203,9 +203,9 @@ level_attributes:
   - unique_name: Calendar Month
     label: Calendar Month
     dataset: date_dim
-    name_column: YEAR_MONTH
+    name_column: year_month
     key_columns:
-      - YEAR_MONTH
+      - year_month
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -218,10 +218,10 @@ level_attributes:
   - unique_name: Calendar Quarter
     label: Calendar Quarter
     dataset: date_dim
-    name_column: D_QUARTER_NAME
+    name_column: d_quarter_name
     key_columns:
-      - YEAR_QUARTER
-    sort_column: YEAR_QUARTER
+      - year_quarter
+    sort_column: year_quarter
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -234,9 +234,9 @@ level_attributes:
   - unique_name: Calendar Week
     label: Calendar Week
     dataset: date_dim
-    name_column: D_WEEK_SEQ
+    name_column: d_week_seq
     key_columns:
-      - D_WEEK_SEQ
+      - d_week_seq
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -249,9 +249,9 @@ level_attributes:
   - unique_name: Calendar Year-Week
     label: Calendar Year
     dataset: date_dim
-    name_column: D_YEAR
+    name_column: d_year
     key_columns:
-      - D_YEAR
+      - d_year
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -264,9 +264,9 @@ level_attributes:
   - unique_name: Calendar Year
     label: Calendar Year
     dataset: date_dim
-    name_column: D_YEAR
+    name_column: d_year
     key_columns:
-      - D_YEAR
+      - d_year
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -280,9 +280,9 @@ level_attributes:
     label: Date
     is_unique_key: true
     dataset: date_dim
-    name_column: D_DATE
+    name_column: d_date
     key_columns:
-      - D_DATE_SK
+      - d_date_sk
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -296,9 +296,9 @@ level_attributes:
     label: Date
     is_unique_key: true
     dataset: date_dim
-    name_column: D_DATE
+    name_column: d_date
     key_columns:
-      - D_DATE_SK
+      - d_date_sk
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants

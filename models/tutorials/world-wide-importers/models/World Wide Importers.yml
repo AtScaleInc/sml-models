@@ -20,7 +20,7 @@ relationships:
     from:
       dataset: FACT_MOVEMENT
       join_columns:
-        - CUSTOMER_KEY
+        - customer_key
     to:
       dimension: WW Customer
       level: Dimension Customer Level
@@ -80,7 +80,7 @@ relationships:
     from:
       dataset: FACT_TRANSACTION
       join_columns:
-        - CUSTOMER_KEY
+        - customer_key
     to:
       dimension: WW Customer
       level: Dimension Customer Level
@@ -100,7 +100,7 @@ relationships:
     from:
       dataset: FACT_TRANSACTION
       join_columns:
-        - PAYMENT_METHOD_KEY
+        - payment_method_key
     to:
       dimension: WW Payment Method
       level: Payment Method Level
@@ -148,7 +148,7 @@ relationships:
     from:
       dataset: FACT_ORDER
       join_columns:
-        - CITY_KEY
+        - city_key
     to:
       dimension: WW Geography
       level: City-State
@@ -168,7 +168,7 @@ relationships:
     from:
       dataset: FACT_ORDER
       join_columns:
-        - CITY_KEY
+        - city_key
     to:
       dimension: WW Geography
       level: City-Region
@@ -178,7 +178,7 @@ relationships:
     from:
       dataset: FACT_ORDER
       join_columns:
-        - CUSTOMER_KEY
+        - customer_key
     to:
       dimension: WW Customer
       level: Dimension Customer Level
@@ -248,7 +248,7 @@ relationships:
     from:
       dataset: FACT_SALE
       join_columns:
-        - CITY_KEY
+        - city_key
     to:
       dimension: WW Geography
       level: City-State
@@ -268,7 +268,7 @@ relationships:
     from:
       dataset: FACT_SALE
       join_columns:
-        - CITY_KEY
+        - city_key
     to:
       dimension: WW Geography
       level: City-Region
@@ -278,7 +278,7 @@ relationships:
     from:
       dataset: FACT_SALE
       join_columns:
-        - CUSTOMER_KEY
+        - customer_key
     to:
       dimension: WW Customer
       level: Dimension Customer Level

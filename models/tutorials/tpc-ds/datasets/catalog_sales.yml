@@ -2,90 +2,90 @@ unique_name: catalog_sales
 object_type: dataset
 label: catalog_sales
 connection_id: Connection - TPCDS
-table: CATALOG_SALES
+table: catalog_sales
 
 columns:
-  - name: CS ROW COUNTER
+  - name: cs row counter
     data_type: long
     sql: "1"
-  - name: CS_BILL_ADDR_SK
+  - name: cs_bill_addr_sk
     data_type: long
-  - name: CS_BILL_CDEMO_SK
+  - name: cs_bill_cdemo_sk
     data_type: long
-  - name: CS_BILL_CUSTOMER_SK
+  - name: cs_bill_customer_sk
     data_type: long
-  - name: CS_BILL_HDEMO_SK
+  - name: cs_bill_hdemo_sk
     data_type: long
-  - name: CS_CALL_CENTER_SK
+  - name: cs_call_center_sk
     data_type: long
-  - name: CS_CATALOG_PAGE_SK
+  - name: cs_catalog_page_sk
     data_type: long
-  - name: CS_COUPON_AMT
+  - name: cs_sales_price
     data_type: "decimal(7,2)"
-  - name: CS_EXT_DISCOUNT_AMT
+  - name: cs_ext_discount_amt
     data_type: "decimal(7,2)"
-  - name: CS_EXT_LIST_PRICE
+  - name: cs_ext_list_price
     data_type: "decimal(7,2)"
-  - name: CS_EXT_SALES_PRICE
+  - name: cs_ext_sales_price
     data_type: "decimal(7,2)"
-  - name: CS_EXT_SHIP_COST
+  - name: cs_ext_ship_cost
     data_type: "decimal(7,2)"
-  - name: CS_EXT_TAX
+  - name: cs_ext_tax
     data_type: "decimal(7,2)"
-  - name: CS_EXT_WHOLESALE_COST
+  - name: cs_ext_wholesale_cost
     data_type: "decimal(7,2)"
-  - name: CS_ITEM_SK
+  - name: cs_item_sk
     data_type: long
-  - name: CS_LIST_PRICE
+  - name: cs_list_price
     data_type: "decimal(7,2)"
-  - name: CS_NET_PAID
+  - name: cs_net_paid
     data_type: "decimal(7,2)"
-  - name: CS_NET_PAID_INC_SHIP
+  - name: cs_net_paid_inc_ship
     data_type: "decimal(7,2)"
-  - name: CS_NET_PAID_INC_SHIP_TAX
+  - name: cs_net_paid_inc_ship_tax
     data_type: "decimal(7,2)"
-  - name: CS_NET_PAID_INC_TAX
+  - name: cs_net_paid_inc_tax
     data_type: "decimal(7,2)"
-  - name: CS_NET_PROFIT
+  - name: cs_net_profit
     data_type: "decimal(7,2)"
-  - name: CS_ORDER_NUMBER
+  - name: cs_order_number
     data_type: long
-  - name: CS_PROMO_SK
+  - name: cs_promo_sk
     data_type: long
-  - name: CS_QUANTITY
+  - name: cs_quantity
     data_type: long
-  - name: CS_SALES_PRICE
+  - name: cs_sales_price
     data_type: "decimal(7,2)"
-  - name: CS_SHIP_ADDR_SK
+  - name: cs_ship_addr_sk
     data_type: long
-  - name: CS_SHIP_CDEMO_SK
+  - name: cs_ship_cdemo_sk
     data_type: long
-  - name: CS_SHIP_CUSTOMER_SK
+  - name: cs_ship_customer_sk
     data_type: long
-  - name: CS_SHIP_DATE_SK
+  - name: cs_ship_date_sk
     data_type: long
-  - name: CS_SHIP_HDEMO_SK
+  - name: cs_ship_hdemo_sk
     data_type: long
-  - name: CS_SHIP_MODE_SK
+  - name: cs_ship_mode_sk
     data_type: long
-  - name: CS_SOLD_DATE_SK
+  - name: cs_sold_date_sk
     data_type: long
-  - name: CS_SOLD_TIME_SK
+  - name: cs_sold_time_sk
     data_type: long
-  - name: CS_WAREHOUSE_SK
+  - name: cs_warehouse_sk
     data_type: long
-  - name: CS_WHOLESALE_COST
+  - name: cs_wholesale_cost
     data_type: "decimal(7,2)"
   - name: Catalog Sales Net Paid
     data_type: "decimal(38,2)"
-    sql: "CAST(\"CS_NET_PAID\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
+    sql: "CAST(\"cs_net_paid\"*\"cs_quantity\" AS decimal(38,2))"
   - name: Catalog Sales Price Tier
     data_type: string
-    sql: CASE WHEN "CS_SALES_PRICE" BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More
+    sql: CASE WHEN "cs_sales_price" BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More
       than 500' END
   - name: Catalog Sales
     data_type: "decimal(38,2)"
-    sql: "CAST(\"CS_SALES_PRICE\"*\"CS_QUANTITY\" AS DECIMAL(38,2))"
+    sql: "CAST(\"cs_sales_price\"*\"cs_quantity\" AS decimal(38,2))"
   - name: Purchased Amount in Catalog
     data_type: "decimal(16,8)"
-    sql: (("CS_EXT_LIST_PRICE"-"CS_EXT_WHOLESALE_COST"-"CS_EXT_DISCOUNT_AMT")+"CS_EXT_SALES_PRICE")/2
+    sql: (("cs_ext_list_price"-"cs_ext_wholesale_cost"-"cs_ext_discount_amt")+"cs_ext_sales_price")/2

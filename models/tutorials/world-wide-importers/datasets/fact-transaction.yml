@@ -7,7 +7,7 @@ table: FACT_TRANSACTION
 columns:
   - name: BILL_TO_CUSTOMER_KEY
     data_type: long
-  - name: CUSTOMER_KEY
+  - name: customer_key
     data_type: long
   - name: DATE_KEY
     data_type: date
@@ -17,7 +17,7 @@ columns:
     data_type: long
   - name: OUTSTANDING_BALANCE
     data_type: double
-  - name: PAYMENT_METHOD_KEY
+  - name: payment_method_key
     data_type: long
   - name: SUPPLIER_INVOICE_NUMBER
     data_type: string

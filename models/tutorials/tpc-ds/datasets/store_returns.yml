@@ -9,98 +9,98 @@ sql: "SELECT ss.*, sr.*,\n  case when (sr_returned_date_sk - ss_sold_date_sk <= 
   \ - ss_sold_date_sk <= 90) then '61-90 days'\n  when (sr_returned_date_sk - ss_sold_date_sk\
   \ > 90) and\n                 (sr_returned_date_sk - ss_sold_date_sk <= 120) then\
   \ '91-120 days' \n  else '> 120 days' end as returns_time_tier,\n  1 as returns_count\n\
-  \tFROM benchmark.TPCDS_SF100GB.store_returns sr\n\tINNER JOIN benchmark.TPCDS_SF100GB.store_sales\
+  \tFROM atscale.tpcds.store_returns sr\n\tINNER JOIN atscale.tpcds.store_sales\
   \ ss\t\n\t\tON\tss.ss_ticket_number = sr.sr_ticket_number\n\t\tAND ss.ss_item_sk\
   \ = sr.sr_item_sk\n\t\tAND ss.ss_customer_sk = sr.sr_customer_sk"
 
 columns:
-  - name: RETURNS_COUNT
+  - name: returns_count
     data_type: long
-  - name: RETURNS_TIME_TIER
+  - name: returns_time_tier
     data_type: string
-  - name: SR_ADDR_SK
+  - name: sr_addr_sk
     data_type: long
-  - name: SR_CDEMO_SK
+  - name: sr_cdemo_sk
     data_type: long
-  - name: SR_CUSTOMER_SK
+  - name: sr_customer_sk
     data_type: long
-  - name: SR_FEE
+  - name: sr_fee
     data_type: "decimal(7,2)"
-  - name: SR_HDEMO_SK
+  - name: sr_hdemo_sk
     data_type: long
-  - name: SR_ITEM_SK
+  - name: sr_item_sk
     data_type: long
-  - name: SR_NET_LOSS
+  - name: sr_net_loss
     data_type: "decimal(7,2)"
-  - name: SR_REASON_SK
+  - name: sr_reason_sk
     data_type: long
-  - name: SR_REFUNDED_CASH
+  - name: sr_refunded_cash
     data_type: "decimal(7,2)"
-  - name: SR_RETURNED_DATE_SK
+  - name: sr_returned_date_sk
     data_type: long
-  - name: SR_RETURN_AMT
+  - name: sr_return_amt
     data_type: "decimal(7,2)"
-  - name: SR_RETURN_AMT_INC_TAX
+  - name: sr_return_amt_inc_tax
     data_type: "decimal(7,2)"
-  - name: SR_RETURN_QUANTITY
+  - name: sr_return_quantity
     data_type: long
-  - name: SR_RETURN_SHIP_COST
+  - name: sr_return_ship_cost
     data_type: "decimal(7,2)"
-  - name: SR_RETURN_TAX
+  - name: sr_return_tax
     data_type: "decimal(7,2)"
-  - name: SR_RETURN_TIME_SK
+  - name: sr_return_time_sk
     data_type: long
-  - name: SR_REVERSED_CHARGE
+  - name: sr_reversed_charge
     data_type: "decimal(7,2)"
-  - name: SR_STORE_CREDIT
+  - name: sr_store_credit
     data_type: "decimal(7,2)"
-  - name: SR_STORE_SK
+  - name: sr_store_sk
     data_type: long
-  - name: SR_TICKET_NUMBER
+  - name: sr_ticket_number
     data_type: long
-  - name: SS_ADDR_SK
+  - name: ss_addr_sk
     data_type: long
-  - name: SS_CDEMO_SK
+  - name: ss_cdemo_sk
     data_type: long
-  - name: SS_COUPON_AMT
+  - name: ss_coupon_amt
     data_type: "decimal(7,2)"
-  - name: SS_CUSTOMER_SK
+  - name: ss_customer_sk
     data_type: long
-  - name: SS_EXT_DISCOUNT_AMT
+  - name: ss_ext_discount_amt
     data_type: "decimal(7,2)"
-  - name: SS_EXT_LIST_PRICE
+  - name: ss_ext_list_price
     data_type: "decimal(7,2)"
-  - name: SS_EXT_SALES_PRICE
+  - name: ss_ext_sales_price
     data_type: "decimal(7,2)"
-  - name: SS_EXT_TAX
+  - name: ss_ext_tax
     data_type: "decimal(7,2)"
-  - name: SS_EXT_WHOLESALE_COST
+  - name: ss_ext_wholesale_cost
     data_type: "decimal(7,2)"
-  - name: SS_HDEMO_SK
+  - name: ss_hdemo_sk
     data_type: long
-  - name: SS_ITEM_SK
+  - name: ss_item_sk
     data_type: long
-  - name: SS_LIST_PRICE
+  - name: ss_list_price
     data_type: "decimal(7,2)"
-  - name: SS_NET_PAID
+  - name: ss_net_paid
     data_type: "decimal(7,2)"
-  - name: SS_NET_PAID_INC_TAX
+  - name: ss_net_paid_inc_tax
     data_type: "decimal(7,2)"
-  - name: SS_NET_PROFIT
+  - name: ss_net_profit
     data_type: "decimal(7,2)"
-  - name: SS_PROMO_SK
+  - name: ss_promo_sk
     data_type: long
-  - name: SS_QUANTITY
+  - name: ss_quantity
     data_type: long
-  - name: SS_SALES_PRICE
+  - name: ss_sales_price
     data_type: "decimal(7,2)"
-  - name: SS_SOLD_DATE_SK
+  - name: ss_sold_date_sk
     data_type: long
-  - name: SS_SOLD_TIME_SK
+  - name: ss_sold_time_sk
     data_type: long
-  - name: SS_STORE_SK
+  - name: ss_store_sk
     data_type: long
-  - name: SS_TICKET_NUMBER
+  - name: ss_ticket_number
     data_type: long
-  - name: SS_WHOLESALE_COST
+  - name: ss_wholesale_cost
     data_type: "decimal(7,2)"

@@ -2,42 +2,42 @@ unique_name: customer
 object_type: dataset
 label: customer
 connection_id: Connection - TPCDS
-table: CUSTOMER
+table: customer
 
 columns:
-  - name: C_BIRTH_COUNTRY
+  - name: c_birth_country
     data_type: string
-  - name: C_BIRTH_DAY
+  - name: c_birth_day
     data_type: int
-  - name: C_BIRTH_MONTH
+  - name: c_birth_month
     data_type: int
-  - name: C_BIRTH_YEAR
+  - name: c_birth_year
     data_type: int
-  - name: C_CURRENT_ADDR_SK
+  - name: c_current_addr_sk
     data_type: int
-  - name: C_CURRENT_CDEMO_SK
+  - name: c_current_cdemo_sk
     data_type: int
-  - name: C_CURRENT_HDEMO_SK
+  - name: c_current_hdemo_sk
     data_type: int
-  - name: C_CUSTOMER_ID
+  - name: c_customer_id
     data_type: string
-  - name: C_CUSTOMER_SK
+  - name: c_customer_sk
     data_type: int
-  - name: C_EMAIL_ADDRESS
+  - name: c_email_address
     data_type: string
-  - name: C_FIRST_NAME
+  - name: c_first_name
     data_type: string
-  - name: C_FIRST_SALES_DATE_SK
+  - name: c_first_sales_date_sk
     data_type: int
-  - name: C_FIRST_SHIPTO_DATE_SK
+  - name: c_first_shipto_date_sk
     data_type: int
-  - name: C_LAST_NAME
+  - name: c_last_name
     data_type: string
-  - name: C_LAST_REVIEW_DATE
+  - name: c_last_review_date
     data_type: string
-  - name: C_LOGIN
+  - name: c_login
     data_type: string
-  - name: C_PREFERRED_CUST_FLAG
+  - name: c_preferred_cust_flag
     data_type: string
-  - name: C_SALUTATION
+  - name: c_salutation
     data_type: string

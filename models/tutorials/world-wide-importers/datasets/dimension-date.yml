@@ -1,31 +1,31 @@
 unique_name: dimension-date
 object_type: dataset
-label: DATE
+label: date
 connection_id: Connection - WW
-table: DATE
+table: date
 
 columns:
-  - name: CALENDAR_MONTH_LABEL
+  - name: calendar_month_label
     data_type: string
   - name: CALENDAR_MONTH_NUMBER
     data_type: long
   - name: CALENDAR_YEAR
     data_type: long
-  - name: CALENDAR_YEAR_LABEL
+  - name: calendar_year_label
     data_type: string
-  - name: DATE
+  - name: date
     data_type: date
   - name: DAY
     data_type: long
   - name: DAY_NUMBER
     data_type: long
-  - name: FISCAL_MONTH_LABEL
+  - name: fiscal_month_label
     data_type: string
   - name: FISCAL_MONTH_NUMBER
     data_type: long
   - name: FISCAL_YEAR
     data_type: long
-  - name: FISCAL_YEAR_LABEL
+  - name: fiscal_year_label
     data_type: string
   - name: ISO_WEEK_NUMBER
     data_type: long
@@ -33,9 +33,9 @@ columns:
     data_type: string
   - name: SHORT_MONTH
     data_type: string
-  - name: YEAR_MONTH
+  - name: year_month
     data_type: string
-    sql: "EXTRACT(YEAR from DATE) || LPAD(EXTRACT(MONTH from DATE),2,'0')"
+    sql: "EXTRACT(YEAR from date) || LPAD(EXTRACT(MONTH from date),2,'0')"
     dialects:
       - dialect: Snowflake 
-        sql: "EXTRACT(YEAR from DATE) || LPAD(EXTRACT(MONTH from DATE),2,'0')"
+        sql: "EXTRACT(YEAR from date) || LPAD(EXTRACT(MONTH from date),2,'0')"

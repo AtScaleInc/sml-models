@@ -1,7 +1,7 @@
 unique_name: Product Dimension
 object_type: dimension
 label: Product Dimension
-description: "Product Line, Category, and Name"
+description: "Product Line, category, and Name"
 type: standard
 
 hierarchies:
@@ -14,7 +14,7 @@ hierarchies:
 
       - unique_name: Product Line
 
-      - unique_name: Product Category
+      - unique_name: Product category
 
         secondary_attributes:
 
@@ -39,9 +39,9 @@ hierarchies:
 
 level_attributes:
 
-  - unique_name: Product Category
-    label: Product Category
-    description: Product Sub Category
+  - unique_name: Product category
+    label: Product category
+    description: Product Sub category
     dataset: dimproduct
     name_column: productsubcategoryname
     key_columns:

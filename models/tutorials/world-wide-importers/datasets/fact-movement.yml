@@ -5,7 +5,7 @@ connection_id: Connection - WW
 table: FACT_MOVEMENT
 
 columns:
-  - name: CUSTOMER_KEY
+  - name: customer_key
     data_type: long
   - name: DATE_KEY
     data_type: date

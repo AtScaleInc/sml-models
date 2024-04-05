@@ -20,19 +20,19 @@ hierarchies:
             label: Is Sales Person
             folder: Employees
             dataset: dimension-employee
-            name_column: IS_SALESPERSON
+            name_column: is_salesperson
             key_columns:
-              - IS_SALESPERSON
-            sort_column: IS_SALESPERSON
+              - is_salesperson
+            sort_column: is_salesperson
 
           - unique_name: d_Preferred_Name
             label: Preferred Name
             folder: Employees
             dataset: dimension-employee
-            name_column: PREFERRED_NAME
+            name_column: preferred_name
             key_columns:
-              - PREFERRED_NAME
-            sort_column: PREFERRED_NAME
+              - preferred_name
+            sort_column: preferred_name
 
 level_attributes:
 
@@ -40,6 +40,6 @@ level_attributes:
     label: Employee
     is_unique_key: true
     dataset: dimension-employee
-    name_column: EMPLOYEE
+    name_column: employee
     key_columns:
-      - EMPLOYEE_KEY
+      - employee_key

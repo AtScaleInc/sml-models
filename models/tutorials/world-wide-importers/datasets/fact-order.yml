@@ -5,9 +5,9 @@ connection_id: Connection - WW
 table: FACT_ORDER
 
 columns:
-  - name: CITY_KEY
+  - name: city_key
     data_type: long
-  - name: CUSTOMER_KEY
+  - name: customer_key
     data_type: long
   - name: DESCRIPTION
     data_type: string

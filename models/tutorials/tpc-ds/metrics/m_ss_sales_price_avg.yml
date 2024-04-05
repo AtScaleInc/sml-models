@@ -3,4 +3,4 @@ object_type: metric
 label: Average Store Sales Sales Price
 calculation_method: average
 dataset: store_sales
-column: SS_SALES_PRICE
+column: ss_sales_price

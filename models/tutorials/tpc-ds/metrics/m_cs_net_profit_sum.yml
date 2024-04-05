@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Net Profit Amount
 calculation_method: sum
 dataset: catalog_sales
-column: CS_NET_PROFIT
+column: cs_net_profit

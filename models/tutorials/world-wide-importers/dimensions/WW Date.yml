@@ -39,46 +39,46 @@ level_attributes:
     description: Date Dimension
     is_unique_key: true
     dataset: dimension-date
-    name_column: DATE
+    name_column: date
     key_columns:
-      - DATE
-    sort_column: DATE
+      - date
+    sort_column: date
 
   - unique_name: Calendar Month - WW
     label: Calendar Month
     dataset: dimension-date
-    name_column: CALENDAR_MONTH_LABEL
+    name_column: calendar_month_label
     key_columns:
-      - CALENDAR_MONTH_LABEL
-    sort_column: YEAR_MONTH
+      - calendar_month_label
+    sort_column: year_month
 
   - unique_name: Calendar Year - WW
     label: Calendar Year
     dataset: dimension-date
-    name_column: CALENDAR_YEAR_LABEL
+    name_column: calendar_year_label
     key_columns:
-      - CALENDAR_YEAR_LABEL
-    sort_column: CALENDAR_YEAR_LABEL
+      - calendar_year_label
+    sort_column: calendar_year_label
 
   - unique_name: Fiscal Day - WW
     label: Fiscal Day
     dataset: dimension-date
-    name_column: DATE
+    name_column: date
     key_columns:
-      - DATE
-    sort_column: DATE
+      - date
+    sort_column: date
 
   - unique_name: Fiscal Month - WW
     label: Fiscal Month
     dataset: dimension-date
-    name_column: FISCAL_MONTH_LABEL
+    name_column: fiscal_month_label
     key_columns:
-      - FISCAL_MONTH_LABEL
-    sort_column: YEAR_MONTH
+      - fiscal_month_label
+    sort_column: year_month
 
   - unique_name: Fiscal Year - WW
     label: Fiscal Year
     dataset: dimension-date
-    name_column: FISCAL_YEAR_LABEL
+    name_column: fiscal_year_label
     key_columns:
-      - FISCAL_YEAR_LABEL
+      - fiscal_year_label

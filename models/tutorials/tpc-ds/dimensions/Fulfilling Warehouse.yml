@@ -28,19 +28,19 @@ hierarchies:
             label: Warehouse Name
             folder: Fulfillment
             dataset: warehouse
-            name_column: W_WAREHOUSE_NAME
+            name_column: w_warehouse_name
             key_columns:
-              - W_WAREHOUSE_NAME
-            sort_column: W_WAREHOUSE_NAME
+              - w_warehouse_name
+            sort_column: w_warehouse_name
 
           - unique_name: d_warehouse_square_feet
             label: Warehouse Square Feet
             folder: Fulfillment
             dataset: warehouse
-            name_column: W_WAREHOUSE_SQ_FT
+            name_column: w_warehouse_sq_ft
             key_columns:
-              - W_WAREHOUSE_SQ_FT
-            sort_column: W_WAREHOUSE_SQ_FT
+              - w_warehouse_sq_ft
+            sort_column: w_warehouse_sq_ft
 
         metrics:
 
@@ -50,43 +50,43 @@ hierarchies:
             folder: Fulfillment
             unrelated_dimensions_handling: repeat
             dataset: warehouse
-            column: W_WAREHOUSE_SQ_FT
+            column: w_warehouse_sq_ft
 
 level_attributes:
 
   - unique_name: Fulfilling Warehouse
     label: Warehouse Number
     dataset: warehouse
-    name_column: W_WAREHOUSE_SK
+    name_column: w_warehouse_sk
     key_columns:
-      - W_WAREHOUSE_SK
+      - w_warehouse_sk
 
   - unique_name: Warehouse City
     label: Warehouse City
     dataset: warehouse
-    name_column: W_CITY
+    name_column: w_city
     key_columns:
-      - W_COUNTRY
-      - W_STATE
-      - W_CITY
+      - w_country
+      - w_state
+      - w_city
 
   - unique_name: Warehouse Country
     label: Warehouse Country
     dataset: warehouse
-    name_column: W_COUNTRY
+    name_column: w_country
     key_columns:
-      - W_COUNTRY
+      - w_country
 
   - unique_name: Warehouse County
     label: Warehouse County
     dataset: warehouse
-    name_column: W_COUNTY
+    name_column: w_county
     key_columns:
-      - W_COUNTY
+      - w_county
 
   - unique_name: Warehouse State
     label: Warehouse State
     dataset: warehouse
-    name_column: W_STATE
+    name_column: w_state
     key_columns:
-      - W_STATE
+      - w_state

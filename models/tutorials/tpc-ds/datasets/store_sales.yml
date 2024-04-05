@@ -2,75 +2,75 @@ unique_name: store_sales
 object_type: dataset
 label: store_sales
 connection_id: Connection - TPCDS
-table: STORE_SALES
+table: store_sales
 
 columns:
   - name: Net Profit Tier
     data_type: string
-    sql: "CASE WHEN \"SS_NET_PROFIT\" > 25000 THEN 'More than 25000' \nWHEN \"SS_NET_PROFIT\"\
-      \ BETWEEN 3000 AND 25000 THEN '3000-25000'\nWHEN \"SS_NET_PROFIT\" BETWEEN 2000\
-      \ AND 3000 THEN '2000-3000'  \nWHEN \"SS_NET_PROFIT\" BETWEEN 300 AND 2000 THEN\
-      \ '300-2000'  \nWHEN \"SS_NET_PROFIT\" BETWEEN 250 AND 300 THEN '250-300'  \n\
-      WHEN \"SS_NET_PROFIT\" BETWEEN 200 AND 250 THEN '200-250'\nWHEN \"SS_NET_PROFIT\"\
-      \ BETWEEN 150 AND 200 THEN '150-200'\nWHEN \"SS_NET_PROFIT\" BETWEEN 100 AND\
-      \ 150 THEN '100-150' \nWHEN \"SS_NET_PROFIT\" BETWEEN 50 AND 100 THEN ' 50-100'\
-      \ \nWHEN \"SS_NET_PROFIT\" BETWEEN 0 AND 50 THEN '  0- 50' \nELSE ' 50 or Less'\
+    sql: "CASE WHEN \"ss_net_profit\" > 25000 THEN 'More than 25000' \nWHEN \"ss_net_profit\"\
+      \ BETWEEN 3000 AND 25000 THEN '3000-25000'\nWHEN \"ss_net_profit\" BETWEEN 2000\
+      \ AND 3000 THEN '2000-3000'  \nWHEN \"ss_net_profit\" BETWEEN 300 AND 2000 THEN\
+      \ '300-2000'  \nWHEN \"ss_net_profit\" BETWEEN 250 AND 300 THEN '250-300'  \n\
+      WHEN \"ss_net_profit\" BETWEEN 200 AND 250 THEN '200-250'\nWHEN \"ss_net_profit\"\
+      \ BETWEEN 150 AND 200 THEN '150-200'\nWHEN \"ss_net_profit\" BETWEEN 100 AND\
+      \ 150 THEN '100-150' \nWHEN \"ss_net_profit\" BETWEEN 50 AND 100 THEN ' 50-100'\
+      \ \nWHEN \"ss_net_profit\" BETWEEN 0 AND 50 THEN '  0- 50' \nELSE ' 50 or Less'\
       \ END"
   - name: Purchased Amount in Store
     data_type: "decimal(16,8)"
-    sql: (("SS_EXT_LIST_PRICE"-"SS_EXT_WHOLESALE_COST"-"SS_EXT_DISCOUNT_AMT")+"SS_EXT_SALES_PRICE")/2
-  - name: SS ROW COUNTER
+    sql: (("ss_ext_list_price"-"ss_ext_wholesale_cost"-"ss_ext_discount_amt")+"ss_ext_sales_price")/2
+  - name: ss row counter
     data_type: int
     sql: "1"
-  - name: SS_ADDR_SK
+  - name: ss_addr_sk
     data_type: long
-  - name: SS_CDEMO_SK
+  - name: ss_cdemo_sk
     data_type: long
-  - name: SS_COUPON_AMT
+  - name: ss_coupon_amt
     data_type: "decimal(7,2)"
-  - name: SS_CUSTOMER_SK
+  - name: ss_customer_sk
     data_type: long
-  - name: SS_EXT_DISCOUNT_AMT
+  - name: ss_ext_discount_amt
     data_type: "decimal(7,2)"
-  - name: SS_EXT_LIST_PRICE
+  - name: ss_ext_list_price
     data_type: "decimal(7,2)"
-  - name: SS_EXT_SALES_PRICE
+  - name: ss_ext_sales_price
     data_type: "decimal(7,2)"
-  - name: SS_EXT_TAX
+  - name: ss_ext_tax
     data_type: "decimal(7,2)"
-  - name: SS_EXT_WHOLESALE_COST
+  - name: ss_ext_wholesale_cost
     data_type: "decimal(7,2)"
-  - name: SS_HDEMO_SK
+  - name: ss_hdemo_sk
     data_type: long
-  - name: SS_ITEM_SK
+  - name: ss_item_sk
     data_type: long
-  - name: SS_LIST_PRICE
+  - name: ss_list_price
     data_type: "decimal(7,2)"
-  - name: SS_NET_PAID
+  - name: ss_net_paid
     data_type: "decimal(7,2)"
-  - name: SS_NET_PAID_INC_TAX
+  - name: ss_net_paid_inc_tax
     data_type: "decimal(7,2)"
-  - name: SS_NET_PROFIT
+  - name: ss_net_profit
     data_type: "decimal(7,2)"
-  - name: SS_PROMO_SK
+  - name: ss_promo_sk
     data_type: long
-  - name: SS_QUANTITY
+  - name: ss_quantity
     data_type: long
-  - name: SS_SALES_PRICE
+  - name: ss_sales_price
     data_type: "decimal(7,2)"
-  - name: SS_SOLD_DATE_SK
+  - name: ss_sold_date_sk
     data_type: long
-  - name: SS_SOLD_TIME_SK
+  - name: ss_sold_time_sk
     data_type: long
-  - name: SS_STORE_SK
+  - name: ss_store_sk
     data_type: long
-  - name: SS_TICKET_NUMBER
+  - name: ss_ticket_number
     data_type: long
-  - name: SS_WHOLESALE_COST
+  - name: ss_wholesale_cost
     data_type: "decimal(7,2)"
-  - name: Sales Price Tier
+  - name: sales price tier
     data_type: string
-    sql: "CASE WHEN \"SS_SALES_PRICE\" > 200 THEN '200 and More' \nWHEN \"SS_SALES_PRICE\"\
-      BETWEEN 150 AND 200 THEN '150-200' \nWHEN \"SS_SALES_PRICE\" BETWEEN 100 AND\
-      \ 150 THEN '100-150' \nWHEN \"SS_SALES_PRICE\" BETWEEN 50 AND 100 THEN ' 50-100'\
+    sql: "CASE WHEN \"ss_sales_price\" > 200 THEN '200 and More' \nWHEN \"ss_sales_price\"\
+      BETWEEN 150 AND 200 THEN '150-200' \nWHEN \"ss_sales_price\" BETWEEN 100 AND\
+      \ 150 THEN '100-150' \nWHEN \"ss_sales_price\" BETWEEN 50 AND 100 THEN ' 50-100'\
       \ \nELSE ' 50 and Less' END"

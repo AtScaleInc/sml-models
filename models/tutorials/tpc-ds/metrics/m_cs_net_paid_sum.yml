@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Net Paid Amount
 calculation_method: sum
 dataset: catalog_sales
-column: CS_NET_PAID
+column: cs_net_paid

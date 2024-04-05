@@ -7,9 +7,9 @@ table: FACT_SALE
 columns:
   - name: BILL_TO_CUSTOMER_KEY
     data_type: long
-  - name: CITY_KEY
+  - name: city_key
     data_type: long
-  - name: CUSTOMER_KEY
+  - name: customer_key
     data_type: long
   - name: DELIVERY_DATE_KEY
     data_type: date

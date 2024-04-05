@@ -19,9 +19,9 @@ level_attributes:
   - unique_name: d_returns_time_tier
     label: Returns Time Tier
     dataset: store_returns
-    name_column: RETURNS_TIME_TIER
+    name_column: returns_time_tier
     key_columns:
-      - RETURNS_TIME_TIER
+      - returns_time_tier
 
 modeler_metadata:
   version: 0

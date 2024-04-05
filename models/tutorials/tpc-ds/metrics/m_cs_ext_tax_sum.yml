@@ -3,4 +3,4 @@ object_type: metric
 label: Catalog Ext Sales Tax
 calculation_method: sum
 dataset: catalog_sales
-column: CS_EXT_TAX
+column: cs_ext_tax

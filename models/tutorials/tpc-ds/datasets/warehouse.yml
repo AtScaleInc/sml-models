@@ -2,34 +2,34 @@ unique_name: warehouse
 object_type: dataset
 label: warehouse
 connection_id: Connection - TPCDS
-table: WAREHOUSE
+table: warehouse
 
 columns:
-  - name: W_CITY
+  - name: w_city
     data_type: string
-  - name: W_COUNTRY
+  - name: w_country
     data_type: string
-  - name: W_COUNTY
+  - name: w_county
     data_type: string
-  - name: W_GMT_OFFSET
+  - name: w_gmt_offset
     data_type: "decimal(5,2)"
-  - name: W_STATE
+  - name: w_state
     data_type: string
-  - name: W_STREET_NAME
+  - name: w_street_name
     data_type: string
-  - name: W_STREET_NUMBER
+  - name: w_street_number
     data_type: string
-  - name: W_STREET_TYPE
+  - name: w_street_type
     data_type: string
-  - name: W_SUITE_NUMBER
+  - name: w_suite_number
     data_type: string
-  - name: W_WAREHOUSE_ID
+  - name: w_warehouse_id
     data_type: string
-  - name: W_WAREHOUSE_NAME
+  - name: w_warehouse_name
     data_type: string
-  - name: W_WAREHOUSE_SK
+  - name: w_warehouse_sk
     data_type: long
-  - name: W_WAREHOUSE_SQ_FT
+  - name: w_warehouse_sq_ft
     data_type: long
-  - name: W_ZIP
+  - name: w_zip
     data_type: string
