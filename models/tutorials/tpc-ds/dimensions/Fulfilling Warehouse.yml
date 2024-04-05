@@ -42,15 +42,15 @@ hierarchies:
               - w_warehouse_sq_ft
             sort_column: w_warehouse_sq_ft
 
-        metrics:
+        # metrics:
 
-          - unique_name: m_warehouse_square_feet
-            label: Warehouse Square Feet (Metric)
-            calculation_method: sum
-            folder: Fulfillment
-            unrelated_dimensions_handling: repeat
-            dataset: warehouse
-            column: w_warehouse_sq_ft
+        #   - unique_name: m_warehouse_square_feet
+        #     label: Warehouse Square Feet (Metric)
+        #     calculation_method: sum
+        #     folder: Fulfillment
+        #     unrelated_dimensions_handling: repeat
+        #     dataset: warehouse
+        #     column: w_warehouse_sq_ft
 
 level_attributes:
 
