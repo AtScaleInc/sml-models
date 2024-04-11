@@ -35,7 +35,9 @@ columns:
     data_type: string
   - name: year_month
     data_type: string
-    sql: "EXTRACT(YEAR from date) || LPAD(EXTRACT(MONTH from date),2,'0')"
+    sql: "TO_CHAR(\"date\", 'YYYYMM')"
     dialects:
-      - dialect: Snowflake 
-        sql: "EXTRACT(YEAR from date) || LPAD(EXTRACT(MONTH from date),2,'0')"
+      - dialect: Databricks 
+        sql: "TO_CHAR(date, 'yMM')"
+      - dialect: BigQuery 
+        sql: "FORMAT_DATE(\"%Y%m\", date)"

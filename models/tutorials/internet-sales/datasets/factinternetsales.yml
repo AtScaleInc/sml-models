@@ -11,7 +11,12 @@ columns:
     data_type: "decimal(38,0)"
   - name: calculated tax
     data_type: double
-    sql: '"salesamount"*0.085'
+    sql: "\"salesamount\"*0.085"
+    dialects:
+      - dialect: Databricks
+        sql: "salesamount*0.085"
+      - dialect: Bigquery
+        sql: "salesamount*0.085"
   - name: orderdate
     data_type: string
   - name: orderdatekey

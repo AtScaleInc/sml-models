@@ -41,6 +41,14 @@ columns:
     data_type: string
   - name: d_last_dom
     data_type: int
+  - name: d_month_name
+    data_type: string
+    sql: "TO_CHAR(\"d_date\", 'YYYY-MM')"
+    dialects:
+      - dialect: Databricks
+        sql: "TO_CHAR(d_date, 'y-MM')"
+      - dialect: Bigquery
+        sql: "FORMAT_DATE('%Y-%m', d_date)"
   - name: d_month_seq
     data_type: int
   - name: d_moy
@@ -63,12 +71,25 @@ columns:
     data_type: int
   - name: year_month
     data_type: date
-    sql: "TO_DATE(SUBSTRING(\"d_date\",1,4) || '-' || SUBSTRING(\"d_date\",6,2) ||\
-      \ '-01')"
+    sql: "TO_CHAR(\"d_date\", 'YYYY-MM-01')"
+    dialects:
+      - dialect: Databricks
+        sql: "TO_CHAR(d_date, 'y-MM-01')"
+      - dialect: Bigquery
+        sql: "FORMAT_DATE('%Y-%m-01', d_date)"
   - name: year_quarter
     data_type: date
-    sql: "TO_DATE(SUBSTRING(\"d_date\",1,4) || '-' || LPAD(\"d_qoy\", 2, '0') || '-01')"
+    sql: "TO_CHAR(date_trunc('quarter', \"d_date\"), 'YYYY-MM-DD')"
+    dialects:
+      - dialect: Databricks
+        sql: "TO_CHAR(DATE_TRUNC('quarter', d_date), 'y-MM-dd')"
+      - dialect: Bigquery
+        sql: "FORMAT_DATE('%Y-%m-%d', DATE_TRUNC(d_date, QUARTER))"
   - name: year_week
     data_type: string
-    sql: "SUBSTRING(\"d_date\",1,4) || '-' || SUBSTRING(\"d_date\",6,2) || '-' ||\
-      \ LPAD(\"d_week_seq\", 2, '0')"
+    sql: "TO_CHAR(date_trunc('week', \"d_date\"), 'YYYY-MM-DD')"
+    dialects:
+      - dialect: Databricks
+        sql: "TO_CHAR(DATE_TRUNC('week', d_date), 'y-MM-dd')"
+      - dialect: Bigquery
+        sql: "FORMAT_DATE('%Y-%m-%d', DATE_TRUNC(d_date, WEEK))"

@@ -79,13 +79,32 @@ columns:
   - name: Catalog Sales Net Paid
     data_type: "decimal(38,2)"
     sql: "CAST(\"cs_net_paid\"*\"cs_quantity\" AS decimal(38,2))"
+    dialects:
+      - dialect: Databricks
+        sql: "CAST(cs_net_paid*cs_quantity AS decimal(38,2))"
+      - dialect: Bigquery
+        sql: "CAST(FORMAT('%.2F', unitprice*salesamount) as decimal)"
   - name: Catalog Sales Price Tier
     data_type: string
-    sql: CASE WHEN "cs_sales_price" BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More
-      than 500' END
+    sql: "CASE WHEN \"cs_sales_price\" BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More than 500' END"
+    dialects:
+      - dialect: Databricks
+        sql: "CASE WHEN cs_sales_price BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More than 500' END"
+      - dialect: Bigquery
+        sql: "CASE WHEN cs_sales_price BETWEEN 0 AND 500 THEN '500 or Less' ELSE 'More than 500' END"
   - name: Catalog Sales
     data_type: "decimal(38,2)"
-    sql: "CAST(\"cs_sales_price\"*\"cs_quantity\" AS decimal(38,2))"
+    sql: "CAST(\"cs_sales_price\"+\"cs_quantity\" AS decimal(38,2))"
+    dialects:
+      - dialect: Databricks
+        sql: "CAST(cs_sales_price-cs_quantity AS decimal(38,2))"
+      - dialect: Bigquery
+        sql: "CAST(FORMAT('%.2F', cs_sales_price-cs_quantity) as decimal)"
   - name: Purchased Amount in Catalog
     data_type: "decimal(16,8)"
     sql: (("cs_ext_list_price"-"cs_ext_wholesale_cost"-"cs_ext_discount_amt")+"cs_ext_sales_price")/2
+    dialects:
+      - dialect: Databricks
+        sql: "((cs_ext_list_price-cs_ext_wholesale_cost-cs_ext_discount_amt)+cs_ext_sales_price)/2"
+      - dialect: Bigquery
+        sql: "((cs_ext_list_price-cs_ext_wholesale_cost-cs_ext_discount_amt)+cs_ext_sales_price)/2"

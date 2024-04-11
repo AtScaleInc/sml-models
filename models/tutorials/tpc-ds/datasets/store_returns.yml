@@ -2,16 +2,54 @@ unique_name: store_returns
 object_type: dataset
 label: store_returns
 connection_id: Connection - TPCDS
-sql: "SELECT ss.*, sr.*,\n  case when (sr_returned_date_sk - ss_sold_date_sk <= 30)\
-  \ then '<= 30 days' \n  when (sr_returned_date_sk - ss_sold_date_sk > 30) and \n\
-  \                 (sr_returned_date_sk - ss_sold_date_sk <= 60) then '31-60 days'\
-  \ \n  when (sr_returned_date_sk - ss_sold_date_sk > 60) and \n                 (sr_returned_date_sk\
-  \ - ss_sold_date_sk <= 90) then '61-90 days'\n  when (sr_returned_date_sk - ss_sold_date_sk\
-  \ > 90) and\n                 (sr_returned_date_sk - ss_sold_date_sk <= 120) then\
-  \ '91-120 days' \n  else '> 120 days' end as returns_time_tier,\n  1 as returns_count\n\
-  \tFROM atscale.tpcds.store_returns sr\n\tINNER JOIN atscale.tpcds.store_sales\
-  \ ss\t\n\t\tON\tss.ss_ticket_number = sr.sr_ticket_number\n\t\tAND ss.ss_item_sk\
-  \ = sr.sr_item_sk\n\t\tAND ss.ss_customer_sk = sr.sr_customer_sk"
+sql: "SELECT ss.*, sr.*,
+        case when (\"sr_returned_date_sk\" - \"ss_sold_date_sk\" <= 30) then '<= 30 days'
+          when (\"sr_returned_date_sk\" - \"ss_sold_date_sk\" > 30) and  
+             (\"sr_returned_date_sk\" - \"ss_sold_date_sk\" <= 60) then '31-60 days'
+          when (\"sr_returned_date_sk\" - \"ss_sold_date_sk\" > 60) and
+             (\"sr_returned_date_sk\" - \"ss_sold_date_sk\" <= 90) then '61-90 days'
+          when (\"sr_returned_date_sk\" - \"ss_sold_date_sk\" > 90) and 
+             (\"sr_returned_date_sk\" - \"ss_sold_date_sk\" <= 120) then '91-120 days'
+          else '> 120 days' end as \"returns_time_tier\",
+        1 as \"returns_count\"
+      FROM \"atscale_tutorial_data\".\"tpcds\".\"store_returns\" sr
+      INNER JOIN \"atscale_tutorial_data\".\"tpcds\".\"store_sales\" ss
+        ON ss.\"ss_ticket_number\" = sr.\"sr_ticket_number\"
+        AND ss.\"ss_item_sk\" = sr.\"sr_item_sk\"
+        AND ss.\"ss_customer_sk\" = sr.\"sr_customer_sk\""
+dialects:
+  - dialect: Databricks
+    sql: "SELECT ss.*, sr.*,
+        case when (sr_returned_date_sk - ss_sold_date_sk <= 30) then '<= 30 days'
+          when (sr_returned_date_sk - ss_sold_date_sk > 30) and  
+             (sr_returned_date_sk - ss_sold_date_sk <= 60) then '31-60 days'
+          when (sr_returned_date_sk - ss_sold_date_sk > 60) and
+             (sr_returned_date_sk - ss_sold_date_sk <= 90) then '61-90 days'
+          when (sr_returned_date_sk - ss_sold_date_sk > 90) and 
+             (sr_returned_date_sk - ss_sold_date_sk <= 120) then '91-120 days'
+          else '> 120 days' end as returns_time_tier,
+        1 as returns_count 
+        FROM atscale_tutorial_data.tpcds.store_returns sr
+        INNER JOIN atscale_tutorial_data.tpcds.store_sales ss
+        ON ss.ss_ticket_number = sr.sr_ticket_number
+        AND ss.ss_item_sk = sr.sr_item_sk
+        AND ss.ss_customer_sk = sr.sr_customer_sk"
+  - dialect: Bigquery
+    sql: "SELECT ss.*, sr.*,
+        case when (sr_returned_date_sk - ss_sold_date_sk <= 30) then '<= 30 days'
+          when (sr_returned_date_sk - ss_sold_date_sk > 30) and  
+             (sr_returned_date_sk - ss_sold_date_sk <= 60) then '31-60 days'
+          when (sr_returned_date_sk - ss_sold_date_sk > 60) and
+             (sr_returned_date_sk - ss_sold_date_sk <= 90) then '61-90 days'
+          when (sr_returned_date_sk - ss_sold_date_sk > 90) and 
+             (sr_returned_date_sk - ss_sold_date_sk <= 120) then '91-120 days'
+          else '> 120 days' end as returns_time_tier,
+        1 as returns_count 
+        FROM atscale_tutorial_data.tpcds.store_returns sr
+        INNER JOIN atscale_tutorial_data.tpcds.store_sales ss
+        ON ss.ss_ticket_number = sr.sr_ticket_number
+        AND ss.ss_item_sk = sr.sr_item_sk
+        AND ss.ss_customer_sk = sr.sr_customer_sk"
 
 columns:
   - name: returns_count
