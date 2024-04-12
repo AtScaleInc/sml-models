@@ -25,7 +25,11 @@ To explore and query the tutorial models, in AtScale Design Center:
 
 ![AtScale Design Center Deploy Catalog](images/AtScale-Design-Center-Deploy-Catalog.png)
 
-2. **Connect your BI Tool:** Click on the "Deployed Catalogs: icon in the Activity bar (left side) and click on your deployed catalog. Instructions for connecting your BI tools will appear on the right side.
+2. **(Optional) Enable Token-based Access for Excel & Power BI:** In order to connect Excel and Power BI without AtScale's imbedded directory service, generate an XMLA token by clicking on the user profile icon (upper right) and clicking on the "Generate Token" button.
+
+![AtScale Design Center Generate XMLA Token](images/AtScale-Design-Center-Generate-XMLA-Token.png)
+
+3. **Connect your BI Tool:** Click on the "Deployed Catalogs: icon in the Activity bar (left side) and click on your deployed catalog. Instructions for connecting your BI tools will appear on the right side.
 
 ![AtScale Design Center Connect](images/AtScale-Design-Center-Connect.png)
 
