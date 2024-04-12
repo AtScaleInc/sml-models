@@ -50,6 +50,42 @@ The tutorial data for the sample models is available for free in the Snowflake M
 
 ### How to Connect to Databricks Tutorial Data
 
-### How to Load to Tutorial Data into BigQUery
+*Coming soon to the Databricks Marketplace*
+
+### How to Load to Tutorial Data into BigQuery
+
+1. Create a project named `atscale-tutorial-data` in BigQuery
+2. In the BigQuery console for the `atscale-tutorial-data` project, run the following DDL scripts in this directory `/data/loaders/bigquery` in this repository:
+	1. [`load-as-adventure.sql`](data/loaders/bigquery/load-as_adventure.sql)
+	2. [`load-ww-importers.sql`](data/loaders/bigquery/load-ww-importers.sql)
+	3. [`load-tpcds.sql`](data/loaders/bigquery/load-tpcds.sql)
+
+## Creating an AtScale Data Warehouse to your Own Data
+
+1. **Go to AtScale Settingsn:** In AtScale Design Center, click on the "Settings" dropdown by clicking on the AtScale logo icon (upper left).
+
+![AtScale-Design-Center-Settings](images/AtScale-Design-Center-Settings.png)
+
+2. **Create a Data Warehouse:** In AtScale Design Center Settings, click on the "Data Warehouse" option (top left) and click on the icon (right) for the data platform you wish to connect (i.e. BigQuery, Snowflake, Databricks, etc.).
+
+![AtScale Design Center Add Connection](images/AtScale-Design-Center-Add-Snowflake.png)
+
+2. **Enter Data Warehouse Information:** In AtScale Design Center Data Warehouse property panel, enter your information and click on the "Apply" button. **Note that you may need to create a new database and schema to hold AtScale's aggregate tables.**
+
+![AtScale Design Center Add DW Properties](images/AtScale-Design-Center-DW-Properties.png)
+
+3. **Create a Data Warehouse Connection:** After creating the data warehouse, create a connection by clicking on the down arrow on the data warehouse your just created and click on the "Add Connection +" button.
+
+![AtScale Design Center Add DW Connection](images/AtScale-Design-Center-DW-Connection.png)
+
+4. **Enter Data Warehouse Connection Information:** In AtScale Design Center Data Warehouse Connection property panel, enter your information and click on the "Apply" button.
+
+![AtScale Design Center DW Connection Properties](images/AtScale-Design-Center-DW-Connection-Properties.png)
+
+5. **Change your SML Connection:** Go back to the Repo Browser by clicking on the AtScale icon (upper left corner) and update each model's connection YML file's `as_connection` property to to same string (i.e. "Snowflake") you entered into "External connection ID" field in the Data Warehouse Connection property panel in step 3. Make sure to click on the "Save File" button at the bottom of the text editor.
+
+![AtScale Design Center Connection Object](images/AtScale-Design-Center-Connection-Object.png)
+
+6. Deploy your catalog (see above).
 
 ## Aditional Resources
