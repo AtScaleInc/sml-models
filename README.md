@@ -12,8 +12,8 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 
 # Getting Started
 
-## How to Install AtScale
-Download AtScale Developer Community Edition and follow the installation instructions here: [AtScale Developer Community Edition](http://www.atscale.com/community)
+## How to the Install AtScale Semantic Layer Platform
+Download the [AtScale Developer Community Edition](http://www.atscale.com/community) and follow the installation instructions
 
 ## How to Connect to Tutorial Data in AtScale
 ### How to Use the Pre-configured PostgresSQL Tutorial Data
@@ -55,22 +55,22 @@ The tutorial data for the sample models is available for free in the Snowflake M
 ### How to Load to Tutorial Data into BigQuery
 
 1. Create a project named `atscale-tutorial-data` in BigQuery
-2. In the BigQuery console for the `atscale-tutorial-data` project, run the following DDL scripts in this directory `/data/loaders/bigquery` in this repository:
+2. In the BigQuery console for the `atscale-tutorial-data` project, run the following DDL scripts in this [directory](data/loaders/bigquery):
 	1. [`load-as-adventure.sql`](data/loaders/bigquery/load-as_adventure.sql)
 	2. [`load-ww-importers.sql`](data/loaders/bigquery/load-ww-importers.sql)
 	3. [`load-tpcds.sql`](data/loaders/bigquery/load-tpcds.sql)
 
-## Creating an AtScale Data Warehouse to your Own Data
+## Creating an AtScale Connection to your Own Data
 
-1. **Go to AtScale Settingsn:** In AtScale Design Center, click on the "Settings" dropdown by clicking on the AtScale logo icon (upper left).
+1. **Go to AtScale Settings:** In AtScale Design Center, click on the "Settings" dropdown by clicking on the AtScale logo icon (upper left).
 
 ![AtScale-Design-Center-Settings](images/AtScale-Design-Center-Settings.png)
 
-2. **Create a Data Warehouse:** In AtScale Design Center Settings, click on the "Data Warehouse" option (top left) and click on the icon (right) for the data platform you wish to connect (i.e. BigQuery, Snowflake, Databricks, etc.).
+2. **Create a Data Warehouse:** In Settings, click on the "Data Warehouse" option (top left) and click on the icon (right) for the data platform you wish to connect (i.e. BigQuery, Snowflake, Databricks, etc.).
 
 ![AtScale Design Center Add Connection](images/AtScale-Design-Center-Add-Snowflake.png)
 
-2. **Enter Data Warehouse Information:** In AtScale Design Center Data Warehouse property panel, enter your information and click on the "Apply" button. **Note that you may need to create a new database and schema to hold AtScale's aggregate tables.**
+2. **Enter Data Warehouse Information:** In the Data Warehouse property panel, enter your information and click on the "Apply" button. **Note that you may need to create a new database and schema to hold AtScale's aggregate tables.**
 
 ![AtScale Design Center Add DW Properties](images/AtScale-Design-Center-DW-Properties.png)
 
@@ -78,7 +78,7 @@ The tutorial data for the sample models is available for free in the Snowflake M
 
 ![AtScale Design Center Add DW Connection](images/AtScale-Design-Center-DW-Connection.png)
 
-4. **Enter Data Warehouse Connection Information:** In AtScale Design Center Data Warehouse Connection property panel, enter your information and click on the "Apply" button.
+4. **Enter Data Warehouse Connection Information:** In the Data Warehouse Connection property panel, enter your information and click on the "Apply" button.
 
 ![AtScale Design Center DW Connection Properties](images/AtScale-Design-Center-DW-Connection-Properties.png)
 
