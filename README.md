@@ -15,12 +15,24 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 ## How to Install AtScale
 Download AtScale Developer Community Edition and follow the installation instructions here: [AtScale Developer Community Edition](http://www.atscale.com/community)
 
-## How to Load Tutorial Data
-You can load AtScale tutorial data that supports the above semantic models in  ways:
-1. Subscribe to the AtScale Tutorial Data Shares via a partner marketplace
-2. Use the load scripts in this repo
+## How to Connect to Tutorial Data in AtScale
+### How to Use the Pre-configured PostgresSQL Tutorial Data
+When you download and install the AtScale Developer Community edition, a PostgresSQL database container with the data for all three models will be installed and configured automatically in AtScale Design Center. 
 
-### Loading Data for Snowflake
+To explore and query the tutorial models, in AtScale Design Center:
+
+1. **Deploy your Catalog:** Click on the "Repo Browser" icon in the Activity bar (left side) and Press the "Deploy" button.
+2. **Connect your BI Tool:** Click on the "Deployed Catalogs: icon in the Activity bar (left side) and click on your deployed catalog. Instructions for connecting your BI tools will appear on the right side. 
+
+### How to Connect to Snowflake Tutorial Data
+The tutorial data for the sample models is available for free in the Snowflake Marketplace. To get access to the tutorial data in the Snowflake Marketplace:
+
+1. **Go to the Snowflake Marketplace:** In the Snowflake console, Click on "Data Products" and then click on the "Marketplace" link.
+2. **Find the "AtScale Tutorials" data product:** In the search bar, type in "AtScale" and select the "AtScale Tutorials" data product.
+3. **Connect to the AtScale Tutorials Data Product:** On the right side of the screen, click on the "Get" button.
+4. **Name Your Database:** Click on the down arrow on the "Options" accordian control and enter `atscale_tutorial_data` in the "Database" field and assign the proper access role. Click the "Get" button. 
+
+
 
 ### Loading Data for Databricks
 
