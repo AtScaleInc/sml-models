@@ -22,18 +22,34 @@ When you download and install the AtScale Developer Community edition, a Postgre
 To explore and query the tutorial models, in AtScale Design Center:
 
 1. **Deploy your Catalog:** Click on the "Repo Browser" icon in the Activity bar (left side) and Press the "Deploy" button.
-2. **Connect your BI Tool:** Click on the "Deployed Catalogs: icon in the Activity bar (left side) and click on your deployed catalog. Instructions for connecting your BI tools will appear on the right side. 
+
+![AtScale Design Center Deploy Catalog](images/AtScale-Design-Center-Deploy-Catalog.png)
+
+2. **Connect your BI Tool:** Click on the "Deployed Catalogs: icon in the Activity bar (left side) and click on your deployed catalog. Instructions for connecting your BI tools will appear on the right side.
+
+![AtScale Design Center Connect](images/AtScale-Design-Center-Connect.png)
 
 ### How to Connect to Snowflake Tutorial Data
 The tutorial data for the sample models is available for free in the Snowflake Marketplace. To get access to the tutorial data in the Snowflake Marketplace:
 
 1. **Go to the Snowflake Marketplace:** In the Snowflake console, Click on "Data Products" and then click on the "Marketplace" link.
+
+![Snowflake Marketplace Page](images/Snowflake-Marketplace-Page.png)
+
 2. **Find the "AtScale Tutorials" data product:** In the search bar, type in "AtScale" and select the "AtScale Tutorials" data product.
+
+![Snowflake Marketplace Search](images/Snowflake-Marketplace-Search.png)
+
 3. **Connect to the AtScale Tutorials Data Product:** On the right side of the screen, click on the "Get" button.
-4. **Name Your Database:** Click on the down arrow on the "Options" accordian control and enter `atscale_tutorial_data` in the "Database" field and assign the proper access role. Click the "Get" button. 
 
+![Snowflake Marketplace AtScale Page](images/Snowflake-Marketplace-AtScale-Page.png)
 
+4. **Name Your Database:** Click on the down arrow on the "Options" accordian control and enter `atscale_tutorial_data` in the "Database" field and assign the proper access role. Click the "Get" button.
 
-### Loading Data for Databricks
+![Snowflake Marketplace Get](images/Snowflake-Marketplace-Get.png)
+
+### How to Connect to Databricks Tutorial Data
+
+### How to Load to Tutorial Data into BigQUery
 
 ## Aditional Resources
