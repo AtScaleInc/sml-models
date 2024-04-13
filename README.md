@@ -82,11 +82,15 @@ The tutorial data for the sample models is available for free in the Snowflake M
 
 ![AtScale Design Center Add DW Connection](images/AtScale-Design-Center-DW-Connection.png)
 
-4. **Enter Data Warehouse Connection Information:** In the Data Warehouse Connection property panel, enter your information and click on the "Apply" button.
+4. **Enter Data Warehouse Connection Information:** In the Data Warehouse Connection property panel, enter your information and click on the "Test" button to make sure that the connection information is valid. Then click on the "Apply" button. 
+
+**SPECIAL NOTE for a Databricks:** Fill in the "Extra JDBC Flags" field with the folowing information you can get from your data wareouse/cluster's "Connection Details" tab in the Databricks console: `transportMode=http;ssl=1;AuthMech=3;httpPath=<YOUR HTTP PATH>`. Also, for the "Username" field enter a value of "token" and enter your Databricks Personal Access Token into the "Password" field.  
 
 ![AtScale Design Center DW Connection Properties](images/AtScale-Design-Center-DW-Connection-Properties.png)
 
 5. **Change your SML Connection:** Go back to the Repo Browser by clicking on the AtScale icon (upper left corner) and update each model's connection YML file's `as_connection` property to to same string (i.e. "Snowflake") you entered into "External connection ID" field in the Data Warehouse Connection property panel in step 3. Make sure to click on the "Save File" button at the bottom of the text editor.
+
+**SPECIAL NOTE for BigQuery:** You may also need to change the `database` property to `atscale-tutorial-data` (note the dashes rather than underscores).
 
 ![AtScale Design Center Connection Object](images/AtScale-Design-Center-Connection-Object.png)
 
