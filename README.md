@@ -53,8 +53,31 @@ The tutorial data for the sample models is available for free in the Snowflake M
 ![Snowflake Marketplace Get](images/Snowflake-Marketplace-Get.png)
 
 ### How to Connect to Databricks Tutorial Data
+The tutorial data for the sample models is available for free in the Databricks Marketplace. To get access to the tutorial data in the Databricks Marketplace:
 
-*Coming soon to the Databricks Marketplace*
+1. **Go to the Databricks Marketplace:** In the Databricks workspace console, Click on "Data Products" and then click on the "Marketplace" link.
+
+![Databricks Marketplace Page](images/Databricks-Marketplace-Page.png)
+
+2. **Find the "AtScale Tutorials" data product:** In the search bar, type in "AtScale" and select the "AtScale Tutorials" data product.
+
+![Databricks Marketplace Search](images/Databricks-Marketplace-Search.png)
+
+3. **Connect to the AtScale Tutorials Data Product:** On the right side of the screen, click on the "Get instant access" button.
+
+![Databricks Marketplace AtScale Page](images/Databricks-Marketplace-AtScale-Page.png)
+
+4. **Accept the Terms and Conditions:** Check the terms and conditions box and click on the "Get instance access" button.
+
+![Databricks Marketplace Get](images/Databricks-Marketplace-Get.png)
+
+5. **View your data:** Click on the "Open" button to see your shared data.
+
+![Databricks Marketplace View](images/Databricks-Marketplace-View.png)
+
+6. **Rename your catalog:** Click on the `atscale_inc_atscale_tutorials` catalog in the "Shared" section, click on the vertical "..." menu on the righthand side of the screen and choose the "Rename" menu option. Type in `atscale_tutorial_data` in the edit box and click on the "Save" button.
+
+![Databricks Marketplace Rename](images/Databricks-Marketplace-Rename.png)
 
 ### How to Load to Tutorial Data into BigQuery
 
