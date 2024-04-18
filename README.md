@@ -119,4 +119,4 @@ The tutorial data for the sample models is available for free in the Databricks 
 
 6. Deploy your catalog (see above).
 
-## Aditional Resources
+## Additional Resources
