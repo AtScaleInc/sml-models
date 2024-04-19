@@ -6,9 +6,9 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 # Model Library
 
 ## Tutorial Models
-1. [Internet Sales](models/tutorials/internet-sales) - a simple, single fact model derived from the ficticious AdventureWorks retail dataset
-2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model that represents a fictional wholesale and distribution company
-3. [TPC-DS](models/tutorials/tpc-ds) - a complex, multi-fact model that encodes the [TPC-DS](https://www.tpc.org/tpcds/) benchmark model in SML
+1. [Internet Sales](models/tutorials/internet-sales) - a simple, single fact model derived from the ficticious AdventureWorks retail dataset.
+2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model that represents a fictional wholesale and distribution company.
+3. [TPC-DS](models/tutorials/tpc-ds) - a complex, multi-fact model that encodes the [TPC-DS](https://www.tpc.org/tpcds/) benchmark model in SML.
 
 # Getting Started
 
@@ -17,9 +17,9 @@ Download the [AtScale Developer Community Edition](http://www.atscale.com/commun
 
 ## How to Connect to Tutorial Data in AtScale
 ### How to Use the Pre-configured PostgresSQL Tutorial Data
-When you download and install the AtScale Developer Community edition, a PostgresSQL database container with the data for all three models will be installed and configured automatically in AtScale Design Center. 
+When you download and install the AtScale Developer Community edition, a PostgresSQL database container with the data for all three models will be installed and configured automatically in the AtScale Design Center. 
 
-To explore and query the tutorial models, in AtScale Design Center:
+To explore and query the tutorial models, in the AtScale Design Center:
 
 1. **Deploy your Catalog:** Click on the "Repo Browser" icon in the Activity bar (left side) and Press the "Deploy" button.
 
@@ -36,7 +36,7 @@ To explore and query the tutorial models, in AtScale Design Center:
 ### How to Connect to Snowflake Tutorial Data
 The tutorial data for the sample models is available for free in the Snowflake Marketplace. To get access to the tutorial data in the Snowflake Marketplace:
 
-1. **Go to the Snowflake Marketplace:** In the Snowflake console, Click on "Data Products" and then click on the "Marketplace" link.
+1. **Go to the Snowflake Marketplace:** In the Snowflake console, click on "Data Products" and then click on the "Marketplace" link.
 
 ![Snowflake Marketplace Page](images/Snowflake-Marketplace-Page.png)
 
@@ -119,4 +119,4 @@ The tutorial data for the sample models is available for free in the Databricks 
 
 6. Deploy your catalog (see above).
 
-## Aditional Resources
+## Additional Resources
