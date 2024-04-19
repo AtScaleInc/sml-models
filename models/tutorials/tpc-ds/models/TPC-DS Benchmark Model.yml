@@ -861,7 +861,7 @@ aggregates:
 
    - unique_name: Q13
      label: Q13
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_hd_dep_count
@@ -903,7 +903,7 @@ aggregates:
 
    - unique_name: Q15
      label: Q15
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_customer_state
@@ -935,7 +935,7 @@ aggregates:
 
    - unique_name: Q2
      label: Q2
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: Calendar Week
@@ -964,7 +964,7 @@ aggregates:
 
    - unique_name: Q31
      label: Q31
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: Calendar Quarter
@@ -989,7 +989,7 @@ aggregates:
 
    - unique_name: Q33
      label: Q33
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_customer_gmt_offset
@@ -1019,7 +1019,7 @@ aggregates:
 
    - unique_name: Q42
      label: Q42
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_month_of_year
@@ -1044,7 +1044,7 @@ aggregates:
 
    - unique_name: Q48
      label: Q48
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_cd_marital_status
@@ -1080,7 +1080,7 @@ aggregates:
 
    - unique_name: Q50
      label: Q50
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_store_zip_code
@@ -1135,7 +1135,7 @@ aggregates:
 
    - unique_name: Q52
      label: Q52
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_product_brand_name
@@ -1163,7 +1163,7 @@ aggregates:
 
    - unique_name: Q53
      label: Q53
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_product_brand_name
@@ -1190,7 +1190,7 @@ aggregates:
 
    - unique_name: Q56-Q60
      label: Q56-Q60
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: Calendar Year
@@ -1223,7 +1223,7 @@ aggregates:
 
    - unique_name: Q61
      label: Q61
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_channel_direct_mail
@@ -1263,7 +1263,7 @@ aggregates:
 
    - unique_name: Q7-Q26
      label: Q7-Q26
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_cd_marital_status
@@ -1302,7 +1302,7 @@ aggregates:
 
    - unique_name: Q88
      label: Q88
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_hd_dep_count
@@ -1324,7 +1324,7 @@ aggregates:
 
    - unique_name: Q96
      label: Q96
-     target_connection: Snowflake
+     target_connection: Connection - TPCDS
      attributes:
 
        - name: d_hd_dep_count
