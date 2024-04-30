@@ -40,9 +40,9 @@ columns:
   - name: s_number_employees
     data_type: int
   - name: s_rec_end_date
-    data_type: string
+    data_type: date
   - name: s_rec_start_date
-    data_type: string
+    data_type: date
   - name: s_state
     data_type: string
   - name: s_store_id

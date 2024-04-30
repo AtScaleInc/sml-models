@@ -40,9 +40,9 @@ columns:
   - name: i_product_name
     data_type: string
   - name: i_rec_end_date
-    data_type: string
+    data_type: date
   - name: i_rec_start_date
-    data_type: string
+    data_type: date
   - name: i_size
     data_type: string
   - name: i_units
