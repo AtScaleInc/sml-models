@@ -19,7 +19,6 @@ level_attributes:
   - unique_name: Style
     label: Style
     description: Product Style
-    is_hidden: true
     dataset: factinternetsales
     name_column: style
     key_columns:
