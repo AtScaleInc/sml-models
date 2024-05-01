@@ -71,20 +71,20 @@ columns:
     data_type: int
   - name: year_month
     data_type: date
-    sql: "TO_CHAR(\"d_date\", 'YYYY-MM-01')"
+    sql: "date(date_trunc('month', \"d_date\"))"
     dialects:
       - dialect: Databricks
-        sql: "TO_CHAR(d_date, 'y-MM-01')"
+        sql: "cast(DATE_TRUNC('month', d_date) as date)"
       - dialect: Bigquery
-        sql: "FORMAT_DATE('%Y-%m-01', d_date)"
+        sql: "DATE_TRUNC(d_date, MONTH)"
   - name: year_quarter
     data_type: date
-    sql: "TO_CHAR(date_trunc('quarter', \"d_date\"), 'YYYY-MM-DD')"
+    sql: "date(date_trunc('quarter', \"d_date\"))"
     dialects:
       - dialect: Databricks
-        sql: "TO_CHAR(DATE_TRUNC('quarter', d_date), 'y-MM-dd')"
+        sql: "cast(DATE_TRUNC('quarter', d_date) as date)"
       - dialect: Bigquery
-        sql: "FORMAT_DATE('%Y-%m-%d', DATE_TRUNC(d_date, QUARTER))"
+        sql: "DATE_TRUNC(d_date, QUARTER)"
   - name: year_week
     data_type: string
     sql: "TO_CHAR(date_trunc('week', \"d_date\"), 'YYYY-MM-DD')"
