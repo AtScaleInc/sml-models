@@ -120,3 +120,13 @@ The tutorial data for the sample models is available for free in the Databricks 
 6. Deploy your catalog (see above).
 
 ## Additional Resources
+
+[Quick Start Video](https://www.atscale.com/resource/quick-tour-community-edition)
+
+[How to connect to Snowflake Video](https://www.atscale.com/resource/how-to-connect-to-snowflake)
+
+[How to connect to Databricks Video](https://www.atscale.com/resource/how-to-connect-to-databricks)
+
+[How to connect to BigQuery Video](https://www.atscale.com/resource/how-to-connect-to-google-bigquery)
+
+
