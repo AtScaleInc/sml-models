@@ -178,7 +178,6 @@ hierarchies:
 level_attributes:
 
   - unique_name: Calendar Month-Week
-    time_unit: month
     label: Calendar Month
     dataset: date_dim
     name_column: year_month
@@ -192,9 +191,9 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: month
 
   - unique_name: Calendar Month
-    time_unit: month
     label: Calendar Month
     dataset: date_dim
     name_column: year_month
@@ -208,9 +207,9 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: month
 
   - unique_name: Calendar Quarter
-    time_unit: quarter
     label: Calendar Quarter
     dataset: date_dim
     name_column: d_quarter_name
@@ -225,9 +224,9 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: quarter
 
   - unique_name: Calendar Week
-    time_unit: week
     label: Calendar Week
     dataset: date_dim
     name_column: d_week_seq
@@ -241,9 +240,9 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: week
 
   - unique_name: Calendar Year-Week
-    time_unit: year
     label: Calendar Year
     dataset: date_dim
     name_column: d_year
@@ -257,9 +256,9 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: year
 
   - unique_name: Calendar Year
-    time_unit: year
     label: Calendar Year
     dataset: date_dim
     name_column: d_year
@@ -273,9 +272,9 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: year
 
   - unique_name: Date Week Hierarchy - TPC-DS
-    time_unit: day
     label: Date
     is_unique_key: true
     dataset: date_dim
@@ -290,9 +289,9 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: day
 
   - unique_name: Time Dimension
-    time_unit: day
     label: Date
     is_unique_key: true
     dataset: date_dim
@@ -307,3 +306,4 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: day

@@ -110,10 +110,10 @@ hierarchies:
 level_attributes:
 
   - unique_name: Time
-    time_unit: second
     label: Time SK
     is_unique_key: true
     dataset: time_dim
     name_column: t_time_id
     key_columns:
       - t_time_sk
+    time_unit: second
