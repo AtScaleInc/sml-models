@@ -13,10 +13,8 @@ hierarchies:
     levels:
 
       - unique_name: Calendar Year
-        time_unit: year
 
       - unique_name: Calendar Quarter
-        time_unit: quarter
 
         secondary_attributes:
 
@@ -34,7 +32,6 @@ hierarchies:
               - Siblings
 
       - unique_name: Calendar Month
-        time_unit: month
 
         secondary_attributes:
 
@@ -65,7 +62,6 @@ hierarchies:
               - Siblings
 
       - unique_name: Time Dimension
-        time_unit: day
 
         secondary_attributes:
 
@@ -142,13 +138,10 @@ hierarchies:
     levels:
 
       - unique_name: Calendar Year-Week
-        time_unit: year
 
       - unique_name: Calendar Month-Week
-        time_unit: month
 
       - unique_name: Calendar Week
-        time_unit: week
 
         secondary_attributes:
 
@@ -166,7 +159,6 @@ hierarchies:
               - Siblings
 
       - unique_name: Date Week Hierarchy - TPC-DS
-        time_unit: day
 
         secondary_attributes:
 
@@ -199,6 +191,7 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: month
 
   - unique_name: Calendar Month
     label: Calendar Month
@@ -214,6 +207,7 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: month
 
   - unique_name: Calendar Quarter
     label: Calendar Quarter
@@ -230,6 +224,7 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: quarter
 
   - unique_name: Calendar Week
     label: Calendar Week
@@ -245,6 +240,7 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: week
 
   - unique_name: Calendar Year-Week
     label: Calendar Year
@@ -260,6 +256,7 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: year
 
   - unique_name: Calendar Year
     label: Calendar Year
@@ -275,6 +272,7 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: year
 
   - unique_name: Date Week Hierarchy - TPC-DS
     label: Date
@@ -291,6 +289,7 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: day
 
   - unique_name: Time Dimension
     label: Date
@@ -307,3 +306,4 @@ level_attributes:
       - PeriodsToDate
       - Range
       - Siblings
+    time_unit: day

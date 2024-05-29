@@ -16,10 +16,8 @@ hierarchies:
     levels:
 
       - unique_name: YearMonth
-        time_unit: year
 
       - unique_name: Quarter
-        time_unit: quarter
 
         secondary_attributes:
 
@@ -33,7 +31,6 @@ hierarchies:
             sort_column: quarter_of_year
 
       - unique_name: Month1
-        time_unit: month
 
         secondary_attributes:
 
@@ -47,7 +44,6 @@ hierarchies:
             sort_column: month_of_year
 
       - unique_name: DayMonth
-        time_unit: day
 
         secondary_attributes:
 
@@ -129,10 +125,8 @@ hierarchies:
     levels:
 
       - unique_name: YearWeek
-        time_unit: year
 
       - unique_name: Week
-        time_unit: week
 
         secondary_attributes:
 
@@ -146,7 +140,6 @@ hierarchies:
             sort_column: week_of_year
 
       - unique_name: DayMonth
-        time_unit: day
 
   - unique_name: Retail445
     label: Retail445
@@ -157,10 +150,8 @@ hierarchies:
     levels:
 
       - unique_name: ReportIng_Year
-        time_unit: year
 
       - unique_name: ReportIng_Half_Year
-        time_unit: halfyear
 
         secondary_attributes:
 
@@ -174,7 +165,6 @@ hierarchies:
             sort_column: reporting_half_year_of_year_name
 
       - unique_name: ReportIng_Month
-        time_unit: month
 
         secondary_attributes:
 
@@ -206,7 +196,6 @@ hierarchies:
             sort_column: reporting_month_of_year_name
 
       - unique_name: ReportIng_Week
-        time_unit: week
 
         secondary_attributes:
 
@@ -229,7 +218,6 @@ hierarchies:
             sort_column: reporting_week_of_year_name
 
       - unique_name: Reporting_Day
-        time_unit: day
 
         secondary_attributes:
 
@@ -274,10 +262,8 @@ hierarchies:
     levels:
 
       - unique_name: customyear
-        time_unit: year
 
       - unique_name: customquarter
-        time_unit: quarter
         parallel_periods:
           - level: customyear
             key_columns:
@@ -295,7 +281,6 @@ hierarchies:
               - reporting_quarter_of_year_name
 
       - unique_name: custommonth
-        time_unit: month
         parallel_periods:
           - level: customyear
             key_columns:
@@ -332,7 +317,6 @@ hierarchies:
             sort_column: reporting_month_of_year_name
 
       - unique_name: customweek
-        time_unit: week
         parallel_periods:
           - level: customyear
             key_columns:
@@ -360,7 +344,6 @@ hierarchies:
             sort_column: reporting_week_of_year_name
 
       - unique_name: customday
-        time_unit: day
         parallel_periods:
           - level: customyear
             key_columns:
@@ -412,6 +395,7 @@ level_attributes:
     key_columns:
       - datekey
     sort_column: datekey
+    time_unit: day
 
   - unique_name: custommonth
     label: Custom Month
@@ -422,6 +406,7 @@ level_attributes:
     key_columns:
       - reporting_month
     sort_column: reporting_month
+    time_unit: month
 
   - unique_name: customquarter
     label: Custom Quarter
@@ -432,6 +417,7 @@ level_attributes:
     key_columns:
       - reporting_quarter
     sort_column: reporting_quarter
+    time_unit: quarter
 
   - unique_name: customweek
     label: Custom Week
@@ -442,6 +428,7 @@ level_attributes:
     key_columns:
       - reporting_week
     sort_column: reporting_week
+    time_unit: week
 
   - unique_name: customyear
     label: Custom Year
@@ -452,6 +439,7 @@ level_attributes:
     key_columns:
       - reporting_year
     sort_column: reporting_year
+    time_unit: year
 
   - unique_name: DayMonth
     label: Day
@@ -462,6 +450,7 @@ level_attributes:
     key_columns:
       - datekey
     sort_column: datekey
+    time_unit: day
 
   - unique_name: Month1
     label: Month
@@ -470,6 +459,7 @@ level_attributes:
     key_columns:
       - month
     sort_column: month
+    time_unit: month
 
   - unique_name: Quarter
     label: Quarter
@@ -478,6 +468,7 @@ level_attributes:
     key_columns:
       - quarter
     sort_column: quarter
+    time_unit: quarter
 
   - unique_name: Reporting_Day
     label: Reporting Day
@@ -488,6 +479,7 @@ level_attributes:
     key_columns:
       - datekey
     sort_column: datekey
+    time_unit: day
 
   - unique_name: ReportIng_Half_Year
     label: ReportIng Half Year
@@ -496,6 +488,7 @@ level_attributes:
     key_columns:
       - reporting_half_year
     sort_column: reporting_half_year
+    time_unit: halfyear
 
   - unique_name: ReportIng_Month
     label: ReportIng Month
@@ -504,6 +497,7 @@ level_attributes:
     key_columns:
       - reporting_month
     sort_column: reporting_month
+    time_unit: month
 
   - unique_name: ReportIng_Week
     label: ReportIng Week
@@ -513,6 +507,7 @@ level_attributes:
     key_columns:
       - reporting_week
     sort_column: reporting_week
+    time_unit: week
 
   - unique_name: ReportIng_Year
     label: ReportIng Year
@@ -521,6 +516,7 @@ level_attributes:
     key_columns:
       - reporting_year
     sort_column: reporting_year
+    time_unit: year
 
   - unique_name: Week
     label: Week
@@ -529,6 +525,7 @@ level_attributes:
     key_columns:
       - week
     sort_column: week
+    time_unit: week
 
   - unique_name: YearMonth
     label: Year
@@ -538,6 +535,7 @@ level_attributes:
     key_columns:
       - year
     sort_column: year
+    time_unit: year
 
   - unique_name: YearWeek
     label: Year
@@ -546,6 +544,7 @@ level_attributes:
     key_columns:
       - year
     sort_column: year
+    time_unit: year
 
 modeler_metadata:
   version: 0

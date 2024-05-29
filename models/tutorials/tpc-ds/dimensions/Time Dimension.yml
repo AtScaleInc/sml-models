@@ -13,7 +13,6 @@ hierarchies:
     levels:
 
       - unique_name: Time
-        time_unit: second
 
         secondary_attributes:
 
@@ -117,3 +116,4 @@ level_attributes:
     name_column: t_time_id
     key_columns:
       - t_time_sk
+    time_unit: second
