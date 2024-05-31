@@ -78,7 +78,7 @@ sql: |-
           GROUP BY
               1,2) z
 dialects:
-  - dialect: Databricks
+  - dialect: DatabricksSQL
     sql: "SELECT
       customer_sk,
       sold_year,
@@ -145,7 +145,7 @@ dialects:
                       cs_sold_date_sk = d_date_sk
                   GROUP BY 1, 2, 3 ) t
           GROUP BY 1,2) z"
-  - dialect: Bigquery
+  - dialect: BigQuery
     sql: "SELECT
       customer_sk,
       sold_year,

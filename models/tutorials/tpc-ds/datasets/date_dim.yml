@@ -45,9 +45,9 @@ columns:
     data_type: string
     sql: "TO_CHAR(\"d_date\", 'YYYY-MM')"
     dialects:
-      - dialect: Databricks
+      - dialect: DatabricksSQL
         sql: "TO_CHAR(d_date, 'y-MM')"
-      - dialect: Bigquery
+      - dialect: BigQuery
         sql: "FORMAT_DATE('%Y-%m', d_date)"
   - name: d_month_seq
     data_type: int
@@ -73,23 +73,23 @@ columns:
     data_type: date
     sql: "date(date_trunc('month', \"d_date\"))"
     dialects:
-      - dialect: Databricks
+      - dialect: DatabricksSQL
         sql: "cast(DATE_TRUNC('month', d_date) as date)"
-      - dialect: Bigquery
+      - dialect: BigQuery
         sql: "DATE_TRUNC(d_date, MONTH)"
   - name: year_quarter
     data_type: date
     sql: "date(date_trunc('quarter', \"d_date\"))"
     dialects:
-      - dialect: Databricks
+      - dialect: DatabricksSQL
         sql: "cast(DATE_TRUNC('quarter', d_date) as date)"
-      - dialect: Bigquery
+      - dialect: BigQuery
         sql: "DATE_TRUNC(d_date, QUARTER)"
   - name: year_week
     data_type: string
     sql: "TO_CHAR(date_trunc('week', \"d_date\"), 'YYYY-MM-DD')"
     dialects:
-      - dialect: Databricks
+      - dialect: DatabricksSQL
         sql: "TO_CHAR(DATE_TRUNC('week', d_date), 'y-MM-dd')"
-      - dialect: Bigquery
+      - dialect: BigQuery
         sql: "FORMAT_DATE('%Y-%m-%d', DATE_TRUNC(d_date, WEEK))"

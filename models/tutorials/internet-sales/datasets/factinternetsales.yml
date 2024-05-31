@@ -13,9 +13,9 @@ columns:
     data_type: double
     sql: "\"salesamount\"*0.085"
     dialects:
-      - dialect: Databricks
+      - dialect: DatabricksSQL
         sql: "salesamount*0.085"
-      - dialect: Bigquery
+      - dialect: BigQuery
         sql: "salesamount*0.085"
   - name: orderdate
     data_type: string
