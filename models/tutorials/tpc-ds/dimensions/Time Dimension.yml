@@ -13,7 +13,7 @@ hierarchies:
     levels:
 
       - unique_name: Time
-        time_unit: second
+        
 
         secondary_attributes:
 
@@ -115,5 +115,6 @@ level_attributes:
     is_unique_key: true
     dataset: time_dim
     name_column: t_time_id
+    time_unit: second
     key_columns:
       - t_time_sk

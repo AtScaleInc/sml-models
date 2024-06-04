@@ -16,10 +16,10 @@ hierarchies:
     levels:
 
       - unique_name: YearMonth
-        time_unit: year
+        
 
       - unique_name: Quarter
-        time_unit: quarter
+       
 
         secondary_attributes:
 
@@ -33,7 +33,7 @@ hierarchies:
             sort_column: quarter_of_year
 
       - unique_name: Month1
-        time_unit: month
+        
 
         secondary_attributes:
 
@@ -47,7 +47,7 @@ hierarchies:
             sort_column: month_of_year
 
       - unique_name: DayMonth
-        time_unit: day
+        
 
         secondary_attributes:
 
@@ -129,10 +129,10 @@ hierarchies:
     levels:
 
       - unique_name: YearWeek
-        time_unit: year
+        
 
       - unique_name: Week
-        time_unit: week
+        
 
         secondary_attributes:
 
@@ -146,7 +146,7 @@ hierarchies:
             sort_column: week_of_year
 
       - unique_name: DayMonth
-        time_unit: day
+        
 
   - unique_name: Retail445
     label: Retail445
@@ -157,10 +157,10 @@ hierarchies:
     levels:
 
       - unique_name: ReportIng_Year
-        time_unit: year
+        
 
       - unique_name: ReportIng_Half_Year
-        time_unit: halfyear
+        
 
         secondary_attributes:
 
@@ -174,7 +174,7 @@ hierarchies:
             sort_column: reporting_half_year_of_year_name
 
       - unique_name: ReportIng_Month
-        time_unit: month
+        
 
         secondary_attributes:
 
@@ -206,7 +206,7 @@ hierarchies:
             sort_column: reporting_month_of_year_name
 
       - unique_name: ReportIng_Week
-        time_unit: week
+        
 
         secondary_attributes:
 
@@ -229,7 +229,7 @@ hierarchies:
             sort_column: reporting_week_of_year_name
 
       - unique_name: Reporting_Day
-        time_unit: day
+        
 
         secondary_attributes:
 
@@ -274,10 +274,9 @@ hierarchies:
     levels:
 
       - unique_name: customyear
-        time_unit: year
+        
 
       - unique_name: customquarter
-        time_unit: quarter
         parallel_periods:
           - level: customyear
             key_columns:
@@ -295,7 +294,6 @@ hierarchies:
               - reporting_quarter_of_year_name
 
       - unique_name: custommonth
-        time_unit: month
         parallel_periods:
           - level: customyear
             key_columns:
@@ -332,7 +330,6 @@ hierarchies:
             sort_column: reporting_month_of_year_name
 
       - unique_name: customweek
-        time_unit: week
         parallel_periods:
           - level: customyear
             key_columns:
@@ -360,7 +357,6 @@ hierarchies:
             sort_column: reporting_week_of_year_name
 
       - unique_name: customday
-        time_unit: day
         parallel_periods:
           - level: customyear
             key_columns:
@@ -408,6 +404,7 @@ level_attributes:
       comparison requirements.
     is_unique_key: true
     dataset: DateCustom
+    time_unit: day
     name_column: reporting_day
     key_columns:
       - datekey
@@ -418,6 +415,7 @@ level_attributes:
     description: "Same as [Retail445].[Reporting Month] but has a custom parallel\
       \ period key."
     dataset: DateCustom
+    time_unit: month
     name_column: reporting_month_name2
     key_columns:
       - reporting_month
@@ -428,6 +426,7 @@ level_attributes:
     description: "Same as [Retail445].[Reporting Quarter] but has a custom parallel\
       \ period key."
     dataset: DateCustom
+    time_unit: quarter
     name_column: reporting_quarter_name
     key_columns:
       - reporting_quarter
@@ -438,6 +437,7 @@ level_attributes:
     description: "Same as [Retail445].[Reporting Week] but has a custom parallel period\
       \ key."
     dataset: DateCustom
+    time_unit: week
     name_column: reporting_week_name
     key_columns:
       - reporting_week
@@ -448,6 +448,7 @@ level_attributes:
     description: "Same as [Retail445].[Reporting Year] but has a custom parallel period\
       \ key."
     dataset: DateCustom
+    time_unit: year
     name_column: reporting_year_name
     key_columns:
       - reporting_year
@@ -458,6 +459,7 @@ level_attributes:
     description: Day level of standard calendar Month Hierarchy
     is_unique_key: true
     dataset: DateCustom
+    time_unit: day
     name_column: date_name
     key_columns:
       - datekey
@@ -467,6 +469,7 @@ level_attributes:
     label: Month
     dataset: DateCustom
     name_column: month_name
+    time_unit: month
     key_columns:
       - month
     sort_column: month
@@ -475,6 +478,7 @@ level_attributes:
     label: Quarter
     dataset: DateCustom
     name_column: quarter_name
+    time_unit: quarter
     key_columns:
       - quarter
     sort_column: quarter
@@ -484,6 +488,7 @@ level_attributes:
     description: A Retail 4-4-5 calendar
     is_unique_key: true
     dataset: DateCustom
+    time_unit: day
     name_column: reporting_day
     key_columns:
       - datekey
@@ -493,6 +498,7 @@ level_attributes:
     label: ReportIng Half Year
     dataset: DateCustom
     name_column: reporting_half_year_name
+    time_unit: halfyear
     key_columns:
       - reporting_half_year
     sort_column: reporting_half_year
@@ -501,6 +507,7 @@ level_attributes:
     label: ReportIng Month
     dataset: DateCustom
     name_column: reporting_month_name2
+    time_unit: month
     key_columns:
       - reporting_month
     sort_column: reporting_month
@@ -510,6 +517,7 @@ level_attributes:
     description: Week level of the 4-4-5 calendar
     dataset: DateCustom
     name_column: reporting_week_name
+    time_unit: week
     key_columns:
       - reporting_week
     sort_column: reporting_week
@@ -518,6 +526,7 @@ level_attributes:
     label: ReportIng Year
     dataset: DateCustom
     name_column: reporting_year_name
+    time_unit: year
     key_columns:
       - reporting_year
     sort_column: reporting_year
@@ -526,6 +535,7 @@ level_attributes:
     label: Week
     dataset: DateCustom
     name_column: week_name
+    time_unit: week
     key_columns:
       - week
     sort_column: week
@@ -535,6 +545,7 @@ level_attributes:
     description: Year level of the Standard Calendar Month Hierarchy.
     dataset: DateCustom
     name_column: year_name
+    time_unit: year
     key_columns:
       - year
     sort_column: year
@@ -543,6 +554,7 @@ level_attributes:
     label: Year
     dataset: DateCustom
     name_column: year_name
+    time_unit: year
     key_columns:
       - year
     sort_column: year
