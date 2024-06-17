@@ -13,11 +13,11 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 # Getting Started
 
 ## How to the Install AtScale Semantic Layer Platform
-Download the [AtScale Developer Community Edition](http://www.atscale.com/community) and follow the installation instructions
+Download the [AtScale Community Edition](http://www.atscale.com/community) and follow the installation instructions
 
 ## How to Connect to Tutorial Data in AtScale
 ### How to Use the Pre-configured PostgresSQL Tutorial Data
-When you download and install the AtScale Developer Community edition, a PostgresSQL database container with the data for all three models will be installed and configured automatically in the AtScale Design Center. 
+When you download and install the AtScale Community edition, a PostgresSQL database container with the data for all three models will be installed and configured automatically in the AtScale Design Center. 
 
 To explore and query the tutorial models, in the AtScale Design Center:
 
