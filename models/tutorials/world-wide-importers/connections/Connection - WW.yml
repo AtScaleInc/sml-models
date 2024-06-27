@@ -1,6 +1,6 @@
 unique_name: Connection - WW
 label: Connection - WW
 object_type: connection
-as_connection: Postgres
+as_connection: Snowflake
 database: atscale_tutorial_data
 schema: ww_importers
