@@ -6,9 +6,13 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 # Model Library
 
 ## Tutorial Models
-1. [Internet Sales](models/tutorials/internet-sales) - a simple, single fact model derived from the ficticious AdventureWorks retail dataset.
-2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model that represents a fictional wholesale and distribution company.
+1. [Internet Sales](models/tutorials/internet-sales) - a simple, single-fact model derived from the fictitious AdventureWorks retail dataset.
+2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model representing a fictional wholesale and distribution company.
 3. [TPC-DS](models/tutorials/tpc-ds) - a complex, multi-fact model that encodes the [TPC-DS](https://www.tpc.org/tpcds/) benchmark model in SML.
+
+## Marketplace Models
+1. [Snowplow Digital Analytics Model](https://github.com/AtScaleInc/sml-models-snowplow) - Snowplow empowers organizations to create a scalable, first-party data foundation so marketing and data teams can effectively analyze and tackle Customer 360 use cases.
+2. [CRISP CPG Retail and Distributor Data Model](https://github.com/AtScaleInc/sml-models-crisp-cpg-retail) - Crisp connects to over 40 leading U.S. retailers and distributors.
 
 # Getting Started
 
@@ -48,7 +52,7 @@ The tutorial data for the sample models is available for free in the Snowflake M
 
 ![Snowflake Marketplace AtScale Page](images/Snowflake-Marketplace-AtScale-Page.png)
 
-4. **Name Your Database:** Click on the down arrow on the "Options" accordian control and enter `atscale_tutorial_data` in the "Database" field and assign the proper access role. Click the "Get" button.
+4. **Name Your Database:** Click on the down arrow on the "Options" accordion control and enter `atscale_tutorial_data` in the "Database" field and assign the proper access role. Click the "Get" button.
 
 ![Snowflake Marketplace Get](images/Snowflake-Marketplace-Get.png)
 
