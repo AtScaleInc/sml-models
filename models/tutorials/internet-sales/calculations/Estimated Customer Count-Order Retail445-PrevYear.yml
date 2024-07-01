@@ -6,4 +6,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[customercountestimate1]) THEN \nNULL 
   ELSE (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ 1, [Order Date Dimension].[Order Retail445].CurrentMember), [Measures].[customercountestimate1])\
   \ END"
-format: General Number
+format: general number

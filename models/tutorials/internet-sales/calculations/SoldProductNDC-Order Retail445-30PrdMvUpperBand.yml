@@ -4,4 +4,4 @@ label: SoldProductNDC-Order Retail445-30PrdMvUpperBand
 description: "Sales 30 Day Moving Average + 1 Standard Deviation use on [Order Retail445]"
 expression: "[Measures].[SoldProductNDC-Order Retail445-30PrdMvAvg] + [Measures].[SoldProductNDC-Order\
   \ Retail445-30PrdMvStdev]"
-format: General Number
+format: general number

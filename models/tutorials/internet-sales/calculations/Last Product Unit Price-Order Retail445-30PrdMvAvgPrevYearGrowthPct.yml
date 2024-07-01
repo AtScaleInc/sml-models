@@ -5,4 +5,4 @@ description: Sales 30 Period Moving Avg  vs Prev Year as Percentage
 expression: "([Measures].[Last Product Unit Price-Order Retail445-30PrdMvAvg] - [Measures].[Last\
   \ Product Unit Price-Order Retail445-30PrdMvAvgPrevYear])  / [Measures].[Last Product\
   \ Unit Price-Order Retail445-30PrdMvAvgPrevYear]"
-format: Percent
+format: percent

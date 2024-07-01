@@ -7,4 +7,4 @@ expression: |-
   ELSE
   (([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[salesamountsstdev1]) - [Measures].[Sales Amount SStdev-Order Retail445-Prev]) / [Measures].[Sales Amount SStdev-Order Retail445-Prev]
   END
-format: Percent
+format: percent

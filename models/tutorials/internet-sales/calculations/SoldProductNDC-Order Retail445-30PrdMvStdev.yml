@@ -4,4 +4,4 @@ label: SoldProductNDC-Order Retail445-30PrdMvStdev
 description: "30 Period Standard Deviation Use at Day Level of [Order Retail445]"
 expression: "Stdev([Order Date Dimension].[Order Retail445].CurrentMember.Lag(29):[Order\
   \ Date Dimension].[Order Retail445].CurrentMember, [Measures].[soldproductNDC1])"
-format: General Number
+format: general number

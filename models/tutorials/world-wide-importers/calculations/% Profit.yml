@@ -2,4 +2,4 @@ unique_name: '% Profit'
 object_type: metric_calc
 label: '% Profit'
 expression: "[Measures].[m_Profit_sum] / [Measures].[m_Sale_Total_Excluding_Tax_sum]"
-format: Percent
+format: percent
