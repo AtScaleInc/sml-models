@@ -1,118 +1,105 @@
 unique_name: Time Dimension
 object_type: dimension
 label: Time Dimension
-type: time
-
 hierarchies:
-
   - unique_name: Time Dimension
     label: Time Dimension
+    filter_empty: 'yes'
     folder: Time
-    filter_empty: "yes"
-
     levels:
-
       - unique_name: Time
-
         secondary_attributes:
-
           - unique_name: d_am_or_pm
             label: Time AM or PM
-            folder: Time
+            allowed_calcs_for_dma:
+              - Lag
+              - Siblings
+              - Range
             dataset: time_dim
-            name_column: t_am_pm
+            folder: Time
             key_columns:
               - t_am_pm
+            name_column: t_am_pm
             sort_column: t_am_pm
-            allowed_calcs_for_dma:
-              - Lag
-              - Range
-              - Siblings
-
           - unique_name: d_hour
             label: Hour
-            folder: Time
+            allowed_calcs_for_dma:
+              - Lag
+              - Siblings
+              - Range
             dataset: time_dim
-            name_column: t_hour
+            folder: Time
             key_columns:
               - t_hour
+            name_column: t_hour
             sort_column: t_hour
-            allowed_calcs_for_dma:
-              - Lag
-              - Range
-              - Siblings
-
           - unique_name: d_meal_time
             label: Meal Time
-            folder: Time
+            allowed_calcs_for_dma:
+              - Lag
+              - Siblings
+              - Range
             dataset: time_dim
-            name_column: t_meal_time
+            folder: Time
             key_columns:
               - t_meal_time
+            name_column: t_meal_time
             sort_column: t_meal_time
-            allowed_calcs_for_dma:
-              - Lag
-              - Range
-              - Siblings
-
           - unique_name: d_minute
             label: Minute
-            folder: Time
+            allowed_calcs_for_dma:
+              - Lag
+              - Siblings
+              - Range
             dataset: time_dim
-            name_column: t_minute
+            folder: Time
             key_columns:
               - t_minute
+            name_column: t_minute
             sort_column: t_minute
-            allowed_calcs_for_dma:
-              - Lag
-              - Range
-              - Siblings
-
           - unique_name: d_morning _time_tier
             label: Morning  Time Tier
-            folder: Time
+            allowed_calcs_for_dma:
+              - Lag
+              - Siblings
+              - Range
             dataset: time_dim
-            name_column: Morning  Time Tier
+            folder: Time
             key_columns:
               - Morning  Time Tier
+            name_column: Morning  Time Tier
             sort_column: Morning  Time Tier
-            allowed_calcs_for_dma:
-              - Lag
-              - Range
-              - Siblings
-
           - unique_name: d_second
             label: Second
-            folder: Time
+            allowed_calcs_for_dma:
+              - Lag
+              - Siblings
+              - Range
             dataset: time_dim
-            name_column: t_second
+            folder: Time
             key_columns:
               - t_second
+            name_column: t_second
             sort_column: t_second
-            allowed_calcs_for_dma:
-              - Lag
-              - Range
-              - Siblings
-
           - unique_name: d_time_sequence
             label: Time Sequence
-            folder: Time
-            dataset: time_dim
-            name_column: t_time
-            key_columns:
-              - t_time
-            sort_column: t_time
             allowed_calcs_for_dma:
               - Lag
-              - Range
               - Siblings
-
+              - Range
+            dataset: time_dim
+            folder: Time
+            key_columns:
+              - t_time
+            name_column: t_time
+            sort_column: t_time
 level_attributes:
-
   - unique_name: Time
     label: Time SK
-    is_unique_key: true
     dataset: time_dim
-    name_column: t_time_id
+    is_unique_key: true
     key_columns:
       - t_time_sk
+    name_column: t_time_id
+    time_unit: second
+type: time
