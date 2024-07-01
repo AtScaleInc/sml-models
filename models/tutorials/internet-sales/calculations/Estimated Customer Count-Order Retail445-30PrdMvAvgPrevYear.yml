@@ -7,4 +7,4 @@ expression: "Avg(ParallelPeriod([Order Date Dimension].[Order Retail445].[Order 
   \ 1, [Order Date Dimension].[Order Retail445].CurrentMember).Lag(29): \nParallelPeriod([Order\
   \ Date Dimension].[Order Retail445].[Order ReportIng_Year], 1, [Order Date Dimension].[Order\
   \ Retail445].CurrentMember), [Measures].[customercountestimate1]\n)"
-format: General Number
+format: general number

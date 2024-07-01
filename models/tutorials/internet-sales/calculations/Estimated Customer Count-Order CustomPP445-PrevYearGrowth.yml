@@ -8,4 +8,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[Estimated Customer Count-Order Custom
   \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
   \ [Measures].[customercountestimate1]) - [Measures].[Estimated Customer Count-Order\
   \ CustomPP445-PrevYear]\nEND"
-format: General Number
+format: general number

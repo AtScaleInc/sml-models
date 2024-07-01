@@ -7,4 +7,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order Retail445-30PrdMvA
   ELSE \n([Measures].[Sales Amount-Order Retail445-30PrdMvAvg] - [Measures].[Sales\
   \ Amount-Order Retail445-30PrdMvAvgPrevYear])  / [Measures].[Sales Amount-Order\
   \ Retail445-30PrdMvAvgPrevYear]\nEND"
-format: Percent
+format: percent

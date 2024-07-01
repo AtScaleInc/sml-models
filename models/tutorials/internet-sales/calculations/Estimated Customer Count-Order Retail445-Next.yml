@@ -5,4 +5,4 @@ description: Next Period's  Sales Amount on Order Retail445
 expression: "CASE WHEN ISEMPTY([Measures].[customercountestimate1]) \nTHEN NULL\n\
   ELSE\n([Order Date Dimension].[Order Retail445].CurrentMember.NextMember, [Measures].[customercountestimate1])\n\
   END\n"
-format: General Number
+format: general number
