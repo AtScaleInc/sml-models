@@ -1,272 +1,309 @@
 unique_name: Date Dimension - TPC-DS
 object_type: dimension
 label: Date Dimension
+type: time
+
 hierarchies:
+
   - unique_name: Date Dimension - TPC-DS
     label: Date Month Hierarchy
-    filter_empty: 'yes'
     folder: Date Attributes
+    filter_empty: "yes"
+
     levels:
+
       - unique_name: Calendar Year
+        time_unit: year
+
       - unique_name: Calendar Quarter
+        time_unit: quarter
+
+      - unique_name: Calendar Month
+        time_unit: month
+
         secondary_attributes:
-          - unique_name: d_quarter_of_year
-            label: Quarter of Year
+
+          - unique_name: d_month_name
+            label: Month Name
+            folder: Date Attributes
+            dataset: date_dim
+            name_column: month_name
+            key_columns:
+              - month_name
+            sort_column: month_name
             allowed_calcs_for_dma:
               - Lag
-              - Siblings
               - Range
-            dataset: date_dim
-            folder: Date Attributes
-            key_columns:
-              - d_qoy
-            name_column: d_qoy
-            sort_column: d_qoy
-      - unique_name: Calendar Month
-        secondary_attributes:
+              - Siblings
+
           - unique_name: d_month_of_year
             label: Month of Year
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_moy
             key_columns:
               - d_moy
-            name_column: d_moy
             sort_column: d_moy
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
           - unique_name: d_month_sequence
             label: Month Sequence
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_month_seq
             key_columns:
               - d_month_seq
-            name_column: d_month_seq
             sort_column: d_month_seq
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
       - unique_name: Time Dimension
+        time_unit: day
+
         secondary_attributes:
+
           - unique_name: d_d_following_holiday
             label: Following Holiday Indicator
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_following_holiday
             key_columns:
               - d_following_holiday
-            name_column: d_following_holiday
             sort_column: d_following_holiday
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
           - unique_name: d_d_holiday
             label: Holiday Indicator
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_holiday
             key_columns:
               - d_holiday
-            name_column: d_holiday
             sort_column: d_holiday
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
           - unique_name: d_d_weekend
             label: Weekend Indicator
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_weekend
             key_columns:
               - d_weekend
-            name_column: d_weekend
             sort_column: d_weekend
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
           - unique_name: d_day_name
             label: Day Name
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_day_name
             key_columns:
               - d_day_name
-            name_column: d_day_name
             sort_column: d_day_name
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
           - unique_name: d_day_of_week
             label: Day of Week
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_dow
             key_columns:
               - d_dow
-            name_column: d_dow
             sort_column: d_dow
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
   - unique_name: Date Week Hierarchy - TPC-DS
     label: Date Week Hierarchy - TPC-DS
-    filter_empty: 'yes'
     folder: Date Attributes
+    filter_empty: "yes"
+
     levels:
+
       - unique_name: Calendar Year-Week
+        time_unit: year
+
       - unique_name: Calendar Month-Week
+        time_unit: month
+
       - unique_name: Calendar Week
+        time_unit: week
+
         secondary_attributes:
+
           - unique_name: d_week_seg
             label: Week Sequence
-            allowed_calcs_for_dma:
-              - Lag
-              - Siblings
-              - Range
-            dataset: date_dim
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_week_seq
             key_columns:
               - d_week_seq
-            name_column: d_week_seq
             sort_column: d_week_seq
-      - unique_name: Date Week Hierarchy - TPC-DS
-        secondary_attributes:
-          - unique_name: d_day_name_week
-            label: Day Name (Week)
             allowed_calcs_for_dma:
               - Lag
-              - Siblings
               - Range
-            dataset: date_dim
+              - Siblings
+
+      - unique_name: Date Week Hierarchy - TPC-DS
+        time_unit: day
+
+        secondary_attributes:
+
+          - unique_name: d_day_name_week
+            label: Day Name (Week)
             folder: Date Attributes
+            dataset: date_dim
+            name_column: d_day_name
             key_columns:
               - d_day_name
-            name_column: d_day_name
             sort_column: d_day_name
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
 level_attributes:
+
   - unique_name: Calendar Month-Week
     label: Calendar Month
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
+    name_column: year_month
     key_columns:
       - year_month
-    name_column: year_month
-    time_unit: month
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
   - unique_name: Calendar Month
     label: Calendar Month
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
+    name_column: year_month
     key_columns:
       - year_month
-    name_column: year_month
-    time_unit: month
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
   - unique_name: Calendar Quarter
     label: Calendar Quarter
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
+    name_column: d_quarter_name
     key_columns:
       - year_quarter
-    name_column: d_quarter_name
     sort_column: year_quarter
-    time_unit: quarter
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
   - unique_name: Calendar Week
     label: Calendar Week
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
+    name_column: d_week_seq
     key_columns:
       - d_week_seq
-    name_column: d_week_seq
-    time_unit: week
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
   - unique_name: Calendar Year-Week
     label: Calendar Year
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
+    name_column: d_year
     key_columns:
       - d_year
-    name_column: d_year
-    time_unit: year
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
   - unique_name: Calendar Year
     label: Calendar Year
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
+    name_column: d_year
     key_columns:
       - d_year
-    name_column: d_year
-    time_unit: year
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
   - unique_name: Date Week Hierarchy - TPC-DS
     label: Date
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
-    is_unique_key: true
+    name_column: d_date
     key_columns:
       - d_date_sk
-    name_column: d_date
-    time_unit: day
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
   - unique_name: Time Dimension
     label: Date
-    allowed_calcs_for_dma:
-      - Lag
-      - ParallelPeriod
-      - Ancestor
-      - Descendants
-      - Siblings
-      - PeriodsToDate
-      - Range
     dataset: date_dim
-    is_unique_key: true
+    name_column: d_date
     key_columns:
       - d_date_sk
-    name_column: d_date
-    time_unit: day
-type: time
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

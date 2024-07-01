@@ -24,5 +24,5 @@ level_attributes:
       - Net Profit Tier
 
 modeler_metadata:
-  version: 0
+  version: "0"
   modified: "false"
