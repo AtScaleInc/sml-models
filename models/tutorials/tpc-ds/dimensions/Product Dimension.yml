@@ -52,7 +52,7 @@ hierarchies:
             name_column: i_brand
             key_columns:
               - i_brand_id
-            sort_column: i_brand
+            sort_column: i_brand_id
 
           - unique_name: d_product_class_id
             label: Product Class ID
@@ -115,7 +115,7 @@ hierarchies:
             name_column: i_manufact
             key_columns:
               - i_manager_id
-            sort_column: i_manufact
+            sort_column: i_manager_id
 
 level_attributes:
 

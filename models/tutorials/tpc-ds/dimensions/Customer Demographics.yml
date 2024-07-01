@@ -25,6 +25,20 @@ hierarchies:
               - cd_credit_rating
             sort_column: cd_credit_rating
 
+          - unique_name: d_cd_dep_count
+            label: Cd Dep Count
+            description: the count of dependents for this customer
+            folder: Customer Information
+            dataset: customer_demographics
+            name_column: cd_dep_count
+            key_columns:
+              - cd_dep_count
+            sort_column: cd_dep_count
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
           - unique_name: d_cd_education_status
             label: Education Status
             folder: Customer Information
@@ -61,3 +75,7 @@ level_attributes:
     name_column: cd_demo_sk
     key_columns:
       - cd_demo_sk
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

@@ -6,4 +6,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[Customer Count-Order Retail445-PrevYe
   \ or ISEMPTY(([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[customercount1]))\
   \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[customercount1])\
   \ - [Measures].[Customer Count-Order Retail445-PrevYear]\nEND\n"
-format: General Number
+format: general number

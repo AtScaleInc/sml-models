@@ -1,7 +1,7 @@
 unique_name: household_demographics
 object_type: dataset
 label: household_demographics
-connection_id: Connection - TPCDS
+connection_id: con1
 table: household_demographics
 
 columns:

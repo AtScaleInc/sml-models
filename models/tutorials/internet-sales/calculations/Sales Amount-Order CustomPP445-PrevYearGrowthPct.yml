@@ -6,4 +6,4 @@ description: "Percent growth over Previous Period Sales with a custom lookback k
 expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order CustomPP445-PrevYear])\
   \ THEN NULL \nELSE [Measures].[Sales Amount-Order CustomPP445-PrevYearGrowth] /\
   \ [Measures].[Sales Amount-Order CustomPP445-PrevYear] \nEND"
-format: Percent
+format: percent

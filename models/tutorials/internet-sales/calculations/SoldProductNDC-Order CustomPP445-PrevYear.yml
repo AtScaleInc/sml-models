@@ -5,4 +5,4 @@ description: "Previous Period Sales with a custom lookback key.  Use with [Order
 expression: "CASE WHEN ISEMPTY([Measures].[soldproductNDC1]) THEN \nNULL\nELSE (ParallelPeriod([Order\
   \ Date Dimension].[Order CustomPP445].[Order customyear], 1, [Order Date Dimension].[Order\
   \ CustomPP445].CurrentMember), [Measures].[soldproductNDC1]) END"
-format: General Number
+format: general number

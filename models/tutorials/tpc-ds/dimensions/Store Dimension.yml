@@ -16,11 +16,26 @@ hierarchies:
 
       - unique_name: d_store_state
 
+        secondary_attributes:
+
+          - unique_name: d_Store State Name
+            label: Store State Name
+            folder: Store Attributes
+            dataset: store
+            name_column: Store State Name
+            key_columns:
+              - Store State Name
+            sort_column: Store State Name
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
       - unique_name: d_store_county
 
       - unique_name: d_store_city
 
-      - unique_name: Store Dimension
+      - unique_name: Store_Number
 
         secondary_attributes:
 
@@ -166,10 +181,14 @@ level_attributes:
       - s_country
       - s_state
 
-  - unique_name: Store Dimension
+  - unique_name: Store_Number
     label: Store Number
     is_unique_key: true
     dataset: store
     name_column: s_store_sk
     key_columns:
       - s_store_sk
+
+modeler_metadata:
+  version: "0"
+  modified: "false"
