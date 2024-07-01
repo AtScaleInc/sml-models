@@ -13,7 +13,6 @@ hierarchies:
     levels:
 
       - unique_name: Time
-        time_unit: second
 
         secondary_attributes:
 
