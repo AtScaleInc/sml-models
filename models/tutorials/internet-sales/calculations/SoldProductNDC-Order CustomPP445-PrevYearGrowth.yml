@@ -8,4 +8,4 @@ expression: "CASE WHEN ISEMPTY([Measures].[SoldProductNDC-Order CustomPP445-Prev
   \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
   \ [Measures].[soldproductNDC1]) - [Measures].[SoldProductNDC-Order CustomPP445-PrevYear]\n\
   END"
-format: General Number
+format: general number

@@ -5,4 +5,4 @@ description: 'Previous Year''s Year-to-date Sum of Sales '
 expression: "Avg(\nPeriodsToDate([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ 1, [Order Date Dimension].[Order Retail445].CurrentMember)), \n[Measures].[customercountestimate1])\n"
-format: General Number
+format: general number

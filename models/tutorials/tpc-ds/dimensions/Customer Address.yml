@@ -16,6 +16,21 @@ hierarchies:
 
       - unique_name: d_customer_state
 
+        secondary_attributes:
+
+          - unique_name: d_Customer State Name
+            label: Customer State Name
+            folder: Customer Information
+            dataset: customer_address
+            name_column: Customer State Name
+            key_columns:
+              - Customer State Name
+            sort_column: Customer State Name
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
       - unique_name: d_customer_city
 
       - unique_name: Customer Address
@@ -82,3 +97,7 @@ level_attributes:
     key_columns:
       - ca_country
       - ca_state
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

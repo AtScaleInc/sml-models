@@ -5,4 +5,4 @@ description: Order Reporting Hierarchy Previous Period Sales
 expression: "CASE WHEN ISEMPTY([Measures].[soldproductNDC1]) \nTHEN NULL\nELSE\n([Order\
   \ Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[soldproductNDC1])\n\
   END\n"
-format: General Number
+format: general number

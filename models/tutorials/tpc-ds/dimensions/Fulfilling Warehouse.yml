@@ -16,6 +16,21 @@ hierarchies:
 
       - unique_name: Warehouse State
 
+        secondary_attributes:
+
+          - unique_name: d_Warehouse State Name
+            label: Ware House State Name
+            folder: Fulfillment
+            dataset: warehouse
+            name_column: Warehouse State Name
+            key_columns:
+              - Warehouse State Name
+            sort_column: Warehouse State Name
+            allowed_calcs_for_dma:
+              - Lag
+              - Range
+              - Siblings
+
       - unique_name: Warehouse County
 
       - unique_name: Warehouse City
@@ -41,16 +56,6 @@ hierarchies:
             key_columns:
               - w_warehouse_sq_ft
             sort_column: w_warehouse_sq_ft
-
-        # metrics:
-
-        #   - unique_name: m_warehouse_square_feet
-        #     label: Warehouse Square Feet (Metric)
-        #     calculation_method: sum
-        #     folder: Fulfillment
-        #     unrelated_dimensions_handling: repeat
-        #     dataset: warehouse
-        #     column: w_warehouse_sq_ft
 
 level_attributes:
 
@@ -90,3 +95,7 @@ level_attributes:
     name_column: w_state
     key_columns:
       - w_state
+
+modeler_metadata:
+  version: "0"
+  modified: "false"
