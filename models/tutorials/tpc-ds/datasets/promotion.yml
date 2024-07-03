@@ -15,6 +15,9 @@ columns:
     data_type: string
   - name: p_channel_email
     data_type: string
+  - name: promotion_sent_via_email
+    data_type: boolean
+    sql: CASE p_channel_email WHEN "N" THEN False ELSE TRUE END
   - name: p_channel_event
     data_type: string
   - name: p_channel_press
