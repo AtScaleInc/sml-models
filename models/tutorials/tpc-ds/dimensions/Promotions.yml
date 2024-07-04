@@ -82,6 +82,15 @@ hierarchies:
               - p_promo_name
             name_column: p_promo_name
             sort_column: p_promo_name
+          - unique_name: d_in_promotion
+            label: d_in_promotion
+            description: if this sale was part in a promotion
+            contains_unique_names: false
+            dataset: promotion
+            is_unique_key: false
+            key_columns:
+              - in_promotion
+            name_column: in_promotion
 level_attributes:
   - unique_name: Promotions
     label: Promotion SK
