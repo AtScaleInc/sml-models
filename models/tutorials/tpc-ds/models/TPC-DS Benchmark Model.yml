@@ -186,6 +186,7 @@ metrics:
   - unique_name: Web Sales Increase
     folder: Web Sales Measures
   - unique_name: m_inventory_inv_quantity_on_hand_sum
+  - unique_name: product_count
 partitions:
   - unique_name: TPC-DS Benchmark Model.Date Dimension - TPC-DS.Calendar Year.partition
     attribute: Calendar Year
