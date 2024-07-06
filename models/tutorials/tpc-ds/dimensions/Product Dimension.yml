@@ -12,6 +12,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_i_color
             label: Product Color
+            description: Item Color
             dataset: item
             folder: Product Attributes
             key_columns:
@@ -20,6 +21,7 @@ hierarchies:
             sort_column: i_color
           - unique_name: d_i_size
             label: Product Size
+            description: Item Size
             dataset: item
             folder: Product Attributes
             key_columns:
@@ -28,6 +30,7 @@ hierarchies:
             sort_column: i_size
           - unique_name: d_product_brand_id
             label: Product Brand ID
+            description: Item Brand ID
             dataset: item
             folder: Product Attributes
             key_columns:
@@ -36,6 +39,7 @@ hierarchies:
             sort_column: i_brand_id
           - unique_name: d_product_brand_name
             label: Product Brand Name
+            description: Item Brand Name
             dataset: item
             folder: Product Attributes
             key_columns:
@@ -52,6 +56,7 @@ hierarchies:
             sort_column: i_class_id
           - unique_name: d_product_class_name
             label: Product Class Name
+            description: Item Product Class Name
             dataset: item
             folder: Product Attributes
             key_columns:
@@ -100,7 +105,7 @@ hierarchies:
             sort_column: i_manager_id
           - unique_name: i_product_name
             label: I Product Name
-            description: the name of the product
+            description: the name of the product, the item name
             contains_unique_names: false
             dataset: item
             is_unique_key: false
@@ -110,6 +115,7 @@ hierarchies:
 level_attributes:
   - unique_name: I category
     label: Product category
+    description: Item Category
     dataset: item
     key_columns:
       - i_category
