@@ -1,7 +1,13 @@
 unique_name: promotion
 object_type: dataset
 label: promotion
+connection_id: con1
+table: promotion
+
 columns:
+  - name: in_promotion
+    data_type: boolean
+    sql: "True"
   - name: p_channel_catalog
     data_type: string
   - name: p_channel_demo
@@ -12,12 +18,6 @@ columns:
     data_type: string
   - name: p_channel_email
     data_type: string
-  - name: promotion_sent_via_email
-    data_type: boolean
-    sql: CASE p_channel_email WHEN "N" THEN False ELSE TRUE END
-  - name: in_promotion
-    data_type: boolean
-    sql: CASE p_channel_email WHEN "norg" THEN False ELSE TRUE END
   - name: p_channel_event
     data_type: string
   - name: p_channel_press
@@ -46,5 +46,10 @@ columns:
     data_type: long
   - name: p_start_date_sk
     data_type: long
-connection_id: con1
-table: promotion
+  - name: promotion_sent_via_email
+    data_type: boolean
+    sql: |-
+      CASE p_channel_email
+        WHEN "N" THEN False
+        ELSE TRUE
+        END
