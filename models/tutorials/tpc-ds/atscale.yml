@@ -1,5 +1,0 @@
-unique_name: sml-models_2024.2
-object_type: catalog
-label: tpc-ds
-as_version: "1.0"
-build_speculative_aggs: false
