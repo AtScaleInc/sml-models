@@ -212,15 +212,6 @@ relationships:
     to:
       dimension: Date Dimension - TPC-DS
       level: Time Dimension
-  - unique_name: inventory_Date_Dimension_-_TPC-DS_Inventory_1
-    from:
-      dataset: inventory
-      join_columns:
-        - inv_date_sk
-    role_play: Inventory {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
   - unique_name: inventory_Product_Dimension_-_TPC-DS
     from:
       dataset: inventory
@@ -272,24 +263,6 @@ relationships:
     to:
       dimension: Customer Address
       level: Customer Address
-  - unique_name: catalog_sales_Date_Dimension_-_TPC-DS_Sold_1
-    from:
-      dataset: catalog_sales
-      join_columns:
-        - cs_sold_date_sk
-    role_play: Sold {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
-  - unique_name: catalog_sales_Date_Dimension_-_TPC-DS_Ship_1
-    from:
-      dataset: catalog_sales
-      join_columns:
-        - cs_ship_date_sk
-    role_play: Ship {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
   - unique_name: catalog_sales_Product_Dimension_-_TPC-DS
     from:
       dataset: catalog_sales
@@ -372,15 +345,6 @@ relationships:
     to:
       dimension: Customer Address
       level: Customer Address
-  - unique_name: store_promotion_Date_Dimension_-_TPC-DS_Sold_1
-    from:
-      dataset: store_promotion
-      join_columns:
-        - ss_sold_date_sk
-    role_play: Sold {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
   - unique_name: store_promotion_Product_Dimension_-_TPC-DS
     from:
       dataset: store_promotion
@@ -472,24 +436,6 @@ relationships:
     to:
       dimension: Customer Address
       level: Customer Address
-  - unique_name: web_sales_Date_Dimension_-_TPC-DS_Sold_1
-    from:
-      dataset: web_sales
-      join_columns:
-        - ws_sold_date_sk
-    role_play: Sold {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
-  - unique_name: web_sales_Date_Dimension_-_TPC-DS_Ship_1
-    from:
-      dataset: web_sales
-      join_columns:
-        - ws_ship_date_sk
-    role_play: Ship {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
   - unique_name: web_sales_Product_Dimension_-_TPC-DS
     from:
       dataset: web_sales
@@ -572,15 +518,6 @@ relationships:
     to:
       dimension: Customer Address
       level: Customer Address
-  - unique_name: store_returns_Date_Dimension_-_TPC-DS_Return_1
-    from:
-      dataset: store_returns
-      join_columns:
-        - sr_returned_date_sk
-    role_play: Return {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
   - unique_name: store_returns_Product_Dimension_-_TPC-DS
     from:
       dataset: store_returns
@@ -656,15 +593,6 @@ relationships:
     to:
       dimension: Customer Address
       level: Customer Address
-  - unique_name: store_sales_Date_Dimension_-_TPC-DS_Sold_1
-    from:
-      dataset: store_sales
-      join_columns:
-        - ss_sold_date_sk
-    role_play: Sold {0}
-    to:
-      dimension: Date Dimension - TPC-DS
-      level: Date Week Hierarchy - TPC-DS
   - unique_name: store_sales_Product_Dimension_-_TPC-DS
     from:
       dataset: store_sales
