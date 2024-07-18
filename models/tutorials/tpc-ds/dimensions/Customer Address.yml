@@ -12,7 +12,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_Customer State Name
             label: Customer State Name
-            description: name of the state the customer lives in
+            description: name of the state the customer lives in, home state full name
             allowed_calcs_for_dma:
               - Lag
               - Siblings
@@ -45,7 +45,7 @@ hierarchies:
             sort_column: ca_gmt_offset
           - unique_name: d_customer_zip_code
             label: Customer Zip Code
-            description: zip code the customer lives in
+            description: zip code the customer lives in, home zip code
             dataset: customer_address
             folder: Customer Information
             key_columns:
@@ -62,7 +62,7 @@ level_attributes:
     name_column: ca_address_id
   - unique_name: d_customer_city
     label: Customer City
-    description: name of the city the customer lives in
+    description: name of the city the customer lives in, home city name
     dataset: customer_address
     key_columns:
       - ca_country
@@ -71,20 +71,20 @@ level_attributes:
     name_column: ca_city
   - unique_name: d_customer_country
     label: Customer Country
-    description: country the customer lives in
+    description: country the customer lives in, home country
     dataset: customer_address
     key_columns:
       - ca_country
     name_column: ca_country
   - unique_name: d_customer_state
     label: Customer State
-    description: shorthand of the state the customer lives in
+    description: shorthand of the state the customer lives in, home state abbreviation
     dataset: customer_address
     key_columns:
       - ca_country
       - ca_state
     name_column: ca_state
 modeler_metadata:
-  modified: 'false'
   version: '0'
+  modified: 'false'
 type: standard

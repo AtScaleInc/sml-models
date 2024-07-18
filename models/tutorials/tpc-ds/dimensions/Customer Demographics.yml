@@ -33,7 +33,7 @@ hierarchies:
             sort_column: cd_dep_count
           - unique_name: d_cd_education_status
             label: Education Status
-            description: Customer Education
+            description: Customer Education Level
             dataset: customer_demographics
             folder: Customer Information
             key_columns:
@@ -67,6 +67,6 @@ level_attributes:
       - cd_demo_sk
     name_column: cd_demo_sk
 modeler_metadata:
-  modified: 'false'
   version: '0'
+  modified: 'false'
 type: standard

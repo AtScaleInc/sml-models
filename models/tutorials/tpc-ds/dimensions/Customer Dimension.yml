@@ -11,6 +11,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_birth_country
             label: Birth Country
+            description: Country of Origin
             dataset: customer
             folder: Customer Information
             key_columns:
@@ -19,6 +20,7 @@ hierarchies:
             sort_column: c_birth_country
           - unique_name: d_c_preferred_cust_flag
             label: Preferred Customer Ind
+            description: Marker for preferred customers
             dataset: customer
             folder: Customer Information
             key_columns:

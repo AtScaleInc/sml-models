@@ -12,7 +12,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_Store State Name
             label: Store State Name
-            description: Store State Name
+            description: Full name of the State
             allowed_calcs_for_dma:
               - Lag
               - Siblings
@@ -37,6 +37,7 @@ hierarchies:
             sort_column: s_floor_space
           - unique_name: d_s_hours
             label: Store Hours
+            description: Store hours of operation
             dataset: store
             folder: Store Attributes
             key_columns:
@@ -45,6 +46,7 @@ hierarchies:
             sort_column: s_hours
           - unique_name: d_s_manager
             label: Store Manager
+            description: Name of the store manager
             dataset: store
             folder: Store Attributes
             key_columns:
@@ -53,6 +55,7 @@ hierarchies:
             sort_column: s_manager
           - unique_name: d_s_number_employees
             label: Store Number of Employees
+            description: count of employees working at a store
             dataset: store
             folder: Store Attributes
             key_columns:
@@ -77,6 +80,7 @@ hierarchies:
             sort_column: s_gmt_offset
           - unique_name: d_store_name
             label: Store Name
+            description: Name of the Store
             dataset: store
             folder: Store Attributes
             key_columns:
@@ -126,7 +130,7 @@ hierarchies:
 level_attributes:
   - unique_name: d_store_city
     label: Store City
-    description: Store City Name
+    description: Name of the Store's City
     dataset: store
     key_columns:
       - s_country
@@ -142,7 +146,7 @@ level_attributes:
     name_column: s_country
   - unique_name: d_store_county
     label: Store County
-    description: Store County Name
+    description: Name of the Store's county
     dataset: store
     key_columns:
       - s_state
@@ -150,7 +154,7 @@ level_attributes:
     name_column: s_county
   - unique_name: d_store_state
     label: Store State
-    description: Store Shorthand
+    description: Store Shorthand, Abbreviation
     dataset: store
     key_columns:
       - s_country
@@ -158,12 +162,13 @@ level_attributes:
     name_column: s_state
   - unique_name: Store_Number
     label: Store Number
+    description: ID of the store
     dataset: store
     is_unique_key: true
     key_columns:
       - s_store_sk
     name_column: s_store_sk
 modeler_metadata:
-  modified: 'false'
   version: '0'
+  modified: 'false'
 type: standard

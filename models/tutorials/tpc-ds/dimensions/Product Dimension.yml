@@ -65,6 +65,7 @@ hierarchies:
             sort_column: i_class
           - unique_name: d_product_current_price
             label: Product Current Price
+            description: item price
             dataset: item
             folder: Product Attributes
             key_columns:
@@ -97,6 +98,7 @@ hierarchies:
             sort_column: i_manufact_id
           - unique_name: d_product_manufacturer_name
             label: Product Manufacturer Name
+            description: item Manufacturer name
             dataset: item
             folder: Product Attributes
             key_columns:
@@ -115,7 +117,7 @@ hierarchies:
 level_attributes:
   - unique_name: I category
     label: Product category
-    description: Item Category
+    description: Item or Product Category Name
     dataset: item
     key_columns:
       - i_category
