@@ -12,7 +12,6 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_Customer State Name
             label: Customer State Name
-            description: name of the state the customer lives in, home state full name
             allowed_calcs_for_dma:
               - Lag
               - Siblings
@@ -77,8 +76,7 @@ level_attributes:
       - ca_country
     name_column: ca_country
   - unique_name: d_customer_state
-    label: Customer State
-    description: shorthand of the state the customer lives in, home state abbreviation
+    label: Customer State Shorthand
     dataset: customer_address
     key_columns:
       - ca_country

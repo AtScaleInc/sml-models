@@ -79,8 +79,7 @@ hierarchies:
             name_column: s_gmt_offset
             sort_column: s_gmt_offset
           - unique_name: d_store_name
-            label: Store Name
-            description: Name of the Store
+            label: Store Full Name
             dataset: store
             folder: Store Attributes
             key_columns:
@@ -129,8 +128,7 @@ hierarchies:
             sort_column: s_zip
 level_attributes:
   - unique_name: d_store_city
-    label: Store City
-    description: Name of the Store's City
+    label: Store City Name
     dataset: store
     key_columns:
       - s_country

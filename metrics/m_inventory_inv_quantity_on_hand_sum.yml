@@ -1,6 +1,0 @@
-unique_name: m_inventory_inv_quantity_on_hand_sum
-object_type: metric
-label: Inv Quantity On Hand
-calculation_method: sum
-column: inv_quantity_on_hand
-dataset: inventory
