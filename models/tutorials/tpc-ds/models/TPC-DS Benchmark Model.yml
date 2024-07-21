@@ -253,6 +253,7 @@ relationships:
       dataset: catalog_sales
       join_columns:
         - cs_ship_addr_sk
+    role_play: Ship {0}
     to:
       dimension: Customer Address
       level: Customer Address
@@ -335,6 +336,7 @@ relationships:
       dataset: store_promotion
       join_columns:
         - ss_addr_sk
+    role_play: Sold {0}
     to:
       dimension: Customer Address
       level: Customer Address
@@ -426,6 +428,7 @@ relationships:
       dataset: web_sales
       join_columns:
         - ws_ship_addr_sk
+    role_play: Ship {0}
     to:
       dimension: Customer Address
       level: Customer Address
@@ -508,6 +511,7 @@ relationships:
       dataset: store_returns
       join_columns:
         - sr_addr_sk
+    role_play: Return {0}
     to:
       dimension: Customer Address
       level: Customer Address
