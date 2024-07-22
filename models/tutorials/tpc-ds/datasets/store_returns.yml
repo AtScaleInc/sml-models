@@ -18,7 +18,7 @@ sql: "SELECT ss.*, sr.*,
         AND ss.\"ss_item_sk\" = sr.\"sr_item_sk\"
         AND ss.\"ss_customer_sk\" = sr.\"sr_customer_sk\""
 dialects:
-  - dialect: Databricks
+  - dialect: DatabricksSQL
     sql: "SELECT ss.*, sr.*,
         case when (sr_returned_date_sk - ss_sold_date_sk <= 30) then '<= 30 days'
           when (sr_returned_date_sk - ss_sold_date_sk > 30) and  
@@ -34,7 +34,7 @@ dialects:
         ON ss.ss_ticket_number = sr.sr_ticket_number
         AND ss.ss_item_sk = sr.sr_item_sk
         AND ss.ss_customer_sk = sr.sr_customer_sk"
-  - dialect: Bigquery
+  - dialect: BigQuery
     sql: "SELECT ss.*, sr.*,
         case when (sr_returned_date_sk - ss_sold_date_sk <= 30) then '<= 30 days'
           when (sr_returned_date_sk - ss_sold_date_sk > 30) and  
