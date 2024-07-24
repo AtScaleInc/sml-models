@@ -12,6 +12,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_Customer State Name
             label: Customer State Name
+            description: customer home state
             allowed_calcs_for_dma:
               - Lag
               - Siblings
