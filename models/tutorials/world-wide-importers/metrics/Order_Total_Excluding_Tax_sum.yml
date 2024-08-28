@@ -1,8 +1,0 @@
-unique_name: Order_Total_Excluding_Tax_sum
-object_type: metric
-label: Order Total Excluding Tax
-calculation_method: sum
-format: "$#,##0;($#,##0)"
-dataset: fact_order
-column: total_excluding_tax
-unrelated_dimensions_handling: repeat

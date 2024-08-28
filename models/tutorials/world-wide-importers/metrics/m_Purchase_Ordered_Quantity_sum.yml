@@ -1,8 +1,0 @@
-unique_name: m_Purchase_Ordered_Quantity_sum
-object_type: metric
-label: Purchase Ordered Quantity
-calculation_method: sum
-format: "#,##0"
-dataset: fact_purchase
-column: ordered_quantity
-unrelated_dimensions_handling: repeat

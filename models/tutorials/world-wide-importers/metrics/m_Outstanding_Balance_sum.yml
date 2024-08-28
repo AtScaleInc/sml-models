@@ -1,8 +1,0 @@
-unique_name: m_Outstanding_Balance_sum
-object_type: metric
-label: Outstanding Balance
-calculation_method: sum
-format: "$#,##0;($#,##0)"
-dataset: fact_transaction
-column: outstanding_balance
-unrelated_dimensions_handling: repeat

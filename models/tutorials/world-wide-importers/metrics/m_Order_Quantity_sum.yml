@@ -1,8 +1,0 @@
-unique_name: m_Order_Quantity_sum
-object_type: metric
-label: Order Quantity
-calculation_method: sum
-format: "#,##0"
-dataset: fact_order
-column: quantity
-unrelated_dimensions_handling: repeat
