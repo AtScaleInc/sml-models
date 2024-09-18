@@ -1,7 +1,7 @@
 unique_name: region
 object_type: dataset
 label: region
-connection_id: Databricks - Test Customer
+connection_id: snowflake_test_conn
 table: region
 
 columns:

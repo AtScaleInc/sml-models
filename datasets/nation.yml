@@ -1,7 +1,7 @@
 unique_name: nation
 object_type: dataset
 label: nation
-connection_id: Databricks - Test Customer
+connection_id: snowflake_test_conn
 table: nation
 
 columns:

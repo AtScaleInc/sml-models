@@ -1,7 +1,7 @@
 unique_name: supplier
 object_type: dataset
 label: supplier
-connection_id: Databricks - Test Customer
+connection_id: snowflake_test_conn
 table: supplier
 
 columns:

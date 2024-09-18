@@ -75,22 +75,6 @@ level_attributes:
       - Siblings
     time_unit: year
 
-calculation_groups:
-
-  - unique_name: Dave
-    label: Dave
-
-    calculated_members:
-
-      - unique_name: Current
-        description: The measure's value for the current dimension members in the
-          query.
-        expression: "([Date Dimension].[Date Month Hierarchy].CurrentMember, [Measures].currentMember)"
-        format: standard
-        attribute: d525ca44-1aa7-4c19-bfa7-ed6e69040b00
-        template: Current
-        is_default: true
-
 modeler_metadata:
   version: "0"
   modified: "false"

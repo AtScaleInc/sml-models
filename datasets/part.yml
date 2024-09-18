@@ -1,7 +1,7 @@
 unique_name: part
 object_type: dataset
 label: part
-connection_id: Databricks - Test Customer
+connection_id: snowflake_test_conn
 table: part
 
 columns:

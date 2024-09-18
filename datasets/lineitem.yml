@@ -1,7 +1,7 @@
 unique_name: lineitem
 object_type: dataset
 label: lineitem
-connection_id: Databricks - Test Customer
+connection_id: snowflake_test_conn
 table: lineitem
 
 columns:
