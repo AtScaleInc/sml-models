@@ -1,8 +1,0 @@
-unique_name: Last Product Unit Price-Order Retail445-Prev
-object_type: metric_calc
-label: 'Last Product Unit Price-Order Retail445-Prev '
-description: Order Reporting Hierarchy Previous Period Sales
-expression: "CASE WHEN ISEMPTY([Measures].[lastproductunitprice]) \nTHEN NULL\nELSE\n\
-  ([Order Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[lastproductunitprice])\n\
-  END\n"
-format: "$#,##0.00"

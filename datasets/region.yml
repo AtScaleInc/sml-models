@@ -1,0 +1,13 @@
+unique_name: region
+object_type: dataset
+label: region
+connection_id: Databricks - Test Customer
+table: region
+
+columns:
+  - name: r_comment
+    data_type: string
+  - name: r_name
+    data_type: string
+  - name: r_regionkey
+    data_type: long

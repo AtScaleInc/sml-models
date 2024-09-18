@@ -1,0 +1,15 @@
+unique_name: nation
+object_type: dataset
+label: nation
+connection_id: Databricks - Test Customer
+table: nation
+
+columns:
+  - name: n_comment
+    data_type: string
+  - name: n_name
+    data_type: string
+  - name: n_nationkey
+    data_type: long
+  - name: n_regionkey
+    data_type: long

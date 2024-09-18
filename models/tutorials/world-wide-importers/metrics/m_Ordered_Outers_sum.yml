@@ -1,8 +1,0 @@
-unique_name: m_Ordered_Outers_sum
-object_type: metric
-label: Ordered Outers
-calculation_method: sum
-format: "#,##0"
-dataset: fact_purchase
-column: ordered_outers
-unrelated_dimensions_handling: repeat

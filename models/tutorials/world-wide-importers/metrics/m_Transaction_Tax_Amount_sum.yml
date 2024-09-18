@@ -1,8 +1,0 @@
-unique_name: m_Transaction_Tax_Amount_sum
-object_type: metric
-label: Transaction Tax Amount
-calculation_method: sum
-format: "$#,##0;($#,##0)"
-dataset: fact_transaction
-column: tax_amount
-unrelated_dimensions_handling: repeat

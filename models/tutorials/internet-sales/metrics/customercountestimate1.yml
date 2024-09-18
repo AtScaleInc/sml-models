@@ -1,7 +1,0 @@
-unique_name: customercountestimate1
-object_type: metric
-label: Estimated Customer Count
-calculation_method: estimated count distinct
-dialect: general number
-dataset: factinternetsales
-column: customerkey

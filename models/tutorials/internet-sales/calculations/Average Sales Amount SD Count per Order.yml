@@ -1,4 +1,0 @@
-unique_name: Average Sales Amount SD Count per Order
-object_type: metric_calc
-label: Average Sales Amount SD Count per Order
-expression: "([Measures].[salesamountsstdev1] / [Measures].[orderquantity1])"

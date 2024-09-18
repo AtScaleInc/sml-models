@@ -1,0 +1,6 @@
+unique_name: Databricks - Test Customer_default
+label: Databricks - Test Customer_default
+object_type: connection
+as_connection: Databricks - Test Customer
+database: iot
+schema: default

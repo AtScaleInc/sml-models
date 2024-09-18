@@ -1,6 +1,0 @@
-unique_name: Connection - Internet Sales
-label: Connection - Internet Sales
-object_type: connection
-as_connection: Postgres
-database: atscale_tutorial_data
-schema: as_adventure

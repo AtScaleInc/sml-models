@@ -1,0 +1,29 @@
+unique_name: Shipping Mode
+object_type: dimension
+label: Shipping Mode
+description: Shipping mode dimension for TPCH Model
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: L_Ship_Mode Hierarchy
+    label: Shipping Mode
+    filter_empty: "yes"
+    folder: Shipping
+
+    levels:
+
+      - unique_name: L_Ship_Mode Level
+
+level_attributes:
+
+  - unique_name: L_Ship_Mode Level
+    label: Shipping Mode
+    dataset: lineitem
+    key_columns:
+      - l_shipmode
+    name_column: l_shipmode
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

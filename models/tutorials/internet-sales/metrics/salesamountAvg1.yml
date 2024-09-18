@@ -1,8 +1,0 @@
-unique_name: salesamountAvg1
-object_type: metric
-label: Sales Amount Avg
-description: Average Sales Amount
-calculation_method: average
-format: "$#,##0.00"
-dataset: factinternetsales
-column: salesamount

@@ -1,0 +1,73 @@
+unique_name: Supplier - TPCH
+object_type: dimension
+label: Supplier - TPCH
+description: Supplier dimension for TPCH model
+type: standard
+
+hierarchies:
+
+  - unique_name: Supplier - TPCH Hierarchy
+    label: Supplier - TPCH Hierarchy
+    filter_empty: "yes"
+    folder: Suppliers
+
+    levels:
+
+      - unique_name: Supplier - TPCH Level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_s_address
+            label: Supplier Address
+            description: Supplier mailing address
+            folder: Suppliers
+            dataset: supplier
+            key_columns:
+              - s_address
+            name_column: s_address
+            sort_column: s_address
+
+          - unique_name: d_s_name
+            label: Supplier Country
+            folder: Suppliers
+            dataset: supplier
+            key_columns:
+              - s_nationkey
+            name_column: s_name
+            sort_column: s_name
+
+          - unique_name: d_s_phone
+            label: Supplier Phone
+            folder: Suppliers
+            dataset: supplier
+            key_columns:
+              - s_phone
+            name_column: s_phone
+            sort_column: s_phone
+
+level_attributes:
+
+  - unique_name: Supplier - TPCH Level
+    label: Supplier - TPCH Level
+    description: Supplier dimension for TPCH model
+    is_unique_key: true
+    dataset: supplier
+    key_columns:
+      - s_suppkey
+    name_column: s_name
+
+relationships:
+
+  - unique_name: Supplier-TPCH_Location-TPCH_Supplier
+    from:
+      hierarchy: Supplier - TPCH Hierarchy
+      level: Supplier - TPCH Level
+      dataset: supplier
+      join_columns:
+        - s_nationkey
+    to:
+      dimension: Location - TPCH
+      level: Country
+    role_play: "Supplier {0}"
+    type: embedded

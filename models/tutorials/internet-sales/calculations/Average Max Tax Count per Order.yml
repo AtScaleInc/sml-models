@@ -1,4 +1,0 @@
-unique_name: Average Max Tax Count per Order
-object_type: metric_calc
-label: Average Max Tax Count per Order
-expression: "([Measures].[maxtaxamount1] / [Measures].[orderquantity1])"

@@ -1,0 +1,25 @@
+unique_name: orders
+object_type: dataset
+label: orders
+connection_id: Databricks - Test Customer
+table: orders
+
+columns:
+  - name: o_clerk
+    data_type: string
+  - name: o_comment
+    data_type: string
+  - name: o_custkey
+    data_type: long
+  - name: o_orderdate
+    data_type: date
+  - name: o_orderkey
+    data_type: long
+  - name: o_orderpriority
+    data_type: string
+  - name: o_orderstatus
+    data_type: string
+  - name: o_shippriority
+    data_type: int
+  - name: o_totalprice
+    data_type: "decimal(18,2)"

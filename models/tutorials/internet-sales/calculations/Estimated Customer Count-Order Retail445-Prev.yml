@@ -1,8 +1,0 @@
-unique_name: Estimated Customer Count-Order Retail445-Prev
-object_type: metric_calc
-label: 'Estimated Customer Count-Order Retail445-Prev '
-description: Order Reporting Hierarchy Previous Period Sales
-expression: "CASE WHEN ISEMPTY([Measures].[customercountestimate1]) \nTHEN NULL\n\
-  ELSE\n([Order Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[customercountestimate1])\n\
-  END\n"
-dialect: general number

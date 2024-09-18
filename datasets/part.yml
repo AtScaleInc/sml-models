@@ -1,0 +1,25 @@
+unique_name: part
+object_type: dataset
+label: part
+connection_id: Databricks - Test Customer
+table: part
+
+columns:
+  - name: p_brand
+    data_type: string
+  - name: p_comment
+    data_type: string
+  - name: p_container
+    data_type: string
+  - name: p_mfgr
+    data_type: string
+  - name: p_name
+    data_type: string
+  - name: p_partkey
+    data_type: long
+  - name: p_retailprice
+    data_type: "decimal(18,2)"
+  - name: p_size
+    data_type: int
+  - name: p_type
+    data_type: string

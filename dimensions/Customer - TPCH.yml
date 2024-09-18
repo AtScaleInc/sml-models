@@ -1,0 +1,76 @@
+unique_name: Customer - TPCH
+object_type: dimension
+label: Customer - TPCH
+description: Customer dimension for TPCH Model
+type: standard
+
+hierarchies:
+
+  - unique_name: Customer - TPCH Hierarchy
+    label: Customer - TPCH Hierarchy
+    filter_empty: "yes"
+    folder: Customers
+
+    levels:
+
+      - unique_name: Customer - TPCH Level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_c_address
+            label: Customer Address
+            description: Customer mailing address
+            folder: Customers
+            dataset: customer
+            key_columns:
+              - c_address
+            name_column: c_address
+            sort_column: c_address
+
+          - unique_name: d_c_name
+            label: Customer Name
+            description: Customer name for TPCH model
+            folder: Customers
+            dataset: customer
+            key_columns:
+              - c_name
+            name_column: c_name
+            sort_column: c_name
+
+          - unique_name: d_c_phone
+            label: Customer Phone
+            description: Customer phone number
+            folder: Customers
+            dataset: customer
+            key_columns:
+              - c_phone
+            name_column: c_phone
+            sort_column: c_phone
+
+level_attributes:
+
+  - unique_name: Customer - TPCH Level
+    label: Customer - TPCH Level
+    description: Customer Dimension for TPCH Model
+    is_unique_key: true
+    dataset: customer
+    key_columns:
+      - c_custkey
+    name_column: c_name
+    sort_column: c_custkey
+
+relationships:
+
+  - unique_name: Customer-TPCH_Location-TPCH_Customer
+    from:
+      hierarchy: Customer - TPCH Hierarchy
+      level: Customer - TPCH Level
+      dataset: customer
+      join_columns:
+        - c_nationkey
+    to:
+      dimension: Location - TPCH
+      level: Country
+    role_play: "Customer {0}"
+    type: embedded

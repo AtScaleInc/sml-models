@@ -1,0 +1,213 @@
+unique_name: DateCustom
+object_type: dataset
+label: DateCustom
+connection_id: Databricks - Test Customer_default
+table: datecustom
+
+columns:
+  - name: date_name
+    data_type: string
+  - name: datekey
+    data_type: long
+  - name: datekey_date
+    data_type: date
+    sql: CAST(pk_date AS DATE)
+  - name: day_of_half_year
+    data_type: long
+  - name: day_of_half_year_name
+    data_type: string
+  - name: day_of_month
+    data_type: long
+  - name: day_of_month_name
+    data_type: string
+  - name: day_of_quarter
+    data_type: long
+  - name: day_of_quarter_name
+    data_type: string
+  - name: day_of_week
+    data_type: long
+  - name: day_of_week_name
+    data_type: string
+  - name: day_of_year
+    data_type: long
+  - name: day_of_year_name
+    data_type: string
+  - name: half_year
+    data_type: datetime
+  - name: half_year_name
+    data_type: string
+  - name: half_year_of_year
+    data_type: long
+  - name: half_year_of_year_name
+    data_type: string
+  - name: iso_8601_day
+    data_type: datetime
+  - name: iso_8601_day_name
+    data_type: string
+  - name: iso_8601_day_of_week
+    data_type: long
+  - name: iso_8601_day_of_week_name
+    data_type: string
+  - name: iso_8601_day_of_year
+    data_type: long
+  - name: iso_8601_day_of_year_name
+    data_type: string
+  - name: iso_8601_week
+    data_type: datetime
+  - name: iso_8601_week_name
+    data_type: string
+  - name: iso_8601_week_of_year
+    data_type: long
+  - name: iso_8601_wk_yr_nm_rpt_dy_ctl
+    data_type: string
+  - name: iso_8601_year
+    data_type: datetime
+  - name: iso_8601_year_name
+    data_type: string
+  - name: month
+    data_type: datetime
+  - name: month_date
+    data_type: date
+    sql: CAST(month AS DATE)
+  - name: month_name
+    data_type: string
+  - name: month_of_half_year
+    data_type: long
+  - name: month_of_half_year_name
+    data_type: string
+  - name: month_of_quarter
+    data_type: long
+  - name: month_of_quarter_name
+    data_type: string
+  - name: month_of_year
+    data_type: long
+  - name: month_of_year_name
+    data_type: string
+  - name: pk_date
+    data_type: datetime
+  - name: pk_date_string
+    data_type: string
+  - name: quarter
+    data_type: datetime
+  - name: quarter_name
+    data_type: string
+  - name: quarter_of_half_year
+    data_type: long
+  - name: quarter_of_half_year_name
+    data_type: string
+  - name: quarter_of_year
+    data_type: long
+  - name: quarter_of_year_name
+    data_type: string
+  - name: rpt_day
+    data_type: datetime
+  - name: rpt_day_lykey
+    data_type: datetime
+  - name: rpt_day_name
+    data_type: string
+  - name: rpt_day_of_half_year
+    data_type: long
+  - name: rpt_day_of_half_year_name
+    data_type: string
+  - name: rpt_day_of_month
+    data_type: long
+  - name: rpt_day_of_month_name
+    data_type: string
+  - name: rpt_day_of_quarter
+    data_type: long
+  - name: rpt_day_of_quarter_name
+    data_type: string
+  - name: rpt_day_of_week
+    data_type: long
+  - name: rpt_day_of_week_name
+    data_type: string
+  - name: rpt_day_of_year
+    data_type: long
+  - name: rpt_day_of_year_name
+    data_type: string
+  - name: rpt_half_year
+    data_type: datetime
+  - name: rpt_half_year_lykey
+    data_type: datetime
+  - name: rpt_half_year_name
+    data_type: string
+  - name: rpt_half_year_of_year
+    data_type: long
+  - name: rpt_half_year_of_year_name
+    data_type: string
+  - name: rpt_month
+    data_type: datetime
+  - name: rpt_month_lykey
+    data_type: datetime
+  - name: rpt_month_name
+    data_type: string
+  - name: rpt_month_name2
+    data_type: string
+  - name: rpt_month_of_half_year
+    data_type: long
+  - name: rpt_month_of_half_year_name
+    data_type: string
+  - name: rpt_month_of_quarter
+    data_type: long
+  - name: rpt_month_of_quarter_name
+    data_type: string
+  - name: rpt_month_of_year
+    data_type: long
+  - name: rpt_month_of_year_name
+    data_type: string
+  - name: rpt_quarter
+    data_type: datetime
+  - name: rpt_quarter_lykey
+    data_type: datetime
+  - name: rpt_quarter_name
+    data_type: string
+  - name: rpt_quarter_of_half_year
+    data_type: long
+  - name: rpt_quarter_of_half_year_name
+    data_type: string
+  - name: rpt_quarter_of_year
+    data_type: long
+  - name: rpt_quarter_of_year_name
+    data_type: string
+  - name: rpt_week
+    data_type: datetime
+  - name: rpt_week_ctl
+    data_type: datetime
+  - name: rpt_week_lykey
+    data_type: datetime
+  - name: rpt_week_name
+    data_type: string
+  - name: rpt_week_of_half_year
+    data_type: long
+  - name: rpt_week_of_half_year_name
+    data_type: string
+  - name: rpt_week_of_month
+    data_type: long
+  - name: rpt_week_of_month_name
+    data_type: string
+  - name: rpt_week_of_quarter
+    data_type: long
+  - name: rpt_week_of_quarter_name
+    data_type: string
+  - name: rpt_week_of_year
+    data_type: long
+  - name: rpt_week_of_year_name
+    data_type: string
+  - name: rpt_year
+    data_type: datetime
+  - name: rpt_year_lykey
+    data_type: datetime
+  - name: rpt_year_name
+    data_type: string
+  - name: week
+    data_type: datetime
+  - name: week_name
+    data_type: string
+  - name: week_of_year
+    data_type: long
+  - name: week_of_year_name
+    data_type: string
+  - name: year
+    data_type: datetime
+  - name: year_name
+    data_type: string

@@ -1,0 +1,42 @@
+unique_name: lineitem
+object_type: dataset
+label: lineitem
+connection_id: Databricks - Test Customer
+table: lineitem
+
+columns:
+  - name: Item Revenue
+    data_type: "decimal(38,4)"
+    sql: l_extendedprice * (1 - l_discount)
+  - name: l_comment
+    data_type: string
+  - name: l_commitdate
+    data_type: date
+  - name: l_discount
+    data_type: "decimal(18,2)"
+  - name: l_extendedprice
+    data_type: "decimal(18,2)"
+  - name: l_linenumber
+    data_type: int
+  - name: l_linestatus
+    data_type: string
+  - name: l_orderkey
+    data_type: long
+  - name: l_partkey
+    data_type: long
+  - name: l_quantity
+    data_type: "decimal(18,2)"
+  - name: l_receiptdate
+    data_type: date
+  - name: l_returnflag
+    data_type: string
+  - name: l_shipdate
+    data_type: date
+  - name: l_shipinstruct
+    data_type: string
+  - name: l_shipmode
+    data_type: string
+  - name: l_suppkey
+    data_type: long
+  - name: l_tax
+    data_type: "decimal(18,2)"

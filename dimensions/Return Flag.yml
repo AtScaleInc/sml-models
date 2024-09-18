@@ -1,0 +1,30 @@
+unique_name: Return Flag
+object_type: dimension
+label: Return Flag
+description: Item return flag for TPCH moel
+is_degenerate: true
+
+hierarchies:
+
+  - unique_name: L_Return_Flag Hierarchy
+    label: Return Flag
+    filter_empty: "yes"
+    folder: Items
+
+    levels:
+
+      - unique_name: L_Return_Flag Level
+
+level_attributes:
+
+  - unique_name: L_Return_Flag Level
+    label: Return Flag
+    description: Return flag indicator for the TPCH model
+    dataset: lineitem
+    key_columns:
+      - l_returnflag
+    name_column: l_returnflag
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

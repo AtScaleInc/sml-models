@@ -1,8 +1,0 @@
-unique_name: Max Tax Amount-Order Retail445-Prev
-object_type: metric_calc
-label: 'Max Tax Amount-Order Retail445-Prev '
-description: Order Reporting Hierarchy Previous Period Sales
-expression: "CASE WHEN ISEMPTY([Measures].[maxtaxamount1]) \nTHEN NULL\nELSE\n([Order\
-  \ Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[maxtaxamount1])\n\
-  END\n"
-format: "$#,##0.00"

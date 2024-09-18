@@ -1,9 +1,0 @@
-unique_name: Max Tax Amount-Order Retail445-YTDPrevYear
-object_type: metric_calc
-label: Max Tax Amount-Order Retail445-YTDPrevYear
-description: 'Previous Year''s Year-to-date Sum of Sales '
-expression: "Aggregate(\nPeriodsToDate([Order Date Dimension].[Order Retail445].[Order\
-  \ ReportIng_Year], ParallelPeriod([Order Date Dimension].[Order Retail445].[Order\
-  \ ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember)),\
-  \ \n[Measures].[maxtaxamount1])\n"
-format: "$#,##0.00"

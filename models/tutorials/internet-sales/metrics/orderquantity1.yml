@@ -1,7 +1,0 @@
-unique_name: orderquantity1
-object_type: metric
-label: Order Quantity
-calculation_method: sum
-dialect: general number
-dataset: factinternetsales
-column: orderquantity

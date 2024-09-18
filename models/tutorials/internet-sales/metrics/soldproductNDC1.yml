@@ -1,8 +1,0 @@
-unique_name: soldproductNDC1
-object_type: metric
-label: SoldProductNDC
-description: Sold Product Non-Distinct Count
-calculation_method: count non-null
-dialect: general number
-dataset: factinternetsales
-column: productkey

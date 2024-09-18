@@ -1,8 +1,0 @@
-unique_name: m_Last_Stocktake_Quantity_sum
-object_type: metric
-label: Last Stocktake Quantity
-calculation_method: sum
-format: "#,##0"
-dataset: fact_stockholding
-column: last_stocktake_quantity
-unrelated_dimensions_handling: repeat

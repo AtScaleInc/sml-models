@@ -1,0 +1,7 @@
+unique_name: m_Revenue_sum
+object_type: metric
+label: Item Revenue
+calculation_method: sum
+format: "$#,##0.00"
+dataset: lineitem
+column: Item Revenue

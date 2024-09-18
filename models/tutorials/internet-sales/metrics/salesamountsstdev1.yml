@@ -1,7 +1,0 @@
-unique_name: salesamountsstdev1
-object_type: metric
-label: Sales Amount SStdev
-calculation_method: stddev_samp
-format: "$#,##0.00"
-dataset: factinternetsales
-column: salesamount

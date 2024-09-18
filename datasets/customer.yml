@@ -1,0 +1,23 @@
+unique_name: customer
+object_type: dataset
+label: customer
+connection_id: Databricks - Test Customer
+table: customer
+
+columns:
+  - name: c_acctbal
+    data_type: "decimal(18,2)"
+  - name: c_address
+    data_type: string
+  - name: c_comment
+    data_type: string
+  - name: c_custkey
+    data_type: long
+  - name: c_mktsegment
+    data_type: string
+  - name: c_name
+    data_type: string
+  - name: c_nationkey
+    data_type: long
+  - name: c_phone
+    data_type: string

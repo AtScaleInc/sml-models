@@ -1,8 +1,0 @@
-unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
-object_type: metric_calc
-label: SoldProductNDC-Order Retail445-YTDPrevYear
-description: 'Previous Year''s Year-to-date Sum of Sales '
-expression: "Sum(\nPeriodsToDate([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
-  \ ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
-  \ 1, [Order Date Dimension].[Order Retail445].CurrentMember)), \n[Measures].[soldproductNDC1])\n"
-dialect: general number

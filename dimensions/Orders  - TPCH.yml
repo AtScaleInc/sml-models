@@ -1,0 +1,84 @@
+unique_name: Orders  - TPCH
+object_type: dimension
+label: Orders  - TPCH
+description: Orders dimension for the TPCH model
+type: standard
+
+hierarchies:
+
+  - unique_name: Orders Dimension Hierarchy
+    label: Orders Dimension Hierarchy
+    filter_empty: "yes"
+    folder: Orders
+
+    levels:
+
+      - unique_name: Orders Dimension Level
+        is_hidden: true
+
+        secondary_attributes:
+
+          - unique_name: d_o_clerk
+            label: Order Clerk
+            description: Order Clerk
+            folder: Orders
+            dataset: orders
+            key_columns:
+              - o_clerk
+            name_column: o_clerk
+            sort_column: o_clerk
+
+          - unique_name: d_o_orderpriority
+            label: Order Priority
+            description: Order priority
+            folder: Orders
+            dataset: orders
+            key_columns:
+              - o_orderpriority
+            name_column: o_orderpriority
+            sort_column: o_orderpriority
+
+          - unique_name: d_o_orderstatus
+            label: Order Status
+            description: Order status
+            folder: Orders
+            dataset: orders
+            key_columns:
+              - o_orderstatus
+            name_column: o_orderstatus
+            sort_column: o_orderstatus
+
+          - unique_name: d_o_shippriority
+            label: Order Shipping Priority
+            folder: Orders
+            dataset: orders
+            key_columns:
+              - o_shippriority
+            name_column: o_shippriority
+            sort_column: o_shippriority
+
+level_attributes:
+
+  - unique_name: Orders Dimension Level
+    label: Orders Dimension Level
+    description: "Orders Dimension, attributes & Hierarchies"
+    is_unique_key: true
+    dataset: orders
+    key_columns:
+      - o_orderkey
+    name_column: o_orderkey
+
+relationships:
+
+  - unique_name: Orders-TPCH_DateDimension_Order
+    from:
+      hierarchy: Orders Dimension Hierarchy
+      level: Orders Dimension Level
+      dataset: orders
+      join_columns:
+        - o_orderdate
+    to:
+      dimension: Date Dimension
+      level: Day - TPCH
+    role_play: "Order {0}"
+    type: embedded

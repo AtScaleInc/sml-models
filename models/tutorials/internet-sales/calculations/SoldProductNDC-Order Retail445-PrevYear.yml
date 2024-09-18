@@ -1,8 +1,0 @@
-unique_name: SoldProductNDC-Order Retail445-PrevYear
-object_type: metric_calc
-label: SoldProductNDC-Order Retail445-PrevYear
-description: Order Sales Amount Prev Year (Retail445)
-expression: "CASE WHEN ISEMPTY([Measures].[soldproductNDC1]) THEN \nNULL \nELSE (ParallelPeriod([Order\
-  \ Date Dimension].[Order Retail445].[Order ReportIng_Year], 1, [Order Date Dimension].[Order\
-  \ Retail445].CurrentMember), [Measures].[soldproductNDC1]) END"
-dialect: general number

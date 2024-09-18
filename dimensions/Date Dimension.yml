@@ -1,0 +1,96 @@
+unique_name: Date Dimension
+object_type: dimension
+label: Date Dimension
+description: "Date Dimension that includes Gregorian, ISO8601 and Retail 445 calendars"
+type: time
+
+hierarchies:
+
+  - unique_name: Date Hierarchy - TPCH
+    label: Date Hierarchy - TPCH
+    filter_empty: "yes"
+    folder: Time
+
+    levels:
+
+      - unique_name: Year
+
+      - unique_name: Month
+
+      - unique_name: Day - TPCH
+
+level_attributes:
+
+  - unique_name: Day - TPCH
+    label: Day
+    description: Day
+    is_unique_key: true
+    dataset: DateCustom
+    key_columns:
+      - datekey_date
+    name_column: datekey_date
+    sort_column: datekey_date
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+    time_unit: day
+
+  - unique_name: Month
+    label: Month
+    dataset: DateCustom
+    key_columns:
+      - month
+    name_column: month_date
+    sort_column: month
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+    time_unit: month
+
+  - unique_name: Year
+    label: Year
+    description: Year
+    dataset: DateCustom
+    key_columns:
+      - year
+    name_column: year_name
+    sort_column: year
+    allowed_calcs_for_dma:
+      - Ancestor
+      - Descendants
+      - Lag
+      - ParallelPeriod
+      - PeriodsToDate
+      - Range
+      - Siblings
+    time_unit: year
+
+calculation_groups:
+
+  - unique_name: Dave
+    label: Dave
+
+    calculated_members:
+
+      - unique_name: Current
+        description: The measure's value for the current dimension members in the
+          query.
+        expression: "([Date Dimension].[Date Month Hierarchy].CurrentMember, [Measures].currentMember)"
+        format: standard
+        attribute: d525ca44-1aa7-4c19-bfa7-ed6e69040b00
+        template: Current
+        is_default: true
+
+modeler_metadata:
+  version: "0"
+  modified: "false"

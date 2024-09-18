@@ -1,8 +1,0 @@
-unique_name: m_Profit_sum
-object_type: metric
-label: Profit
-calculation_method: sum
-format: "$#,##0;($#,##0)"
-dataset: fact_sale
-column: profit
-unrelated_dimensions_handling: repeat

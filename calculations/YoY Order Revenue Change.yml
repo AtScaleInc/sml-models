@@ -1,0 +1,9 @@
+unique_name: YoY Order Revenue Change
+object_type: metric_calc
+label: YoY Order Revenue Change
+description: Year over year change in order revenue
+expression: "CASE WHEN ISEMPTY([Measures].[Order Revenue Previous Year]) or ISEMPTY(([Order\
+  \ Date Dimension].[Order Date Hierarchy - TPCH].CurrentMember, [Measures].[m_order_revenue]))\
+  \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order Date Hierarchy - TPCH].CurrentMember,\
+  \ [Measures].[m_order_revenue]) - [Measures].[Order Revenue Previous Year]\nEND"
+format: "$#,##0.00"

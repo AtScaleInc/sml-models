@@ -1,0 +1,17 @@
+unique_name: partsupp
+object_type: dataset
+label: partsupp
+connection_id: Databricks - Test Customer
+table: partsupp
+
+columns:
+  - name: ps_availqty
+    data_type: int
+  - name: ps_comment
+    data_type: string
+  - name: ps_partkey
+    data_type: long
+  - name: ps_suppkey
+    data_type: long
+  - name: ps_supplycost
+    data_type: "decimal(18,2)"

@@ -1,0 +1,8 @@
+unique_name: Order Revenue Previous Year
+object_type: metric_calc
+label: Order Revenue Previous Year
+description: Previous year's order revenue
+expression: "CASE WHEN ISEMPTY([Measures].[m_order_revenue]) THEN \nNULL\nELSE (ParallelPeriod([Order\
+  \ Date Dimension].[Order Date Hierarchy - TPCH].[Order Year], 1, [Order Date Dimension].[Order\
+  \ Date Hierarchy - TPCH].CurrentMember), [Measures].[m_order_revenue]) END"
+format: "$#,##0.00"

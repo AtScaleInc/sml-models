@@ -1,0 +1,21 @@
+unique_name: supplier
+object_type: dataset
+label: supplier
+connection_id: Databricks - Test Customer
+table: supplier
+
+columns:
+  - name: s_acctbal
+    data_type: "decimal(18,2)"
+  - name: s_address
+    data_type: string
+  - name: s_comment
+    data_type: string
+  - name: s_name
+    data_type: string
+  - name: s_nationkey
+    data_type: long
+  - name: s_phone
+    data_type: string
+  - name: s_suppkey
+    data_type: long

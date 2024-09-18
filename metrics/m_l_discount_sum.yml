@@ -1,0 +1,7 @@
+unique_name: m_l_discount_sum
+object_type: metric
+label: Item Discount
+calculation_method: sum
+format: "$#,##0.00"
+dataset: lineitem
+column: l_discount
