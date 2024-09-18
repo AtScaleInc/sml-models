@@ -5,4 +5,4 @@ description: Parts availability quantity
 calculation_method: sum
 format: "#,##0"
 dataset: partsupp
-column: ps_availqty
+column: PS_AVAILQTY

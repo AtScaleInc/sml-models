@@ -5,4 +5,4 @@ description: Number of unique suppliers
 calculation_method: count non-null
 format: "#,##0"
 dataset: supplier
-column: s_suppkey
+column: S_SUPPKEY

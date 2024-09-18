@@ -5,4 +5,4 @@ description: Sales Tax by Item
 calculation_method: sum
 format: "$#,##0.00"
 dataset: lineitem
-column: l_tax
+column: L_TAX

@@ -22,8 +22,8 @@ level_attributes:
     description: Return flag indicator for the TPCH model
     dataset: lineitem
     key_columns:
-      - l_returnflag
-    name_column: l_returnflag
+      - L_RETURNFLAG
+    name_column: L_RETURNFLAG
 
 modeler_metadata:
   version: "0"

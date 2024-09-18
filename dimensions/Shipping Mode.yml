@@ -21,8 +21,8 @@ level_attributes:
     label: Shipping Mode
     dataset: lineitem
     key_columns:
-      - l_shipmode
-    name_column: l_shipmode
+      - L_SHIPMODE
+    name_column: L_SHIPMODE
 
 modeler_metadata:
   version: "0"

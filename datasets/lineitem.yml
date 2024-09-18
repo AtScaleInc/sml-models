@@ -4,7 +4,7 @@ label: lineitem
 columns:
   - name: Item Revenue
     data_type: decimal(38,4)
-    sql: l_extendedprice * (1 - l_discount)
+    sql: L_EXTENDEDPRICE * (1 - L_DISCOUNT)
   - name: L_ORDERKEY
     data_type: decimal(38,0)
   - name: L_PARTKEY

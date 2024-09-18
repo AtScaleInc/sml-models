@@ -5,4 +5,4 @@ description: Item Order Quantity
 calculation_method: sum
 format: "#,##0"
 dataset: lineitem
-column: l_quantity
+column: L_QUANTITY

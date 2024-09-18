@@ -4,4 +4,4 @@ label: Item Discount
 calculation_method: sum
 format: "$#,##0.00"
 dataset: lineitem
-column: l_discount
+column: L_DISCOUNT

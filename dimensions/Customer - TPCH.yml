@@ -24,9 +24,9 @@ hierarchies:
             folder: Customers
             dataset: customer
             key_columns:
-              - c_address
-            name_column: c_address
-            sort_column: c_address
+              - C_ADDRESS
+            name_column: C_ADDRESS
+            sort_column: C_ADDRESS
 
           - unique_name: d_c_name
             label: Customer Name
@@ -34,9 +34,9 @@ hierarchies:
             folder: Customers
             dataset: customer
             key_columns:
-              - c_name
-            name_column: c_name
-            sort_column: c_name
+              - C_NAME
+            name_column: C_NAME
+            sort_column: C_NAME
 
           - unique_name: d_c_phone
             label: Customer Phone
@@ -44,9 +44,9 @@ hierarchies:
             folder: Customers
             dataset: customer
             key_columns:
-              - c_phone
-            name_column: c_phone
-            sort_column: c_phone
+              - C_PHONE
+            name_column: C_PHONE
+            sort_column: C_PHONE
 
 level_attributes:
 
@@ -56,9 +56,9 @@ level_attributes:
     is_unique_key: true
     dataset: customer
     key_columns:
-      - c_custkey
-    name_column: c_name
-    sort_column: c_custkey
+      - C_CUSTKEY
+    name_column: C_NAME
+    sort_column: C_CUSTKEY
 
 relationships:
 
@@ -68,7 +68,7 @@ relationships:
       level: Customer - TPCH Level
       dataset: customer
       join_columns:
-        - c_nationkey
+        - C_NATIONKEY
     to:
       dimension: Location - TPCH
       level: Country

@@ -3,4 +3,4 @@ object_type: metric
 label: Number of Unique Customers
 calculation_method: count non-null
 dataset: customer
-column: c_custkey
+column: C_CUSTKEY
