@@ -1,0 +1,6 @@
+unique_name: con_atscale_tutorial_data_as_adventure
+object_type: connection
+label: con_atscale_tutorial_data_as_adventure
+as_connection: snowflake_test_conn
+database: atscale_tutorial_data
+schema: as_adventure

@@ -1,15 +1,14 @@
 unique_name: nation
 object_type: dataset
 label: nation
-connection_id: snowflake_test_conn
-table: nation
-
 columns:
-  - name: n_comment
+  - name: N_NATIONKEY
+    data_type: decimal(38,0)
+  - name: N_NAME
     data_type: string
-  - name: n_name
+  - name: N_REGIONKEY
+    data_type: decimal(38,0)
+  - name: N_COMMENT
     data_type: string
-  - name: n_nationkey
-    data_type: long
-  - name: n_regionkey
-    data_type: long
+connection_id: snowflake_test_conn
+table: NATION

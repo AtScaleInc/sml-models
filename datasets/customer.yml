@@ -1,23 +1,22 @@
 unique_name: customer
 object_type: dataset
 label: customer
-connection_id: snowflake_test_conn
-table: customer
-
 columns:
-  - name: c_acctbal
-    data_type: "decimal(18,2)"
-  - name: c_address
+  - name: C_CUSTKEY
+    data_type: decimal(38,0)
+  - name: C_NAME
     data_type: string
-  - name: c_comment
+  - name: C_ADDRESS
     data_type: string
-  - name: c_custkey
-    data_type: long
-  - name: c_mktsegment
+  - name: C_NATIONKEY
+    data_type: decimal(38,0)
+  - name: C_PHONE
     data_type: string
-  - name: c_name
+  - name: C_ACCTBAL
+    data_type: decimal(12,2)
+  - name: C_MKTSEGMENT
     data_type: string
-  - name: c_nationkey
-    data_type: long
-  - name: c_phone
+  - name: C_COMMENT
     data_type: string
+connection_id: snowflake_test_conn
+table: CUSTOMER

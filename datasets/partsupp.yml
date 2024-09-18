@@ -1,17 +1,16 @@
 unique_name: partsupp
 object_type: dataset
 label: partsupp
-connection_id: snowflake_test_conn
-table: partsupp
-
 columns:
-  - name: ps_availqty
-    data_type: int
-  - name: ps_comment
+  - name: PS_PARTKEY
+    data_type: decimal(38,0)
+  - name: PS_SUPPKEY
+    data_type: decimal(38,0)
+  - name: PS_AVAILQTY
+    data_type: decimal(38,0)
+  - name: PS_SUPPLYCOST
+    data_type: decimal(12,2)
+  - name: PS_COMMENT
     data_type: string
-  - name: ps_partkey
-    data_type: long
-  - name: ps_suppkey
-    data_type: long
-  - name: ps_supplycost
-    data_type: "decimal(18,2)"
+connection_id: snowflake_test_conn
+table: PARTSUPP

@@ -1,21 +1,20 @@
 unique_name: supplier
 object_type: dataset
 label: supplier
-connection_id: snowflake_test_conn
-table: supplier
-
 columns:
-  - name: s_acctbal
-    data_type: "decimal(18,2)"
-  - name: s_address
+  - name: S_SUPPKEY
+    data_type: decimal(38,0)
+  - name: S_NAME
     data_type: string
-  - name: s_comment
+  - name: S_ADDRESS
     data_type: string
-  - name: s_name
+  - name: S_NATIONKEY
+    data_type: decimal(38,0)
+  - name: S_PHONE
     data_type: string
-  - name: s_nationkey
-    data_type: long
-  - name: s_phone
+  - name: S_ACCTBAL
+    data_type: decimal(12,2)
+  - name: S_COMMENT
     data_type: string
-  - name: s_suppkey
-    data_type: long
+connection_id: snowflake_test_conn
+table: SUPPLIER

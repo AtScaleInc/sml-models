@@ -1,13 +1,12 @@
 unique_name: region
 object_type: dataset
 label: region
-connection_id: snowflake_test_conn
-table: region
-
 columns:
-  - name: r_comment
+  - name: R_REGIONKEY
+    data_type: decimal(38,0)
+  - name: R_NAME
     data_type: string
-  - name: r_name
+  - name: R_COMMENT
     data_type: string
-  - name: r_regionkey
-    data_type: long
+connection_id: snowflake_test_conn
+table: REGION

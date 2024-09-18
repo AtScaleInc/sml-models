@@ -1,42 +1,41 @@
 unique_name: lineitem
 object_type: dataset
 label: lineitem
-connection_id: snowflake_test_conn
-table: lineitem
-
 columns:
   - name: Item Revenue
-    data_type: "decimal(38,4)"
+    data_type: decimal(38,4)
     sql: l_extendedprice * (1 - l_discount)
-  - name: l_comment
+  - name: L_ORDERKEY
+    data_type: decimal(38,0)
+  - name: L_PARTKEY
+    data_type: decimal(38,0)
+  - name: L_SUPPKEY
+    data_type: decimal(38,0)
+  - name: L_LINENUMBER
+    data_type: decimal(38,0)
+  - name: L_QUANTITY
+    data_type: decimal(12,2)
+  - name: L_EXTENDEDPRICE
+    data_type: decimal(12,2)
+  - name: L_DISCOUNT
+    data_type: decimal(12,2)
+  - name: L_TAX
+    data_type: decimal(12,2)
+  - name: L_RETURNFLAG
     data_type: string
-  - name: l_commitdate
+  - name: L_LINESTATUS
+    data_type: string
+  - name: L_SHIPDATE
     data_type: date
-  - name: l_discount
-    data_type: "decimal(18,2)"
-  - name: l_extendedprice
-    data_type: "decimal(18,2)"
-  - name: l_linenumber
-    data_type: int
-  - name: l_linestatus
-    data_type: string
-  - name: l_orderkey
-    data_type: long
-  - name: l_partkey
-    data_type: long
-  - name: l_quantity
-    data_type: "decimal(18,2)"
-  - name: l_receiptdate
+  - name: L_COMMITDATE
     data_type: date
-  - name: l_returnflag
-    data_type: string
-  - name: l_shipdate
+  - name: L_RECEIPTDATE
     data_type: date
-  - name: l_shipinstruct
+  - name: L_SHIPINSTRUCT
     data_type: string
-  - name: l_shipmode
+  - name: L_SHIPMODE
     data_type: string
-  - name: l_suppkey
-    data_type: long
-  - name: l_tax
-    data_type: "decimal(18,2)"
+  - name: L_COMMENT
+    data_type: string
+connection_id: snowflake_test_conn
+table: LINEITEM
