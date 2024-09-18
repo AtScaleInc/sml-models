@@ -1,0 +1,6 @@
+unique_name: snowflake_test_conn
+label: snowflake_test_conn
+object_type: connection
+as_connection: snowflake_test_conn
+database: SNOWFLAKE_SAMPLE_DATA
+schema: TPCH_SF1

@@ -1,0 +1,6 @@
+unique_name: sml-models
+object_type: catalog
+label: sml-models
+aggressive_agg_promotion: false
+as_version: 1
+build_speculative_aggs: true

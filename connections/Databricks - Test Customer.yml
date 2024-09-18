@@ -1,6 +1,0 @@
-unique_name: Databricks - Test Customer
-label: Databricks - Test Customer
-object_type: connection
-as_connection: Databricks - Test Customer
-database: hive_metastore
-schema: tpch

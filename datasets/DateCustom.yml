@@ -1,7 +1,7 @@
 unique_name: DateCustom
 object_type: dataset
 label: DateCustom
-connection_id: Databricks - Test Customer_default
+connection_id: snowflake_test_conn_atscale_schema
 table: datecustom
 
 columns:
