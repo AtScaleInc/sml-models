@@ -24,27 +24,27 @@ hierarchies:
             folder: Suppliers
             dataset: supplier
             key_columns:
-              - s_address
-            name_column: s_address
-            sort_column: s_address
+              - S_ADDRESS
+            name_column: S_ADDRESS
+            sort_column: S_ADDRESS
 
           - unique_name: d_s_name
             label: Supplier Country
             folder: Suppliers
             dataset: supplier
             key_columns:
-              - s_nationkey
-            name_column: s_name
-            sort_column: s_name
+              - S_NATIONKEY
+            name_column: S_NAME
+            sort_column: S_NAME
 
           - unique_name: d_s_phone
             label: Supplier Phone
             folder: Suppliers
             dataset: supplier
             key_columns:
-              - s_phone
-            name_column: s_phone
-            sort_column: s_phone
+              - S_PHONE
+            name_column: S_PHONE
+            sort_column: S_PHONE
 
 level_attributes:
 
@@ -54,8 +54,8 @@ level_attributes:
     is_unique_key: true
     dataset: supplier
     key_columns:
-      - s_suppkey
-    name_column: s_name
+      - S_SUPPKEY
+    name_column: S_NAME
 
 relationships:
 
@@ -65,7 +65,7 @@ relationships:
       level: Supplier - TPCH Level
       dataset: supplier
       join_columns:
-        - s_nationkey
+        - S_NATIONKEY
     to:
       dimension: Location - TPCH
       level: Country

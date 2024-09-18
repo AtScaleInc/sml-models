@@ -24,9 +24,9 @@ hierarchies:
             folder: Orders
             dataset: orders
             key_columns:
-              - o_clerk
-            name_column: o_clerk
-            sort_column: o_clerk
+              - O_CLERK
+            name_column: O_CLERK
+            sort_column: O_CLERK
 
           - unique_name: d_o_orderpriority
             label: Order Priority
@@ -34,9 +34,9 @@ hierarchies:
             folder: Orders
             dataset: orders
             key_columns:
-              - o_orderpriority
-            name_column: o_orderpriority
-            sort_column: o_orderpriority
+              - O_ORDERPRIORITY
+            name_column: O_ORDERPRIORITY
+            sort_column: O_ORDERPRIORITY
 
           - unique_name: d_o_orderstatus
             label: Order Status
@@ -44,18 +44,18 @@ hierarchies:
             folder: Orders
             dataset: orders
             key_columns:
-              - o_orderstatus
-            name_column: o_orderstatus
-            sort_column: o_orderstatus
+              - O_ORDERSTATUS
+            name_column: O_ORDERSTATUS
+            sort_column: O_ORDERSTATUS
 
           - unique_name: d_o_shippriority
             label: Order Shipping Priority
             folder: Orders
             dataset: orders
             key_columns:
-              - o_shippriority
-            name_column: o_shippriority
-            sort_column: o_shippriority
+              - O_SHIPPRIORITY
+            name_column: O_SHIPPRIORITY
+            sort_column: O_SHIPPRIORITY
 
 level_attributes:
 
@@ -65,8 +65,8 @@ level_attributes:
     is_unique_key: true
     dataset: orders
     key_columns:
-      - o_orderkey
-    name_column: o_orderkey
+      - O_ORDERKEY
+    name_column: O_ORDERKEY
 
 relationships:
 
@@ -76,7 +76,7 @@ relationships:
       level: Orders Dimension Level
       dataset: orders
       join_columns:
-        - o_orderdate
+        - O_ORDERDATE
     to:
       dimension: Date Dimension
       level: Day - TPCH

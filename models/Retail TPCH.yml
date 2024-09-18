@@ -11,7 +11,7 @@ relationships:
     from:
       dataset: supplier
       join_columns:
-        - s_suppkey
+        - S_SUPPKEY
     to:
       dimension: Supplier - TPCH
       level: Supplier - TPCH Level
@@ -20,7 +20,7 @@ relationships:
     from:
       dataset: customer
       join_columns:
-        - c_custkey
+        - C_CUSTKEY
     to:
       dimension: Customer - TPCH
       level: Customer - TPCH Level
@@ -29,7 +29,7 @@ relationships:
     from:
       dataset: lineitem
       join_columns:
-        - l_partkey
+        - L_PARTKEY
     to:
       dimension: Parts - TPCH
       level: Parts - TPCH Level
@@ -38,7 +38,7 @@ relationships:
     from:
       dataset: lineitem
       join_columns:
-        - l_orderkey
+        - L_ORDERKEY
     to:
       dimension: Orders  - TPCH
       level: Orders Dimension Level
@@ -47,7 +47,7 @@ relationships:
     from:
       dataset: lineitem
       join_columns:
-        - l_suppkey
+        - L_SUPPKEY
     to:
       dimension: Supplier - TPCH
       level: Supplier - TPCH Level
@@ -56,7 +56,7 @@ relationships:
     from:
       dataset: lineitem
       join_columns:
-        - l_receiptdate
+        - L_RECEIPTDATE
     to:
       dimension: Date Dimension
       level: Day - TPCH
@@ -66,7 +66,7 @@ relationships:
     from:
       dataset: lineitem
       join_columns:
-        - l_shipdate
+        - L_SHIPDATE
     to:
       dimension: Date Dimension
       level: Day - TPCH
@@ -76,7 +76,7 @@ relationships:
     from:
       dataset: lineitem
       join_columns:
-        - l_commitdate
+        - L_COMMITDATE
     to:
       dimension: Date Dimension
       level: Day - TPCH
@@ -86,7 +86,7 @@ relationships:
     from:
       dataset: partsupp
       join_columns:
-        - ps_partkey
+        - PS_PARTKEY
     to:
       dimension: Parts - TPCH
       level: Parts - TPCH Level
@@ -95,7 +95,7 @@ relationships:
     from:
       dataset: partsupp
       join_columns:
-        - ps_suppkey
+        - PS_SUPPKEY
     to:
       dimension: Supplier - TPCH
       level: Supplier - TPCH Level
@@ -104,7 +104,7 @@ relationships:
     from:
       dataset: orders
       join_columns:
-        - o_orderkey
+        - O_ORDERKEY
     to:
       dimension: Orders  - TPCH
       level: Orders Dimension Level
@@ -113,7 +113,7 @@ relationships:
     from:
       dataset: orders
       join_columns:
-        - o_custkey
+        - O_CUSTKEY
     to:
       dimension: Customer - TPCH
       level: Customer - TPCH Level

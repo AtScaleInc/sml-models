@@ -5,4 +5,4 @@ description: Part cost
 calculation_method: sum
 format: "$#,##0.00"
 dataset: partsupp
-column: ps_supplycost
+column: PS_SUPPLYCOST

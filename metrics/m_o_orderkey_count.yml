@@ -5,4 +5,4 @@ description: Number of orders
 calculation_method: count non-null
 format: "#,##0"
 dataset: orders
-column: o_orderkey
+column: O_ORDERKEY
