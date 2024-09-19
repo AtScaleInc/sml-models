@@ -1,7 +1,7 @@
 unique_name: Date Dimension
 object_type: dimension
 label: Date Dimension
-description: "Date Dimension that includes Gregorian, ISO8601 and Retail 445 calendars"
+description: "Date Dimension to cover standard Gregorian calendar"
 type: time
 
 hierarchies:
@@ -27,9 +27,9 @@ level_attributes:
     is_unique_key: true
     dataset: DateCustom
     key_columns:
-      - datekey_date
-    name_column: datekey_date
-    sort_column: datekey_date
+      - DATEKEY_DATE
+    name_column: DATEKEY_DATE
+    sort_column: DATEKEY_DATE
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -44,9 +44,9 @@ level_attributes:
     label: Month
     dataset: DateCustom
     key_columns:
-      - month
-    name_column: month_date
-    sort_column: month
+      - MONTH
+    name_column: MONTH_DATE
+    sort_column: MONTH
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
@@ -62,9 +62,9 @@ level_attributes:
     description: Year
     dataset: DateCustom
     key_columns:
-      - year
-    name_column: year_name
-    sort_column: year
+      - YEAR
+    name_column: YEAR_NAME
+    sort_column: YEAR
     allowed_calcs_for_dma:
       - Ancestor
       - Descendants
