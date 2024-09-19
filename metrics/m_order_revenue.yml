@@ -1,8 +1,8 @@
 unique_name: m_order_revenue
 object_type: metric
 label: Order Revenue
-description: Order total price
+description: Total price of the order
 calculation_method: sum
-format: "$#,##0.00"
-dataset: orders
 column: O_TOTALPRICE
+dataset: orders
+format: $#,##0.00

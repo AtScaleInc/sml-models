@@ -2,83 +2,71 @@ unique_name: Orders  - TPCH
 object_type: dimension
 label: Orders  - TPCH
 description: Orders dimension for the TPCH model
-type: standard
-
 hierarchies:
-
   - unique_name: Orders Dimension Hierarchy
     label: Orders Dimension Hierarchy
-    filter_empty: "yes"
+    filter_empty: 'yes'
     folder: Orders
-
     levels:
-
       - unique_name: Orders Dimension Level
         is_hidden: true
-
         secondary_attributes:
-
           - unique_name: d_o_clerk
             label: Order Clerk
-            description: Order Clerk
-            folder: Orders
+            description: The clerk associated with the order
             dataset: orders
+            folder: Orders
             key_columns:
               - O_CLERK
             name_column: O_CLERK
             sort_column: O_CLERK
-
           - unique_name: d_o_orderpriority
             label: Order Priority
-            description: Order priority
-            folder: Orders
+            description: the priority or importance of the order
             dataset: orders
+            folder: Orders
             key_columns:
               - O_ORDERPRIORITY
             name_column: O_ORDERPRIORITY
             sort_column: O_ORDERPRIORITY
-
           - unique_name: d_o_orderstatus
             label: Order Status
-            description: Order status
-            folder: Orders
+            description: Status of the order
             dataset: orders
+            folder: Orders
             key_columns:
               - O_ORDERSTATUS
             name_column: O_ORDERSTATUS
             sort_column: O_ORDERSTATUS
-
           - unique_name: d_o_shippriority
             label: Order Shipping Priority
-            folder: Orders
+            description: The shipping priority or importance
             dataset: orders
+            folder: Orders
             key_columns:
               - O_SHIPPRIORITY
             name_column: O_SHIPPRIORITY
             sort_column: O_SHIPPRIORITY
-
 level_attributes:
-
   - unique_name: Orders Dimension Level
     label: Orders Dimension Level
-    description: "Orders Dimension, attributes & Hierarchies"
-    is_unique_key: true
+    description: The unique identifier for the order
     dataset: orders
+    is_unique_key: true
     key_columns:
       - O_ORDERKEY
     name_column: O_ORDERKEY
-
 relationships:
-
   - unique_name: Orders-TPCH_DateDimension_Order
     from:
-      hierarchy: Orders Dimension Hierarchy
-      level: Orders Dimension Level
       dataset: orders
+      hierarchy: Orders Dimension Hierarchy
       join_columns:
         - O_ORDERDATE
+      level: Orders Dimension Level
+    role_play: Order {0}
     to:
       dimension: Date Dimension
       level: Day - TPCH
-    role_play: "Order {0}"
     type: embedded
+type: standard

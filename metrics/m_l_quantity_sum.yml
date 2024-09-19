@@ -1,8 +1,8 @@
 unique_name: m_l_quantity_sum
 object_type: metric
 label: Item Quantity
-description: Item Order Quantity
+description: the total number of items in the order
 calculation_method: sum
-format: "#,##0"
-dataset: lineitem
 column: L_QUANTITY
+dataset: lineitem
+format: '#,##0'

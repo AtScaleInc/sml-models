@@ -2,87 +2,74 @@ unique_name: Parts - TPCH
 object_type: dimension
 label: Parts - TPCH
 description: Parts dimension for the TPCH model
-type: standard
-
 hierarchies:
-
   - unique_name: Parts - TPCH Hierarchy
     label: Parts - TPCH Hierarchy
-
     levels:
-
       - unique_name: Parts - TPCH Level
         is_hidden: true
-
         secondary_attributes:
-
           - unique_name: d_p_brand
             label: Part Brand
-            description: Part brand
-            folder: Parts
+            description: the brand associated with the part
             dataset: part
+            folder: Parts
             key_columns:
               - P_BRAND
             name_column: P_BRAND
             sort_column: P_BRAND
-
           - unique_name: d_p_container
             label: Part Container
-            description: Partner container
-            folder: Parts
+            description: the container associated with the part
             dataset: part
+            folder: Parts
             key_columns:
               - P_CONTAINER
             name_column: P_CONTAINER
             sort_column: P_CONTAINER
-
           - unique_name: d_p_mfgr
             label: Part Manufacturer
-            description: Part Manufacturer
-            folder: Parts
+            description: the manufacturer or maker of the part
             dataset: part
+            folder: Parts
             key_columns:
               - P_MFGR
             name_column: P_MFGR
             sort_column: P_MFGR
-
           - unique_name: d_p_retailprice
             label: Part Retail Price
             description: Part retail price
-            folder: Parts
             dataset: part
+            folder: Parts
             key_columns:
               - P_RETAILPRICE
             name_column: P_RETAILPRICE
             sort_column: P_RETAILPRICE
-
           - unique_name: d_p_size
             label: Part Size
-            description: Part size
-            folder: Parts
+            description: the size of the part
             dataset: part
+            folder: Parts
             key_columns:
               - P_SIZE
             name_column: P_SIZE
             sort_column: P_SIZE
-
           - unique_name: d_p_type
             label: Part Type
-            description: Part type
-            folder: Parts
+            description: the type or category of part
             dataset: part
+            folder: Parts
             key_columns:
               - P_TYPE
             name_column: P_TYPE
             sort_column: P_TYPE
-
 level_attributes:
-
   - unique_name: Parts - TPCH Level
     label: Parts - TPCH Level
-    description: Parts for the TPCH model
-    is_unique_key: true
+    description: The name of the part
     dataset: part
+    is_unique_key: true
     key_columns:
       - P_PARTKEY
     name_column: P_NAME
+type: standard

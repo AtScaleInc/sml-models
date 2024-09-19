@@ -1,6 +1,7 @@
 unique_name: m_c_custkey_count
 object_type: metric
 label: Number of Unique Customers
+description: 'non distinct count of non-null values '
 calculation_method: count non-null
-dataset: customer
 column: C_CUSTKEY
+dataset: customer

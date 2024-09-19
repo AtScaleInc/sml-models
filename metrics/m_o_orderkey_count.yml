@@ -1,8 +1,8 @@
 unique_name: m_o_orderkey_count
 object_type: metric
 label: Number of Unique Orders
-description: Number of orders
+description: Non-distinct count of non-null orders
 calculation_method: count non-null
-format: "#,##0"
-dataset: orders
 column: O_ORDERKEY
+dataset: orders
+format: '#,##0'

@@ -1,7 +1,8 @@
 unique_name: m_l_discount_sum
 object_type: metric
 label: Item Discount
+description: the total discount amount
 calculation_method: sum
-format: "$#,##0.00"
-dataset: lineitem
 column: L_DISCOUNT
+dataset: lineitem
+format: $#,##0.00

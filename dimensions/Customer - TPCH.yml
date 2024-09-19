@@ -2,75 +2,63 @@ unique_name: Customer - TPCH
 object_type: dimension
 label: Customer - TPCH
 description: Customer dimension for TPCH Model
-type: standard
-
 hierarchies:
-
   - unique_name: Customer - TPCH Hierarchy
     label: Customer - TPCH Hierarchy
-    filter_empty: "yes"
+    filter_empty: 'yes'
     folder: Customers
-
     levels:
-
       - unique_name: Customer - TPCH Level
         is_hidden: true
-
         secondary_attributes:
-
           - unique_name: d_c_address
             label: Customer Address
             description: Customer mailing address
-            folder: Customers
             dataset: customer
+            folder: Customers
             key_columns:
               - C_ADDRESS
             name_column: C_ADDRESS
             sort_column: C_ADDRESS
-
           - unique_name: d_c_name
             label: Customer Name
-            description: Customer name for TPCH model
-            folder: Customers
+            description: Customer name
             dataset: customer
+            folder: Customers
             key_columns:
               - C_NAME
             name_column: C_NAME
             sort_column: C_NAME
-
           - unique_name: d_c_phone
             label: Customer Phone
             description: Customer phone number
-            folder: Customers
             dataset: customer
+            folder: Customers
             key_columns:
               - C_PHONE
             name_column: C_PHONE
             sort_column: C_PHONE
-
 level_attributes:
-
   - unique_name: Customer - TPCH Level
     label: Customer - TPCH Level
-    description: Customer Dimension for TPCH Model
-    is_unique_key: true
+    description: Unique identifier of the customer
     dataset: customer
+    is_unique_key: true
     key_columns:
       - C_CUSTKEY
     name_column: C_NAME
     sort_column: C_CUSTKEY
-
 relationships:
-
   - unique_name: Customer-TPCH_Location-TPCH_Customer
     from:
-      hierarchy: Customer - TPCH Hierarchy
-      level: Customer - TPCH Level
       dataset: customer
+      hierarchy: Customer - TPCH Hierarchy
       join_columns:
         - C_NATIONKEY
+      level: Customer - TPCH Level
+    role_play: Customer {0}
     to:
       dimension: Location - TPCH
       level: Country
-    role_play: "Customer {0}"
     type: embedded
+type: standard

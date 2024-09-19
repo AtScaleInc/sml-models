@@ -1,80 +1,70 @@
 unique_name: Date Dimension
 object_type: dimension
 label: Date Dimension
-description: "Date Dimension to cover standard Gregorian calendar"
-type: time
-
+description: Date Dimension to cover standard Gregorian calendar
 hierarchies:
-
   - unique_name: Date Hierarchy - TPCH
     label: Date Hierarchy - TPCH
-    filter_empty: "yes"
+    filter_empty: 'yes'
     folder: Time
-
     levels:
-
       - unique_name: Year
-
       - unique_name: Month
-
       - unique_name: Day - TPCH
-
 level_attributes:
-
   - unique_name: Day - TPCH
     label: Day
-    description: Day
-    is_unique_key: true
+    description: the day level
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - Range
     dataset: DateCustom
+    is_unique_key: true
     key_columns:
       - DATEKEY_DATE
     name_column: DATEKEY_DATE
     sort_column: DATEKEY_DATE
-    allowed_calcs_for_dma:
-      - Ancestor
-      - Descendants
-      - Lag
-      - ParallelPeriod
-      - PeriodsToDate
-      - Range
-      - Siblings
     time_unit: day
-
   - unique_name: Month
     label: Month
+    description: the month and year
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - Range
     dataset: DateCustom
     key_columns:
       - MONTH
     name_column: MONTH_DATE
     sort_column: MONTH
-    allowed_calcs_for_dma:
-      - Ancestor
-      - Descendants
-      - Lag
-      - ParallelPeriod
-      - PeriodsToDate
-      - Range
-      - Siblings
     time_unit: month
-
   - unique_name: Year
     label: Year
-    description: Year
+    description: Year Number
+    allowed_calcs_for_dma:
+      - Lag
+      - ParallelPeriod
+      - Ancestor
+      - Descendants
+      - Siblings
+      - PeriodsToDate
+      - Range
     dataset: DateCustom
     key_columns:
       - YEAR
     name_column: YEAR_NAME
     sort_column: YEAR
-    allowed_calcs_for_dma:
-      - Ancestor
-      - Descendants
-      - Lag
-      - ParallelPeriod
-      - PeriodsToDate
-      - Range
-      - Siblings
     time_unit: year
-
 modeler_metadata:
-  version: "0"
-  modified: "false"
+  version: '0'
+  modified: 'false'
+type: time

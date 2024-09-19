@@ -2,41 +2,31 @@ unique_name: Location - TPCH
 object_type: dimension
 label: Location - TPCH
 description: Location dimension
-type: standard
-
 hierarchies:
-
   - unique_name: Location Hierarchy
     label: Location Hierarchy
-    filter_empty: "yes"
+    filter_empty: 'yes'
     folder: Locations
-
     levels:
-
       - unique_name: Region
-
       - unique_name: Country
-
 level_attributes:
-
   - unique_name: Country
     label: Country
-    description: Country
-    is_unique_key: true
+    description: the country associated with the customer
     dataset: nation
+    is_unique_key: true
     key_columns:
       - N_NATIONKEY
     name_column: N_NAME
-
   - unique_name: Region
     label: Region
+    description: the region associated with the customer
     dataset: region
     key_columns:
       - R_REGIONKEY
     name_column: R_REGIONKEY
-
 relationships:
-
   - from:
       dataset: nation
       join_columns:
@@ -44,3 +34,4 @@ relationships:
     to:
       level: Region
     type: snowflake
+type: standard

@@ -1,73 +1,63 @@
 unique_name: Supplier - TPCH
 object_type: dimension
-label: Supplier - TPCH
-description: Supplier dimension for TPCH model
-type: standard
-
+label: Supplier
+description: Supplier dimension
 hierarchies:
-
   - unique_name: Supplier - TPCH Hierarchy
     label: Supplier - TPCH Hierarchy
-    filter_empty: "yes"
+    filter_empty: 'yes'
     folder: Suppliers
-
     levels:
-
       - unique_name: Supplier - TPCH Level
         is_hidden: true
-
         secondary_attributes:
-
           - unique_name: d_s_address
             label: Supplier Address
             description: Supplier mailing address
-            folder: Suppliers
             dataset: supplier
+            folder: Suppliers
             key_columns:
               - S_ADDRESS
             name_column: S_ADDRESS
             sort_column: S_ADDRESS
-
           - unique_name: d_s_name
             label: Supplier Country
-            folder: Suppliers
+            description: the country the supplier is based out of
             dataset: supplier
+            folder: Suppliers
             key_columns:
               - S_NATIONKEY
             name_column: S_NAME
             sort_column: S_NAME
-
           - unique_name: d_s_phone
             label: Supplier Phone
-            folder: Suppliers
+            description: the supplier's phone number
             dataset: supplier
+            folder: Suppliers
             key_columns:
               - S_PHONE
             name_column: S_PHONE
             sort_column: S_PHONE
-
 level_attributes:
-
   - unique_name: Supplier - TPCH Level
     label: Supplier - TPCH Level
-    description: Supplier dimension for TPCH model
-    is_unique_key: true
+    description: the id of the supplier
     dataset: supplier
+    is_unique_key: true
     key_columns:
       - S_SUPPKEY
     name_column: S_NAME
-
 relationships:
-
   - unique_name: Supplier-TPCH_Location-TPCH_Supplier
     from:
-      hierarchy: Supplier - TPCH Hierarchy
-      level: Supplier - TPCH Level
       dataset: supplier
+      hierarchy: Supplier - TPCH Hierarchy
       join_columns:
         - S_NATIONKEY
+      level: Supplier - TPCH Level
+    role_play: Supplier {0}
     to:
       dimension: Location - TPCH
       level: Country
-    role_play: "Supplier {0}"
     type: embedded
+type: standard

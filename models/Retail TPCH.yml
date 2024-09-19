@@ -2,11 +2,38 @@ unique_name: Retail TPCH
 object_type: model
 label: Retail TPCH
 description: Based on Databricks Retail TPCH sample dataset
+dimensions:
+  - Return Flag
+  - Shipping Mode
 include_default_drillthrough: true
-visible: true
-
+metrics:
+  - unique_name: m_c_custkey_count
+    folder: Customers
+  - unique_name: m_l_discount_sum
+    folder: Items
+  - unique_name: m_l_quantity_sum
+    folder: Items
+  - unique_name: m_l_tax_sum
+    folder: Items
+  - unique_name: m_o_orderkey_count
+    folder: Orders
+  - unique_name: m_order_revenue
+    folder: Orders
+  - unique_name: m_ps_availqty_sum
+    folder: Parts
+  - unique_name: m_ps_supplycost_sum
+    folder: Parts
+  - unique_name: m_Revenue_sum
+    folder: Items
+  - unique_name: m_s_suppkey_count
+    folder: Suppliers
+  - unique_name: Order Revenue Previous Year
+    folder: Orders
+  - unique_name: YoY Order Revenue Change
+    folder: Orders
+  - unique_name: YTD Order Revenue
+    folder: Orders
 relationships:
-
   - unique_name: supplier_Supplier_-_TPCH
     from:
       dataset: supplier
@@ -15,7 +42,6 @@ relationships:
     to:
       dimension: Supplier - TPCH
       level: Supplier - TPCH Level
-
   - unique_name: customer_Customer_-_TPCH
     from:
       dataset: customer
@@ -24,7 +50,6 @@ relationships:
     to:
       dimension: Customer - TPCH
       level: Customer - TPCH Level
-
   - unique_name: lineitem_Parts_-_TPCH
     from:
       dataset: lineitem
@@ -33,7 +58,6 @@ relationships:
     to:
       dimension: Parts - TPCH
       level: Parts - TPCH Level
-
   - unique_name: lineitem_Orders__-_TPCH
     from:
       dataset: lineitem
@@ -42,7 +66,6 @@ relationships:
     to:
       dimension: Orders  - TPCH
       level: Orders Dimension Level
-
   - unique_name: lineitem_Supplier_-_TPCH
     from:
       dataset: lineitem
@@ -51,37 +74,33 @@ relationships:
     to:
       dimension: Supplier - TPCH
       level: Supplier - TPCH Level
-
   - unique_name: lineitem_Date_Dimension_ItemReceipt
     from:
       dataset: lineitem
       join_columns:
         - L_RECEIPTDATE
+    role_play: Item Receipt {0}
     to:
       dimension: Date Dimension
       level: Day - TPCH
-    role_play: "Item Receipt {0}"
-
   - unique_name: lineitem_Date_Dimension_ItemShip
     from:
       dataset: lineitem
       join_columns:
         - L_SHIPDATE
+    role_play: Item Ship {0}
     to:
       dimension: Date Dimension
       level: Day - TPCH
-    role_play: "Item Ship {0}"
-
   - unique_name: lineitem_Date_Dimension_ItemCommit
     from:
       dataset: lineitem
       join_columns:
         - L_COMMITDATE
+    role_play: Item Commit {0}
     to:
       dimension: Date Dimension
       level: Day - TPCH
-    role_play: "Item Commit {0}"
-
   - unique_name: partsupp_Parts_-_TPCH
     from:
       dataset: partsupp
@@ -90,7 +109,6 @@ relationships:
     to:
       dimension: Parts - TPCH
       level: Parts - TPCH Level
-
   - unique_name: partsupp_Supplier_-_TPCH
     from:
       dataset: partsupp
@@ -99,7 +117,6 @@ relationships:
     to:
       dimension: Supplier - TPCH
       level: Supplier - TPCH Level
-
   - unique_name: orders_Orders__-_TPCH
     from:
       dataset: orders
@@ -108,7 +125,6 @@ relationships:
     to:
       dimension: Orders  - TPCH
       level: Orders Dimension Level
-
   - unique_name: orders_Customer_-_TPCH
     from:
       dataset: orders
@@ -117,48 +133,4 @@ relationships:
     to:
       dimension: Customer - TPCH
       level: Customer - TPCH Level
-
-dimensions:
-  - Return Flag
-  - Shipping Mode
-
-metrics:
-
-  - unique_name: m_c_custkey_count
-    folder: Customers
-
-  - unique_name: m_l_discount_sum
-    folder: Items
-
-  - unique_name: m_l_quantity_sum
-    folder: Items
-
-  - unique_name: m_l_tax_sum
-    folder: Items
-
-  - unique_name: m_o_orderkey_count
-    folder: Orders
-
-  - unique_name: m_order_revenue
-    folder: Orders
-
-  - unique_name: m_ps_availqty_sum
-    folder: Parts
-
-  - unique_name: m_ps_supplycost_sum
-    folder: Parts
-
-  - unique_name: m_Revenue_sum
-    folder: Items
-
-  - unique_name: m_s_suppkey_count
-    folder: Suppliers
-
-  - unique_name: Order Revenue Previous Year
-    folder: Orders
-
-  - unique_name: YoY Order Revenue Change
-    folder: Orders
-
-  - unique_name: YTD Order Revenue
-    folder: Orders
+visible: true
