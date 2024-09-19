@@ -8,7 +8,7 @@ columns:
     data_type: decimal(38,0)
   - name: datekey_date
     data_type: date
-    sql: CAST(pk_date AS DATE)
+    sql: "CAST(\"pk_date\" AS DATE)"
   - name: day_of_half_year
     data_type: decimal(38,0)
   - name: day_of_half_year_name
@@ -63,7 +63,7 @@ columns:
     data_type: datetime
   - name: month_date
     data_type: date
-    sql: CAST(month AS DATE)
+    sql: "CAST(\"month\" AS DATE)"
   - name: month_name
     data_type: string
   - name: month_of_half_year
