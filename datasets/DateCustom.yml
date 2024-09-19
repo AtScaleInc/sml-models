@@ -207,4 +207,4 @@ columns:
   - name: reporting_year_lykey
     data_type: datetime
 connection_id: con_atscale_tutorial_data_as_adventure
-table: datecustom
+table: DATECUSTOM
