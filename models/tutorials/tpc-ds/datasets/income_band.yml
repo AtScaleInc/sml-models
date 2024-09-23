@@ -1,7 +1,7 @@
 unique_name: income_band
 object_type: dataset
 label: income_band
-connection_id: con1
+connection_id: Connection - TPCDS
 table: income_band
 
 columns:

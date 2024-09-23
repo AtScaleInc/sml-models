@@ -1,7 +1,7 @@
 unique_name: store
 object_type: dataset
 label: store
-connection_id: con1
+connection_id: Connection - TPCDS
 table: store
 
 columns:

@@ -560,5 +560,5 @@ level_attributes:
     sort_column: year
 
 modeler_metadata:
-  version: "0"
+  version: 0
   modified: "false"

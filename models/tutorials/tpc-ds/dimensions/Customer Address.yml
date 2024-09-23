@@ -84,6 +84,6 @@ level_attributes:
       - ca_state
     name_column: ca_state
 modeler_metadata:
-  version: '0'
+  version: 0
   modified: 'false'
 type: standard

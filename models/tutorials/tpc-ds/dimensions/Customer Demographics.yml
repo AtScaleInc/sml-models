@@ -67,6 +67,6 @@ level_attributes:
       - cd_demo_sk
     name_column: cd_demo_sk
 modeler_metadata:
-  version: '0'
+  version: 0
   modified: 'false'
 type: standard

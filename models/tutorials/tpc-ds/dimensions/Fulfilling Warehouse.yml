@@ -81,6 +81,6 @@ level_attributes:
       - w_state
     name_column: w_state
 modeler_metadata:
-  version: '0'
+  version: 0
   modified: 'false'
 type: standard

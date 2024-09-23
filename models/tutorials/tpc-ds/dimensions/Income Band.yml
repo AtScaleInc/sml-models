@@ -45,5 +45,5 @@ level_attributes:
     name_column: ib_income_band_sk
 
 modeler_metadata:
-  version: "0"
+  version: 0
   modified: "false"

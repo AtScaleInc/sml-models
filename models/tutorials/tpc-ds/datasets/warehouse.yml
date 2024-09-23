@@ -1,7 +1,7 @@
 unique_name: warehouse
 object_type: dataset
 label: warehouse
-connection_id: con1
+connection_id: Connection - TPCDS
 table: warehouse
 
 columns:

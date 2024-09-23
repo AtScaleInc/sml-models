@@ -1,11 +1,6 @@
 unique_name: store_promotion
 object_type: dataset
 label: store_promotion
-connection_id: con1
-sql: "SELECT p.*, ss.* \nFROM \"atscale-tutorial-data\".\"tpcds\".\"promotion\" p\n\
-  INNER JOIN \"atscale-tutorial-data\".\"tpcds\".\"store_sales\" ss\nON ss.\"ss_promo_sk\"\
-  \ = p.\"p_promo_sk\""
-
 columns:
   - name: p_channel_catalog
     data_type: string
@@ -91,15 +86,20 @@ columns:
     data_type: int
   - name: ss_wholesale_cost
     data_type: "decimal(7,2)"
-
+connection_id: Connection - TPCDS
+sql: |-
+  SELECT p.*, ss.* 
+  FROM "atscale_tutorial_data"."tpcds"."promotion" p
+  INNER JOIN "atscale_tutorial_data"."tpcds"."store_sales" ss
+  ON ss."ss_promo_sk" = p."p_promo_sk"
 dialects:
   - dialect: DatabricksSQL
     sql: "SELECT p.*, ss.* 
-      FROM atscale-tutorial-data.tpcds.promotion p
-      INNER JOIN atscale-tutorial-data.tpcds.store_sales ss
+      FROM atscale_tutorial_data.tpcds.promotion p
+      INNER JOIN atscale_tutorial_data.tpcds.store_sales ss
       ON ss.ss_promo_sk = p.p_promo_sk"
   - dialect: BigQuery
     sql: "SELECT p.*, ss.* 
-      FROM atscale-tutorial-data.tpcds.promotion p
-      INNER JOIN atscale-tutorial-data.tpcds.store_sales ss
+      FROM atscale_tutorial_data.tpcds.promotion p
+      INNER JOIN atscale_tutorial_data.tpcds.store_sales ss
       ON ss.ss_promo_sk = p.p_promo_sk"

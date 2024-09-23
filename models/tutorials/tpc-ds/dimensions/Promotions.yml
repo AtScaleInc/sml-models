@@ -121,5 +121,5 @@ level_attributes:
     name_column: p_promo_sk
 
 modeler_metadata:
-  version: "0"
+  version: 0
   modified: "false"
