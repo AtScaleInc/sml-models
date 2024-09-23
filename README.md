@@ -6,8 +6,8 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 # Model Library
 
 ## Tutorial Models
-1. [Internet Sales](models/tutorials/internet-sales) - a simple, single fact model derived from the ficticious AdventureWorks retail dataset.
-2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model that represents a fictional wholesale and distribution company.
+1. [Internet Sales](models/tutorials/internet-sales) - a simple, single-fact model derived from the fictitious AdventureWorks retail dataset.
+2. [World Wide Importers](models/tutorials/world-wide-importers) - a more complex, multi-fact model representing a fictional wholesale and distribution company.
 3. [TPC-DS](models/tutorials/tpc-ds) - a complex, multi-fact model that encodes the [TPC-DS](https://www.tpc.org/tpcds/) benchmark model in SML.
 
 # Getting Started
@@ -17,7 +17,7 @@ Download the [AtScale Developer Community Edition](http://www.atscale.com/commun
 
 ## How to Connect to Tutorial Data in AtScale
 ### How to Use the Pre-configured PostgresSQL Tutorial Data
-When you download and install the AtScale Developer Community edition, a PostgresSQL database container with the data for all three models will be installed and configured automatically in the AtScale Design Center. 
+When you download and install the AtScale Developer Edition, a PostgresSQL database container with the data for all three models will be installed and configured automatically in the AtScale Design Center. 
 
 To explore and query the tutorial models, in the AtScale Design Center:
 
@@ -48,7 +48,7 @@ The tutorial data for the sample models is available for free in the Snowflake M
 
 ![Snowflake Marketplace AtScale Page](images/Snowflake-Marketplace-AtScale-Page.png)
 
-4. **Name Your Database:** Click on the down arrow on the "Options" accordian control and enter `atscale_tutorial_data` in the "Database" field and assign the proper access role. Click the "Get" button.
+4. **Name Your Database:** Click on the down arrow on the "Options" accordion control and enter `atscale_tutorial_data` in the "Database" field and assign the proper access role. Click the "Get" button.
 
 ![Snowflake Marketplace Get](images/Snowflake-Marketplace-Get.png)
 
