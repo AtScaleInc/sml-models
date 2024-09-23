@@ -1,7 +1,7 @@
 unique_name: YTD Order Revenue
 object_type: metric_calc
 label: YTD Order Revenue
-description: YTD Order Revenue
+description: Year to date Order Revenue
 expression: "CASE WHEN ISEMPTY([Measures].[m_order_revenue]) THEN NULL \nELSE \nAggregate(PeriodsToDate([Order\
   \ Date Dimension].[Order Date Hierarchy - TPCH].[Order Year], [Order Date Dimension].[Order\
   \ Date Hierarchy - TPCH].CurrentMember), [Measures].[m_order_revenue]) \nEND "
