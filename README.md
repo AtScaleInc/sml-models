@@ -17,7 +17,7 @@ This repository contains a variety of semantic models encoded in the **S**emanti
 # Getting Started
 
 ## How to the Install AtScale Semantic Layer Platform
-Download the [AtScale Developer Edition](http://www.atscale.com/community) and follow the installation instructions
+Download the [AtScale Developer Community Edition](http://www.atscale.com/community) and follow the installation instructions
 
 ## How to Connect to Tutorial Data in AtScale
 ### How to Use the Pre-configured PostgresSQL Tutorial Data

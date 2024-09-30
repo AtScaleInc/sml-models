@@ -8,21 +8,21 @@ columns:
   - name: i_brand
     data_type: string
   - name: i_brand_id
-    data_type: int
+    data_type: "decimal(38,0)"
   - name: i_category
     data_type: string
   - name: i_category_id
-    data_type: int
+    data_type: "decimal(38,0)"
   - name: i_class
     data_type: string
   - name: i_class_id
-    data_type: int
+    data_type: "decimal(38,0)"
   - name: i_color
     data_type: string
   - name: i_container
     data_type: string
   - name: i_current_price
-    data_type: decimal
+    data_type: "decimal(7,2)"
   - name: i_formulation
     data_type: string
   - name: i_item_desc
@@ -30,13 +30,13 @@ columns:
   - name: i_item_id
     data_type: string
   - name: i_item_sk
-    data_type: int
+    data_type: "decimal(38,0)"
   - name: i_manager_id
-    data_type: int
+    data_type: "decimal(38,0)"
   - name: i_manufact
     data_type: string
   - name: i_manufact_id
-    data_type: int
+    data_type: "decimal(38,0)"
   - name: i_product_name
     data_type: string
   - name: i_rec_end_date
@@ -48,4 +48,4 @@ columns:
   - name: i_units
     data_type: string
   - name: i_wholesale_cost
-    data_type: decimal
+    data_type: "decimal(7,2)"
